@@ -1,0 +1,88 @@
+colors:
+  # COLORSCHEME: base16-edge-dark-256.yml
+  # Default colors
+  primary:
+    background: "0x262729"
+    foreground: "0xb7bec9"
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  normal:
+    black: "0x262729"
+    red: "0xe77171"
+    green: "0xa1bf78"
+    yellow: "0xdbb774"
+    blue: "0x73b3e7"
+    magenta: "0xd390e7"
+    cyan: "0x5ebaa5"
+    white: "0xb7bec9"
+
+  # Bright colors
+  bright:
+    black: "0x3e4249"
+    red: "0xe77171"
+    green: "0xa1bf78"
+    yellow: "0xdbb774"
+    blue: "0x73b3e7"
+    magenta: "0xd390e7"
+    cyan: "0x5ebaa5"
+    white: "0x3e4249"
+
+  cursor:
+    text: "0x262729"
+    cursor: "0xb7bec9"
+
+  # Normal colors
+  indexed_colors:
+    - { index: 16, color: "0xe77171" }
+    - { index: 17, color: "0x5ebaa5" }
+    - { index: 18, color: "0x88909f" }
+    - { index: 19, color: "0xb7bec9" }
+    - { index: 20, color: "0x73b3e7" }
+    - { index: 21, color: "0xd390e7" }
+font:
+  normal:
+    family: Liga SFMono Nerd Font
+    style: semibold
+  italic:
+    family: Liga SFMono Nerd Font
+    style: Italic
+  bold_italic:
+    family: Cascadia Mono
+    style: Bold Italic
+
+  # 字大小
+  size: 8
+
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+
+window:
+  padding:
+    x: 2
+    y: 2
+  opacity: 0.8
+
+scrolling:
+  # 回滚缓冲区中的最大行数,指定“0”将禁用滚动。
+  history: 10000
+
+  # 滚动行数
+
+  multiplier: 10
+
+# 如果为‘true’，则使用亮色变体绘制粗体文本。
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+
+live_config_reload: true
+
+key_bindings:
+  - { key: V, mods: command, action: Paste }
+  - { key: C, mods: command, action: Copy }

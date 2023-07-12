@@ -1,0 +1,383 @@
+# Oxide theme
+#
+# Author: Diki Ananta <diki1aap@gmail.com>
+# Repository: https://github.com/dikiaap/dotfiles
+# License: MIT
+# i3 config file (v4)
+
+# font for window titles and bar
+font pango:pingfang 10
+
+# use win key
+set $mod Mod1
+
+# use these keys for focus, movement, and resize directions
+set $left   h 
+set $down   j
+set $up     k
+set $right  l
+
+# define names for workspaces
+# set $ws1    "1:   Terminal "
+# set $ws2    "2:   Code "
+# set $ws3    "3:   Chromium "
+# set $ws4    "4:   Files "
+# set $ws5    "5:   Documents "
+# set $ws6    "6:   Media "
+# set $ws7    "7:   Design "
+# set $ws8    "8:   Chat "
+# set $ws9    "9:   General "
+# set $ws10   "10:   Settings "
+set $ws1    "1  "
+set $ws2    "2  "
+set $ws3    "3  "
+set $ws4    "4  "
+set $ws5    "5  "
+set $ws6    "6  "
+set $ws7    "7  "
+set $ws8    "8  "
+set $ws9    "9  "
+set $ws10   "10  "
+
+# use $mod+Mouse to drag floating windows to their wanted position
+floating_modifier $mod
+
+# control focused window when follows the mouse movementsfocus_follows_mouse yes
+focus_follows_mouse no
+# window border settings
+default_border pixel 1
+# default_border          none
+default_floating_border none
+
+# hiding borders adjacent to the screen edges
+hide_edge_borders none
+
+# set popups during fullscreen mode
+popup_during_fullscreen smart
+
+title_align center
+
+floating_minimum_size 75 x 50
+floating_maximum_size 1400 x 900
+
+
+# start a term
+bindsym $mod+Return exec --no-startup-id st
+
+# start a program launcher
+#bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --dmenu="dmenu -i -fn 'Source Sans Pro-10' -nb '#212121' -sb '#2b83a6' -sf '#ffffff'"
+bindsym $mod+space exec --no-startup-id rofi -show drun
+
+#defa window with win+tab
+bindsym Ctrl+Tab exec --no-startup-id rofi -show window
+
+# kill focused window
+bindsym $mod+q kill
+bindsym $mod+Shift+q exec kill -9 $(xprop | grep _NET_WM_PID | awk '{print $3}')
+
+# change focus
+bindsym $mod+$left  focus left
+bindsym $mod+$down  focus down
+bindsym $mod+$up    focus up
+bindsym $mod+$right focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left   focus left
+bindsym $mod+Down   focus down
+bindsym $mod+Up     focus up
+bindsym $mod+Right  focus right
+
+# move focused window
+bindsym $mod+Shift+$left    move left
+bindsym $mod+Shift+$down    move down
+bindsym $mod+Shift+$up      move up
+bindsym $mod+Shift+$right   move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left     move left
+bindsym $mod+Shift+Down     move down
+bindsym $mod+Shift+Up       move up
+bindsym $mod+Shift+Right    move right
+
+#分屏
+# split in horizontal orientation
+#bindsym $mod+h split h
+
+# split in vertical orientation
+#bindsym $mod+v split v
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# change container layout
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+# bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+#bindsym $mod+Shift+a focus child
+
+# move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# show the next scratchpad window or hide the focused scratchpad window
+bindsym $mod+minus scratchpad show
+
+# move focused floating window to the center of all outputs
+#bindsym $mod+Shift+h move absolute position center
+
+# move focused floating window to the current position of the cursor
+bindsym $mod+Shift+m move position mouse
+
+# set a window to stick to the glass
+# bindsym $mod+Shift+s sticky toggle
+
+# sticky preview for media
+bindsym $mod+Shift+p fullscreen disable; floating enable; resize set 350 px 197 px; sticky enable; move window to position 1006 px 537 px
+
+# shortcut to change window border
+#bindsym $mod+t border normal    0
+bindsym $mod+y border pixel     1
+bindsym $mod+u border none
+
+# switch to workspace
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
+bindsym $mod+0 workspace $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace $ws1;workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2;workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3;workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4;workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5;workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6;workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7;workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8;workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9;workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10
+
+# shortcut applications
+# bindsym Print                   exec --no-startup-id gnome-screenshot
+# bindsym $mod+Print              exec --no-startup-id gnome-screenshot -a
+bindsym $mod+Shift+x            exec --no-startup-id i3lock-fancy
+
+# volume
+bindsym XF86AudioLowerVolume    exec --no-startup-id amixer set Master 5%- unmute
+bindsym XF86AudioRaiseVolume    exec --no-startup-id amixer set Master 5%+ unmute
+bindsym XF86AudioMute           exec --no-startup-id amixer set Master toggle
+
+bindsym XF86MonBrightnessUp exec light -A 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 10 # decrease screen brightness
+
+# notification
+# bindsym Ctrl+space              exec --no-startup-id dunstctl close
+# bindsym Ctrl+Shift+space        exec --no-startup-id dunstctl close-all
+# bindsym Ctrl+grave              exec --no-startup-id dunstctl history-pop
+# bindsym Ctrl+Shift+period       exec --no-startup-id dunstctl context
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+
+# restart i3 inplace
+bindsym $mod+Shift+r restart
+
+# manage i3 session
+bindsym $mod+Shift+e exec --no-startup-id i3-nagbar -t warning -f "pango:Hack 9" -m "Do you really want to exit?" -B "    Exit " "i3-msg exit" -B "    Lock " "pkill i3-nagbar && ~/.config/polybar/scripts/lock.sh" -B "    Reboot " "pkill i3-nagbar && reboot" -B "    Shutdown " "pkill i3-nagbar && shutdown -h now"
+
+# resize window
+bindsym $mod+r mode "  "
+mode "  " {
+    # pressing left and up will shrink the window's width and height
+    # pressing right and down will grow the window's width and height
+    bindsym $left   resize shrink width 1 px or 1 ppt
+    bindsym $down   resize grow height 1 px or 1 ppt
+    bindsym $up     resize shrink height 1 px or 1 ppt
+    bindsym $right  resize grow width 1 px or 1 ppt
+
+    # same bindings, but for the arrow keys
+    bindsym Left    resize shrink width 1 px or 1 ppt
+    bindsym Down    resize grow height 1 px or 1 ppt
+    bindsym Up      resize shrink height 1 px or 1 ppt
+    bindsym Right   resize grow width 1 px or 1 ppt
+
+    # back to normal: Enter or win+r
+    bindsym Return mode "default"
+    bindsym $mod+r mode "default"
+}
+
+# set specific windows to floating mode
+for_window [window_role="app"]                  floating enable
+for_window [window_role="pop-up"]               floating enable
+for_window [window_role="task_dialog"]          floating enable
+for_window [title="Preferences$"]               floating enable
+for_window [title="Konsole$"]                   floating enable
+for_window [class="icalingua$"]                 floating enable
+for_window [title="KDE Connect$"]               floating enable
+for_window [title="蓝牙设备"]                   floating enable
+# for_window [class="kdeconnect"]               floating enable
+for_window [class="VirtualBoxVM"]               floating enable
+for_window [class="dolphin"]                    floating enable
+for_window [class="deepin-mail"]                floating enable
+for_window [class="thunder.exe"]                floating enable
+for_window [class="wemeetapp"]                  floating enable
+for_window [class="Wine"]                       floating enable
+for_window [class="ark"]                        floating enable
+for_window [class="flashdownloaddesktop.exe"]   floating enable
+for_window [class="xfce4-notifyd-config"]       floating enable
+for_window [title="腾讯会议"]                   floating enable
+for_window [title="管理成员"]                   floating enable
+for_window [title="聊天"]                       floating enable
+for_window [title="配置中心"]                   floating enable
+for_window [title="QQ"]                         floating enable
+for_window [title="plank"]                      floating enable
+for_window [class="kmail"]                      floating enable
+for_window [class="Gnome-screenshot"]           floating enable
+for_window [class="copyq"]                      floating enable
+for_window [class="dingtalk"]                   floating enable
+for_window [class="trans.py"]                   floating enable
+# # class                 border  backgr. text    indicator child_border
+# client.focused          #387 #2b8 #ffffff #dddddd   #483
+# client.focused_inactive #212121 #212121 #86888c #292d2e   #5a5a5a
+# client.unfocused        #212121 #212121 #86888c #292d2e   #5a5a5a
+# client.urgent           #d64e4e #d64e4e #ffffff #d64e4e   #d64e4e
+# client.placeholder      #212121 #0c0c0c #ffffff #212121   #262626
+# client.background       #212121
+# class                 border  backgr. text    indicator child_border
+# client.focused          #a050aa #2b8 #3b8 #3b8   #2b7
+# client.focused_inactive #212121 #212121 #86888c #292d2e   #5a5a5a
+# client.unfocused        #212121 #212121 #86888c #292d2e   #5a5a5a
+# client.urgent           #d64e4e #d64e4e #ffffff #d64e4e   #d64e4e
+# client.placeholder      #212121 #0c0c0c #ffffff #212121   #262626
+# client.background       #212121
+
+# client.focused #a550a5 #71f8f6 #fdf6e3 #71f8f9
+# client.focused_inactive #073642 #073642 #eee8d5 #6c71c4
+# client.unfocused #073642 #073642 #93a1a1 #586e75
+# client.urgent #d33682 #d33682 #fdf6e3 #dc322f
+
+client.focused          #a550a5 #DFA898 #1E1E1E #2C37F4   #285577
+client.focused_inactive #333333 #F1DDDD #03061E #484E50   #5F676A
+client.unfocused        #333333 #222222 #888888 #292D2E   #222222
+client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+
+# start i3bar to display a workspace bar
+# bar {
+#     output            eDP-1
+#     status_command    i3blocks
+# }
+
+bar {
+    # output HDMI-1
+	i3bar_command i3bar -t
+	# status_command i3status
+	status_command i3blocks
+	position top
+	# position bottom
+
+    ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+    # tray_output eDP1
+	tray_output primary
+
+    # font pango:bold:15
+    # font pango:pingfang bold 10
+
+	bindsym button4 nop
+	bindsym button5 nop
+
+    font xft:pingfang bold 10
+
+	strip_workspace_numbers no
+	workspace_min_width 1
+    workspace_buttons yes
+
+    colors {
+        background #32323260
+    #	background $term_background
+        statusline #323232
+        #statusline #aacc60
+        separator  #629692
+
+    #                      border  backgr. text
+        focused_workspace  #353836 #132 #292F34
+        active_workspace   #595B5B #353836 #FDF6E3
+        inactive_workspace #595B5B #222D31 #EEE8D5
+        binding_mode       #16a085 #2C2C2C #F9FAF9
+        urgent_workspace   #16a085 #FDF6E3 #E5201D
+    }
+}
+
+
+# 我的快捷键
+bindsym $mod+c exec --no-startup-id google-chrome-stable --password-store=gnome
+# bindsym $mod+c exec microsoft-edge-stable --password-store=gnome
+bindsym Mod4+q exec --no-startup-id icalingua
+bindsym Mod4+w workspace $ws6
+bindsym $mod+Shift+a exec --no-startup-id flameshot gui
+bindsym Ctrl+d exec st
+# bindsym Ctrl+k exec kdeconnect-app
+bindsym $mod+b exec --no-startup-id feh --recursive --randomize --bg-fill /data/图片/壁纸/bg-N/*
+bindsym $mod+i exec kill -s USR1 $(pidof deadd-notification-center)
+bindsym $mod+x [all] move workspace $ws1;workspace $ws1
+bindsym Mod4+p exec --no-startup-id lxqt-config-monitor
+bindsym Mod4+e exec --no-startup-id dolphin
+bindsym Mod4+v exec --no-startup-id xfce4-popup-clipman
+bindsym $mod+m bar mode toggle
+bindsym Ctrl+m exec --no-startup-id xfce4-notifyd-config
+bindsym Ctrl+q exec --no-startup-id qutebrowser
+bindsym $mod+Shift+s exec --no-startup-id python /data/code/python/trans/trans.py
+bindsym $mod+Shift+w exec --no-startup-id python /data/code/python/trans/transimg.py
+bindsym $mod+d exec --no-startup-id dingtalk
+
+
+
+# i3-gaps 窗口间隔
+smart_gaps on
+gaps inner 9
+gaps outer 3
+
+# new window
+# new_window none
+# new_float normal
+# hide_edge_borders both
+# local config file
+
+# startup applications
+# exec_always --no-startup-id xautolock -time 30 -locker "~/.config/polybar/scripts/lock.sh" -corners +000 -cornersize 5 -cornerdelay 5 -cornerredelay 180
+exec_always --no-startup-id xautolock -time 30 -locker i3lock-fancy -corners +000 -cornersize 5 -cornerdelay 5 -cornerredelay 180
+exec_always --no-startup-id nm-applet
+# exec_always --no-startup-id pulseaudio -k
+exec_always --no-startup-id volumeicon
+exec_always --no-startup-id xfce4-power-manager
+# exec_always --no-startup-id lxpolkit
+exec_always --no-startup-id feh --recursive --randomize --bg-fill /data/图片/壁纸/bg-N/*
+exec_always --no-startup-id picom --experimental-backends
+exec_always --no-startup-id fcitx5 
+# exec_always --no-startup-id v2raya --lite 
+# exec_always --no-startup-id /data/APP/deadd-notification-center
+exec_always --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
+exec_always --no-startup-id xfce4-clipman
+exec_always --no-startup-id autotiling
+# exec_always --no-startup-id blueman-applet
+exec_always --no-startup-id xmodmap ~/.xmodmap
+# exec_always --no-startup-id ~/.config/polybar/launch.sh
+# exec_always --no-startup-id redshift
+# exec_always --no-startup-id xfce4-panel

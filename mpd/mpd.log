@@ -1,0 +1,1139 @@
+Apr 14 16:30 : update: Not a directory: /data/音乐
+Apr 14 16:30 : exception: inotify_add_watch() has failed: Not a directory
+Apr 14 16:30 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 16:31 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 16:32 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 16:32 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 16:33 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 16:33 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 16:34 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 16:34 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 17:08 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 17:09 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 17:10 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 17:10 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 17:13 : update: added /人是.opus
+Apr 14 17:13 : update: added /人是.opus
+Apr 14 17:13 : update: added /人是.opus
+Apr 14 17:13 : update: added /人是.opus
+Apr 14 17:15 : update: removing 人是.opus
+Apr 14 17:15 : update: removing 人是.opus
+Apr 14 17:15 : update: removing 人是.opus
+Apr 14 17:15 : update: removing 人是.opus
+Apr 14 17:15 : update: added /人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3
+Apr 14 17:15 : update: added /人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3
+Apr 14 17:15 : update: added /人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3
+Apr 14 17:15 : update: added /人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3
+Apr 14 17:23 : player: played "人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3"
+Apr 14 17:28 : player: played "人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3"
+Apr 14 17:32 : update: removing 人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3
+Apr 14 17:32 : update: added /2-人是.mp3
+Apr 14 17:33 : update: removing 人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3
+Apr 14 17:33 : update: removing 人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3
+Apr 14 17:33 : update: removing 人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3
+Apr 14 17:33 : update: added /2-人是.mp3
+Apr 14 17:33 : update: added /2-人是.mp3
+Apr 14 17:33 : update: added /2-人是.mp3
+Apr 14 17:33 : exception: Bad song index
+Apr 14 17:38 : player: played "2-人是.mp3"
+Apr 14 18:12 : config: option 'buffer_time' on line 219 was not recognized
+Apr 14 18:13 : exception: Failed to open audio output
+Apr 14 18:17 : player: played "2-人是.mp3"
+Apr 14 18:21 : player: played "2-人是.mp3"
+Apr 14 18:23 : update: added /Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3
+Apr 14 18:23 : update: added /Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3
+Apr 14 18:25 : update: added /天龍八部之宿敵 [Iv2ODAJkQ3U].mp3
+Apr 14 18:28 : update: removing 天龍八部之宿敵 [Iv2ODAJkQ3U].mp3
+Apr 14 18:28 : update: updating /Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3
+Apr 14 18:28 : update: added /宿敌-许嵩.mp3.mp3
+Apr 14 18:28 : update: updating /Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3
+Apr 14 18:28 : update: updating /2-人是.mp3
+Apr 14 18:29 : exception: Failed to decode /data/音乐/天龍八部之宿敵 [Iv2ODAJkQ3U].mp3; Failed to open '/data/音乐/天龍八部之宿敵 [Iv2ODAJkQ3U].mp3': No such file or directory
+Apr 14 18:30 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Apr 14 18:30 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Apr 14 18:30 : update: updating /Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3
+Apr 14 18:30 : update: updating /宿敌-许嵩.mp3.mp3
+Apr 14 18:30 : update: updating /Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3
+Apr 14 18:30 : update: updating /2-人是.mp3
+Apr 14 18:33 : update: updating /Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3
+Apr 14 18:33 : update: updating /宿敌-许嵩.mp3.mp3
+Apr 14 18:33 : update: updating /Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3
+Apr 14 18:33 : update: updating /2-人是.mp3
+Apr 14 18:33 : exception: Bad song index
+Apr 14 18:34 : player: played "Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3"
+Apr 14 18:35 : update: updating /Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3
+Apr 14 18:35 : update: updating /宿敌-许嵩.mp3.mp3
+Apr 14 18:35 : update: updating /Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3
+Apr 14 18:35 : update: updating /2-人是.mp3
+Apr 14 18:35 : exception: No such directory
+Apr 14 18:36 : exception: No such directory
+Apr 14 18:36 : exception: No such directory
+Apr 14 18:38 : exception: No such directory
+Apr 14 18:38 : exception: Failed to open '/home/bighu/.config/mpd/playlists/free.m3u': No such file or directory
+Apr 14 18:38 : exception: No such playlist
+Apr 14 18:38 : exception: No such song
+Apr 14 18:38 : exception: No such song
+Apr 14 18:38 : exception: Bad song index
+Apr 14 18:38 : exception: Bad song index
+Apr 14 18:38 : exception: Bad song index
+Apr 14 18:38 : exception: Bad song index
+Apr 14 18:38 : exception: Bad song index
+Apr 14 18:38 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+Apr 14 18:41 : update: added /Irony [P7vvkS-zwnY].mp3
+Apr 14 18:42 : update: updating /Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3
+Apr 14 18:42 : update: removing Irony [P7vvkS-zwnY].mp3
+Apr 14 18:42 : update: updating /宿敌-许嵩.mp3.mp3
+Apr 14 18:42 : update: added /Irony.mp3
+Apr 14 18:42 : update: updating /Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3
+Apr 14 18:42 : update: updating /2-人是.mp3
+Apr 14 18:43 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+Apr 14 18:43 : exception: Bad song index
+Apr 14 18:46 : player: played "Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3"
+Apr 14 18:51 : player: played "Irony.mp3"
+Apr 14 18:55 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+Apr 14 18:59 : player: played "2-人是.mp3"
+Apr 14 19:03 : player: played "Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3"
+Apr 14 19:07 : player: played "Irony.mp3"
+Apr 14 19:11 : player: played "Irony.mp3"
+Apr 14 19:44 : update: added /Inochini Kirawareteiru [0bDIxQlHGIo].mp3
+Apr 14 19:45 : update: added /琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3
+Apr 14 19:46 : update: added /傲寒 [GHvQa-BpYkQ].mp3
+Apr 14 19:46 : update: added /傲寒 [GHvQa-BpYkQ].webm
+Apr 14 19:46 : update: removing 傲寒 [GHvQa-BpYkQ].webm
+Apr 14 19:46 : update: updating /傲寒 [GHvQa-BpYkQ].mp3
+Apr 14 19:46 : update: added /海底 [h0lXcZtcEr0].mp3
+Apr 14 19:47 : update: added /在夜裡跳舞 [zenChTeAhhI].mp3
+Apr 14 19:47 : update: added /Huang Hun (Sunset) [KQTCO417h_M].webm
+Apr 14 19:47 : update: added /Huang Hun (Sunset) [KQTCO417h_M].mp3
+Apr 14 19:47 : update: removing Huang Hun (Sunset) [KQTCO417h_M].webm
+Apr 14 19:47 : update: updating /Huang Hun (Sunset) [KQTCO417h_M].mp3
+Apr 14 19:48 : update: added /一葷一素 [Ok-xHqfE1r8].mp3
+Apr 14 19:48 : update: added /歲月神偷 [pS0s1cQRb10].mp3
+Apr 14 19:48 : update: added /林志炫-煙花易冷 (繁中歌詞) [Ur7aRrDWNak].mp3
+Apr 14 19:48 : update: added /房東的貓 - 如常 [Sl6ZQxoABSI].mp3
+Apr 14 19:48 : update: added /山水之間 [gLLRRrBRJ_M].mp3
+Apr 14 19:50 : update: added /黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3
+Apr 14 19:50 : update: added /林志炫 Terry Lin - 單身情歌 [QOPTkoK0MXI].mp3
+Apr 14 19:50 : update: added /烛 [4PDo6HUVpxI].mp3
+Apr 14 19:50 : update: added /任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3
+Apr 14 19:51 : update: added /人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3
+Apr 14 19:51 : update: added /棠梨煎雪 [qkpIZgmDrqw].mp3
+Apr 14 19:51 : update: added /陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3
+Apr 14 19:51 : update: added /【双笙&排骨 翻唱】腐草为萤 [qUo4Ecvbh64].mp3
+Apr 14 19:51 : update: added /天龍八部之宿敵 [Iv2ODAJkQ3U].mp3
+Apr 14 19:51 : update: added /關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3
+Apr 14 19:51 : update: added /黃齡 Isabelle Huang《繁華夢 Flourished Dream》【扶搖插曲 Legend Of Fu Yao OST】官方MV (Phù Dao OST ｜ Mộng Phồn Hoa) [W0b6HramCug].mp3
+Apr 14 19:51 : update: added /双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3
+Apr 14 19:51 : update: added /魚仔 (He-R) - 電視劇ᐸ花甲男孩轉大人ᐳ主題曲 [oDUKf2NONG8].mp3
+Apr 14 19:51 : update: added /Irony [P7vvkS-zwnY].mp3
+Apr 14 19:52 : update: added /Hibiwareta Sekai [E9rgHcFaFX4].mp3
+Apr 14 19:52 : update: added /Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack [RgKAFK5djSk].mp3
+Apr 14 19:53 : update: added /たぶん [rgNdeflYdYw].mp3
+Apr 14 19:53 : update: added /緣滅 [xN739Jdauzw].mp3
+Apr 14 19:53 : update: added /烟花易冷 (Live) [cufHI9v1v7I].mp3
+Apr 14 19:54 : update: removing 【双笙&排骨 翻唱】腐草为萤 [qUo4Ecvbh64].mp3
+Apr 14 19:54 : update: added /腐草为萤.mp3
+Apr 14 19:56 : update: added /【オリジナルMV】窓を開けて ⧸ CIEL #01 [KD14CW-j2sA].mp3
+Apr 14 19:56 : update: added /【双笙&排骨 翻唱】腐草为萤 [qUo4Ecvbh64].mp3
+Apr 14 19:56 : update: added /好樂團 GoodBand－他們說我是沒有用的年輕人 Official Lyrics Video [FNJG6MsKO0k].mp3
+Apr 14 19:56 : update: added /Love Story [aZ1hziFhj1o].mp3
+Apr 14 19:57 : update: added /踊 [C7YQq-nup3A].mp3
+Apr 14 19:57 : update: added /a小调圆舞曲（肖邦） [gkA6mBmcJGU].mp3
+Apr 14 19:57 : update: added /我從崖邊跌落 [lTeFfziL4Co].mp3
+Apr 14 19:57 : update: added /有何不可 [_2f-7oQIS8M].mp3
+Apr 14 19:57 : update: added /星空 [NOe1lwdRH8M].mp3
+Apr 14 19:57 : update: added /故梦【双笙】翻唱 [2UQYc08WfxM].mp3
+Apr 14 19:58 : update: added /單依純 -《給電影人的情書》(電影 一秒鐘 推廣曲)｜CC歌詞字幕 [zq7pK96bp6M].mp3
+Apr 14 19:58 : update: added /青花瓷 [DxpndDEAqGk].mp3
+Apr 14 19:59 : update: added /【绝美戏腔】少年霜⧸提糯-非李 『猿声远，引鲛人落泪。一片月，已守尽千秋岁』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [JejyWLyn3Oc].mp3
+Apr 14 19:59 : update: added /借 [gT6jLXVi_OQ].mp3
+Apr 14 19:59 : update: added /Hold On Anime Music Video [ZFYVQZgJ5xw].mp3
+Apr 14 19:59 : update: added /Fleeting Lullaby [kHXLTei_L7s].mp3
+Apr 14 19:59 : update: added /毛不易 - 呓语「 日月蹉跎小起大落 光陰裡有多少景色 」【cc字幕】 ♪ 高音質  ♪ MaHaMusic♪ [HUIFZNLTp38].mp3
+Apr 14 19:59 : update: added /Inochini Kirawareteiru [NVbbj5wCuiA].mp3
+Apr 14 19:59 : update: added /【tk極推薦】雙笙 - 風緣「偷來了，與你長伴餘生的歲月。」[ High Quality Lyrics ][ Chinese Style ] 虐心 [ZrX6gsAYVcM].mp3
+Apr 14 20:00 : update: added /半吨兄弟 信仰 （完整版）【動態歌詞⧸Lyrics Video】 [Zan6BGkJqf8].mp3
+Apr 14 20:00 : update: added /心如止水 [zeWJs6F8teQ].mp3
+Apr 14 20:00 : update: added /鲸鱼电台 [9itP-h8ggGc].mp3
+Apr 14 20:00 : update: added /山丘 [BwOWcyhSrpE].webm
+Apr 14 20:00 : update: added /山丘 [BwOWcyhSrpE].mp3
+Apr 14 20:00 : update: removing 山丘 [BwOWcyhSrpE].webm
+Apr 14 20:00 : update: updating /山丘 [BwOWcyhSrpE].mp3
+Apr 14 20:01 : update: added /紅塵客棧 [GUvMWPHVfKM].mp3
+Apr 14 20:01 : update: added /年岁 [WTpWDteXOXk].mp3
+Apr 14 20:02 : update: added /BLUE GURASU [2lwj7fcWL4Q].mp3
+Apr 14 20:02 : update: added /Emily To Juugono Yakusoku [DOdzY9n_uOs].mp3
+Apr 14 20:02 : update: added /大鱼 [a3ftowBldYA].mp3
+Apr 14 20:02 : update: added /像我這樣的人 [Cm4h4hhYupA].mp3
+Apr 14 20:03 : update: added /起風了 (電視劇＂加油你是最棒的＂主題曲) [Qd0sFK_SnSY].mp3
+Apr 14 20:03 : update: added /梅香如故 [wfdtg2UjdI0].mp3
+Apr 14 20:03 : update: added /Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3
+Apr 14 20:03 : update: added /我的一个道姑朋友 [iswLw33jj1I].mp3
+Apr 14 20:03 : update: removing 【オリジナルMV】窓を開けて ⧸ CIEL #01 [KD14CW-j2sA].mp3
+Apr 14 20:03 : update: added /窓を開けて ⧸ CIEL.mp3
+Apr 14 20:04 : update: added /如愿 [6fV2dRqJHvw].mp3
+Apr 14 20:04 : update: removing 【双笙&排骨 翻唱】腐草为萤 [qUo4Ecvbh64].mp3
+Apr 14 20:04 : update: added /繁華夢 (電視劇《扶搖》插曲) [YlwMXtKZCS8].webm
+Apr 14 20:04 : update: updating /腐草为萤.mp3
+Apr 14 20:04 : update: added /繁華夢 (電視劇《扶搖》插曲) [YlwMXtKZCS8].mp3
+Apr 14 20:04 : update: removing 繁華夢 (電視劇《扶搖》插曲) [YlwMXtKZCS8].webm
+Apr 14 20:04 : update: updating /繁華夢 (電視劇《扶搖》插曲) [YlwMXtKZCS8].mp3
+Apr 14 20:05 : update: removing 【tk極推薦】雙笙 - 風緣「偷來了，與你長伴餘生的歲月。」[ High Quality Lyrics ][ Chinese Style ] 虐心 [ZrX6gsAYVcM].mp3
+Apr 14 20:05 : update: added /易燃易爆炸 [U0ENg_ddScY].mp3
+Apr 14 20:05 : update: added /风缘.mp3
+Apr 14 20:05 : update: added /髮如雪 [Px_TOP_d9zY].mp3
+Apr 14 20:05 : update: added /如初 [FKvNJsvM_8Y].mp3
+Apr 14 20:05 : update: added /海市蜃楼 [hv1U9t4DTls].mp3
+Apr 14 20:05 : update: added /Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3
+Apr 14 20:05 : update: removing 2-人是.mp3
+Apr 14 20:05 : update: added /人是.mp3
+Apr 14 20:06 : update: removing 一葷一素 [Ok-xHqfE1r8].mp3
+Apr 14 20:06 : update: added /林志炫~你的樣子 [jFD1YU9aRc4].mp3
+Apr 14 20:06 : update: added /一葷一素.mp3
+Apr 14 20:06 : update: added /童話鎮 [OaYoWjfQUN0].mp3
+Apr 14 20:07 : update: removing 人是_ (电影《流浪地球2》定义主题曲) [wBhtHGWwifU].mp3
+Apr 14 20:07 : update: added /Setagaya Night Safari [Lco0XVXLjvY].mp3
+Apr 14 20:07 : update: added /李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].webm
+Apr 14 20:07 : update: added /李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3
+Apr 14 20:07 : update: added /雅俗共賞 [gvwawFvCy0o].mp3
+Apr 14 20:07 : update: removing 宿敌-许嵩.mp3.mp3
+Apr 14 20:07 : update: removing 李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].webm
+Apr 14 20:07 : update: added /七里香 [U8E3j6y__BA].mp3
+Apr 14 20:07 : update: added /林俊傑 - 醉赤壁 (女聲版)【動態歌詞】 [Iqy6IGD5Ic0].mp3
+Apr 14 20:07 : update: added /宿敌.mp3
+Apr 14 20:07 : update: updating /李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3
+Apr 14 20:08 : update: removing 好樂團 GoodBand－他們說我是沒有用的年輕人 Official Lyrics Video [FNJG6MsKO0k].mp3
+Apr 14 20:08 : update: added /爱若琉璃 (电视剧《琉璃美人煞》推广曲）) [HWw2q4lYMLg].mp3
+Apr 14 20:08 : update: added /爱就一个字 (女声版) [pYbzYdcQTVk].mp3
+Apr 14 20:08 : update: added /牧馬城市 [8TF7wibRxaI].mp3
+Apr 14 20:08 : update: added /他們說我是沒有用的年輕人.mp3
+Apr 14 20:09 : update: removing 林俊傑 - 醉赤壁 (女聲版)【動態歌詞】 [Iqy6IGD5Ic0].mp3
+Apr 14 20:09 : update: added /林俊傑 - 醉赤壁 (女聲版).mp3
+Apr 14 20:09 : update: added /カワキヲアメク [VjeoJ6I81vA].mp3
+Apr 14 20:09 : update: added /心という名の不可解 [zySlbZ8JVAM].mp3
+Apr 14 20:09 : update: added /Practice Love [HbTu28zjPVs].mp3
+Apr 14 20:09 : update: added /千年一叹 [2F528lC9GHE].mp3
+Apr 14 20:09 : update: added /曹操 (现场) [fT-uM_WeC0U].mp3
+Apr 14 20:10 : update: added /她說 [2YKd5uG-v_o].mp3
+Apr 14 20:10 : update: added /【抖音熱歌-懸溺（女生版）】有點特別哦！高音質⧸能動歌詞！ [G4SM62kTtAc].mp3
+Apr 14 20:10 : update: added /听我说 [kgMhoiAV57w].mp3
+Apr 14 20:10 : update: added /杏花弦外雨 [007ru6Nezr0].mp3
+Apr 14 20:10 : update: added /艾福杰尼 After Journey - Sorry (Official Lyric Video) [qwW-0TRrRbo].mp3
+Apr 14 20:11 : update: added /同心而語 (電視劇《琉璃》彩蛋曲) [OgIGteS8rIA].mp3
+Apr 14 20:11 : update: added /木蘭 [bQ3q2xsyLz4].mp3
+Apr 14 20:12 : update: added /Cross a thousand kilometers to find you [Ur_hogbfsOg].mp3
+Apr 14 20:12 : update: removing 心という名の不可解 [zySlbZ8JVAM].mp3
+Apr 14 20:12 : update: added /レディメイド [eHTeP9QQ_fs].mp3
+Apr 14 20:12 : update: added /レディメイド [eHTeP9QQ_fs].webm
+Apr 14 20:12 : update: added /心という名の不可解.mp3
+Apr 14 20:12 : update: removing レディメイド [eHTeP9QQ_fs].webm
+Apr 14 20:12 : update: updating /レディメイド [eHTeP9QQ_fs].mp3
+Apr 14 20:12 : update: added /WATCHING THE WHEELS. (Ultimate Mix, 2020) - John Lennon (official music video HD) [uVXR2LYeFBI].mp3
+Apr 14 20:12 : update: added /Monster Party [ndqXz9uKBxE].mp3
+Apr 14 20:13 : update: removing 山丘 [BwOWcyhSrpE].mp3
+Apr 14 20:13 : update: added /山丘.mp3
+Apr 14 20:13 : update: added /葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3
+Apr 14 20:13 : update: added /Nothing Left Between Us [33uKSODjvDo].mp3
+Apr 14 20:14 : update: removing 山水之間 [gLLRRrBRJ_M].mp3
+Apr 14 20:14 : update: added /红马 (女版) [ksV94Ag5Tvs].mp3
+Apr 14 20:14 : update: added /山水之間.mp3
+Apr 14 20:14 : update: added /Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3
+Apr 14 20:14 : update: added /Christina Perri - A Thousand Years [Official Music Video] [rtOvBOTyX00].mp3
+Apr 14 20:15 : update: added /太想愛你 [c4W79NcUSfU].mp3
+Apr 14 20:15 : update: added /大魚（唱片版） [MRypl3B1Cj4].mp3
+Apr 14 20:15 : update: added /Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3
+Apr 14 20:15 : update: added /OneRepublic - Counting Stars [hT_nvWreIhg].mp3
+Apr 14 20:15 : update: added /素顏 [SwBEmdhqb6M].mp3
+Apr 14 20:15 : update: removing 如愿 [6fV2dRqJHvw].mp3
+Apr 14 20:15 : update: added /如愿.mp3
+Apr 14 20:15 : update: added /求佛 [R3xjEeBM6nI].mp3
+Apr 14 20:15 : update: added /汉服 - 七音盒【汉服三千年 曾驱狼烟舞过剑】古风音乐 中国风音乐 中文歌曲 华语歌曲 抖音歌曲 流行音乐 中文音乐 ｜ Chinese Song, Chinese Music [5ddXBMOaR68].mp3
+Apr 14 20:16 : update: removing Irony [P7vvkS-zwnY].mp3
+Apr 14 20:16 : update: added /願得一心人（《鶴唳華亭》主題曲） [dU3lctUqR_A].mp3
+Apr 14 20:16 : update: updating /Irony.mp3
+Apr 14 20:16 : update: added /打上花火⧸DAOKO × 米津玄師(Covered by コバソロ & 春茶 & 伊礼亮) [qBIxl_6tFfo].mp3
+Apr 14 20:16 : update: added /歎服 [CL-9JJqp0Dg].mp3
+Apr 14 20:16 : update: added /FANTASY [HWNj9eYPo4E].mp3
+Apr 14 20:17 : update: added /下雨天 [XkcKycMblaE].mp3
+Apr 14 20:17 : update: added /親情式愛情 [wn2pXBvYHho].mp3
+Apr 14 20:18 : update: updating /Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3
+Apr 14 20:18 : update: updating /Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3
+Apr 14 20:20 : update: removing 求佛 [R3xjEeBM6nI].mp3
+Apr 14 20:20 : update: added /求佛.mp3
+Apr 14 20:21 : player: played "踊 [C7YQq-nup3A].mp3"
+Apr 14 20:23 : update: removing 歲月神偷 [pS0s1cQRb10].mp3
+Apr 14 20:23 : update: added /歲月神偷.mp3
+Apr 14 20:23 : update: updating /毛不易 - 呓语「 日月蹉跎小起大落 光陰裡有多少景色 」【cc字幕】 ♪ 高音質  ♪ MaHaMusic♪ [HUIFZNLTp38].mp3
+Apr 14 20:24 : update: removing 髮如雪 [Px_TOP_d9zY].mp3
+Apr 14 20:24 : update: added /髮如雪.mp3
+Apr 14 20:24 : update: removing 魚仔 (He-R) - 電視劇ᐸ花甲男孩轉大人ᐳ主題曲 [oDUKf2NONG8].mp3
+Apr 14 20:24 : update: added /魚仔 (He-R).mp3
+Apr 14 20:25 : update: removing 願得一心人（《鶴唳華亭》主題曲） [dU3lctUqR_A].mp3
+Apr 14 20:25 : update: added /願得一心人（《鶴唳華亭》主題曲）.mp3
+Apr 14 20:25 : update: updating /青花瓷 [DxpndDEAqGk].mp3
+Apr 14 20:26 : update: updating /雅俗共賞 [gvwawFvCy0o].mp3
+Apr 14 20:26 : update: updating /陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3
+Apr 14 20:27 : update: updating /關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3
+Apr 14 20:27 : update: updating /踊 [C7YQq-nup3A].mp3
+Apr 14 20:27 : update: updating /關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3
+Apr 14 20:28 : update: updating /黃齡 Isabelle Huang《繁華夢 Flourished Dream》【扶搖插曲 Legend Of Fu Yao OST】官方MV (Phù Dao OST ｜ Mộng Phồn Hoa) [W0b6HramCug].mp3
+Apr 14 20:29 : update: updating /黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3
+Apr 14 20:29 : update: updating /鲸鱼电台 [9itP-h8ggGc].mp3
+Apr 14 20:30 : update: updating /起風了 (電視劇＂加油你是最棒的＂主題曲) [Qd0sFK_SnSY].mp3
+Apr 14 20:30 : update: updating /親情式愛情 [wn2pXBvYHho].mp3
+Apr 14 20:32 : update: updating /林志炫-煙花易冷 (繁中歌詞) [Ur7aRrDWNak].mp3
+Apr 14 20:32 : update: updating /林志炫~你的樣子 [jFD1YU9aRc4].mp3
+Apr 14 20:33 : update: updating /梅香如故 [wfdtg2UjdI0].mp3
+Apr 14 20:34 : update: updating /棠梨煎雪 [qkpIZgmDrqw].mp3
+Apr 14 20:34 : update: updating /毛不易 - 呓语「 日月蹉跎小起大落 光陰裡有多少景色 」【cc字幕】 ♪ 高音質  ♪ MaHaMusic♪ [HUIFZNLTp38].mp3
+Apr 14 20:35 : update: updating /汉服 - 七音盒【汉服三千年 曾驱狼烟舞过剑】古风音乐 中国风音乐 中文歌曲 华语歌曲 抖音歌曲 流行音乐 中文音乐 ｜ Chinese Song, Chinese Music [5ddXBMOaR68].mp3
+Apr 14 20:36 : update: updating /海市蜃楼 [hv1U9t4DTls].mp3
+Apr 14 20:37 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 14 20:39 : update: updating /【抖音熱歌-懸溺（女生版）】有點特別哦！高音質⧸能動歌詞！ [G4SM62kTtAc].mp3
+Apr 14 20:39 : update: updating /【绝美戏腔】少年霜⧸提糯-非李 『猿声远，引鲛人落泪。一片月，已守尽千秋岁』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [JejyWLyn3Oc].mp3
+Apr 14 20:40 : player: played "【抖音熱歌-懸溺（女生版）】有點特別哦！高音質⧸能動歌詞！ [G4SM62kTtAc].mp3"
+Apr 14 20:40 : update: updating /Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3
+Apr 14 20:40 : update: updating /a小调圆舞曲（肖邦） [gkA6mBmcJGU].mp3
+Apr 14 20:42 : update: updating /BLUE GURASU [2lwj7fcWL4Q].mp3
+Apr 14 20:43 : update: updating /Christina Perri - A Thousand Years [Official Music Video] [rtOvBOTyX00].mp3
+Apr 14 20:45 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 14 20:45 : update: updating /Cross a thousand kilometers to find you [Ur_hogbfsOg].mp3
+Apr 14 20:45 : update: updating /Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3
+Apr 14 20:47 : update: updating /Emily To Juugono Yakusoku [DOdzY9n_uOs].mp3
+Apr 14 20:48 : update: updating /FANTASY [HWNj9eYPo4E].mp3
+Apr 14 20:49 : update: updating /Fleeting Lullaby [kHXLTei_L7s].mp3
+Apr 14 20:49 : update: updating /Hibiwareta Sekai [E9rgHcFaFX4].mp3
+Apr 14 20:50 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Apr 14 20:50 : update: updating /Hold On Anime Music Video [ZFYVQZgJ5xw].mp3
+Apr 14 20:51 : update: updating /Nothing Left Between Us [33uKSODjvDo].mp3
+Apr 14 20:52 : update: updating /Monster Party [ndqXz9uKBxE].mp3
+Apr 14 20:53 : update: updating /Love Story [aZ1hziFhj1o].mp3
+Apr 14 20:54 : update: updating /Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3
+Apr 14 20:54 : update: updating /Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3
+Apr 14 20:56 : update: updating /Inochini Kirawareteiru [NVbbj5wCuiA].mp3
+Apr 14 20:59 : update: updating /OneRepublic - Counting Stars [hT_nvWreIhg].mp3
+Apr 14 21:00 : update: updating /Practice Love [HbTu28zjPVs].mp3
+Apr 14 21:01 : update: updating /Setagaya Night Safari [Lco0XVXLjvY].mp3
+Apr 14 21:02 : update: updating /WATCHING THE WHEELS. (Ultimate Mix, 2020) - John Lennon (official music video HD) [uVXR2LYeFBI].mp3
+Apr 14 21:03 : update: updating /Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack [RgKAFK5djSk].mp3
+Apr 14 21:04 : update: updating /たぶん [rgNdeflYdYw].mp3
+Apr 14 21:05 : update: updating /下雨天 [XkcKycMblaE].mp3
+Apr 14 21:06 : update: updating /任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3
+Apr 14 21:06 : update: updating /借 [gT6jLXVi_OQ].mp3
+Apr 14 21:07 : update: updating /傲寒 [GHvQa-BpYkQ].mp3
+Apr 14 21:07 : update: updating /像我這樣的人 [Cm4h4hhYupA].mp3
+Apr 14 21:08 : update: updating /千年一叹 [2F528lC9GHE].mp3
+Apr 14 21:08 : update: updating /半吨兄弟 信仰 （完整版）【動態歌詞⧸Lyrics Video】 [Zan6BGkJqf8].mp3
+Apr 14 21:09 : update: updating /双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3
+Apr 14 21:11 : update: updating /同心而語 (電視劇《琉璃》彩蛋曲) [OgIGteS8rIA].mp3
+Apr 14 21:11 : update: updating /听我说 [kgMhoiAV57w].mp3
+Apr 14 21:12 : update: updating /單依純 -《給電影人的情書》(電影 一秒鐘 推廣曲)｜CC歌詞字幕 [zq7pK96bp6M].mp3
+Apr 14 21:12 : update: updating /在夜裡跳舞 [zenChTeAhhI].mp3
+Apr 14 21:12 : update: updating /大魚（唱片版） [MRypl3B1Cj4].mp3
+Apr 14 21:13 : update: updating /天龍八部之宿敵 [Iv2ODAJkQ3U].mp3
+Apr 14 21:14 : update: updating /太想愛你 [c4W79NcUSfU].mp3
+Apr 14 21:14 : update: updating /她說 [2YKd5uG-v_o].mp3
+Apr 14 21:14 : update: updating /如初 [FKvNJsvM_8Y].mp3
+Apr 14 21:15 : update: updating /年岁 [WTpWDteXOXk].mp3
+Apr 14 21:15 : update: updating /心如止水 [zeWJs6F8teQ].mp3
+Apr 14 21:15 : update: updating /心如止水 [zeWJs6F8teQ].mp3
+Apr 14 21:16 : update: updating /我從崖邊跌落 [lTeFfziL4Co].mp3
+Apr 14 21:16 : update: updating /我的一个道姑朋友 [iswLw33jj1I].mp3
+Apr 14 21:16 : update: updating /房東的貓 - 如常 [Sl6ZQxoABSI].mp3
+Apr 14 21:17 : update: updating /打上花火⧸DAOKO × 米津玄師(Covered by コバソロ & 春茶 & 伊礼亮) [qBIxl_6tFfo].mp3
+Apr 14 21:17 : update: updating /故梦【双笙】翻唱 [2UQYc08WfxM].mp3
+Apr 14 21:18 : update: updating /易燃易爆炸 [U0ENg_ddScY].mp3
+Apr 14 21:18 : update: updating /星空 [NOe1lwdRH8M].mp3
+Apr 14 21:18 : update: updating /曹操 (现场) [fT-uM_WeC0U].mp3
+Apr 14 21:18 : update: updating /有何不可 [_2f-7oQIS8M].mp3
+Apr 14 21:19 : update: updating /木蘭 [bQ3q2xsyLz4].mp3
+Apr 14 21:19 : update: updating /李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3
+Apr 14 21:20 : update: updating /杏花弦外雨 [007ru6Nezr0].mp3
+Apr 14 21:20 : update: updating /歎服 [CL-9JJqp0Dg].mp3
+Apr 14 21:21 : update: updating /童話鎮 [OaYoWjfQUN0].mp3
+Apr 14 21:21 : update: updating /紅塵客棧 [GUvMWPHVfKM].mp3
+Apr 14 21:21 : update: updating /素顏 [SwBEmdhqb6M].mp3
+Apr 14 21:21 : update: updating /緣滅 [xN739Jdauzw].mp3
+Apr 14 21:22 : player: played "故梦【双笙】翻唱 [2UQYc08WfxM].mp3"
+Apr 14 21:22 : update: updating /繁華夢 (電視劇《扶搖》插曲) [YlwMXtKZCS8].mp3
+Apr 14 21:22 : update: updating /红马 (女版) [ksV94Ag5Tvs].mp3
+Apr 14 21:22 : update: updating /艾福杰尼 After Journey - Sorry (Official Lyric Video) [qwW-0TRrRbo].mp3
+Apr 14 21:23 : update: updating /葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3
+Apr 14 21:23 : update: updating /海底 [h0lXcZtcEr0].mp3
+Apr 14 21:23 : update: updating /烛 [4PDo6HUVpxI].mp3
+Apr 14 21:24 : update: updating /烟花易冷 (Live) [cufHI9v1v7I].mp3
+Apr 14 21:24 : update: updating /爱若琉璃 (电视剧《琉璃美人煞》推广曲）) [HWw2q4lYMLg].mp3
+Apr 14 21:24 : update: updating /牧馬城市 [8TF7wibRxaI].mp3
+Apr 14 21:24 : update: updating /琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3
+Apr 14 21:25 : update: updating /爱就一个字 (女声版) [pYbzYdcQTVk].mp3
+Apr 14 21:25 : update: updating /七里香 [U8E3j6y__BA].mp3
+Apr 14 21:29 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 14 21:30 : player: played "Emily To Juugono Yakusoku [DOdzY9n_uOs].mp3"
+Apr 14 21:30 : player: played "Emily To Juugono Yakusoku [DOdzY9n_uOs].mp3"
+Apr 14 21:31 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 14 21:38 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 14 21:42 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 14 21:49 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 14 21:58 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 14 22:00 : player: played "Irony.mp3"
+Apr 14 22:03 : update: updating /大鱼 [a3ftowBldYA].mp3
+Apr 14 22:04 : update: removing 大鱼 [a3ftowBldYA].mp3
+Apr 14 22:10 : player: played "關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3"
+Apr 14 22:14 : player: played "人是.mp3"
+Apr 14 22:18 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 14 22:22 : player: played "【抖音熱歌-懸溺（女生版）】有點特別哦！高音質⧸能動歌詞！ [G4SM62kTtAc].mp3"
+Apr 14 22:27 : player: played "黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3"
+Apr 14 22:34 : player: played "Irony.mp3"
+Apr 14 22:36 : player: played "一葷一素.mp3"
+Apr 14 22:52 : player: played "一葷一素.mp3"
+Apr 14 22:52 : player: played "一葷一素.mp3"
+Apr 14 23:01 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Apr 14 23:04 : player: played "關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3"
+Apr 14 23:08 : player: played "Emily To Juugono Yakusoku [DOdzY9n_uOs].mp3"
+Apr 14 23:13 : player: played "太想愛你 [c4W79NcUSfU].mp3"
+Apr 14 23:16 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 15 09:02 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 15 09:06 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 15 09:11 : player: played "一葷一素.mp3"
+Apr 15 09:15 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 15 09:32 : player: played "故梦【双笙】翻唱 [2UQYc08WfxM].mp3"
+Apr 15 09:37 : player: played "繁華夢 (電視劇《扶搖》插曲) [YlwMXtKZCS8].mp3"
+Apr 15 13:59 : player: played "海市蜃楼 [hv1U9t4DTls].mp3"
+Apr 15 14:01 : update: added /張杰 Jason Zhang - 如歌（官方歌詞版）- 電視劇《烈火如歌》主題曲 [Mj6PZhhCb-A].mp3
+Apr 15 14:01 : update: added /張杰 Jason Zhang - 如歌（官方歌詞版）- 電視劇《烈火如歌》主題曲 [Mj6PZhhCb-A].mp3
+Apr 15 14:01 : exception: Failed to save database: Failed to commit /home/bighu/.config/mpd/mpd.db: File exists
+Apr 15 14:03 : update: updating /張杰 Jason Zhang - 如歌（官方歌詞版）- 電視劇《烈火如歌》主題曲 [Mj6PZhhCb-A].mp3
+Apr 15 14:03 : update: updating /張杰 Jason Zhang - 如歌（官方歌詞版）- 電視劇《烈火如歌》主題曲 [Mj6PZhhCb-A].mp3
+Apr 15 14:06 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 15 14:08 : exception: Failed to commit /home/bighu/.config/mpd/mpdstate: File exists
+Apr 15 14:08 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 15 14:08 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 15 14:08 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 15 14:16 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 15 14:18 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 15 14:18 : output: Failed to open mixer for 'My Sound Card': no such mixer control: PCM
+Apr 15 14:19 : output: Failed to open mixer for 'My Sound Card': no such mixer control: PCM
+Apr 15 14:19 : output: Failed to open mixer for 'My Sound Card': no such mixer control: PCM
+Apr 15 14:19 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 15 14:21 : output: Failed to open mixer for 'My Sound Card': no such mixer control: PCM
+Apr 15 14:23 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 15 14:24 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 15 14:27 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 15 14:34 : player: played "棠梨煎雪 [qkpIZgmDrqw].mp3"
+Apr 15 14:38 : player: played "烛 [4PDo6HUVpxI].mp3"
+Apr 15 14:44 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 15 14:49 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 15 14:53 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 15 14:59 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 15 15:04 : player: played "同心而語 (電視劇《琉璃》彩蛋曲) [OgIGteS8rIA].mp3"
+Apr 15 15:38 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 15 15:42 : player: played "棠梨煎雪 [qkpIZgmDrqw].mp3"
+Apr 15 15:47 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Apr 15 15:50 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Apr 15 15:54 : player: played "烛 [4PDo6HUVpxI].mp3"
+Apr 15 16:01 : exception: Failed to commit /home/bighu/.config/mpd/mpdstate: File exists
+Apr 15 16:01 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 15 16:01 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 15 16:10 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Apr 15 16:11 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 15 16:17 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 15 16:20 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Apr 15 16:25 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 15 17:11 : update: updating /Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3
+Apr 15 17:13 : update: updating /林志炫 Terry Lin - 單身情歌 [QOPTkoK0MXI].mp3
+Apr 15 17:14 : update: updating /Inochini Kirawareteiru [0bDIxQlHGIo].mp3
+Apr 15 17:15 : update: updating /Huang Hun (Sunset) [KQTCO417h_M].mp3
+Apr 15 17:21 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 15 17:25 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 15 17:29 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 15 17:32 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 15 17:41 : player: played "棠梨煎雪 [qkpIZgmDrqw].mp3"
+Apr 15 19:23 : player: played "Huang Hun (Sunset) [KQTCO417h_M].mp3"
+Apr 15 20:02 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Apr 15 20:06 : player: played "烛 [4PDo6HUVpxI].mp3"
+Apr 15 20:10 : player: played "人是.mp3"
+Apr 15 20:17 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 15 20:22 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 15 20:25 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 15 20:30 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 15 20:35 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 15 20:40 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 15 20:45 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 15 20:50 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 15 20:57 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 15 21:02 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 15 21:07 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 15 21:12 : player: played "同心而語 (電視劇《琉璃》彩蛋曲) [OgIGteS8rIA].mp3"
+Apr 15 21:17 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 15 21:25 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 15 21:51 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 15 21:58 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Apr 15 22:02 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 15 22:07 : player: played "葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3"
+Apr 15 22:12 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 15 22:16 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 15 22:20 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 15 22:24 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 15 22:30 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 15 22:35 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 15 22:41 : player: played "Practice Love [HbTu28zjPVs].mp3"
+Apr 15 22:45 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 15 22:50 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 15 22:58 : player: played "山丘.mp3"
+Apr 15 23:03 : player: played "她說 [2YKd5uG-v_o].mp3"
+Apr 15 23:09 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Apr 15 23:13 : player: played "半吨兄弟 信仰 （完整版）【動態歌詞⧸Lyrics Video】 [Zan6BGkJqf8].mp3"
+Apr 15 23:18 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 15 23:22 : player: played "千年一叹 [2F528lC9GHE].mp3"
+Apr 15 23:26 : player: played "宿敌.mp3"
+Apr 15 23:31 : player: played "故梦【双笙】翻唱 [2UQYc08WfxM].mp3"
+Apr 15 23:38 : player: played "山丘.mp3"
+Apr 16 10:40 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 16 10:44 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 16 10:49 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 16 10:53 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 16 10:57 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 16 11:03 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 16 11:08 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 16 11:12 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 16 11:18 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 16 11:23 : player: played "同心而語 (電視劇《琉璃》彩蛋曲) [OgIGteS8rIA].mp3"
+Apr 16 11:28 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 16 11:32 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Apr 16 12:08 : player: played "Huang Hun (Sunset) [KQTCO417h_M].mp3"
+Apr 16 12:12 : player: played "烛 [4PDo6HUVpxI].mp3"
+Apr 16 12:16 : player: played "人是.mp3"
+Apr 16 12:20 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 16 12:25 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Apr 16 12:30 : player: played "Practice Love [HbTu28zjPVs].mp3"
+Apr 16 12:34 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 16 12:39 : player: played "她說 [2YKd5uG-v_o].mp3"
+Apr 16 12:45 : player: played "張杰 Jason Zhang - 如歌（官方歌詞版）- 電視劇《烈火如歌》主題曲 [Mj6PZhhCb-A].mp3"
+Apr 16 12:51 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+Apr 16 12:55 : player: played "我從崖邊跌落 [lTeFfziL4Co].mp3"
+Apr 16 12:59 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 16 13:04 : player: played "葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3"
+Apr 16 13:05 : update: added /逮虾户 Deja vu ！中英双字幕MV   1 逮虾户Av37286416,P1 [82BUsnjBGi4].mp3
+Apr 16 13:05 : update: added /逮虾户 Deja vu ！中英双字幕MV   1 逮虾户Av37286416,P1 [82BUsnjBGi4].webm
+Apr 16 13:05 : update: removing 逮虾户 Deja vu ！中英双字幕MV   1 逮虾户Av37286416,P1 [82BUsnjBGi4].webm
+Apr 16 13:05 : update: updating /逮虾户 Deja vu ！中英双字幕MV   1 逮虾户Av37286416,P1 [82BUsnjBGi4].mp3
+Apr 16 13:07 : update: removing 逮虾户 Deja vu ！中英双字幕MV   1 逮虾户Av37286416,P1 [82BUsnjBGi4].mp3
+Apr 16 13:07 : update: added /逮虾户 Deja vu.mp3
+Apr 16 13:08 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 16 13:13 : player: played "逮虾户 Deja vu.mp3"
+Apr 16 13:18 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 16 13:22 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 16 13:26 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 16 13:32 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 16 13:37 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 16 13:41 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 16 13:47 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 16 13:52 : player: played "同心而語 (電視劇《琉璃》彩蛋曲) [OgIGteS8rIA].mp3"
+Apr 16 13:57 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 16 14:01 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Apr 16 14:07 : player: played "Huang Hun (Sunset) [KQTCO417h_M].mp3"
+Apr 16 14:10 : player: played "烛 [4PDo6HUVpxI].mp3"
+Apr 16 14:15 : player: played "人是.mp3"
+Apr 16 14:19 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 16 14:24 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Apr 16 14:29 : player: played "Practice Love [HbTu28zjPVs].mp3"
+Apr 16 14:33 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 16 14:38 : player: played "她說 [2YKd5uG-v_o].mp3"
+Apr 16 14:43 : player: played "張杰 Jason Zhang - 如歌（官方歌詞版）- 電視劇《烈火如歌》主題曲 [Mj6PZhhCb-A].mp3"
+Apr 16 14:49 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+Apr 16 14:53 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Apr 16 14:57 : player: played "半吨兄弟 信仰 （完整版）【動態歌詞⧸Lyrics Video】 [Zan6BGkJqf8].mp3"
+Apr 16 15:01 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 16 15:05 : player: played "千年一叹 [2F528lC9GHE].mp3"
+Apr 16 15:10 : player: played "宿敌.mp3"
+Apr 16 15:15 : player: played "故梦【双笙】翻唱 [2UQYc08WfxM].mp3"
+Apr 16 18:12 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 16 18:16 : player: played "千年一叹 [2F528lC9GHE].mp3"
+Apr 16 18:20 : player: played "宿敌.mp3"
+Apr 16 18:25 : player: played "故梦【双笙】翻唱 [2UQYc08WfxM].mp3"
+Apr 16 18:32 : player: played "山丘.mp3"
+Apr 16 18:36 : player: played "如愿.mp3"
+Apr 16 18:41 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 16 18:46 : player: played "葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3"
+Apr 16 18:50 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 16 18:55 : player: played "逮虾户 Deja vu.mp3"
+Apr 16 19:00 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 16 19:04 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 16 19:08 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 16 19:13 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 16 19:18 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 16 19:23 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 16 20:40 : update: added /KAROL G, Shakira - TQG (Official Video) [jZGpkLElSu8].mp3
+Apr 16 20:40 : update: added /Yng Lvcas & Peso Pluma - La Bebe (Remix) [Video Oficial] [3mchJ-EW9rM].mp3
+Apr 16 20:40 : update: added /SIDHU MOOSE WALA ： Mera Na (Official Video) Feat. Burna Boy & Steel Banglez ｜ Navkaran Brar [jaVdD4Z8UCs].mp3
+Apr 16 20:40 : update: added /JISOO - ‘꽃(FLOWER)’ M⧸V [YudHcBIxlYw].mp3
+Apr 16 20:43 : update: updating /KAROL G, Shakira - TQG (Official Video) [jZGpkLElSu8].mp3
+Apr 16 20:44 : update: updating /JISOO - ‘꽃(FLOWER)’ M⧸V [YudHcBIxlYw].mp3
+Apr 16 20:53 : update: added /IVE 아이브 'I AM' MV [6ZUIwj3FgUY].mp3
+Apr 16 20:59 : update: added /YOASOBI「アイドル」 Official Music Video [ZRtdQ81jPUQ].mp3
+Apr 16 21:03 : update: updating /IVE 아이브 'I AM' MV [6ZUIwj3FgUY].mp3
+Apr 16 21:04 : update: updating /YOASOBI「アイドル」 Official Music Video [ZRtdQ81jPUQ].mp3
+Apr 16 21:33 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 16 22:13 : player: played "IVE 아이브 'I AM' MV [6ZUIwj3FgUY].mp3"
+Apr 16 22:17 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 16 22:22 : player: played "葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3"
+Apr 16 22:27 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 16 22:31 : player: played "逮虾户 Deja vu.mp3"
+Apr 16 22:34 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 17 17:46 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 17 18:11 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 17 18:15 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 17 18:19 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 17 18:24 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 17 18:29 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 17 18:34 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 17 18:39 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 17 18:44 : player: played "IVE 아이브 'I AM' MV [6ZUIwj3FgUY].mp3"
+Apr 17 18:51 : player: played "【抖音熱歌-懸溺（女生版）】有點特別哦！高音質⧸能動歌詞！ [G4SM62kTtAc].mp3"
+Apr 17 18:57 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Apr 17 19:01 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 17 19:06 : player: played "葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3"
+Apr 17 19:11 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 17 19:15 : player: played "逮虾户 Deja vu.mp3"
+Apr 17 19:18 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 17 19:22 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 17 19:26 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 17 19:31 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 17 19:36 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 17 19:41 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 17 19:46 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 17 19:51 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 17 19:56 : player: played "同心而語 (電視劇《琉璃》彩蛋曲) [OgIGteS8rIA].mp3"
+Apr 17 20:01 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 17 20:06 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Apr 17 20:08 : player: played "Huang Hun (Sunset) [KQTCO417h_M].mp3"
+Apr 17 20:51 : player: played "Huang Hun (Sunset) [KQTCO417h_M].mp3"
+Apr 18 17:37 : player: played "Huang Hun (Sunset) [KQTCO417h_M].mp3"
+Apr 18 19:51 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 18 19:56 : player: played "Practice Love [HbTu28zjPVs].mp3"
+Apr 18 20:00 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 18 20:06 : player: played "她說 [2YKd5uG-v_o].mp3"
+Apr 18 20:11 : player: played "張杰 Jason Zhang - 如歌（官方歌詞版）- 電視劇《烈火如歌》主題曲 [Mj6PZhhCb-A].mp3"
+Apr 18 20:17 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+Apr 18 20:20 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Apr 18 20:27 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 18 20:31 : player: played "千年一叹 [2F528lC9GHE].mp3"
+Apr 18 20:35 : player: played "宿敌.mp3"
+Apr 18 21:11 : player: played "故梦【双笙】翻唱 [2UQYc08WfxM].mp3"
+Apr 18 21:18 : player: played "山丘.mp3"
+Apr 18 21:22 : player: played "如愿.mp3"
+Apr 18 21:25 : player: played "IVE 아이브 'I AM' MV [6ZUIwj3FgUY].mp3"
+Apr 18 21:30 : player: played "BLUE GURASU [2lwj7fcWL4Q].mp3"
+Apr 18 21:33 : player: played "【抖音熱歌-懸溺（女生版）】有點特別哦！高音質⧸能動歌詞！ [G4SM62kTtAc].mp3"
+Apr 18 21:36 : player: played "FANTASY [HWNj9eYPo4E].mp3"
+Apr 18 21:41 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Apr 18 21:45 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 18 21:50 : player: played "葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3"
+Apr 19 11:48 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 19 11:54 : player: played "逮虾户 Deja vu.mp3"
+Apr 19 11:59 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 19 12:02 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 19 12:07 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 19 12:12 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 19 12:30 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 19 19:30 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 19 20:32 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 20 17:33 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 20 17:33 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 20 17:33 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 20 17:33 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 20 17:33 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 20 17:33 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 20 19:26 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 20 19:31 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 20 19:41 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 20 19:46 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 21 17:41 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 21 19:25 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 21 19:30 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 21 19:34 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 21 19:36 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 21 19:45 : player: played "關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3"
+Apr 21 19:50 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 21 19:56 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 21 20:01 : player: played "逮虾户 Deja vu.mp3"
+Apr 21 20:05 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 21 20:30 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 21 20:35 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 21 20:40 : player: played "Hibiwareta Sekai [E9rgHcFaFX4].mp3"
+Apr 21 20:45 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 22 11:09 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Apr 22 11:13 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Apr 22 11:19 : player: played "Huang Hun (Sunset) [KQTCO417h_M].mp3"
+Apr 22 11:23 : player: played "宿敌.mp3"
+Apr 22 11:28 : player: played "故梦【双笙】翻唱 [2UQYc08WfxM].mp3"
+Apr 22 12:34 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 22 12:38 : player: played "千年一叹 [2F528lC9GHE].mp3"
+Apr 22 12:42 : player: played "宿敌.mp3"
+Apr 22 12:47 : player: played "故梦【双笙】翻唱 [2UQYc08WfxM].mp3"
+Apr 22 12:54 : player: played "山丘.mp3"
+Apr 22 12:58 : player: played "如愿.mp3"
+Apr 22 13:01 : player: played "IVE 아이브 'I AM' MV [6ZUIwj3FgUY].mp3"
+Apr 22 17:02 : player: played "我的一个道姑朋友 [iswLw33jj1I].mp3"
+Apr 22 17:07 : player: played "爱就一个字 (女声版) [pYbzYdcQTVk].mp3"
+Apr 22 17:12 : player: played "葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3"
+Apr 22 17:16 : player: played "林志炫~你的樣子 [jFD1YU9aRc4].mp3"
+Apr 22 17:21 : player: played "逮虾户 Deja vu.mp3"
+Apr 22 17:25 : player: played "Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3"
+Apr 22 17:29 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Apr 22 17:34 : player: played "Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3"
+Apr 22 18:21 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Apr 22 18:25 : player: played "Inochini Kirawareteiru [NVbbj5wCuiA].mp3"
+Apr 22 21:26 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Apr 22 21:31 : player: played "Huang Hun (Sunset) [KQTCO417h_M].mp3"
+Apr 22 21:35 : player: played "烛 [4PDo6HUVpxI].mp3"
+Apr 22 21:39 : player: played "人是.mp3"
+Apr 22 21:43 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 22 21:48 : player: played "Practice Love [HbTu28zjPVs].mp3"
+Apr 22 21:52 : player: played "借 [gT6jLXVi_OQ].mp3"
+Apr 22 21:58 : player: played "她說 [2YKd5uG-v_o].mp3"
+Apr 22 22:03 : player: played "張杰 Jason Zhang - 如歌（官方歌詞版）- 電視劇《烈火如歌》主題曲 [Mj6PZhhCb-A].mp3"
+Apr 22 22:06 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 23 17:34 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 24 17:57 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 25 11:56 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 25 17:40 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 26 14:10 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 26 17:33 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 26 17:44 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 26 19:32 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 26 20:04 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 27 18:03 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 28 17:41 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 28 18:41 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Apr 28 18:45 : player: played "千年一叹 [2F528lC9GHE].mp3"
+Apr 28 18:49 : player: played "宿敌.mp3"
+Apr 28 18:54 : player: played "故梦【双笙】翻唱 [2UQYc08WfxM].mp3"
+Apr 28 18:57 : update: added /I'm Yours [A93OQy81TYs].mp3
+Apr 28 18:58 : update: added /Counting Stars [_GWKkqNoyEA].mp3
+Apr 28 18:58 : update: added /Lucky [ezVbN7e-L7Y].mp3
+Apr 28 18:58 : update: added /The Show [kU0P2P5dtjE].mp3
+Apr 28 18:59 : update: updating /I'm Yours [A93OQy81TYs].mp3
+Apr 28 19:00 : update: updating /Lucky [ezVbN7e-L7Y].mp3
+Apr 28 19:00 : update: updating /The Show [kU0P2P5dtjE].mp3
+Apr 28 19:01 : player: played "山丘.mp3"
+Apr 28 19:03 : update: updating /Counting Stars [_GWKkqNoyEA].mp3
+Apr 28 19:07 : update: added /Trouble Is a Friend [ZZ30ji-LEME].mp3
+Apr 28 19:07 : update: added /A Thousand Years [XeUYMrGmLPw].mp3
+Apr 28 19:08 : update: updating /Trouble Is a Friend [ZZ30ji-LEME].mp3
+Apr 28 19:08 : player: played "Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3"
+Apr 28 19:09 : update: updating /A Thousand Years [XeUYMrGmLPw].mp3
+Apr 28 19:15 : player: played "A Thousand Years [XeUYMrGmLPw].mp3"
+Apr 28 19:19 : player: played "Trouble Is a Friend [ZZ30ji-LEME].mp3"
+Apr 28 19:23 : player: played "The Show [kU0P2P5dtjE].mp3"
+Apr 28 19:28 : player: played "Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3"
+Apr 28 19:32 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+Apr 28 19:36 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Apr 28 19:40 : player: played "Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3"
+Apr 28 19:43 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Apr 28 19:48 : player: played "A Thousand Years [XeUYMrGmLPw].mp3"
+Apr 28 19:52 : player: played "Trouble Is a Friend [ZZ30ji-LEME].mp3"
+Apr 28 19:56 : player: played "The Show [kU0P2P5dtjE].mp3"
+Apr 28 19:59 : player: played "Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3"
+Apr 28 20:03 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+Apr 28 20:07 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Apr 29 12:56 : player: played "Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3"
+Apr 29 13:00 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+Apr 29 13:05 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Apr 29 13:13 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Apr 29 13:17 : player: played "A Thousand Years [XeUYMrGmLPw].mp3"
+Apr 29 13:21 : player: played "Trouble Is a Friend [ZZ30ji-LEME].mp3"
+Apr 29 20:36 : player: played "The Show [kU0P2P5dtjE].mp3"
+Apr 29 20:40 : player: played "Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3"
+Apr 29 20:43 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+Apr 30 15:21 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+May 01 17:23 : player: played "IVE 아이브 'I AM' MV [6ZUIwj3FgUY].mp3"
+May 01 18:07 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+May 01 18:14 : player: played "听我说 [kgMhoiAV57w].mp3"
+May 01 18:19 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+May 01 18:23 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+May 01 18:28 : player: played "太想愛你 [c4W79NcUSfU].mp3"
+May 01 18:33 : player: played "星空 [NOe1lwdRH8M].mp3"
+May 01 18:45 : player: played "求佛.mp3"
+May 01 18:49 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+May 01 18:53 : player: played "听我说 [kgMhoiAV57w].mp3"
+May 01 18:57 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+May 01 19:02 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 01 19:07 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+May 01 19:11 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+May 01 19:15 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+May 01 19:20 : player: played "星空 [NOe1lwdRH8M].mp3"
+May 01 19:26 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+May 01 19:30 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 01 19:36 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+May 01 19:40 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+May 01 19:45 : player: played "關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3"
+May 01 21:04 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 01 21:08 : player: played "听我说 [kgMhoiAV57w].mp3"
+May 01 21:13 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+May 01 21:17 : player: played "腐草为萤.mp3"
+May 01 21:22 : player: played "太想愛你 [c4W79NcUSfU].mp3"
+May 01 21:46 : player: played "Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3"
+May 01 21:52 : player: played "Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3"
+May 01 21:52 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+May 01 22:02 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+May 01 22:06 : player: played "Trouble Is a Friend [ZZ30ji-LEME].mp3"
+May 01 22:12 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+May 01 22:17 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 01 22:26 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+May 01 22:31 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+May 01 22:40 : player: played "單依純 -《給電影人的情書》(電影 一秒鐘 推廣曲)｜CC歌詞字幕 [zq7pK96bp6M].mp3"
+May 01 22:44 : player: played "听我说 [kgMhoiAV57w].mp3"
+May 01 22:47 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+May 02 19:01 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+May 02 21:53 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+May 02 21:58 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+May 02 22:03 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 02 22:10 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 02 22:14 : player: played "關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3"
+May 02 22:20 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+May 02 22:24 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+May 03 11:00 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+May 03 11:30 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+May 03 11:34 : player: played "Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3"
+May 03 11:39 : player: played "關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3"
+May 03 11:45 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+May 03 11:49 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 03 11:53 : player: played "听我说 [kgMhoiAV57w].mp3"
+May 03 11:57 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+May 03 12:01 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 03 12:05 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+May 03 12:10 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 03 12:15 : player: played "求佛.mp3"
+May 03 12:19 : player: played "星空 [NOe1lwdRH8M].mp3"
+May 03 12:24 : player: played "A Thousand Years [XeUYMrGmLPw].mp3"
+May 03 12:29 : player: played "腐草为萤.mp3"
+May 03 12:33 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+May 03 12:37 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+May 03 12:42 : player: played "太想愛你 [c4W79NcUSfU].mp3"
+May 03 12:46 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+May 03 17:59 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+May 03 18:03 : player: played "听我说 [kgMhoiAV57w].mp3"
+May 03 18:06 : player: played "Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3"
+May 03 18:11 : player: played "單依純 -《給電影人的情書》(電影 一秒鐘 推廣曲)｜CC歌詞字幕 [zq7pK96bp6M].mp3"
+May 03 18:14 : player: played "Trouble Is a Friend [ZZ30ji-LEME].mp3"
+May 03 18:17 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+May 03 18:21 : player: played "The Show [kU0P2P5dtjE].mp3"
+May 03 18:26 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+May 03 21:04 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+May 05 17:48 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+May 05 20:44 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+May 06 17:34 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+May 06 17:34 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+May 06 17:34 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+May 07 12:06 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+May 07 22:00 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 08 17:56 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 09 13:47 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 09 16:11 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 09 18:03 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 09 18:08 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 10 16:08 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 10 16:08 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 10 17:41 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 10 19:34 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 10 22:05 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 11 18:05 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 11 21:44 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 12 17:32 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 12 17:32 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 12 17:32 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 12 20:50 : player: played "太想愛你 [c4W79NcUSfU].mp3"
+May 14 10:36 : player: played "太想愛你 [c4W79NcUSfU].mp3"
+May 14 10:36 : player: played "太想愛你 [c4W79NcUSfU].mp3"
+May 14 11:05 : player: played "太想愛你 [c4W79NcUSfU].mp3"
+May 14 13:08 : player: played "單依純 -《給電影人的情書》(電影 一秒鐘 推廣曲)｜CC歌詞字幕 [zq7pK96bp6M].mp3"
+May 14 13:12 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 14 13:17 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+May 14 13:22 : player: played "關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3"
+May 14 13:27 : player: played "求佛.mp3"
+May 14 13:30 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+May 14 13:34 : player: played "听我说 [kgMhoiAV57w].mp3"
+May 14 13:39 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+May 14 13:43 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+May 14 13:49 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+May 15 05:22 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 15 05:24 : update: added /默 - 那英 - 『超高无损音質』【動態歌詞Lyrics】 [heUq2v88Z9Q].mp3
+May 15 05:26 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+May 15 16:54 : player: played "A Thousand Years [XeUYMrGmLPw].mp3"
+May 15 17:58 : player: played "A Thousand Years [XeUYMrGmLPw].mp3"
+May 16 17:48 : player: played "A Thousand Years [XeUYMrGmLPw].mp3"
+May 16 19:19 : player: played "A Thousand Years [XeUYMrGmLPw].mp3"
+May 17 12:06 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 17 12:06 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 17 15:55 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 17 15:55 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 17 17:52 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 18 18:12 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 18 21:46 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 19 17:39 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+May 19 20:04 : player: played "Trouble Is a Friend [ZZ30ji-LEME].mp3"
+May 20 10:29 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 20 22:20 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 21 17:23 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 21 21:01 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 22 17:56 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 22 17:56 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 23 17:50 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 23 21:53 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 24 18:27 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 24 21:27 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 25 17:50 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 25 23:08 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 26 22:07 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 26 23:10 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 28 09:37 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 28 13:48 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 28 15:12 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 28 23:12 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 30 09:42 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 30 09:42 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 30 09:42 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 30 12:17 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+May 31 01:50 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 01 08:05 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 01 14:13 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 02 07:52 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 02 11:59 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 04 09:17 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 04 09:40 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 04 09:40 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 04 14:53 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 04 21:11 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 04 21:11 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 04 21:21 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 04 21:26 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 04 21:47 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jun 04 21:58 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+Jun 04 22:02 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+Jun 04 22:07 : player: played "A Thousand Years [XeUYMrGmLPw].mp3"
+Jun 04 22:12 : player: played "求佛.mp3"
+Jun 04 22:17 : player: played "單依純 -《給電影人的情書》(電影 一秒鐘 推廣曲)｜CC歌詞字幕 [zq7pK96bp6M].mp3"
+Jun 04 22:20 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+Jun 04 22:26 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+Jun 04 22:30 : player: played "听我说 [kgMhoiAV57w].mp3"
+Jun 04 22:35 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Jun 04 22:39 : player: played "Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3"
+Jun 04 22:42 : player: played "Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3"
+Jun 04 22:50 : player: played "Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3"
+Jun 04 22:55 : player: played "星空 [NOe1lwdRH8M].mp3"
+Jun 04 22:59 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 04 23:03 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 05 16:06 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jun 05 16:11 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+Jun 05 16:15 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jun 05 16:21 : player: played "關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3"
+Jun 05 16:26 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Jun 05 16:30 : player: played "听我说 [kgMhoiAV57w].mp3"
+Jun 05 16:35 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Jun 05 16:40 : player: played "求佛.mp3"
+Jun 05 16:46 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+Jun 05 16:51 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Jun 05 16:56 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+Jun 05 17:00 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Jun 05 17:04 : player: played "Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3"
+Jun 05 17:08 : player: played "單依純 -《給電影人的情書》(電影 一秒鐘 推廣曲)｜CC歌詞字幕 [zq7pK96bp6M].mp3"
+Jun 05 17:11 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jun 05 17:16 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Jun 05 17:19 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 05 17:24 : player: played "星空 [NOe1lwdRH8M].mp3"
+Jun 05 17:27 : player: played "Trouble Is a Friend [ZZ30ji-LEME].mp3"
+Jun 05 17:32 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 05 17:37 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+Jun 05 17:41 : player: played "腐草为萤.mp3"
+Jun 05 17:46 : player: played "A Thousand Years [XeUYMrGmLPw].mp3"
+Jun 05 17:49 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jun 05 17:53 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jun 05 17:57 : player: played "听我说 [kgMhoiAV57w].mp3"
+Jun 05 18:02 : player: played "單依純 -《給電影人的情書》(電影 一秒鐘 推廣曲)｜CC歌詞字幕 [zq7pK96bp6M].mp3"
+Jun 05 18:06 : player: played "親情式愛情 [wn2pXBvYHho].mp3"
+Jun 05 18:11 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+Jun 05 18:16 : player: played "腐草为萤.mp3"
+Jun 05 18:20 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Jun 05 18:25 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 05 18:30 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Jun 05 18:35 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Jun 05 18:38 : player: played "Trouble Is a Friend [ZZ30ji-LEME].mp3"
+Jun 05 18:44 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 05 18:56 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 05 19:12 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 05 19:20 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 05 19:24 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 05 19:34 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 05 19:39 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 05 23:10 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 06 08:10 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 06 08:32 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 06 08:35 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 06 14:16 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 06 22:51 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 06 22:51 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 06 22:51 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 07 00:25 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 07 15:57 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 07 17:52 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 07 18:10 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 07 18:22 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 07 18:25 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 07 18:47 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 07 21:20 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 07 21:25 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 07 21:31 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 08 23:06 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 10 16:10 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 10 18:49 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 11 13:49 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jun 11 22:31 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 13 08:28 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 13 12:18 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 13 12:18 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 14 08:51 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 15 09:23 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 16 10:34 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 16 20:37 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 16 20:37 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 16 20:37 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 16 20:37 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 16 23:06 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 17 11:56 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jun 17 12:01 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Jun 17 12:06 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Jun 17 12:09 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jun 17 12:14 : player: played "星空 [NOe1lwdRH8M].mp3"
+Jun 17 20:16 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 17 20:28 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 17 21:01 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 18 21:42 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 19 07:38 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 19 10:04 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 19 11:39 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 21 16:25 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 21 17:40 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 21 23:02 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 22 22:00 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 23 00:05 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 23 18:04 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 23 22:01 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 23 22:56 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 24 20:22 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 24 22:01 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 25 11:28 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 25 11:28 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 25 11:50 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 25 11:50 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 25 13:56 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 25 19:34 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 26 15:39 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 26 17:50 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 26 19:34 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 27 10:18 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 27 18:11 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 27 20:26 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 29 17:14 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 29 17:50 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 29 22:29 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 30 23:15 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jun 30 23:50 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jul 01 10:05 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jul 01 19:21 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jul 01 19:32 : player: played "求佛.mp3"
+Jul 01 19:38 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Jul 01 19:44 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Jul 01 19:48 : player: played "双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3"
+Jul 01 19:52 : player: played "任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3"
+Jul 01 19:56 : player: played "Trouble Is a Friend [ZZ30ji-LEME].mp3"
+Jul 01 20:00 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jul 01 20:05 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Jul 01 20:09 : player: played "腐草为萤.mp3"
+Jul 02 00:14 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 02 03:35 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 02 12:41 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 02 16:56 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 02 19:25 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 03 18:06 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 04 07:36 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 04 18:02 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 05 15:13 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 06 08:28 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 06 10:07 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 06 10:07 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 06 10:07 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 06 17:46 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 07 17:51 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 07 23:02 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 08 01:56 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 08 09:58 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 08 11:15 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 08 13:45 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jul 08 13:52 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Jul 08 13:57 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+Jul 08 14:02 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Jul 08 14:06 : player: played "Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3"
+Jul 08 14:09 : player: played "Trouble Is a Friend [ZZ30ji-LEME].mp3"
+Jul 08 14:14 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Jul 08 14:51 : player: played "求佛.mp3"
+Jul 08 22:13 : player: played "听我说 [kgMhoiAV57w].mp3"
+Jul 08 22:18 : player: played "關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3"
+Jul 08 22:23 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Jul 08 22:28 : player: played "腐草为萤.mp3"
+Jul 08 22:31 : player: played "Lucky [ezVbN7e-L7Y].mp3"
+Jul 08 22:35 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jul 08 22:41 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+Jul 08 22:46 : player: played "李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3"
+Jul 08 22:54 : player: played "琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3"
+Jul 08 22:58 : player: played "Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3"
+Jul 08 23:03 : player: played "Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3"
+Jul 08 23:07 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Jul 08 23:12 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+Jul 09 10:02 : player: played "像我這樣的人 [Cm4h4hhYupA].mp3"
+Jul 09 10:07 : player: played "星空 [NOe1lwdRH8M].mp3"
+Jul 09 11:30 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jul 09 11:35 : player: played "半吨兄弟 信仰 （完整版）【動態歌詞⧸Lyrics Video】 [Zan6BGkJqf8].mp3"
+Jul 09 11:43 : player: played "紅塵客棧 [GUvMWPHVfKM].mp3"
+Jul 09 11:48 : update: added /悟空 [YQdiyw_sB-U].webm
+Jul 09 11:48 : update: added /悟空 [YQdiyw_sB-U].mp3
+Jul 09 11:48 : update: removing 悟空 [YQdiyw_sB-U].webm
+Jul 09 11:48 : update: updating /悟空 [YQdiyw_sB-U].mp3
+Jul 09 11:49 : update: updating /悟空 [YQdiyw_sB-U].mp3
+Jul 09 11:50 : update: removing 汉服 - 七音盒【汉服三千年 曾驱狼烟舞过剑】古风音乐 中国风音乐 中文歌曲 华语歌曲 抖音歌曲 流行音乐 中文音乐 ｜ Chinese Song, Chinese Music [5ddXBMOaR68].mp3
+Jul 09 11:50 : update: added /七音盒.mp3
+Jul 09 11:50 : update: removing 千年一叹 [2F528lC9GHE].mp3
+Jul 09 11:50 : update: added /千年一叹.mp3
+Jul 09 11:54 : player: played "杏花弦外雨 [007ru6Nezr0].mp3"
+Jul 09 12:01 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+Jul 09 12:07 : player: played "房東的貓 - 如常 [Sl6ZQxoABSI].mp3"
+Jul 09 12:12 : player: played "願得一心人（《鶴唳華亭》主題曲）.mp3"
+Jul 09 21:13 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jul 10 13:36 : exception: Failed to commit /home/bighu/.config/mpd/mpdstate: File exists
+Jul 10 13:36 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jul 10 13:36 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jul 10 18:18 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jul 10 18:18 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jul 10 18:18 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jul 10 18:18 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jul 10 18:51 : player: played "Nothing Left Between Us [33uKSODjvDo].mp3"
+Jul 10 18:57 : player: played "星空 [NOe1lwdRH8M].mp3"
+Jul 10 19:07 : player: played "傲寒 [GHvQa-BpYkQ].mp3"
+Jul 10 19:11 : player: played "天龍八部之宿敵 [Iv2ODAJkQ3U].mp3"
+Jul 10 19:16 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Jul 10 19:19 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Jul 10 19:19 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Jul 10 19:19 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Jul 10 19:23 : player: played "大魚（唱片版） [MRypl3B1Cj4].mp3"
+Jul 10 19:25 : alsa_output: Decoder is too slow; playing silence to avoid xrun
+Jul 10 19:28 : player: played "JISOO - ‘꽃(FLOWER)’ M⧸V [YudHcBIxlYw].mp3"
+Jul 10 20:04 : player: played "陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3"
+Jul 10 20:09 : player: played "The Show [kU0P2P5dtjE].mp3"
+Jul 11 09:20 : player: played "黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3"
+Jul 11 18:06 : player: played "黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3"
+Jul 11 20:15 : player: played "黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3"
+Jul 11 20:18 : player: played "黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3"
+Jul 11 20:55 : output: Failed to flush filter on "My Sound Card" (alsa): snd_pcm_writei() failed: Broken pipe
+Jul 11 20:55 : player: played "黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3"
+Jul 11 20:55 : player: played "黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3"
+Jul 11 21:06 : player: played "故梦【双笙】翻唱 [2UQYc08WfxM].mp3"
