@@ -13,8 +13,10 @@ rm -rf $HOME/.config/nvim-bak
 rm -rf $HOME/.vim-bak
 mv $HOME/.vim $HOME/.vim-bak
 mv $HOME/.config/nvim $HOME/.config/nvim-bak
-cp -rf vim $HOME/.vim
-cp -rf nvim $HOME/.config/nvim
+mkdir $HOME/.config/nvim
+mkdir $HOME/.vim
+cp -rf vim/* $HOME/.vim
+cp -rf nvim/* $HOME/.config/nvim
 
 ##### config
 cp -rf config/* $HOME/.config
