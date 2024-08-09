@@ -2,60 +2,56 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export ZSH=$HOME/.oh-my-zsh
-export OPENAI_API_KEY=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
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="mytheme"
 
-plugins=(    
-	colored-man-pages
+plugins=(
+    colored-man-pages
     colorize
-	git
-	vi-mode
-	z
+    git
+    vi-mode
+    z
     cp
     zsh-autosuggestions
-	zsh-syntax-highlighting
+    zsh-syntax-highlighting
 )
 source $ZSH/oh-my-zsh.sh
-
+source ~/.zshrc-alias
 
 #npm配置
 # 定义npm存放的目录
-NPM_PACKAGES="${HOME}/.npm-packages"
-# 确保node可以找到安装的包
-NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
-# 确保可以使用安装的二进制应用和man文档
-PATH="$NPM_PACKAGES/bin:$PATH"
-# Unset manpath so we can inherit from /etc/manpath via the `manpath`
-# command
-unset MANPATH # delete if you already modified MANPATH elsewhere in your config
-MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
-
+#NPM_PACKAGES="${HOME}/.npm-packages"
+## 确保node可以找到安装的包
+#NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+## 确保可以使用安装的二进制应用和man文档
+#PATH="$NPM_PACKAGES/bin:$PATH"
+## Unset manpath so we can inherit from /etc/manpath via the `manpath`
+## command
+#unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+#MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
 
 # echo "何期自性本自清净！何期自性本不生灭！何期自性本自具足！何期自性本无动摇！何期自性能生万法！"
 # /data/pyfile/read
 
-export WINEARCH=win32
-export WINEPREFIX=~/.wine
+export WINEARCH=win64
+export WINEDEBUG=-all
+export WINEPREFIX=~/公共/wine
 #wien64 的配置可以使用wine64快是的使用deepin-wine5来模拟一个64位windows环境
-alias www="export WINEARCH=win64 WINEPREFIX=~/公共/wine"
-alias ww="export WINEARCH=win32 WINEPREFIX=~/.wine"
-alias deepin="WINEARCH=win64 WINEPREFIX=~/.deepinwine deepin-wine6-stable"
-alias keymod="echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode"
 
 # go语言配置
-export GOROOT=/home/bighu/.go
+export GOROOT=/home/ivhu/.go
 export GOPATH=/data/code/Go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
 #sudo go快捷键使用sgo可以直接运行需要管理员权限的go代码
-alias sgo='sudo /home/bighu/.go/bin/go'
+#
+#
 
 #本地bin
-export PATH=$PATH:/home/bighu/.local/bin
-export PATH=$PATH:/home/bighu/.cargo/bin
-export PATH=$PATH:/home/bighu/.local/share/gem/ruby/3.0.0/bin
+export PATH=$PATH:/home/ivhu/.local/bin
+export PATH=$PATH:/home/ivhu/.cargo/bin
+export PATH=$PATH:/home/ivhu/.local/share/gem/ruby/3.0.0/bin
 
 function setjava11() {
     sudo rm /usr/lib/jvm/default
@@ -75,10 +71,31 @@ function sayhello(){
     /data/pyfile/read
 }
 
+function connect_3_51()
+{
+    tmux rename-window 3.51
+    ssh fabric@192.168.3.51
+}
+
+function connect_1_20()
+{
+    tmux rename-window 1.20
+    sshpass -p "hfcas1-1=0" fabric@192.168.1.20
+}
+
 下班 ()
 {
-    echo "下班打卡"
+
 }
+
+function work(){
+    connect_3_51
+    tmux new-window
+    connect_1_20
+    tmux new-window
+    tmux rename-window local
+}
+
 
 # sayhello
 
@@ -95,63 +112,11 @@ export WORKSPACE=$HOME/.local/share/nvim/lsp_servers/java/workspace/ # 不设置
 # alias upjava="sudo update-alternatives --config java"
 #py的环境变量
 export PATH=$PATH:/data/pyfile
-
-#natron的环境变量,这是一个视频特效软件,现在应该是没什么用
-export PATH=$PATH:/data/natron
-
-#fabric的工具包的环境变量
-export PATH=$PATH:/data/文档/区块链/fabric-samples/bin
-
-export PATH=$PATH:/opt/cuda/bin
-export LD_LIBRARY_PATH=/opt/cuda/lib
+export PATH=$PATH:/home/ivhu/.local/share/nvim/mason/bin
+export TERM=xterm-256color
 
 #自定义
 #限制频率60%
-alias c="echo "hutendalo" | echo "60" | sudo tee /sys/devices/system/cpu/intel_pstate/max_perf_pct"
-alias cc="echo "50" | sudo tee /sys/devices/system/cpu/intel_pstate/max_perf_pct"
-alias ncp="echo "100" | sudo tee /sys/devices/system/cpu/intel_pstate/max_perf_pct"
-
-#更换壁纸,在dwm下用的,kde时一般不使用这个
-alias bg="feh --recursive --randomize --bg-fill /data/图片/壁纸/bg-d/*"
-
-# alias yay=sayhello
-
-#方便使用python3
-alias py='python3'
-#下载工具
-alias ad='aria2c'
-# --dir=~/下载/aria2'
-# 终端文件管理
-alias ra='ranger'
-# 使用一种更新的cat
-alias cat='bat'
-# 带有图标的ls
-alias ls='lsd'
-#连接服务器
-# alias server='ssh -i ~/.ssh/id_rsa -p 22 ivhu@39.103.230.97'
-# alias ssh='kitty +kitten ssh'
-# alias diff='kitty +kitten diff'
-#清屏
-alias cl='clear'
-#退出
-alias q='exit'
-#使用代理
-alias d='proxychains'
-# 开启clash
-alias ca='~/公共/clash/clash.sh'
-#v2ray
-alias va='/home/bighu/公共/clash/va.sh'
-#使用fzf搜索文件
-alias cdf='cd $(find * -type d | fzf)'
-#使用fzf打开文件
-alias vimf='nvim $(fzf)'
-# 修改rm命令将文件删除至回收站
-alias rm=trash-put
-alias rl=trash-list
-alias cp='cp -r'
-alias gdl="cd ~/.gvc&&./gvc xray shell"
-
-alias tmuxsw="tmux set -g status"
 
 # 将大写锁定改为esc
 function setkeymod1 ()
@@ -160,19 +125,9 @@ function setkeymod1 ()
     xmodmap ~/.xmodmap
 }
 
-# 蓝牙键盘专用
-function setkeymod2 ()
-{
-    setxkbmap
-    xmodmap ~/.xmodmap2
-}
-
-alias mod1=setkeymod1
-alias mod2=setkeymod2
-
 #代理
 function proxy_on() {
-    export http_proxy=http://127.0.0.1:7890
+    export http_proxy=http://192.168.3.244:7890
     export https_proxy=$http_proxy
     echo -e "终端代理已开启。"
 }
@@ -187,6 +142,7 @@ function proxy_off(){
     echo -e "终端代理已关闭。"
 }
 
+
 function go_proxy(){
     # 配置 GOPROXY 环境变量
     export GOPROXY=https://proxy.golang.com.cn,direct
@@ -194,52 +150,6 @@ function go_proxy(){
     export GOPRIVATE=git.mycompany.com,github.com/my/private
     echo -e "GO代理已开启。"
 }
-# alias dl='export http_proxy=http://127.0.0.1:7890 && export https_proxy=https://127.0.0.1:7890'
-alias dl=proxy_on
-alias ndl=proxy_off
-alias godl=go_proxy
-
-# alias wget='proxychains wget'
-alias neo="neofetch | lolcat"
-
-
-#快速打开笔记
-alias vimm='cd /data/文档/md && vim .'
-
-#切换到指定路经
-alias cd="z"
-alias cdd='cd /data/code/'
-alias cds='cd ~/文档/区块链/src'
-alias cdc='cd /data/code/cross'
-alias cdr='cd ~/文档/区块链/fabric-Restaurant'
-alias cdm='cd ~/文档/md'
-
-#创造文件
-alias mk='mkdir'
-
-#burpsuite的启动方法
-alias burpcn='cd /home/bighu/下载/burpcn && java -javaagent:BurpSuiteCn.jar -Xbootclasspath/p:burp-loader-keygen.jar  -Xmx1024m -jar burpsuite_pro_v1.7.37.jar'
-alias burp='cd /home/bighu/下载/burp && /usr/lib/jvm/java-11-openjdk/bin/java -javaagent:BurpLoaderKeygen.jar -noverify -jar burpsuite_pro.jar'
-
-#默认使用nvim
-# alias vim="nvim"
-#快速复制输出
-alias x="xclip -selection c"
-#打开自动启动脚本
-alias auto='vim ~/公共/aliwebdav/auto.sh'
-
-alias poweroff="下班 && mpc pause && sync && poweroff"
-alias reboot="sync && reboot"
-alias pg="pkill gopls"
-
-# some more ls aliases
-alias ll='lsd -l'
-alias la='lsd -a'
-alias l='lsd'
-alias cp='cpv'
-
-
-alias ydl="cd /data/音乐 && yt-dlp  -f 'ba' -x --audio-format mp3"
 # enable auto-suggestions based on the history
 if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
     . /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -247,17 +157,41 @@ if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
     ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#f9f899'
 fi
 
-alias xmod="xmodmap ~/.xmodmap"
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export EDITOR=/usr/bin/nvim
 
+# alias cd='cdWithZ'
+
+# if [ -n "$DESKTOP_SESSION" ];then
+#     eval $(gnome-keyring-daemon --start)
+#     export SSH_AUTH_SOCK
+# fi
+
 eval "$(zoxide init zsh)"
-export PATH="$PATH:/home/bighu/.foundry/bin"
-source /home/bighu/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$PATH:/home/ivhu/.foundry/bin"
+source /home/ivhu/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ==GVC== block start
 # sub block @gvc start
 export  PATH="$PATH:$HOME/.gvc"
 # sub block @gvc end
-# ==GVC== block end
+___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
+. "/home/ivhu/.acme.sh/acme.sh.env"
+
+printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c'
+
+function zd(){
+    if [ -z "$1" ]; then
+        cd
+    elif [ -d "$1" ]; then
+        cd $1
+    else
+        z $1
+    fi
+}
+
+# alias cd=zd
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
