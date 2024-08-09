@@ -1,3 +1,4 @@
+git pull
 ###### zsh
 rm -rf $HOME/.oh-my-zsh-bak
 mv $HOME/.zshrc $HOME/.zshrc.bak

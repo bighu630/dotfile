@@ -445,7 +445,7 @@ let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/dotfile
+cd ~/.ssh
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -454,14 +454,14 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
+badd +0 id_rsa.pub
 argglobal
 %argdel
-edit Startify
+$argadd id_rsa.pub
+edit id_rsa.pub
 argglobal
 let s:cpo_save=&cpo
 set cpo&vim
-imap <buffer> <silent> <C-G>g <Plug>delimitMateJumpMany
-imap <buffer> <S-BS> <Plug>delimitMateS-BS
 inoremap <buffer> <silent> <M-n> :call AutoPairsJump()a
 inoremap <buffer> <silent> <expr> <M-p> AutoPairsToggle()
 inoremap <buffer> <silent> <M-b> =AutoPairsBackInsert()
@@ -474,25 +474,10 @@ inoremap <buffer> <silent> <M-]> =AutoPairsMoveCharacter(']')
 inoremap <buffer> <silent> <M-[> =AutoPairsMoveCharacter('[')
 inoremap <buffer> <silent> <M-)> =AutoPairsMoveCharacter(')')
 inoremap <buffer> <silent> <M-(> =AutoPairsMoveCharacter('(')
+imap <buffer> <silent> <C-G>g <Plug>delimitMateJumpMany
+imap <buffer> <S-BS> <Plug>delimitMateS-BS
 inoremap <buffer> <silent> <C-H> =AutoPairsDelete()
 inoremap <buffer> <silent> <BS> =AutoPairsDelete()
-nnoremap <buffer> <nowait> <silent>  :call startify#open_buffers()
-nnoremap <buffer> <silent> 0 :call startify#open_buffers('15')
-nnoremap <buffer> <silent> 11 :call startify#open_buffers('29')
-nnoremap <buffer> <silent> 10 :call startify#open_buffers('28')
-nnoremap <buffer> <silent> 15 :call startify#open_buffers('33')
-nnoremap <buffer> <silent> 14 :call startify#open_buffers('32')
-nnoremap <buffer> <silent> 13 :call startify#open_buffers('31')
-nnoremap <buffer> <silent> 12 :call startify#open_buffers('30')
-nnoremap <buffer> <silent> 1 :call startify#open_buffers('16')
-nnoremap <buffer> <silent> 2 :call startify#open_buffers('17')
-nnoremap <buffer> <silent> 3 :call startify#open_buffers('18')
-nnoremap <buffer> <silent> 4 :call startify#open_buffers('19')
-nnoremap <buffer> <silent> 5 :call startify#open_buffers('20')
-nnoremap <buffer> <silent> 6 :call startify#open_buffers('21')
-nnoremap <buffer> <silent> 7 :call startify#open_buffers('22')
-nnoremap <buffer> <silent> 8 :call startify#open_buffers('23')
-nnoremap <buffer> <silent> 9 :call startify#open_buffers('24')
 inoremap <buffer> <silent> § =AutoPairsMoveCharacter('''')
 inoremap <buffer> <silent> ¢ =AutoPairsMoveCharacter('"')
 inoremap <buffer> <silent> © =AutoPairsMoveCharacter(')')
@@ -505,15 +490,6 @@ inoremap <buffer> <silent> ý =AutoPairsMoveCharacter('}')
 inoremap <buffer> <silent> û =AutoPairsMoveCharacter('{')
 inoremap <buffer> <silent> Ý =AutoPairsMoveCharacter(']')
 inoremap <buffer> <silent> Û =AutoPairsMoveCharacter('[')
-nnoremap <buffer> <expr> N 'j '[v:searchforward].'N'
-nnoremap <buffer> <nowait> <silent> e :call startify#open_buffers('11')
-nnoremap <buffer> <nowait> <silent> i :enew | startinsert
-nnoremap <buffer> j j
-nnoremap <buffer> k k
-nnoremap <buffer> <expr> n ' j'[v:searchforward].'n'
-nnoremap <buffer> <nowait> <silent> q :call startify#open_buffers('35')
-nnoremap <buffer> <nowait> <silent> <2-LeftMouse> :call startify#open_buffers()
-nnoremap <buffer> <nowait> <silent> <Insert> :enew | startinsert
 noremap <buffer> <silent> <M-n> :call AutoPairsJump()
 noremap <buffer> <silent> <M-p> :call AutoPairsToggle()
 imap <buffer> <silent> g <Plug>delimitMateJumpMany
@@ -540,8 +516,8 @@ setlocal balloonexpr=
 setlocal nobinary
 setlocal nobreakindent
 setlocal breakindentopt=
-setlocal bufhidden=wipe
-setlocal nobuflisted
+setlocal bufhidden=
+setlocal buflisted
 setlocal buftype=
 setlocal nocindent
 setlocal cinkeys=0{,0},0),0],:,0#,!^F,o,O,e
@@ -561,7 +537,7 @@ setlocal cryptmethod=
 setlocal nocursorbind
 setlocal nocursorcolumn
 set cursorline
-setlocal nocursorline
+setlocal cursorline
 setlocal cursorlineopt=both
 setlocal define=
 setlocal dictionary=
@@ -569,8 +545,8 @@ setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
 setlocal noexpandtab
-if &filetype != 'startify'
-setlocal filetype=startify
+if &filetype != ''
+setlocal filetype=
 endif
 setlocal fillchars=
 setlocal fixendofline
@@ -610,10 +586,10 @@ setlocal makeencoding=
 setlocal makeprg=
 setlocal matchpairs=(:),{:},[:]
 setlocal modeline
-setlocal nomodifiable
+setlocal modifiable
 setlocal nrformats=bin,octal,hex
 set number
-setlocal nonumber
+setlocal number
 setlocal numberwidth=4
 setlocal omnifunc=
 setlocal path=
@@ -622,7 +598,7 @@ setlocal nopreviewwindow
 setlocal quoteescape=\\
 setlocal noreadonly
 set relativenumber
-setlocal norelativenumber
+setlocal relativenumber
 setlocal norightleft
 setlocal rightleftcmd=search
 setlocal noscrollbind
@@ -645,8 +621,8 @@ setlocal statusline=%!airline#statusline(1)
 setlocal suffixesadd=
 setlocal noswapfile
 setlocal synmaxcol=3000
-if &syntax != 'startify'
-setlocal syntax=startify
+if &syntax != ''
+setlocal syntax=
 endif
 setlocal tabstop=8
 setlocal tagcase=
@@ -669,12 +645,12 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-let s:l = 19 - ((13 * winheight(0) + 12) / 25)
+let s:l = 1 - ((0 * winheight(0) + 12) / 25)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 19
-normal! 05|
+keepjumps 1
+normal! 0
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf

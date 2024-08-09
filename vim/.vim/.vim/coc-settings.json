@@ -43,7 +43,7 @@
     },
     "vcs-r": {
       "patterns": [".git", ".hg", ".projections.json"],
-      "bottomUp": true
+      "bottomUp": false
     }
   }
 }
