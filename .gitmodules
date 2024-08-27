@@ -1,6 +1,6 @@
 [submodule "nvim"]
 	path = nvim
-	url = https://github.com/bighu630/nvim
+	url = git@github.com:bighu630/nvim.git
 [submodule "vimrc"]
 	path = vimrc
-	url = https://github.com/bighu630/vimrc
+	url = git@github.com:bighu630/vimrc.git
