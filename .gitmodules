@@ -4,3 +4,6 @@
 [submodule "vimrc"]
 	path = vimrc
 	url = git@github.com:bighu630/vimrc.git
+[submodule "dwm"]
+	path = dwm
+	url = git@github.com:bighu630/dwm.git
