@@ -1,22 +1,19 @@
+#!/bin/bash
+local=$(pwd)
 git pull
 ###### zsh
 rm -rf $HOME/.oh-my-zsh-bak
-mv $HOME/.zshrc $HOME/.zshrc.bak
-mv $HOME/.zshrc-alias $HOME/.zshrc-alias-bak
-mv $HOME/.oh-my-zsh $HOME/.oh-my-zsh-bak
-cp -rf zshrc $HOME/.zshrc
-cp -rf zshrc-alias $HOME/.zshrc-alias
-cp -rf oh-my-zsh $HOME/.oh-my-zsh
+ln -s -b $local/zshrc $HOME/.zshrc
+ln -s -b $local/zshrc-alias $HOME/.zshrc-alias
+ln -s -b $local/oh-my-zsh $HOME/.oh-my-zsh
 
 ##### vim
 rm -rf $HOME/.config/nvim-bak
 rm -rf $HOME/.vim-bak
-mv $HOME/.vim $HOME/.vim-bak
-mv $HOME/.config/nvim $HOME/.config/nvim-bak
-mkdir $HOME/.config/nvim
-mkdir $HOME/.vim
-cp -rf vim/* $HOME/.vim
-cp -rf nvim/* $HOME/.config/nvim
+# mv $HOME/.vim $HOME/.vim-bak
+# mv $HOME/.config/nvim $HOME/.config/nvim-bak
+ln -s -b ${local}/nvim ~/.config
+ln -s -b ${local}/vim ~/.vim
 
 ##### config
 cp -rf config/* $HOME/.config
