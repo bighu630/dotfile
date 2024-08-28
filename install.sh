@@ -14,7 +14,7 @@ backup_and_link() {
     fi
 
     # 创建符号链接
-    ln -s -b "$source_file" "$target"
+    ln -s -b -T "$source_file" "$target"
 }
 
 ##### zsh
@@ -24,7 +24,7 @@ backup_and_link "$local/oh-my-zsh" "$HOME/.oh-my-zsh"
 
 ##### vim
 backup_and_link "$local/nvim" "$HOME/.config/nvim"
-backup_and_link "$local/vim" "$HOME/.vim"
+backup_and_link "$local/vimrc" "$HOME/.vim"
 
 ##### config
 backup_and_link "$local/config/mpd" "$HOME/.config/mpd"
