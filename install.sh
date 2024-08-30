@@ -14,9 +14,10 @@ backup_and_link() {
     fi
 
     # 创建符号链接
-    ln -s -b -T "$source_file" "$target"
+    ln -s -f -T "$source_file" "$target"
 }
 
+# 遍历文件夹
 backup_and_link_dirs(){
     source_dir=$1
     target_dir=$2
