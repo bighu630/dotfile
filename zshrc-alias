@@ -22,7 +22,7 @@ alias ad='aria2c'
 # 终端文件管理
 alias ra='ranger'
 # 使用一种更新的cat
-alias cat='bat'
+# alias cat='bat'
 # 带有图标的ls
 alias ls='lsd'
 #连接服务器
