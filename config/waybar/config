@@ -1,0 +1,320 @@
+[{
+    "height": 24, // Waybar height (to be removed for auto height)
+    "layer": "top", // Waybar at top layer
+    "output": ["eDP-1"],
+    "margin-top": 4,
+    "margin-left": 7,
+    "margin-bottom": 0,
+    "margin-right": 7,
+    "spacing": 5, // Gaps between modules (4px)
+    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/window", "custom/weather","custom/spotify"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["custom/speed","tray", "backlight", "pulseaudio", "battery", "clock", "custom/power-menu","custom/notify"],
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "1": "一",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
+        "7": "七",
+        "11": "一",
+        "12": "二",
+        "13": "三",
+        "14": "四",
+        "15": "五",
+        "16": "六",
+        "17": "七",
+        "urgent": "",
+        "default": ""
+      }
+    },
+    "hyprland/window": {
+        "max-length": 20,
+        "separate-outputs": true
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format": "<span color='#bf616a'> </span>{:%I:%M %p}",
+        "format-alt": "<span color='#bf616a'> </span>{:%a %b %d}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+
+    "cpu": {
+      "interval": 10,
+      "format": " {}%",
+      "max-length": 10,
+      "on-click": "",
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "format-alt":" {used:0.1f}G",
+        "max-length": 10,
+    },
+    "backlight": {
+        "device": "DP-1",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-click": "",
+    },
+    "network": {
+        "format-wifi": "直 {signalStrength}%",
+        "format-ethernet": " wired",
+        "format-disconnected": "睊",
+        "format-disconnected": "Disconnected  ",
+    },
+
+    "custom/speed": {
+      "restart-interval": 1,
+      "exec": "bash ~/.config/waybar/scripts/net.sh",
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "  {volume}%",
+        "format-bluetooth-muted": " ",
+        "format-muted": "婢",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol-qt"
+    },
+    "custom/notify": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": " <span foreground='red'><sup></sup></span>",
+            "none": " ",
+            "dnd-notification": " <span foreground='red'><sup></sup></span>",
+            "dnd-none": " ",
+            "inhibited-notification": " <span foreground='red'><sup></sup></span>",
+            "inhibited-none": " ",
+            "dnd-inhibited-notification": " <span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": " "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    "bluetooth": {
+        "on-click": "~/.config/waybar/scripts/rofi-bluetooth &",
+        "format": " {status}",
+    },
+
+    "battery": {
+      "bat": "BAT0",
+      "adapter": "ADP0",
+      "interval": 60,
+      "states": {
+          "warning": 30,
+          "critical": 15
+      },
+      "max-length": 20,
+      "format": "{icon} {time}",
+      "format-warning": "{icon} {capacity}%",
+      "format-critical": "{icon} {capacity}%",
+      "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
+      "format-plugged": "  {capacity}%",
+      "format-alt": "{icon} {capacity}%",
+      "format-full": "  {capacity}%",
+      "format-icons": [" ", " ", " ", " ", " "],
+    },
+    "custom/weather": {
+      "exec": "python3 ~/.config/waybar/scripts/weather.py",
+      "restart-interval": 300,
+      "return-type": "json",
+    },
+
+   "custom/spotify": {
+    "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py",
+    "format": "  ",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-double-click-right": "playerctl next",
+    "on-double-click-left": "playerctl previous",
+    },
+    "custom/power-menu": {
+        "format": " <span color='#6a92d7'>⏻ </span>",
+        "on-click": "bash ~/.config/waybar/scripts/power-menu/powermenu.sh",
+    },
+    "custom/launcher": {
+        "format": " <span color='#6a92d7'> </span>",
+        "on-click": "rofi -show drun",
+    },
+},
+{
+    "height": 21, // Waybar height (to be removed for auto height)
+    "layer": "top", // Waybar at top layer
+    "output": ["HDMI-A-1"],
+    "margin-top": 4,
+    "margin-left": 10,
+    "margin-bottom": 0,
+    "margin-right": 10,
+    "spacing": 3, // Gaps between modules (4px)
+    "modules-left": ["custom/launcher", "cpu", "memory", "custom/spotify","hyprland/window"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["custom/speed","tray",  "pulseaudio",  "clock", "custom/power-menu","custom/notify"],
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "1": "一",
+        "2": "二",
+        "3": "三",
+        "4": "四",
+        "5": "五",
+        "6": "六",
+        "7": "七",
+        "11": "一",
+        "12": "二",
+        "13": "三",
+        "14": "四",
+        "15": "五",
+        "16": "六",
+        "17": "七",
+        "urgent": "",
+        "default": ""
+      }
+    },
+    "hyprland/window": {
+        "max-length": 20,
+        "separate-outputs": true
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "format": "<span color='#bf616a'> </span>{:%I:%M %p}",
+        "format-alt": "<span color='#bf616a'> </span>{:%a %b %d}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    },
+
+    "cpu": {
+      "interval": 10,
+      "format": " {}%",
+      "max-length": 10,
+      "on-click": "",
+    },
+    "memory": {
+        "interval": 30,
+        "format": " {}%",
+        "format-alt":" {used:0.1f}G",
+        "max-length": 10,
+    },
+    "backlight": {
+        "device": "DP-1",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-click": "",
+    },
+    "network": {
+        "format-wifi": "直 {signalStrength}%",
+        "format-ethernet": " wired",
+        "format-disconnected": "睊",
+        "format-disconnected": "Disconnected  ",
+    },
+
+    "custom/speed": {
+      "restart-interval": 1,
+      "exec": "bash ~/.config/waybar/scripts/net.sh",
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "  {volume}%",
+        "format-bluetooth-muted": " ",
+        "format-muted": "婢",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "bluetooth": {
+        "on-click": "~/.config/waybar/scripts/rofi-bluetooth &",
+        "format": " {status}",
+    },
+
+    "battery": {
+      "bat": "BAT0",
+      "adapter": "ADP0",
+      "interval": 60,
+      "states": {
+          "warning": 30,
+          "critical": 15
+      },
+      "max-length": 20,
+      "format": "{icon} {time}",
+      "format-warning": "{icon} {capacity}%",
+      "format-critical": "{icon} {capacity}%",
+      "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
+      "format-plugged": "  {capacity}%",
+      "format-alt": "{icon} {capacity}%",
+      "format-full": "  {capacity}%",
+      "format-icons": [" ", " ", " ", " ", " "],
+    },
+    "custom/weather": {
+      "exec": "python3 ~/.config/waybar/scripts/weather.py",
+      "restart-interval": 300,
+      "return-type": "json",
+    },
+    "custom/notify": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+        "notification": " <span foreground='red'><sup></sup></span>",
+        "none": " ",
+        "dnd-notification": " <span foreground='red'><sup></sup></span>",
+        "dnd-none": " ",
+        "inhibited-notification": " <span foreground='red'><sup></sup></span>",
+        "inhibited-none": " ",
+        "dnd-inhibited-notification": " <span foreground='red'><sup></sup></span>",
+        "dnd-inhibited-none": " "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+   "custom/spotify": {
+    "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py",
+    "format": "  ",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-double-click-right": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    },
+    "custom/power-menu": {
+        "format": " <span color='#6a92d7'>⏻ </span>",
+        "on-click": "bash ~/.config/waybar/scripts/power-menu/powermenu.sh",
+    },
+    "custom/launcher": {
+        "format": " <span color='#6a92d7'> </span>",
+        "on-click": "rofi -show drun",
+    },
+}]
