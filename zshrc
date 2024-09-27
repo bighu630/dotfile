@@ -176,7 +176,6 @@ source /home/ivhu/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highligh
 export  PATH="$PATH:$HOME/.gvc"
 # sub block @gvc end
 ___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
-. "/home/ivhu/.acme.sh/acme.sh.env"
 
 printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c'
 
@@ -190,3 +189,4 @@ export NVM_DIR="$HOME/.nvm"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+source /home/ivhu/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
