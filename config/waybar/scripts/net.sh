@@ -1,5 +1,5 @@
 #!/bin/bash
-ethn=wlan0
+ethn=wlp0s20f3
 # while true
 # do
 RX_pre=$(cat /proc/net/dev | grep $ethn | sed 's/:/ /g' | awk '{print $2}')

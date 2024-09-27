@@ -7,7 +7,7 @@
     "margin-bottom": 0,
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "hyprland/window", "custom/weather","custom/spotify"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "custom/weather","custom/spotify", "hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["custom/speed","tray", "backlight", "pulseaudio", "battery", "clock", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
@@ -21,13 +21,6 @@
         "5": "五",
         "6": "六",
         "7": "七",
-        "11": "一",
-        "12": "二",
-        "13": "三",
-        "14": "四",
-        "15": "五",
-        "16": "六",
-        "17": "七",
         "urgent": "",
         "default": ""
       }
@@ -168,26 +161,19 @@
     "margin-right": 10,
     "spacing": 3, // Gaps between modules (4px)
     "modules-left": ["custom/launcher", "cpu", "memory", "custom/spotify","hyprland/window"],
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/speed","tray",  "pulseaudio",  "clock", "custom/power-menu","custom/notify"],
+    "modules-center": ["hyprland/workspaces",  "clock"],
+    "modules-right": ["custom/speed","network","tray",  "pulseaudio", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
-        "1": "一",
-        "2": "二",
-        "3": "三",
-        "4": "四",
-        "5": "五",
-        "6": "六",
-        "7": "七",
-        "11": "一",
-        "12": "二",
-        "13": "三",
-        "14": "四",
-        "15": "五",
-        "16": "六",
-        "17": "七",
+        "10": "一",
+        "11": "二",
+        "12": "三",
+        "13": "四",
+        "14": "五",
+        "15": "六",
+        "16": "七",
         "urgent": "",
         "default": ""
       }
@@ -224,7 +210,7 @@
         "on-click": "",
     },
     "network": {
-        "format-wifi": "直 {signalStrength}%",
+        "format-wifi": "直 {ipaddr}",
         "format-ethernet": " wired",
         "format-disconnected": "睊",
         "format-disconnected": "Disconnected  ",
@@ -284,14 +270,14 @@
         "tooltip": false,
         "format": "{icon}",
         "format-icons": {
-        "notification": " <span foreground='red'><sup></sup></span>",
-        "none": " ",
-        "dnd-notification": " <span foreground='red'><sup></sup></span>",
-        "dnd-none": " ",
-        "inhibited-notification": " <span foreground='red'><sup></sup></span>",
-        "inhibited-none": " ",
-        "dnd-inhibited-notification": " <span foreground='red'><sup></sup></span>",
-        "dnd-inhibited-none": " "
+            "notification": " <span foreground='red'><sup></sup></span>",
+            "none": " ",
+            "dnd-notification": " <span foreground='red'><sup></sup></span>",
+            "dnd-none": " ",
+            "inhibited-notification": " <span foreground='red'><sup></sup></span>",
+            "inhibited-none": " ",
+            "dnd-inhibited-notification": " <span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": " "
         },
         "return-type": "json",
         "exec-if": "which swaync-client",
@@ -302,12 +288,12 @@
     },
 
    "custom/spotify": {
-    "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py",
-    "format": "  ",
-    "return-type": "json",
-    "on-click": "playerctl play-pause",
-    "on-double-click-right": "playerctl next",
-    "on-scroll-down": "playerctl previous",
+        "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py",
+        "format": "  ",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-double-click-right": "playerctl next",
+        "on-double-click-left": "playerctl previous",
     },
     "custom/power-menu": {
         "format": " <span color='#6a92d7'>⏻ </span>",

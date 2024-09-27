@@ -7,11 +7,11 @@
   "layer-shell": true,
   "cssPriority": "application",
   "control-center-margin-top": 10,
-  "control-center-margin-bottom": 500,
+  "control-center-margin-bottom": 200,
   "control-center-margin-right": 10,
   "control-center-margin-left": 0,
   "notification-2fa-action": true,
-  "notification-inline-replies": false,
+  "notification-inline-replies": true,
   "notification-icon-size": 64,
   "notification-body-image-height": 100,
   "notification-body-image-width": 200,
@@ -53,7 +53,6 @@
     "dnd",
     "notifications",
     "mpris",
-    "label",
     "buttons-grid"
   ],
   "widget-config": {
@@ -76,7 +75,8 @@
     },
     "mpris": {
       "image-size": 64,
-      "image-radius": 8
+      "image-radius": 8,
+      "blur": true
     },
     "buttons-grid": {
       "actions": [
