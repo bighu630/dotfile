@@ -50,6 +50,7 @@ backup_and_link "$local/zshrc" "$HOME/.zshrc"
 backup_and_link "$local/zshrc-alias" "$HOME/.zshrc-alias"
 backup_and_link "$local/oh-my-zsh" "$HOME/.oh-my-zsh"
 
+
 ##### vim
 backup_and_link "$local/nvim" "$HOME/.config/nvim"
 backup_and_link "$local/vimrc" "$HOME/.vim"
@@ -64,3 +65,4 @@ backup_and_link "$local/tmux/.tmux.conf" "$HOME/.tmux.conf"
 ##### 杂项
 backup_and_link "$local/conkyrc" "$HOME/.conkyrc"
 backup_and_link "$local/autostart.sh" "$HOME/.autostart.sh"
+
