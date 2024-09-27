@@ -149,6 +149,7 @@
     "custom/launcher": {
         "format": " <span color='#6a92d7'> </span>",
         "on-click": "rofi -show drun",
+        "on-click-right": "bash ~/.config/waybar/scripts/warpaper.sh",
     },
 },
 {
@@ -235,7 +236,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol-qt"
     },
 
     "bluetooth": {
@@ -302,5 +303,6 @@
     "custom/launcher": {
         "format": " <span color='#6a92d7'> </span>",
         "on-click": "rofi -show drun",
+        "on-click-right": "bash ~/.config/waybar/scripts/warpaper.sh",
     },
 }]

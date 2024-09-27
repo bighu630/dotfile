@@ -61,7 +61,6 @@ if [ -d "./oh-my-zsh/plugins/zsh-syntax-highlighting" ]; then
     echo "oh-my-zsh-plugins已存在"
 else
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ./oh-my-zsh/plugins/zsh-syntax-highlighting
-    echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
 fi
 
 
