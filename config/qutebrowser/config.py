@@ -21,7 +21,7 @@ config = config  # type: ConfigAPI # noqa: F821 pylint: disable=E0602,C0103
 c = c
 
 # Change the argument to True to still load settings configured via autoconfig.yml
-config.load_autoconfig(False)
+config.load_autoconfig(True)
 
 # Always restore open sites when qutebrowser is reopened. Without this
 # option set, `:wq` (`:quit --save`) needs to be used to save open tabs
@@ -32,7 +32,9 @@ config.load_autoconfig(False)
 # Type: Bool
 c.auto_save.session = True
 
-catppuccin.setup(c, "mocha", True)
+c.completion.height = 300
+
+catppuccin.setup(c, "macchiato", True)
 # Which cookies to accept. With QtWebEngine, this setting also controls
 # other features with tracking capabilities similar to those of cookies;
 # including IndexedDB, DOM storage, filesystem API, service workers, and
@@ -237,39 +239,7 @@ c.url.searchengines = {"DEFAULT": "https://www.google.com/search?q={}"}
 # Type: List of FuzzyUrl, or FuzzyUrl
 c.url.start_pages = "https://www.google.com"
 
-# Default font families to use. Whenever "default_family" is used in a
-# font setting, it's replaced with the fonts listed here. If set to an
-# empty value, a system-specific monospace default is used.
-# Type: List of Font, or Font
-c.fonts.default_family = "Liga SFMono Nerd Font"
-
-# Font used for tooltips. If set to null, the Qt default is used.
-# Type: Font
 c.fonts.tooltip = None
-
-# Font family for standard fonts.
-# Type: FontFamily
-c.fonts.web.family.standard = "Liga SFMono Nerd Font"
-
-# Font family for fixed fonts.
-# Type: FontFamily
-c.fonts.web.family.fixed = "Liga SFMono Nerd Font"
-
-# Font family for serif fonts.
-# Type: FontFamily
-c.fonts.web.family.serif = "Liga SFMono Nerd Font"
-
-# Font family for sans-serif fonts.
-# Type: FontFamily
-c.fonts.web.family.sans_serif = "Liga SFMono Nerd Font"
-
-# Font family for cursive fonts.
-# Type: FontFamily
-c.fonts.web.family.cursive = "Liga SFMono Nerd Font"
-
-# Font family for fantasy fonts.
-# Type: FontFamily
-c.fonts.web.family.fantasy = "Liga SFMono Nerd Font"
 
 # Bindings for normal mode
 config.bind("<Ctrl+1>", "tab-select 1")
