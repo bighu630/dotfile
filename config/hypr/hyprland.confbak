@@ -22,12 +22,14 @@ env = GOROOT,/home/ivhu/.go
 env = GOPATH,/data/code/GOPATH/
 env = GOBIN,$GOPATH/bin
 
-env = QT_QPA_PLATFORM,qt6ct
+env = QT_QPA_PLATFORMTHEME,qt6ct
 env = GDK_SCALE,1
 env = XCURSOR_SIZE,24
 env = QT_SCALE_FACTOR_ROUNDING_POLICY,RoundPreferFloor
-env = ELECTRON_OZONE_PLATFORM_HINT,wayland
-exec-once = XDG_MENU_PREFIX=plasma- kbuildsycoca6
+env = XDG_MENU_PREFIX,plasma6-
+# env = ELECTRON_OZONE_PLATFORM_HINT,wayland
+exec-once = kbuildsycoca6
+exec-once = kdeconnectd
 exec-once = dbus-update-activation-environment --systemd XDG_MENU_PREFIX
 
 exec-once = wlsunset -l 39.9 -L 116.3 -t 5000 -T 6000
@@ -106,7 +108,7 @@ general {
     col.inactive_border = rgba(595959aa)
 
     # Set to true enable resizing windows by clicking and dragging on borders and gaps
-    resize_on_border = false
+    resize_on_border = true
 
     # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
     allow_tearing = false
@@ -172,9 +174,9 @@ misc {
 
 
 # Float Necessary Windows
-windowrule=float,Rofi
 windowrule=float,pavucontrol-qt
-windowrule=float,dolphin
+# windowrule=float,dolphin
+windowrulev2 = stayfocused,class:(Rofi)
 windowrulev2 = float,class:^()$,title:^(Picture in picture)$
 windowrulev2 = float,title:^(媒体查看器)$
 windowrulev2 = float,class:^(brave)$,title:^(Save File)$
@@ -187,7 +189,8 @@ windowrulev2 = float,class:^(float)$
 windowrulev2 = float,title:float
 windowrulev2 = float,class:^(xdg-desktop-portal-gtk)$
 windowrulev2 = float,class:^(geeqie)$
-windowrulev2=float,class:qutebrowser
+windowrulev2 = float,title:Translate
+# windowrulev2=float,class:qutebrowser
 
 # Increase the opacity
 windowrule=opacity 0.92,dolphin
@@ -195,7 +198,7 @@ windowrule=opacity 0.96,discord
 windowrule=opacity 0.9,VSCodium
 windowrule=opacity 0.88,obsidian
 windowrule=opacity 0.93,telegram
-windowrule=opacity 0.93,qutebrowser
+windowrule=opacity 0.96,qutebrowser
 
 # ^.*nvim.*$
 windowrule=tile,librewolf
@@ -217,7 +220,7 @@ bind=ALT,C,exec,firefox
 bind=ALTSHIFT,Q,exit,
 bind=ALT,E,exec, dolphin
 bind=ALT,D,exec, alacritty -T float
-bind=ALTSHIFT,S,exec, alacritty -T float --config-file ~/.config/alacritty/translate.toml -e ~/.config/hypr/scripts/translate/tui
+bind=ALTSHIFT,S,exec, alacritty -T Translate --config-file ~/.config/alacritty/translate.toml -e ~/.config/hypr/scripts/translate/tui
 bind=ALT,space,exec, rofi -show drun
 bind=ALT,P,pseudo,
 bind=ALTSHIFT,ESCAPE,exec,systemctl suspend
