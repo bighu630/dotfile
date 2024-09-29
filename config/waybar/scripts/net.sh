@@ -1,5 +1,15 @@
 #!/bin/bash
-ethn=wlp0s20f3
+#!/bin/bash
+
+ethn="wlan0"
+
+# 检查网卡是否存在
+if ip link show "$ethn" 2>/dev/null | grep -q "$interface_name:"; then
+    ethn="wlan0"
+else
+    ethn=wlp0s20f3
+fi
+
 # while true
 # do
 RX_pre=$(cat /proc/net/dev | grep $ethn | sed 's/:/ /g' | awk '{print $2}')

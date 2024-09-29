@@ -1,13 +1,14 @@
 [{
+    "auto height": false,
     "height": 24, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
     "output": ["eDP-1"],
-    "margin-top": 4,
+    "margin-top": 3,
     "margin-left": 7,
     "margin-bottom": 0,
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "custom/weather","custom/spotify", "hyprland/window"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "custom/weather","custom/spotify","cava", "wlr/taskbar"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["custom/speed","tray", "backlight", "pulseaudio", "battery", "clock", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
@@ -28,6 +29,46 @@
     "hyprland/window": {
         "max-length": 20,
         "separate-outputs": true
+    },
+    "wlr/taskbar": {
+        "format": " {icon}",
+        "icon-size": 18,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "icon-theme": "Papirus-Dark",
+        "on-click-middle": "close",
+        "ignore-list": [
+            "Alacritty"
+        ],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition",
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
+    },
+    "cava": {
+//        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+        "framerate": 800,
+        "autosens": 1,
+        "sensitivity": 1,
+        "bars": 12,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 20000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
     },
     "tray": {
         "spacing": 10
@@ -153,15 +194,15 @@
     },
 },
 {
-    "height": 21, // Waybar height (to be removed for auto height)
+    "height": 24, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
     "output": ["HDMI-A-1"],
-    "margin-top": 4,
-    "margin-left": 10,
+    "margin-top": 2,
+    "margin-left": 8,
     "margin-bottom": 0,
-    "margin-right": 10,
+    "margin-right": 8,
     "spacing": 3, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "custom/spotify","hyprland/window"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "custom/spotify","wlr/taskbar"],
     "modules-center": ["hyprland/workspaces",  "clock"],
     "modules-right": ["custom/speed","network","tray",  "pulseaudio", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
@@ -180,8 +221,29 @@
       }
     },
     "hyprland/window": {
+        "format": "",
         "max-length": 20,
-        "separate-outputs": true
+        "separate-outputs": true,
+        "icon": true,
+        "icon-size": 24,
+    },
+    "wlr/taskbar": {
+        "format": " {icon}",
+        "icon-size": 18,
+        "tooltip-format": "{title}",
+        "icon-theme": "Papirus-Dark",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+            "Alacritty"
+        ],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition"
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal"
+        }
     },
     "tray": {
         "spacing": 10
