@@ -179,7 +179,7 @@ windowrule=float,pavucontrol-qt
 windowrulev2 = stayfocused,class:(Rofi)
 windowrulev2 = float,class:^()$,title:^(Picture in picture)$
 windowrulev2 = float,title:^(媒体查看器)$
-windowrulev2 = float,class:^(brave)$,title:^(Save File)$
+windowrulev2 = float,class:^(brave)$,title:^(Save File)$kk
 windowrulev2 = float,class:^(brave)$,title:^(Open File)$
 windowrulev2 = float,class:^(LibreWolf)$,title:^(Picture-in-Picture)$
 windowrulev2 = float,class:^(blueman-manager)$
@@ -189,7 +189,7 @@ windowrulev2 = float,class:^(float)$
 windowrulev2 = float,title:float
 windowrulev2 = float,class:^(xdg-desktop-portal-gtk)$
 windowrulev2 = float,class:^(geeqie)$
-windowrulev2 = float,title:Translate
+windowrulev2 = float,size 10% override 6% override,title:Translate
 # windowrulev2=float,class:qutebrowser
 
 # Increase the opacity
