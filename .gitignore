@@ -2,3 +2,4 @@
 vim/plugged/*
 config/hypr/wallpapers/*
 config/hypr/hyprland.conf
+config/hypr/scripts/translate/config.toml
