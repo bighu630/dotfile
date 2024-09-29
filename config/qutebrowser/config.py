@@ -258,3 +258,9 @@ config.bind("E", "tab-prev")
 config.bind("R", "tab-next")
 config.bind("eu", "edit-url")
 config.bind("x", "tab-close")
+
+config.bind(
+    "<Ctrl-i>",
+    "spawn --userscript qute-keepass -p ~/.keepass/keepass.kdbx --keyfile-path ~/.keepass/keepass --no-password",
+    mode="insert",
+)
