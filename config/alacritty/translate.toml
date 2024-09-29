@@ -1,0 +1,82 @@
+live_config_reload = true
+
+[font]
+size = 12.5
+
+[font.bold_italic]
+family = "Liga SFMono Nerd Font"
+style = "semibold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "Liga SFMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Liga SFMono Nerd Font"
+style = "semibold"
+
+[font.offset]
+x = 0
+y = 0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "command"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "command"
+
+[scrolling]
+history = 10000
+multiplier = 10
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[window]
+opacity = 0.8
+
+[window.padding]
+x = 2
+y = 2
+
+[window.dimensions]
+columns = 120
+lines = 20
+
+
+[colors.primary]
+background = "0x1c2023"
+foreground = "0xc7ccd1"
+
+[colors.cursor]
+text = "0x1c2023"
+cursor = "0xc7ccd1"
+
+[colors.normal]
+black = "0x1c2023"
+red = "0xc7ae95"
+green = "0x95c7ae"
+yellow = "0xaec795"
+blue = "0xae95c7"
+magenta = "0xc795ae"
+cyan = "0x95aec7"
+white = "0xc7ccd1"
+
+[colors.bright]
+black = "0x747c84"
+red = "0xc7c795"
+green = "0x393f45"
+yellow = "0x565e65"
+blue = "0xadb3ba"
+magenta = "0xdfe2e5"
+cyan = "0xc79595"
+white = "0xf3f4f5"

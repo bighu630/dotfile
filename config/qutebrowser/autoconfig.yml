@@ -6,26 +6,25 @@
 
 config_version: 2
 settings:
-  bindings.commands:
-    global:
-      insert:
-        <Ctrl+i>: spawn --userscript qute-keepass -p ~/.keepass/keepass.kdbx
-      normal:
-        <Ctrl+1>: tab-select 1
-        <Ctrl+2>: tab-select 2
-        <Ctrl+3>: tab-select 3
-        <Ctrl+4>: tab-select 4
-        <Ctrl+5>: tab-select 5
-        <Ctrl+6>: tab-select 6
-        <Ctrl+7>: tab-select 7
-        <Ctrl+8>: tab-select 8
-        <Ctrl+9>: tab-select 9
-        <Ctrl+r>: reload
-        <Ctrl+s>: save
-        B: bookmark-list
-        E: tab-prev
-        R: tab-next
-        eu: edit-url
-        x: tab-close
-      prompt:
-        <Ctrl+i>: spawn --userscript qute-keepass -p ~/.keepass/keepass.kdbx
+  colors.webpage.darkmode.algorithm:
+    global: lightness-cielab
+  colors.webpage.darkmode.enabled:
+    global: true
+  colors.webpage.darkmode.policy.images:
+    global: smart
+  fonts.default_size:
+    global: 12pt
+  fonts.statusbar:
+    global: 14px default_family
+  fonts.web.family.cursive:
+    global: 苹方
+  fonts.web.family.fantasy:
+    global: 苹方
+  fonts.web.family.fixed:
+    global: 苹方
+  fonts.web.family.sans_serif:
+    global: 苹方
+  fonts.web.family.serif:
+    global: 苹方
+  fonts.web.family.standard:
+    global: 苹方

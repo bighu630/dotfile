@@ -1,4 +1,6 @@
 git pull
+# 
+cp ./config/hypr/hyprland.conf ./config/hypr/hyprland.confbak
 
 #!/bin/bash
 
