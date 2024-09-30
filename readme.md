@@ -9,6 +9,7 @@
 - swasync
 - rofi
 - kitty
+- swww
 - qutebrowser
 - networkmanager
 - [bluetuith](https://github.com/darkhz/bluetuith)
@@ -40,7 +41,7 @@
 ## install in arch
 
 ```shell
-yay -S hyprland waybar swaylock rofi kitty qutebrowser networkmanager bluetuith kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct ranger neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit
+yay -S hyprland waybar swaylock rofi kitty qutebrowser networkmanager bluetuith kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct ranger neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww
 
 ```
 
@@ -52,6 +53,18 @@ yay -S hyprland waybar swaylock rofi kitty qutebrowser networkmanager bluetuith 
 git clone --recursive https://github.com/bighu630/dotfile.git
 cd dotfile
 ./install.sh
+```
+
+### hyprland安装必要插件
+
+> 由于我配置文件配了这两个插件相关的东西，所以这两个插件必须安装(或者需要删除对应的配置)
+
+```shell
+hyprpm update
+hyprpm add https://github.com/hyprwm/hyprland-plugins
+hyprpm add https://github.com/Duckonaut/split-monitor-workspaces
+hyprpm enable hyprexpo
+hyprpm enable split-monitor-workspaces
 ```
 
 ## 添加内容
