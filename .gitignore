@@ -1,5 +1,5 @@
 */.git
 vim/plugged/*
 config/hypr/wallpapers/*
-config/hypr/hyprland.conf
+config/hypr/configs/monitor.conf
 config/hypr/scripts/translate/config.toml
