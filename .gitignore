@@ -3,3 +3,5 @@ vim/plugged/*
 config/hypr/wallpapers/*
 config/hypr/configs/monitor.conf
 config/hypr/scripts/translate/config.toml
+oh-my-zsh/plugins/zsh-autosuggestions
+oh-my-zsh/plugins/zsh-syntax-highlighting
