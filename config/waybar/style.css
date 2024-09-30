@@ -78,6 +78,10 @@ window#waybar.hidden {
     box-shadow: inset 0 3px #24f3f2;
 }
 
+#cava {
+    color: #b3f1ff;
+}
+
 #clock,
 #battery,
 #cpu,
