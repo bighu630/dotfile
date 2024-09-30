@@ -1,7 +1,5 @@
 git pull
-# 
-cp ./config/hypr/hyprland.conf ./config/hypr/hyprland.confbak
-
+#
 #!/bin/bash
 
 # 提交所有嵌套仓库的更改
