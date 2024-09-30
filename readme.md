@@ -34,13 +34,13 @@
 - fzf
 - jq
 - fd
-- rigrep
+- ripgrep
 - lazygit
 
 ## install in arch
 
 ```shell
-yay -S hyprland waybar swaylock rofi kitty qutebrowser networkmanager bluetuith kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct ranger neovim vim nodejs fzf jq rigrep fd kvantummanager lazygit
+yay -S hyprland waybar swaylock rofi kitty qutebrowser networkmanager bluetuith kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct ranger neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit
 
 ```
 
