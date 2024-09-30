@@ -145,7 +145,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol-qt"
+        "on-click": "pavucontrol-qt",
+        "on-click-right": "~/.config/waybar/scripts/bluetui.sh"
     },
     "custom/notify": {
         "tooltip": false,
@@ -342,7 +343,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol-qt"
+        "on-click": "pavucontrol-qt",
+        "on-click-right": "~/.config/waybar/scripts/bluetui.sh"
     },
 
     "bluetooth": {
