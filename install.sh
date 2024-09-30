@@ -69,8 +69,11 @@ fi
 backup_and_link "$local/nvim" "$HOME/.config/nvim"
 backup_and_link "$local/vimrc" "$HOME/.vim"
 
-##### config
+##### .config
 backup_and_link_dirs "$local/config" "$HOME/.config"
+
+#### .local/share
+backup_and_link_dirs "$local/share" "$HOME/.local/share"
 
 ##### tmux
 backup_and_link "$local/tmux/.tmux.conf.local" "$HOME/.tmux.conf.local"
