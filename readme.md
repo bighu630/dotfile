@@ -11,6 +11,9 @@
 - kitty
 - swww
 - qutebrowser
+- grim
+- swappy
+- slurp
 - networkmanager
 - [bluetuith](https://github.com/darkhz/bluetuith)
 - kde connect
@@ -38,10 +41,27 @@
 - ripgrep
 - lazygit
 
+## 其他软件(不用安装)
+
+- vscode
+- wiliwili
+- wechat
+- qqlinux
+- telegram-desktop(我选择用网页版的)
+- youtube-music-desktop
+- wine
+- meilmaster(网易邮箱大师，目前只能用wine版本的)
+- krdc
+- bruno(轻量postman)
+- konsole
+- dolphin
+- keepassxc
+- wps
+
 ## install in arch
 
 ```shell
-yay -S hyprland waybar swaylock rofi kitty qutebrowser networkmanager bluetuith kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct ranger neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww
+yay -S hyprland waybar swaylock rofi kitty qutebrowser networkmanager bluetuith kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct ranger neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp
 
 ```
 
