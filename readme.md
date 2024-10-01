@@ -57,6 +57,7 @@
 - dolphin
 - keepassxc
 - wps
+- obs
 
 ## install in arch
 
