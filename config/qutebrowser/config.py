@@ -10,6 +10,7 @@
 #   qute://help/configuring.html
 #   qute://help/settings.html
 import catppuccin
+from qutebrowser.api import interceptor
 from qutebrowser.config.configfiles import (
     ConfigAPI,
 )  # noqa: F401,E501 pylint: disable=unused-import
@@ -263,4 +264,27 @@ config.bind(
     "<Ctrl-i>",
     "spawn --userscript qute-keepass -p ~/.keepass/keepass.kdbx --keyfile-path ~/.keepass/keepass --no-password",
     mode="insert",
+)
+
+
+### youtube ad block
+def filter_yt(info: interceptor.Request):
+    """Block the given urls from being loaded."""
+    blocked_urls = ["https://www.youtube.com/watch?v="]
+    url = info.request_url
+    if (
+        url.host() == "www.youtube.com"
+        and url.path() == "/get_video_info"
+        and "&adformat=" in url.query()
+    ):
+        info.block()
+
+
+interceptor.register(filter_yt)
+
+c.content.autoplay = False
+config.bind(
+    "<Ctrl-m>",
+    "spawn --userscript view_in_mpv",
+    mode="normal",
 )

@@ -16,6 +16,10 @@ settings:
     global: 12pt
   fonts.statusbar:
     global: 14px default_family
+  fonts.tabs.selected:
+    global: 15px default_family
+  fonts.tabs.unselected:
+    global: 14px default_family
   fonts.web.family.cursive:
     global: 苹方
   fonts.web.family.fantasy:
