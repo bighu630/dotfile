@@ -12,6 +12,8 @@ settings:
     global: true
   colors.webpage.darkmode.policy.images:
     global: smart
+  content.autoplay:
+    global: false
   fonts.default_size:
     global: 12pt
   fonts.statusbar:
