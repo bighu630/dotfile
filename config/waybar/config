@@ -255,7 +255,7 @@
         "tooltip-format": "{title}",
         "icon-theme": "Papirus-Dark",
         "on-click": "activate",
-        "on-click-middle": "close",
+        "on-click-right": "close",
         "ignore-list": [
         ],
         "app_ids-mapping": {
