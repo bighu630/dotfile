@@ -41,13 +41,6 @@ window#waybar.hidden {
   border-radius: 0;
 }
 
-#window {
-  /* border-radius: 20px; */
-  /* padding-left: 10px; */
-  /* padding-right: 10px; */
-  color: #64727d;
-}
-
 #taskbar {
     /* border-radius: 0px 8px 8px 0; */
     border-radius: 9px;
@@ -92,7 +85,6 @@ window#waybar.hidden {
 #backlight,
 #network,
 #speed,
-#window,
 #pulseaudio,
 #custom-media,
 #tray,
@@ -121,6 +113,15 @@ window#waybar.hidden {
   border-radius: 9.5px;
   background-color: #1f2530;
 }
+
+#window {
+  padding: 0 10px;
+  color: #e5e5e5;
+  /* color: #bf616a; */
+  border-radius: 9.5px;
+  background-color: rgba(26, 27, 38, 0.3);
+}
+
 
 #workspaces {
     background: @workspacesbackground1;
