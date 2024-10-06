@@ -8,7 +8,7 @@
     "margin-bottom": 0,
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "custom/weather","custom/spotify","cava", "wlr/taskbar"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "custom/weather","custom/spotify","cava", "wlr/taskbar","hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["custom/speed","tray", "backlight", "pulseaudio", "battery", "clock", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
@@ -20,8 +20,11 @@
       }
     },
     "hyprland/window": {
+        "format": "{}",
         "max-length": 20,
-        "separate-outputs": true
+        "separate-outputs": true,
+        "icon": true,
+        "icon-size": 24,
     },
     "wlr/taskbar": {
         "format": " {icon}",
@@ -219,7 +222,7 @@
     "margin-bottom": 0,
     "margin-right": 8,
     "spacing": 3, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "custom/spotify","wlr/taskbar"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "custom/spotify","wlr/taskbar","hyprland/window"],
     "modules-center": ["hyprland/workspaces",  "clock"],
     "modules-right": ["custom/speed","network","tray",  "pulseaudio", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
@@ -231,7 +234,7 @@
       }
     },
     "hyprland/window": {
-        "format": "",
+        "format": "{}",
         "max-length": 20,
         "separate-outputs": true,
         "icon": true,
