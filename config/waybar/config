@@ -15,13 +15,6 @@
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
-        "1": "一",
-        "2": "二",
-        "3": "三",
-        "4": "四",
-        "5": "五",
-        "6": "六",
-        "7": "七",
         "urgent": "",
         "default": ""
       }
@@ -233,13 +226,6 @@
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
-        "10": "一",
-        "11": "二",
-        "12": "三",
-        "13": "四",
-        "14": "五",
-        "15": "六",
-        "16": "七",
         "urgent": "",
         "default": ""
       }
@@ -407,7 +393,7 @@
     },
     "custom/power-menu": {
         "format": " <span color='#6a92d7'>⏻ </span>",
-        "on-click": "bash ~/.config/waybar/scripts/power-menu/powermenu.sh",
+        "on-click": "wlogout",
     },
     "custom/launcher": {
         "format": " <span color='#6a92d7'> </span>",
