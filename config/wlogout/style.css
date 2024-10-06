@@ -4,7 +4,7 @@
 }
 
 window {
-	background-color:
+	background-color: rgba(12, 12, 12, 0.9);
 }
 
 button {
@@ -25,8 +25,8 @@ button:focus, button:active, button:hover {
 	outline-style: none;
 }
 
-#lock {j
-    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/l
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
 }
 
 #logout {
