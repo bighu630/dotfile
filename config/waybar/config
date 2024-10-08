@@ -140,7 +140,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol-qt",
+        "on-click": "~/.config/waybar/scripts/process.sh pavucontrol-qt",
         "on-click-right": "~/.config/waybar/scripts/bluetui.sh"
     },
     "custom/notify": {
@@ -333,7 +333,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol-qt",
+        "on-click": "~/.config/waybar/scripts/process.sh pavucontrol-qt",
         "on-click-right": "~/.config/waybar/scripts/bluetui.sh"
     },
 

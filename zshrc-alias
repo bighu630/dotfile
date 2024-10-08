@@ -21,6 +21,7 @@ alias ad='aria2c'
 # --dir=~/下载/aria2'
 # 终端文件管理
 alias ra='ranger'
+alias yz='yazi'
 # 使用一种更新的cat
 # alias cat='bat'
 # 带有图标的ls
