@@ -45,25 +45,35 @@ backup_and_link_dirs(){
     done
 }
 
+hyprlandCfg(){
+    if [ ! -f "config/hypr/configs/env_hidpi.conf" ];then
+        touch config/hypr/configs/env_hidpi.conf  # 只需要文件存在就可以，如果有配置可以写在这里面
+    fi
+}
+
+oh-my-zshCfg(){
+    # 判断目录不存在
+    if [ -d "./oh-my-zsh/plugins/zsh-autosuggestions" ]; then
+        echo "zsh-autosuggestions已存在"
+    else
+        git clone https://github.com/zsh-users/zsh-autosuggestions ./oh-my-zsh/plugins/zsh-autosuggestions
+    fi
+
+    if [ -d "./oh-my-zsh/plugins/zsh-syntax-highlighting" ]; then
+        echo "oh-my-zsh-plugins已存在"
+    else
+        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ./oh-my-zsh/plugins/zsh-syntax-highlighting
+    fi
+}
+
+vscodeConfig(){
+
+}
+
 ##### zsh
 backup_and_link "$local/zshrc" "$HOME/.zshrc"
 backup_and_link "$local/zshrc-alias" "$HOME/.zshrc-alias"
 backup_and_link "$local/oh-my-zsh" "$HOME/.oh-my-zsh"
-
-# 判断目录不存在
-if [ -d "./oh-my-zsh/plugins/zsh-autosuggestions" ]; then
-    echo "zsh-autosuggestions已存在"
-else
-    git clone https://github.com/zsh-users/zsh-autosuggestions ./oh-my-zsh/plugins/zsh-autosuggestions
-fi
-
-if [ -d "./oh-my-zsh/plugins/zsh-syntax-highlighting" ]; then
-    echo "oh-my-zsh-plugins已存在"
-else
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ./oh-my-zsh/plugins/zsh-syntax-highlighting
-fi
-
-
 
 ##### vim
 backup_and_link "$local/nvim" "$HOME/.config/nvim"
@@ -82,3 +92,6 @@ backup_and_link "$local/tmux/.tmux.conf" "$HOME/.tmux.conf"
 ##### 杂项
 backup_and_link "$local/conkyrc" "$HOME/.conkyrc"
 backup_and_link "$local/autostart.sh" "$HOME/.autostart.sh"
+
+hyprlandCfg
+oh-my-zshCfg
