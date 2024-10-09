@@ -66,9 +66,6 @@ oh-my-zshCfg(){
     fi
 }
 
-vscodeConfig(){
-
-}
 
 ##### zsh
 backup_and_link "$local/zshrc" "$HOME/.zshrc"
