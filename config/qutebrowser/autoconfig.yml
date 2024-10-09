@@ -35,7 +35,9 @@ settings:
   colors.webpage.darkmode.enabled:
     global: true
   colors.webpage.darkmode.policy.images:
-    global: smart
+    global: never
+  colors.webpage.darkmode.policy.page:
+    global: always
   content.autoplay:
     global: false
   content.blocking.hosts.lists:
@@ -61,3 +63,7 @@ settings:
     global: 苹方
   fonts.web.family.standard:
     global: 苹方
+  url.default_page:
+    global: https://go.itab.link/
+  url.start_pages:
+    global: https://go.itab.link/
