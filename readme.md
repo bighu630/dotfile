@@ -66,6 +66,8 @@
 
 ```shell
 yay -S hyprland hyprlock waybar swaylock rofi kitty qutebrowser networkmanager bluetuith wlogout kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct yazi neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp copyq
+# fcitx5 词库，可以不用安装
+yay -S fcitx5-pinyin-chinese-idiom fcitx5-pinyin-sougou fcitx5-pinyin-zhwiki fcitx5-pinyin-custom-pinyin-dictionary
 
 ```
 

@@ -25,6 +25,8 @@ settings:
         <Ctrl+m>: spawn --userscript view_in_mpv
         <Ctrl+r>: reload
         <Ctrl+s>: save
+        <Escape>: spawn fcitx5-remote -c ;; clear-keychain ;; search ;; fullscreen
+          --leave
         B: bookmark-list
         E: tab-prev
         R: tab-next
