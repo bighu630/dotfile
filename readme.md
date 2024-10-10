@@ -31,6 +31,7 @@
 - zsh
 - qt6ct(qt6ct-kde)
 - yazi
+- copyq
 
 ### vim 依赖
 
@@ -64,7 +65,7 @@
 ## install in arch
 
 ```shell
-yay -S hyprland hyprlock waybar swaylock rofi kitty qutebrowser networkmanager bluetuith wlogout kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct yazi neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp
+yay -S hyprland hyprlock waybar swaylock rofi kitty qutebrowser networkmanager bluetuith wlogout kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct yazi neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp copyq
 
 ```
 

@@ -21,7 +21,7 @@ settings:
         <Ctrl+7>: tab-select 7
         <Ctrl+8>: tab-select 8
         <Ctrl+9>: tab-select 9
-        <Ctrl+c>: open -t https://chatgpt.com
+        <Ctrl+Shift+c>: open -t https://chatgpt.com
         <Ctrl+m>: spawn --userscript view_in_mpv
         <Ctrl+r>: reload
         <Ctrl+s>: save
