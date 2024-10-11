@@ -67,5 +67,8 @@ settings:
     global: 苹方
   url.default_page:
     global: https://go.itab.link/
+  url.searchengines:
+    global:
+      DEFAULT: https://www.google.com/search?q={}
   url.start_pages:
     global: https://go.itab.link/
