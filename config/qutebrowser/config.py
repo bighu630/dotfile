@@ -238,7 +238,7 @@ c.url.searchengines = {"DEFAULT": "https://www.google.com/search?q={}"}
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = "https://www.google.com"
+c.url.start_pages = "https://go.itab.link/"
 
 c.fonts.tooltip = None
 
@@ -266,11 +266,16 @@ config.bind(
     mode="insert",
 )
 
+# 在 Passthrough Mode 中刷新页面
+config.bind("<Ctrl-Shift-E>", "tab-prev", mode="passthrough")
 
-### youtube ad block
+# 在 Passthrough Mode 中打开新标签
+config.bind("<Ctrl-Shift-R>", "tab-next", mode="passthrough")
+
+
+# youtube ad block
 def filter_yt(info: interceptor.Request):
     """Block the given urls from being loaded."""
-    blocked_urls = ["https://www.youtube.com/watch?v="]
     url = info.request_url
     if (
         url.host() == "www.youtube.com"
@@ -281,6 +286,7 @@ def filter_yt(info: interceptor.Request):
 
 
 interceptor.register(filter_yt)
+
 
 c.content.autoplay = False
 config.bind(
