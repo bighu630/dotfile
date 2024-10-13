@@ -48,6 +48,8 @@ settings:
   content.blocking.hosts.lists:
     global:
     - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  content.pdfjs:
+    global: false
   fonts.default_size:
     global: 12pt
   fonts.statusbar:
