@@ -38,11 +38,15 @@ settings:
   colors.webpage.darkmode.algorithm:
     global: lightness-cielab
   colors.webpage.darkmode.enabled:
-    global: true
+    global: false
   colors.webpage.darkmode.policy.images:
     global: never
   colors.webpage.darkmode.policy.page:
     global: always
+  colors.webpage.darkmode.threshold.background:
+    global: 0
+  colors.webpage.preferred_color_scheme:
+    global: auto
   content.autoplay:
     global: false
   content.blocking.hosts.lists:
