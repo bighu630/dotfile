@@ -92,3 +92,4 @@ backup_and_link "$local/autostart.sh" "$HOME/.autostart.sh"
 
 hyprlandCfg
 oh-my-zshCfg
+./.install.sh

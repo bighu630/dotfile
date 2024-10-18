@@ -1,4 +1,5 @@
 */.git
+.install.sh
 vim/plugged/*
 config/hypr/wallpapers/*
 config/hypr/configs/monitor.conf

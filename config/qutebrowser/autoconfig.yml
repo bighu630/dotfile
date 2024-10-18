@@ -52,6 +52,8 @@ settings:
   content.blocking.hosts.lists:
     global:
     - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  content.notifications.enabled:
+    https://www.teambition.com: true
   content.pdfjs:
     global: false
   fonts.default_size:
