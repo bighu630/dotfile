@@ -11,6 +11,7 @@
 #   qute://help/settings.html
 import catppuccin
 from qutebrowser.api import interceptor
+from qutebrowser.api import cmdutils
 from qutebrowser.config.configfiles import (
     ConfigAPI,
 )  # noqa: F401,E501 pylint: disable=unused-import

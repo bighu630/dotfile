@@ -1,4 +1,5 @@
 */.git
+.install.sh
 vim/plugged/*
 config/hypr/wallpapers/*
 config/hypr/configs/monitor.conf
@@ -9,6 +10,7 @@ oh-my-zsh/plugins/zsh-autosuggestions
 oh-my-zsh/plugins/zsh-syntax-highlighting
 config/qutebrowser/qsettings/*
 config/copyq/copyq_tabs.ini
+config/copyq/copyq_geometry.ini
 *.dat
 *.lock
 *.pyc

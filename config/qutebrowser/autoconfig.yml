@@ -43,11 +43,17 @@ settings:
     global: never
   colors.webpage.darkmode.policy.page:
     global: always
+  colors.webpage.darkmode.threshold.background:
+    global: 0
+  colors.webpage.preferred_color_scheme:
+    global: auto
   content.autoplay:
     global: false
   content.blocking.hosts.lists:
     global:
     - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  content.notifications.enabled:
+    https://www.teambition.com: true
   content.pdfjs:
     global: false
   fonts.default_size:

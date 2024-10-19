@@ -33,6 +33,7 @@
         "on-click": "activate",
         "icon-theme": "Papirus-Dark",
         "on-click-middle": "close",
+        "active-first": true,
         "ignore-list": [
         ],
         "app_ids-mapping": {
@@ -246,6 +247,7 @@
         "tooltip-format": "{title}",
         "icon-theme": "Papirus-Dark",
         "on-click": "activate",
+        "active-first": true,
         "on-click-right": "close",
         "ignore-list": [
             "Fctix",
