@@ -8,5 +8,5 @@ if [ -n "$pid" ]; then
     # 杀死窗口
     pkill -f "bluetuith"
 else
-    kitty --title bluetui --config ~/.config/kitty/tools.conf -e bluetuith
+    xfce4-terminal --title bluetui  --geometry 70x20 -e bluetuith
 fi
