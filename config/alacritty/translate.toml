@@ -50,7 +50,7 @@ y = 2
 
 [window.dimensions]
 columns = 60
-lines = 40
+lines = 30
 
 [colors.primary]
 background = "#1e1e2e"

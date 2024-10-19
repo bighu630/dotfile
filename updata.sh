@@ -6,6 +6,7 @@ git pull
 for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
     echo "Processing $dir"
     cd $dir
+    git pull
     git add .
     git commit -m "update $dir"
     git push
