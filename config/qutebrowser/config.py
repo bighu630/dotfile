@@ -289,6 +289,15 @@ def filter_yt(info: interceptor.Request):
 interceptor.register(filter_yt)
 
 
+def filter_js(info: interceptor.Request):
+    url = info.request_url
+    if "r.qq.com" in url.host():
+        info.block()
+
+
+interceptor.register(filter_js)
+
+
 c.content.autoplay = False
 config.bind(
     "<Ctrl-m>",
