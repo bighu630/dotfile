@@ -430,30 +430,6 @@ const rules = [
         ]
     },
     {
-        name: 'telegram聊天新',
-        matcher: /https:\/\/.*?.telegram.org\/(a|z)\//,
-        options: [
-            {
-                name: "聊天内容",
-                selector: baseSelector('p.text-content[dir=auto],div.text-content'),
-                textGetter: e => Array.from(e.childNodes).filter(item => !item.className).map(item => item.nodeName === "BR" ? "\n" : item.textContent).join(''),
-                textSetter: baseTextSetter,
-            }
-        ]
-    },
-    {
-        name: 'telegram聊天',
-        matcher: /https:\/\/.*?.telegram.org\/.+/,
-        options: [
-            {
-                name: "聊天内容",
-                selector: baseSelector('div.message[dir=auto],div.im_message_text'),
-                textGetter: e => Array.from(e.childNodes).filter(item => !item.className || item.className === 'translatable-message').map(item => item.nodeValue || item.innerText).join(" "),
-                textSetter: baseTextSetter,
-            }
-        ]
-    },
-    {
         name: 'quora通用',
         matcher: /https:\/\/www.quora.com/,
         options: [

@@ -6,6 +6,8 @@ xmodmap ~/.xmodmap &
 
 gnome-keyring-daemon --start &
 
+kwalletd6 &
+
 export SSH_AUTH_SOCK
 
 fcitx5 &
@@ -28,9 +30,8 @@ blueman-applet &
 
 nm-applet &
 
-# feh --recursive --randomize --bg-fill /home/ivhu/图片/壁纸/bg-d & # 69.png
+feh --recursive --randomize --bg-fill /home/ivhu/图片/壁纸/bg-d & # 69.png
 # feh --recursive --randomize --bg-fill /home/ivhu/图片/壁纸/plasma6/*
-/home/ivhu/dotfiles/hypr/scripts/wallpaper_x11.sh  /home/ivhu/wallpaper/now.png &
 /home/ivhu/dotfiles/scripts/autolock.sh &
 
 # /usr/lib/xfce4/notifyd/xfce4-notifyd &
@@ -48,7 +49,7 @@ conky &
 
 # utools &
 
-cd /data/dotfile/dwm || exit
+cd ~/dotfile/dwm || exit
 
 ./statusbar/statusbar.sh cron &
 
