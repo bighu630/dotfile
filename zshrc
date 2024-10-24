@@ -169,6 +169,7 @@ export EDITOR=/usr/bin/nvim
 
 eval "$(zoxide init zsh)"
 export PATH="$PATH:/home/ivhu/.foundry/bin"
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /home/ivhu/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ==GVC== block start
