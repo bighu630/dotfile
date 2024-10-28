@@ -35,7 +35,8 @@ feh --recursive --randomize --bg-fill /home/ivhu/图片/壁纸/bg-d & # 69.png
 /home/ivhu/dotfiles/scripts/autolock.sh &
 
 # /usr/lib/xfce4/notifyd/xfce4-notifyd &
-dunst &
+# dunst &
+lxqt-notificationd &
 
 # /data/server/frp_0.53.2_linux_amd64/frpc -c /data/server/frp_0.53.2_linux_amd64/frpc.toml &
 
