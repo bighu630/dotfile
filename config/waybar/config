@@ -10,7 +10,7 @@
     "spacing": 5, // Gaps between modules (4px)
     "modules-left": ["custom/launcher", "cpu", "memory", "custom/weather","custom/spotify", "wlr/taskbar","hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/speed","tray", "backlight", "pulseaudio", "battery", "clock", "custom/power-menu","custom/notify"],
+    "modules-right": ["custom/speed", "backlight","tray", "pulseaudio", "battery", "clock", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
@@ -317,6 +317,10 @@
         "format-ethernet": " wired",
         "format-disconnected": "睊",
         "format-disconnected": "Disconnected  ",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
     },
 
     "custom/speed": {

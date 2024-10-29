@@ -14,10 +14,37 @@
 @define-color textcolor3 #000000;
 @define-color iconcolor #000000;
 
+@define-color rosewater #f4dbd6;
+@define-color flamingo #f0c6c6;
+@define-color pink #f5bde6;
+@define-color mauve #c6a0f6;
+@define-color red #ed8796;
+@define-color maroon #ee99a0;
+@define-color peach #f5a97f;
+@define-color yellow #eed49f;
+@define-color green #a6da95;
+@define-color teal #8bd5ca;
+@define-color sky #91d7e3;
+@define-color sapphire #7dc4e4;
+@define-color blue #8aadf4;
+@define-color lavender #b7bdf8;
+@define-color text #cad3f5;
+@define-color subtext1 #b8c0e0;
+@define-color subtext0 #a5adcb;
+@define-color overlay2 #939ab7;
+@define-color overlay1 #8087a2;
+@define-color overlay0 #6e738d;
+@define-color surface2 #5b6078;
+@define-color surface1 #494d64;
+@define-color surface0 #363a4f;
+@define-color base #24273a;
+@define-color mantle #1e2030;
+@define-color crust #181926;
+
 
 window#waybar {
   background-color: rgba(26, 27, 38, 0.1);
-  color: #ffffff;
+  color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
   border-top: 8px transparent;
@@ -76,26 +103,10 @@ window#waybar.hidden {
     font-size: 8px;
 }
 
-#clock,
-#battery,
-#cpu,
-#memor,
 #disk,
 #temperature,
-#backlight,
-#network,
-#speed,
-#pulseaudio,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#mpd,
-#bluetooth,
 #custom-hyprPicker,
 #custom-power-menu,
-#custom-spotify,
-#custom-notify,
 #custom-weather,
 #custom-weather.severe,
 #custom-weather.sunnyDay,
@@ -110,15 +121,50 @@ window#waybar.hidden {
   padding: 0 10px;
   color: #e5e5e5;
   /* color: #bf616a; */
-  border-radius: 9.5px;
-  background-color: #1f2530;
+  border-radius: 6.5px;
+  background-color: @surface2;
 }
 
-#window {
+#tray{
   padding: 0 10px;
   color: #e5e5e5;
   /* color: #bf616a; */
-  border-radius: 9.5px;
+}
+
+#network{
+  padding: 0 10px;
+  color: #e5e5e5;
+}
+
+#battery,
+#clock,
+#backlight,
+#pulseaudio,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#mpd,
+#custom-spotify,
+#bluetooth{
+  padding: 0 10px;
+  color: #e5e5e5;
+  /* color: #bf616a; */
+  border-radius: 6.5px;
+  background-color: @base;
+}
+#custom-notify{
+  padding: 0 10px;
+  color: @sky;
+  /* color: #bf616a; */
+  border-radius: 6.5px;
+  background-color: @base;
+}
+
+
+#window {
+  padding: 0 10px;
+  color: @text;
+  border-radius: 6.5px;
   background-color: rgba(26, 27, 38, 0.3);
 }
 
@@ -142,7 +188,7 @@ window#waybar.hidden {
     border-radius: 15px;
     border: 0px;
     color: @textcolor1;
-    background-color: @workspacesbackground2;
+    background-color: @base;
     transition: all 0.3s ease-in-out;
     opacity: 0.4;
 }
@@ -158,7 +204,7 @@ window#waybar.hidden {
 
 #workspaces button:hover {
     color: @textcolor1;
-    background: @workspacesbackground2;
+    background: @surface0;
     border-radius: 15px;
     opacity:0.7;
 }
@@ -166,14 +212,14 @@ window#waybar.hidden {
 
 #cpu {
   color: #fb958b;
-  border-radius: 9.5px;
-  background-color: #1f2530;
+  background-color: @surface1;
+  border-radius: 7.5px;
 }
 
 #memory {
   color: #ebcb8b;
-  border-radius: 8px;
-  background-color: #1f2530;
+  background-color: @surface0;
+  border-radius: 7.5px;
 }
 
 #custom-power-menu {
@@ -183,7 +229,7 @@ window#waybar.hidden {
   padding: 0 5px;
 }
 
-#custom-notify {
+#custom-notify base{
   color: #60caf5;
   border-radius: 8px;
   background-color: #1b242b;
@@ -193,7 +239,7 @@ window#waybar.hidden {
 
 
 #custom-launcher {
-  background-color: #1b242b;
+  background-color: @base;
   color: #6a92d7;
   border-radius: 7.5px;
   padding: 0 3px;
