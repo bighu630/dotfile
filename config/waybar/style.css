@@ -106,7 +106,6 @@ window#waybar.hidden {
 #disk,
 #temperature,
 #custom-hyprPicker,
-#custom-power-menu,
 #custom-weather,
 #custom-weather.severe,
 #custom-weather.sunnyDay,
@@ -126,19 +125,38 @@ window#waybar.hidden {
 }
 
 #tray{
+  background-color: @base;
   padding: 0 10px;
   color: #e5e5e5;
+  border-radius: 6.5px;
   /* color: #bf616a; */
 }
 
-#network{
+#custom-power-menu{
   padding: 0 10px;
   color: #e5e5e5;
+  /* color: #bf616a; */
+  border-radius: 6.5px;
+  background-color: @mantle;
+}
+#pulseaudio{
+  padding: 0 10px;
+  color: #e5e5e5;
+  /* color: #bf616a; */
+  border-radius: 6.5px;
+  background-color: @base;
+}
+#backlight{
+  padding: 0 10px;
+  color: #e5e5e5;
+  /* color: #bf616a; */
+  border-radius: 6.5px;
+  background-color: @surface0;
+
 }
 
 #battery,
 #clock,
-#backlight,
 #pulseaudio,
 #custom-media,
 #mode,
@@ -232,7 +250,7 @@ window#waybar.hidden {
 #custom-notify base{
   color: #60caf5;
   border-radius: 8px;
-  background-color: #1b242b;
+  background-color: @crust;
   border-radius: 7.5px;
   padding: 0 5px;
 }
@@ -346,14 +364,11 @@ label:focus {
 
 #network {
   color: #b48ead;
+  background-color: @surface0;
+  border-radius: 7.5px;
 }
-#speed {
-  background-color: #66cc99;
-  color: #d481ad;
-}
-
-#network.disconnected {
-  color: #f53c3c;
+#custom-speed {
+  border-radius: 7.5px;
 }
 
 #custom-media {

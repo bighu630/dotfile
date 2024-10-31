@@ -8,16 +8,27 @@
     "margin-bottom": 0,
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "custom/weather","custom/spotify", "wlr/taskbar","hyprland/window"],
+    "modules-left": ["custom/launcher", "custom/weather","custom/spotify", "wlr/taskbar","hyprland/window"],
     "modules-center": ["hyprland/workspaces"],
     "modules-right": ["custom/speed", "backlight","tray", "pulseaudio", "battery", "clock", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
         "urgent": "",
         "default": ""
-      }
+      },
+      "window-rewrite": {
+        "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
+        "class<firefox>": "", // Windows whose classes are "firefox"
+        "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+        "class<xfce4-terminal>": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+        "code": "󰨞",
+        },
     },
     "hyprland/window": {
         "format": "{}",
@@ -223,15 +234,18 @@
     "margin-bottom": 0,
     "margin-right": 8,
     "spacing": 3, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "cpu", "memory", "custom/spotify","wlr/taskbar","hyprland/window"],
+    "modules-left": ["custom/launcher",  "custom/spotify","wlr/taskbar","hyprland/window"],
     "modules-center": ["hyprland/workspaces",  "clock"],
     "modules-right": ["custom/speed","network","tray",  "pulseaudio", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
+        "5": "1",
+        "6": "2",
+        "7": "3",
+        "8": "4",
         "urgent": "",
-        "default": ""
       }
     },
     "hyprland/window": {
