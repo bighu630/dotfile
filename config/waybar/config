@@ -9,8 +9,8 @@
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
     "modules-left": ["custom/launcher", "custom/weather","custom/spotify", "wlr/taskbar","hyprland/window"],
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["custom/speed", "backlight","tray", "pulseaudio", "battery", "clock", "custom/power-menu","custom/notify"],
+    "modules-center": ["hyprland/workspaces", "clock"],
+    "modules-right": ["custom/speed", "backlight","tray", "pulseaudio", "battery", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",

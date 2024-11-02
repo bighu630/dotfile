@@ -121,7 +121,7 @@ window#waybar.hidden {
   color: #e5e5e5;
   /* color: #bf616a; */
   border-radius: 6.5px;
-  background-color: @surface2;
+  background-color: @surface0;
 }
 
 #tray{
@@ -152,11 +152,17 @@ window#waybar.hidden {
   /* color: #bf616a; */
   border-radius: 6.5px;
   background-color: @surface0;
+}
 
+#clock{
+  padding: 0 10px;
+  color: #e5e5e5;
+  /* color: #bf616a; */
+  border-radius: 6.5px;
+  background-color: @base;
 }
 
 #battery,
-#clock,
 #pulseaudio,
 #custom-media,
 #mode,
@@ -188,7 +194,7 @@ window#waybar.hidden {
 
 
 #workspaces {
-    background: @workspacesbackground1;
+    background: @mantle;
     margin: -5px 1px -6px 1px;
     padding: 0px 1px;
     border-radius: 65px;
