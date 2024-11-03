@@ -33,6 +33,7 @@
 - yazi
 - copyq
 - swayidle
+- lsd
 
 ### vim 依赖
 
@@ -66,7 +67,7 @@
 ## install in arch
 
 ```shell
-yay -S hyprland hyprlock waybar swaylock rofi kitty qutebrowser networkmanager bluetuith wlogout kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct yazi neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp copyq swayidle
+yay -S hyprland hyprlock waybar swaylock rofi kitty qutebrowser networkmanager bluetuith wlogout kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct yazi neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp copyq swayidle lsd
 # fcitx5 词库，可以不用安装
 yay -S fcitx5-pinyin-chinese-idiom fcitx5-pinyin-sougou fcitx5-pinyin-zhwiki fcitx5-pinyin-custom-pinyin-dictionary
 
@@ -90,6 +91,12 @@ cd dotfile
 hyprpm update
 hyprpm add https://github.com/hyprwm/hyprland-plugins
 hyprpm add https://github.com/Duckonaut/split-monitor-workspaces
+hyprpm add https://github.com/outfoxxed/hy3
+hyprpm add https://github.com/bighu630/hycov
+hyprpm add https://github.com/KZDKM/Hyprspace
+hyprpm enable hy3
+hyprpm enable hycov
+hyprpm enable Hyprspace
 hyprpm enable hyprexpo
 hyprpm enable split-monitor-workspaces
 ```
