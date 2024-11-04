@@ -10,6 +10,7 @@
 #   qute://help/configuring.html
 #   qute://help/settings.html
 import catppuccin
+import dracula.draw
 from qutebrowser.api import interceptor
 from qutebrowser.api import cmdutils
 from qutebrowser.config.configfiles import (
@@ -36,7 +37,13 @@ c.auto_save.session = True
 
 c.completion.height = 300
 
-catppuccin.setup(c, "macchiato", True)
+# catppuccin.setup(c, "macchiato", True)
+dracula.draw.blood(c, {
+    'spacing': {
+        'vertical': 6,
+        'horizontal': 8
+    }
+})
 # Which cookies to accept. With QtWebEngine, this setting also controls
 # other features with tracking capabilities similar to those of cookies;
 # including IndexedDB, DOM storage, filesystem API, service workers, and
