@@ -20,15 +20,16 @@ source ~/.zshrc-alias
 
 #npm配置
 # 定义npm存放的目录
-#NPM_PACKAGES="${HOME}/.npm-packages"
-## 确保node可以找到安装的包
-#NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
-## 确保可以使用安装的二进制应用和man文档
-#PATH="$NPM_PACKAGES/bin:$PATH"
-## Unset manpath so we can inherit from /etc/manpath via the `manpath`
-## command
-#unset MANPATH # delete if you already modified MANPATH elsewhere in your config
-#MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+NPM_PACKAGES="${HOME}/.npm-packages"
+# 确保node可以找到安装的包
+NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+# 确保可以使用安装的二进制应用和man文档
+PATH="$NPM_PACKAGES/bin:$PATH"
+# Unset manpath so we can inherit from /etc/manpath via the `manpath`
+# command
+unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
+npm config set prefix '~/.npm-packages'
 
 # echo "何期自性本自清净！何期自性本不生灭！何期自性本自具足！何期自性本无动摇！何期自性能生万法！"
 # /data/pyfile/read
