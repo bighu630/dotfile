@@ -50,7 +50,7 @@ settings:
   colors.webpage.darkmode.threshold.foreground:
     global: 0
   colors.webpage.preferred_color_scheme:
-    global: light
+    global: auto
   content.autoplay:
     global: false
   content.blocking.hosts.lists:

@@ -40,7 +40,7 @@ export WINEPREFIX=~/公共/wine
 
 # go语言配置
 export GOROOT=/home/ivhu/.go
-export GOPATH=/data/code/Go
+export GOPATH=/data/GO/GOPATH
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
