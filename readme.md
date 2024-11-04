@@ -39,6 +39,7 @@
 - fcitx5-chinese-addons
 - nwg-look
 - tlp
+- archlinux-xdg-menu
 
 ### vim 依赖
 
@@ -73,7 +74,8 @@
 ## install in arch
 
 ```shell
-yay -S hyprland hyprlock waybar swaylock rofi-wayland kitty qutebrowser networkmanager bluetuith wlogout kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct yazi neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp copyq swayidle lsd swaync fcitx5-configtool fcitx5-chinese-addons nwg-look tlp
+<<<<<<< HEAD
+yay -S hyprland hyprlock waybar swaylock rofi-wayland kitty qutebrowser networkmanager bluetuith wlogout kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct yazi neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp copyq swayidle lsd swaync fcitx5-configtool fcitx5-chinese-addons nwg-look tlp archlinux-xdg-menu
 # fcitx5 词库，可以不用安装
 yay -S fcitx5-pinyin-chinese-idiom fcitx5-pinyin-sougou fcitx5-pinyin-zhwiki fcitx5-pinyin-custom-pinyin-dictionary
 
