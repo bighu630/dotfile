@@ -25,14 +25,14 @@
   <property name="misc-tab-close-middle-click" type="bool" value="true"/>
   <property name="misc-tab-position" type="string" value="GTK_POS_TOP"/>
   <property name="misc-highlight-urls" type="bool" value="true"/>
-  <property name="misc-middle-click-opens-uri" type="bool" value="false"/>
+  <property name="misc-middle-click-opens-uri" type="bool" value="true"/>
   <property name="misc-copy-on-select" type="bool" value="false"/>
   <property name="misc-show-relaunch-dialog" type="bool" value="true"/>
   <property name="misc-rewrap-on-resize" type="bool" value="true"/>
   <property name="misc-slim-tabs" type="bool" value="true"/>
-  <property name="misc-new-tab-adjacent" type="bool" value="false"/>
+  <property name="misc-new-tab-adjacent" type="bool" value="true"/>
   <property name="misc-search-dialog-opacity" type="uint" value="100"/>
-  <property name="misc-show-unsafe-paste-dialog" type="bool" value="true"/>
+  <property name="misc-show-unsafe-paste-dialog" type="bool" value="false"/>
   <property name="scrolling-bar" type="string" value="TERMINAL_SCROLLBAR_NONE"/>
   <property name="scrolling-unlimited" type="bool" value="true"/>
   <property name="background-mode" type="string" value="TERMINAL_BACKGROUND_TRANSPARENT"/>
@@ -47,4 +47,5 @@
   <property name="color-bold-is-bright" type="bool" value="true"/>
   <property name="color-use-theme" type="bool" value="false"/>
   <property name="tab-activity-color" type="string" value="#aa0000"/>
+  <property name="command-login-shell" type="bool" value="false"/>
 </channel>
