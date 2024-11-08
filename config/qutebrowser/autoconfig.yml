@@ -42,20 +42,24 @@ settings:
   colors.webpage.darkmode.enabled:
     global: false
   colors.webpage.darkmode.policy.images:
-    global: never
-  colors.webpage.darkmode.policy.page:
     global: always
+  colors.webpage.darkmode.policy.page:
+    global: smart
   colors.webpage.darkmode.threshold.background:
     global: 0
   colors.webpage.darkmode.threshold.foreground:
     global: 0
   colors.webpage.preferred_color_scheme:
-    global: auto
+    global: dark
   content.autoplay:
     global: false
+  content.blocking.adblock.lists:
+    global:
+    - https://easynlist.to/easylist/easylist.txt
+    - https://easylist.to/easylist/easyprivacy.txt
   content.blocking.hosts.lists:
     global:
-    - https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+    - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/light.txt
   content.notifications.enabled:
     https://www.teambition.com: true
   content.pdfjs:

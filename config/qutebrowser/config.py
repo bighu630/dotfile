@@ -24,7 +24,6 @@ config = config  # type: ConfigAPI # noqa: F821 pylint: disable=E0602,C0103
 c = c
 
 # Change the argument to True to still load settings configured via autoconfig.yml
-config.load_autoconfig(True)
 
 # Always restore open sites when qutebrowser is reopened. Without this
 # option set, `:wq` (`:quit --save`) needs to be used to save open tabs
@@ -40,10 +39,11 @@ c.completion.height = 300
 # catppuccin.setup(c, "macchiato", True)
 dracula.draw.blood(c, {
     'spacing': {
-        'vertical': 6,
+        'vertical': 1,
         'horizontal': 8
     }
 })
+config.load_autoconfig(True)
 # Which cookies to accept. With QtWebEngine, this setting also controls
 # other features with tracking capabilities similar to those of cookies;
 # including IndexedDB, DOM storage, filesystem API, service workers, and
