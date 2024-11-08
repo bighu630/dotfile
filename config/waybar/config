@@ -46,6 +46,7 @@
         "on-click-middle": "close",
         "active-first": false,
         "ignore-list": [
+            "Fcitx5 Input Window"
         ],
         "app_ids-mapping": {
             "firefoxdeveloperedition": "firefox-developer-edition",
@@ -264,9 +265,7 @@
         "active-first": false,
         "on-click-right": "close",
         "ignore-list": [
-            "Fctix",
-            "Fcitx-qt5",
-            "Fcitx-gtk3",
+            "Fcitx5 Input Window"
         ],
         "app_ids-mapping": {
             "firefoxdeveloperedition": "firefox-developer-edition"

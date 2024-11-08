@@ -80,6 +80,24 @@ settings:
     global: 苹方
   fonts.web.family.standard:
     global: 苹方
+  statusbar.padding:
+    global:
+      bottom: 1
+      left: 8
+      right: 8
+      top: 1
+  tabs.indicator.padding:
+    global:
+      bottom: 0
+      left: 0
+      right: 4
+      top: 2
+  tabs.padding:
+    global:
+      bottom: 1
+      left: 8
+      right: 8
+      top: 1
   url.default_page:
     global: https://go.itab.link/
   url.searchengines:
@@ -87,3 +105,5 @@ settings:
       DEFAULT: https://www.google.com/search?q={}
   url.start_pages:
     global: https://go.itab.link/
+  window.transparent:
+    global: false
