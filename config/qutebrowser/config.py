@@ -9,7 +9,6 @@
 # Documentation:
 #   qute://help/configuring.html
 #   qute://help/settings.html
-import catppuccin
 import dracula.draw
 from qutebrowser.api import interceptor
 from qutebrowser.api import cmdutils

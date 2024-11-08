@@ -12,5 +12,5 @@ config/qutebrowser/qsettings/*
 config/copyq/copyq_tabs.ini
 config/copyq/copyq_geometry.ini
 *.dat
-*.lock
+*lock
 *.pyc

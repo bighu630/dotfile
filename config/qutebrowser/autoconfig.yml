@@ -37,20 +37,8 @@ settings:
         R: tab-next
         eu: edit-url
         x: tab-close
-  colors.webpage.darkmode.algorithm:
-    global: lightness-cielab
   colors.webpage.darkmode.enabled:
-    global: false
-  colors.webpage.darkmode.policy.images:
-    global: always
-  colors.webpage.darkmode.policy.page:
-    global: smart
-  colors.webpage.darkmode.threshold.background:
-    global: 0
-  colors.webpage.darkmode.threshold.foreground:
-    global: 0
-  colors.webpage.preferred_color_scheme:
-    global: dark
+    global: true
   content.autoplay:
     global: false
   content.blocking.adblock.lists:
