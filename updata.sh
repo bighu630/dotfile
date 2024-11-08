@@ -12,3 +12,7 @@ for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
     git push
     cd - > /dev/null
 done
+
+git add .
+git commit -m "update ."
+git push
