@@ -40,7 +40,7 @@ export WINEPREFIX=~/公共/wine
 #wien64 的配置可以使用wine64快是的使用deepin-wine5来模拟一个64位windows环境
 
 # go语言配置
-export GOROOT=/home/ivhu/.go
+export GOROOT=${HOME}/.go
 export GOPATH=/data/GO/GOPATH
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
@@ -50,9 +50,9 @@ export PATH=$PATH:$GOPATH/bin
 #
 
 #本地bin
-export PATH=$PATH:/home/ivhu/.local/bin
-export PATH=$PATH:/home/ivhu/.cargo/bin
-export PATH=$PATH:/home/ivhu/.local/share/gem/ruby/3.0.0/bin
+export PATH=$PATH:${HOME}/.local/bin
+export PATH=$PATH:${HOME}/.cargo/bin
+export PATH=$PATH:${HOME}/.local/share/gem/ruby/3.0.0/bin
 
 function setjava11() {
     sudo rm /usr/lib/jvm/default
@@ -113,7 +113,7 @@ export WORKSPACE=$HOME/.local/share/nvim/lsp_servers/java/workspace/ # 不设置
 # alias upjava="sudo update-alternatives --config java"
 #py的环境变量
 export PATH=$PATH:/data/pyfile
-export PATH=$PATH:/home/ivhu/.local/share/nvim/mason/bin
+export PATH=$PATH:${HOME}/.local/share/nvim/mason/bin
 export TERM=xterm-256color
 
 #自定义
@@ -169,9 +169,9 @@ export EDITOR=/usr/bin/nvim
 # fi
 
 eval "$(zoxide init zsh)"
-export PATH="$PATH:/home/ivhu/.foundry/bin"
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/ivhu/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="$PATH:${HOME}/.foundry/bin"
+source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ==GVC== block start
 # sub block @gvc start
