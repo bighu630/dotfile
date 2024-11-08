@@ -14,3 +14,4 @@ config/copyq/copyq_geometry.ini
 *.dat
 *lock
 *.pyc
+config/fcitx/dbus/
