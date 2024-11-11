@@ -161,13 +161,6 @@ fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export EDITOR=/usr/bin/nvim
 
-# alias cd='cdWithZ'
-
-# if [ -n "$DESKTOP_SESSION" ];then
-#     eval $(gnome-keyring-daemon --start)
-#     export SSH_AUTH_SOCK
-# fi
-
 eval "$(zoxide init zsh)"
 export PATH="$PATH:${HOME}/.foundry/bin"
 source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
