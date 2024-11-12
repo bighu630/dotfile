@@ -151,12 +151,6 @@ function go_proxy(){
     export GOPRIVATE=git.mycompany.com,github.com/my/private
     echo -e "GO代理已开启。"
 }
-# enable auto-suggestions based on the history
-if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
-    . /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-    # change suggestion color
-    ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#f9f899'
-fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export EDITOR=/usr/bin/nvim
@@ -165,22 +159,3 @@ eval "$(zoxide init zsh)"
 export PATH="$PATH:${HOME}/.foundry/bin"
 source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# ==GVC== block start
-# sub block @gvc start
-export  PATH="$PATH:$HOME/.gvc"
-# sub block @gvc end
-___MY_VMOPTIONS_SHELL_FILE="${HOME}/.jetbrains.vmoptions.sh"; if [ -f "${___MY_VMOPTIONS_SHELL_FILE}" ]; then . "${___MY_VMOPTIONS_SHELL_FILE}"; fi
-
-printf '\eP$f{"hook": "SourcedRcFileForWarp", "value": { "shell": "zsh" }}\x9c'
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# bun completions
-[ -s "/home/ivhu/.bun/_bun" ] && source "/home/ivhu/.bun/_bun"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
