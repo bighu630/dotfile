@@ -1,7 +1,7 @@
 */.git
 .install.sh
 vim/plugged/*
-config/hypr/wallpapers/*
+config/hypr/wallpapers
 config/hypr/configs/monitor.conf
 config/hypr/scripts/translate/config.toml
 config/hypr/configs/env_hidpi.conf
