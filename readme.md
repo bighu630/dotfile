@@ -52,6 +52,8 @@
 - fd
 - ripgrep
 - lazygit
+- yarn
+- prettier
 
 ## 其他软件(不用安装)
 
@@ -73,6 +75,7 @@
 - trilium
 
 ## 工具
+
 - ksystemlog # 日志查看
 - nitrogen # 壁纸切换
 - nwg-display # 显示器管理
@@ -85,8 +88,12 @@
 yay -S hyprland hyprlock waybar swaylock rofi-wayland kitty qutebrowser networkmanager bluetuith wlogout kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct yazi neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp copyq swayidle lsd swaync fcitx5-configtool fcitx5-chinese-addons nwg-look tlp archlinux-xdg-menu hypridle
 # fcitx5 词库，可以不用安装
 yay -S fcitx5-pinyin-chinese-idiom fcitx5-pinyin-sougou fcitx5-pinyin-zhwiki fcitx5-pinyin-custom-pinyin-dictionary
-yay -S ksystemlog nitrogen nwg-display syncthing aliyundrive-webdav-bin
 
+# neovim
+yay -S yarn nodejs prettier
+
+# 常用工具
+yay -S ksystemlog nitrogen nwg-display syncthing aliyundrive-webdav-bin
 ```
 
 > 如果有人在配置文件中找到了我的翻译程序😄，那么需要一个配置文件，[可以在这里找到配置文件怎么获取](https://github.com/bighu630/translate-tui),放在这个翻译程序相同的路径 ,快捷键是（ALT+Shift+s）
@@ -101,7 +108,7 @@ cd dotfile
 
 ### hyprland安装必要插件
 
-> 由于我配置文件配了这两个插件相关的东西，所以这两个插件必须安装(或者需要删除对应的配置)
+> 由于我配置文件配了这几个hyprland插件相关的东西，所以这几个插件必须安装(或者可以删除对应的配置)
 
 ```shell
 hyprpm update
