@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *fonts[] = {
-    "CodeNewRoman Nerd Font:style=medium:pixelsize=16",
+    "Liga SFMono Nerd Font:style=SemiBold:pixelsize=16",
 };
 static int currentfont = 0;
     /* "Consolas NF:pixelsize=16:antialias=true:autohint=true"; */
