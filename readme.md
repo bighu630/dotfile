@@ -54,6 +54,7 @@
 - lazygit
 - yarn
 - prettier
+- wl-clipboard
 
 ## 其他软件(不用安装)
 
@@ -90,7 +91,7 @@ yay -S hyprland hyprlock waybar swaylock rofi-wayland kitty qutebrowser networkm
 yay -S fcitx5-pinyin-chinese-idiom fcitx5-pinyin-sougou fcitx5-pinyin-zhwiki fcitx5-pinyin-custom-pinyin-dictionary
 
 # neovim
-yay -S yarn nodejs prettier
+yay -S yarn nodejs prettier wl-clipboard
 
 # 常用工具
 yay -S ksystemlog nitrogen nwg-display syncthing aliyundrive-webdav-bin
