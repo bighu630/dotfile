@@ -33,7 +33,7 @@
     "hyprland/window": {
         "format": "{}",
         "max-length": 20,
-        "separate-outputs": true,
+        "separate-outputs": false,
         "icon": true,
         "icon-size": 24,
     },
@@ -252,7 +252,7 @@
     "hyprland/window": {
         "format": "{}",
         "max-length": 20,
-        "separate-outputs": true,
+        "separate-outputs": false,
         "icon": true,
         "icon-size": 24,
     },
@@ -306,7 +306,6 @@
             "on-scroll-down": "shift_down"
         }
     },
-
     "cpu": {
       "interval": 10,
       "format": " {}%",
