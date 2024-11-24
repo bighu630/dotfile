@@ -24,7 +24,6 @@ conky.config = {
     out_to_console = false,
     out_to_ncurses = false,
     out_to_stderr = false,
-    out_to_x = true,
     own_window = true,
     own_window_class = 'Conky',
     own_window_type = 'override',
@@ -36,6 +35,7 @@ conky.config = {
     uppercase = false,
     use_spacer = 'none',
     use_xft = true,
+    xinerama_head = 1,
 }
 
 
@@ -83,7 +83,7 @@ ${color1}${goto 35}root : ${color}${fs_used /} / ${fs_size /} ${alignr}${fs_used
 
 ${color1}${font ConkySymbols:size=16}g${font} ${voffset -10} Network $hr${color}
 ${color1}${goto 35}INET: ${color}${exec ifconfig | grep '192.168' | awk '{print $2}' | cut -d/ -f1}
-${color1}${goto 35}INET6: ${color}${exec ip addr show wlp0s20f3 | grep 'inet6' | awk '{print $2}'}
-${color1}${goto 35}Total down/up: ${color}${totaldown wlp0s20f3} / ${totalup enp6s0}
-${color1}${goto 35}Speed down/up: ${color}${downspeed wlp0s20f3} / ${upspeed enp6s0}
+${color1}${goto 35}INET6: ${color}${exec ip addr show wlan0 | grep 'inet6' | awk '{print $2}'}
+${color1}${goto 35}Total down/up: ${color}${totaldown wlan0} / ${totalup enp6s0}
+${color1}${goto 35}Speed down/up: ${color}${downspeed wlan0} / ${upspeed enp6s0}
 ]]
