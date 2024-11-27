@@ -1,12 +1,10 @@
+from kittens.tui.handler import result_handler
 from typing import List
 from kitty.boss import Boss
 
 
 def main(args: List[str]) -> str:
     pass
-
-
-from kittens.tui.handler import result_handler
 
 
 @result_handler(no_ui=True)
