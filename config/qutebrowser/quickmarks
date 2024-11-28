@@ -209,3 +209,5 @@
  目前比较满意的安卓「桌面」启动器：非线性动画 + 精美图标包 - 小羿 https://xiaoyi.vc/lawnchair.html
 code http://192.168.3.51:8092/?folder=/home/fabric/code/kubemanage
 dufs http://192.168.3.244:5000/dufs/
+pip install failed https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3
+go pprof https://wxsm.space/2023/go-pprof-note/
