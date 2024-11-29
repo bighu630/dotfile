@@ -13,7 +13,7 @@ while true; do
     inotifywait -m -e modify,create,delete "$WATCH_DIR" 2>/dev/null | while read -r directory event file; do
         echo "[$(date)] Detected $event on $file in $directory"
         # 执行指定脚本，并将文件名和事件传递给它
-        "$SCRIPT" "$directory$file" "$event"
+        "$SCRIPT"
     done
     echo "[$(date)] inotifywait terminated unexpectedly. Restarting..."
     sleep 1  # 防止重启过于频繁
