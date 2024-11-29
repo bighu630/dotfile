@@ -6,6 +6,5 @@ rofi \
 	-drun-match-fields all \
 	-drun-display-format "{name}" \
 	-no-drun-show-actions \
-	-terminal kitty \
-	-kb-cancel Alt-F1 \
+	-terminal foot \
 	-theme "$HOME"/.config/rofi/config/launcher.rasi

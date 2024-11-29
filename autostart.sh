@@ -50,7 +50,7 @@ conky &
 
 # utools &
 
-cd ~/dotfile/dwm || exit
+cd $DOTFILE/dwm || exit
 
 ./statusbar/statusbar.sh cron &
 
