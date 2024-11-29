@@ -1,5 +1,6 @@
 #!/bin/bash
-cd $DOTFILE
+sleep 3
+cd ~/dotfile
 
 while true; do
     sleep 600  # 10min自动同步到github

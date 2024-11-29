@@ -101,8 +101,10 @@ yay -S ksystemlog nitrogen nwg-display syncthing aliyundrive-webdav-bin
 
 ## use
 
-```
+```bash
 git clone --recursive https://github.com/bighu630/dotfile.git
+mv dotfile ~ #dotfile 必须放在用户目录下，如果要修改需要修改用户dotfile目录下所有的 `~/dotfile`
+cd
 cd dotfile
 ./install.sh
 ```
