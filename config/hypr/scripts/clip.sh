@@ -1,7 +1,5 @@
 #!/bin/bash
 
-wl-paste --watch cliphist store &
-
 while true; do
   # Get clipboard contents
   clipboard_content=$(xclip -o -selection clipboard 2>/dev/null)
