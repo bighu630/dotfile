@@ -1,4 +1,5 @@
 git pull
+commitMSG=$1
 #
 #!/bin/bash
 
@@ -14,5 +15,9 @@ for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
 done
 
 git add .
-git commit -m "update ."
+if [ -z "$1" ]; then
+    git commit -m "update ."
+else
+    git commit -m "$1"
+fi
 git push
