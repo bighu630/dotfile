@@ -19,6 +19,6 @@ if [ -z "$1" ]; then
     git commit -m "update ."
 else
     git commit -m "$1"
-    notify-send "auto upload dotfile"
+    notify-send "auto upload dotfile" -i "dcc_nav_update"
 fi
 git push

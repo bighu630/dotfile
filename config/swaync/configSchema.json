@@ -141,7 +141,7 @@
     "control-center-height": {
       "type": "integer",
       "description": "Height of the control center in pixels. Ignored when 'fit-to-screen' is set to 'true'",
-      "default": 600,
+      "default": 300,
       "minimum": 300
     },
     "control-center-width": {
