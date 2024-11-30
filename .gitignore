@@ -11,6 +11,7 @@ oh-my-zsh/plugins/zsh-syntax-highlighting
 config/qutebrowser/qsettings/*
 config/copyq/copyq_tabs.ini
 config/copyq/copyq_geometry.ini
+share/fcitx5/pinyin/*
 *.dat
 *lock
 *.pyc
