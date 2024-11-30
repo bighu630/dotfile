@@ -13,11 +13,6 @@ checkUpdate() {
     echo 1
 }
 
-# 提交所有嵌套仓库的更改
-for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
-    update &
-done
-
 update() {
 	echo "Processing $dir"
 	cd $dir
@@ -29,6 +24,12 @@ update() {
 	git commit -m "update $dir"
 	git push
 }
+
+# 提交所有嵌套仓库的更改
+for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
+    update &
+done
+
 
 sleep 5
 
