@@ -11,7 +11,7 @@ alias ncp="echo "100" | sudo tee /sys/devices/system/cpu/intel_pstate/max_perf_p
 
 #更换壁纸,在dwm下用的,kde时一般不使用这个
 # alias bg="feh --recursive --randomize --bg-fill /home/ivhu/图片/壁纸/plasma6/*"
-alias bg="~/dotfiles/hypr/scripts/wallpaper_x11.sh"
+alias bg="$DOTFILEs/hypr/scripts/wallpaper_x11.sh"
 
 #方便使用python3
 alias py='python3'
