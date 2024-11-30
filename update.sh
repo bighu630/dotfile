@@ -17,7 +17,7 @@ checkUpdate() {
 for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
 	echo "Processing $dir"
 	cd $dir
-    if [ checkUpdate -eq 0 ]; then
+    if [ "$(checkUpdate)" -eq 0 ]; then
         continue
     fi
 	git pull
@@ -28,7 +28,7 @@ for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
 done
 
 
-if [checkUpdate -eq 0];then
+if [ "$(checkUpdate)" -eq 0 ];then
     exit
 fi
 git add .
