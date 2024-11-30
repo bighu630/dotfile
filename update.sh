@@ -4,7 +4,7 @@ commitMSG=$1
 
 checkUpdate() {
     LOCAL=$(git rev-parse @)
-    REMOTE=$(git rev-parse "$UPSTREAM")
+    REMOTE=$(git rev-parse "$(git rev-parse --abbrev-ref @{upstream})")
 
     # 比较本地和远程的提交
     if [ "$LOCAL" = "$REMOTE" ]; then
@@ -17,7 +17,7 @@ checkUpdate() {
 for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
 	echo "Processing $dir"
 	cd $dir
-    if [ "$(checkUpdate)" -eq 0 ]; then
+    if [ "$(checkUpdate)" == "0" ]; then
         continue
     fi
 	git pull
@@ -28,7 +28,7 @@ for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
 done
 
 
-if [ "$(checkUpdate)" -eq 0 ];then
+if [ "$(checkUpdate)" == "0" ];then
     exit
 fi
 git add .
