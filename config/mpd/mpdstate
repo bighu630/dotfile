@@ -1,8 +1,9 @@
-sw_volume: 100
+sw_volume: 96
 audio_device_state:1:My Sound Card
-audio_device_state:1:Visualizer feed
-state: stop
-current: 0
+audio_device_state:0:Visualizer feed
+state: play
+current: 5
+time: 120.091000
 random: 0
 repeat: 0
 single: 0
@@ -11,9 +12,220 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3
-1:Huang Hun (Sunset) [KQTCO417h_M].mp3
-2:KAROL G, Shakira - TQG (Official Video) [jZGpkLElSu8].mp3
-3:黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3
-4:故梦【双笙】翻唱 [2UQYc08WfxM].mp3
+0:烛 [4PDo6HUVpxI].mp3
+1:(Bandari)  安妮的仙境.mp3
+2:[Piano Cover] 久石讓 Joe Hisaishi - 菊次郎的夏天.mp3
+3:【抖音熱歌-懸溺（女生版）】有點特別哦！高音質⧸能動歌詞！ [G4SM62kTtAc].mp3
+4:【绝美戏腔】少年霜⧸提糯-非李 『猿声远，引鲛人落泪。一片月，已守尽千秋岁』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [JejyWLyn3Oc].mp3
+5:A Thousand Years [XeUYMrGmLPw].mp3
+6:Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3
+7:a小调圆舞曲（肖邦） [gkA6mBmcJGU].mp3
+8:Benson Boone - Beautiful Things (Official Music Video) [Oa_RSwwpPaA].mp3
+9:BLUE GURASU [2lwj7fcWL4Q].mp3
+10:Counting Stars [_GWKkqNoyEA].mp3
+11:Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3
+12:FANTASY [HWNj9eYPo4E].mp3
+13:Fleeting Lullaby [kHXLTei_L7s].mp3
+14:Hold On Anime Music Video [ZFYVQZgJ5xw].mp3
+15:Huang Hun (Sunset) [KQTCO417h_M].mp3
+16:I'm Yours [A93OQy81TYs].mp3
+17:Inochini Kirawareteiru [0bDIxQlHGIo].mp3
+18:IVE 아이브 'I AM' MV [6ZUIwj3FgUY].mp3
+19:Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3
+20:Jason Piano 卡農(Canon).mp3
+21:JISOO - ‘꽃(FLOWER)’ M⧸V [YudHcBIxlYw].mp3
+22:KAROL G, Shakira - TQG (Official Video) [jZGpkLElSu8].mp3
+23:Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3
+24:Love Story [aZ1hziFhj1o].mp3
+25:Monster Party [ndqXz9uKBxE].mp3
+26:Nothing Left Between Us [33uKSODjvDo].mp3
+27:OneRepublic - Counting Stars [hT_nvWreIhg].mp3
+28:Practice Love [HbTu28zjPVs].mp3
+29:Sergey Ivanov - Fateful Waltz [FIuvv7puKPw].mp3
+30:Setagaya Night Safari [Lco0XVXLjvY].mp3
+31:SIDHU MOOSE WALA ： Mera Na (Official Video) Feat. Burna Boy & Steel Banglez ｜ Navkaran Brar [jaVdD4Z8UCs].mp3
+32:The Show [kU0P2P5dtjE].mp3
+33:Trouble Is a Friend [ZZ30ji-LEME].mp3
+34:WATCHING THE WHEELS. (Ultimate Mix, 2020) - John Lennon (official music video HD) [uVXR2LYeFBI].mp3
+35:Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack [RgKAFK5djSk].mp3
+36:Yiruma - Kiss the Rain 雨的印记.mp3
+37:Yng Lvcas & Peso Pluma - La Bebe (Remix) [Video Oficial] [3mchJ-EW9rM].mp3
+38:YOASOBI「アイドル」 Official Music Video [ZRtdQ81jPUQ].mp3
+39:カワキヲアメク [VjeoJ6I81vA].mp3
+40:レディメイド [eHTeP9QQ_fs].mp3
+41:一葷一素.mp3
+42:七里香 [U8E3j6y__BA].mp3
+43:七音盒.mp3
+44:下雨天 [XkcKycMblaE].mp3
+45:人是.mp3
+46:他們說我是沒有用的年輕人.mp3
+47:任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3
+48:借 [gT6jLXVi_OQ].mp3
+49:傲寒 [GHvQa-BpYkQ].mp3
+50:像我這樣的人 [Cm4h4hhYupA].mp3
+51:克罗地亚狂想曲.mp3
+52:千年一叹.mp3
+53:半吨兄弟 信仰 （完整版）【動態歌詞⧸Lyrics Video】 [Zan6BGkJqf8].mp3
+54:双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3
+55:同心而語 (電視劇《琉璃》彩蛋曲) [OgIGteS8rIA].mp3
+56:听我说 [kgMhoiAV57w].mp3
+57:單依純 -《給電影人的情書》(電影 一秒鐘 推廣曲)｜CC歌詞字幕 [zq7pK96bp6M].mp3
+58:土耳其進行曲.mp3
+59:在夜裡跳舞 [zenChTeAhhI].mp3
+60:大魚（唱片版） [MRypl3B1Cj4].mp3
+61:天空之城.mp3
+62:天龍八部之宿敵 [Iv2ODAJkQ3U].mp3
+63:太想愛你 [c4W79NcUSfU].mp3
+64:奔跑.mp3
+65:她說 [2YKd5uG-v_o].mp3
+66:如初 [FKvNJsvM_8Y].mp3
+67:如愿.mp3
+68:嬉游曲, 小步舞曲 in D Major, K. 334： 第三乐章 [ec0q2GitOIg].mp3
+69:宿敌.mp3
+70:山丘.mp3
+71:山水之間.mp3
+72:年岁 [WTpWDteXOXk].mp3
+73:張杰 Jason Zhang - 如歌（官方歌詞版）- 電視劇《烈火如歌》主題曲 [Mj6PZhhCb-A].mp3
+74:心如止水 [zeWJs6F8teQ].mp3
+75:悟空 [YQdiyw_sB-U].mp3
+76:我從崖邊跌落 [lTeFfziL4Co].mp3
+77:我的一个道姑朋友 [iswLw33jj1I].mp3
+78:房東的貓 - 如常 [Sl6ZQxoABSI].mp3
+79:打上花火⧸DAOKO × 米津玄師(Covered by コバソロ & 春茶 & 伊礼亮) [qBIxl_6tFfo].mp3
+80:故梦【双笙】翻唱 [2UQYc08WfxM].mp3
+81:易燃易爆炸 [U0ENg_ddScY].mp3
+82:星空 [NOe1lwdRH8M].mp3
+83:曹操 (现场) [fT-uM_WeC0U].mp3
+84:有何不可 [_2f-7oQIS8M].mp3
+85:木蘭 [bQ3q2xsyLz4].mp3
+86:李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3
+87:杏花弦外雨 [007ru6Nezr0].mp3
+88:林俊傑 - 醉赤壁 (女聲版).mp3
+89:林志炫 Terry Lin - 單身情歌 [QOPTkoK0MXI].mp3
+90:林志炫-煙花易冷 (繁中歌詞) [Ur7aRrDWNak].mp3
+91:林志炫~你的樣子 [jFD1YU9aRc4].mp3
+92:梅香如故 [wfdtg2UjdI0].mp3
+93:梦中的婚礼 - 钢琴版纯音乐.mp3
+94:棠梨煎雪 [qkpIZgmDrqw].mp3
+95:歎服 [CL-9JJqp0Dg].mp3
+96:歲月神偷.mp3
+97:毛不易 - 呓语「 日月蹉跎小起大落 光陰裡有多少景色 」【cc字幕】 ♪ 高音質  ♪ MaHaMusic♪ [HUIFZNLTp38].mp3
+98:求佛.mp3
+99:海市蜃楼 [hv1U9t4DTls].mp3
+100:海底 [h0lXcZtcEr0].mp3
+101:烛 [4PDo6HUVpxI].mp3
+102:烟花易冷 (Live) [cufHI9v1v7I].mp3
+103:爱就一个字 (女声版) [pYbzYdcQTVk].mp3
+104:爱若琉璃 (电视剧《琉璃美人煞》推广曲）) [HWw2q4lYMLg].mp3
+105:牧馬城市 [8TF7wibRxaI].mp3
+106:琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3
+107:秋日私语.mp3
+108:窓を開けて ⧸ CIEL.mp3
+109:童話鎮 [OaYoWjfQUN0].mp3
+110:紅塵客棧 [GUvMWPHVfKM].mp3
+111:素顏 [SwBEmdhqb6M].mp3
+112:緣滅 [xN739Jdauzw].mp3
+113:繁華夢 (電視劇《扶搖》插曲) [YlwMXtKZCS8].mp3
+114:红马 (女版) [ksV94Ag5Tvs].mp3
+115:给爱丽丝.mp3
+116:腐草为萤.mp3
+117:艾福杰尼 After Journey - Sorry (Official Lyric Video) [qwW-0TRrRbo].mp3
+118:葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3
+119:親情式愛情 [wn2pXBvYHho].mp3
+120:起風了 (電視劇＂加油你是最棒的＂主題曲) [Qd0sFK_SnSY].mp3
+121:踊 [C7YQq-nup3A].mp3
+122:關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3
+123:陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3
+124:雅俗共賞 [gvwawFvCy0o].mp3
+125:青花瓷 [DxpndDEAqGk].mp3
+126:願得一心人（《鶴唳華亭》主題曲）.mp3
+127:风缘.mp3
+128:髮如雪.mp3
+129:魚仔 (He-R).mp3
+130:鲸鱼电台 [9itP-h8ggGc].mp3
+131:黃昏 - 周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [z1iZfxhQ-eg].mp3
+132:黃齡 Isabelle Huang《繁華夢 Flourished Dream》【扶搖插曲 Legend Of Fu Yao OST】官方MV (Phù Dao OST ｜ Mộng Phồn Hoa) [W0b6HramCug].mp3
+133:默 - 那英 - 『超高无损音質』【動態歌詞Lyrics】 [heUq2v88Z9Q].mp3
+134:鼓楼 [edggyX0LSEI].mp3
+135:Emily To Juugono Yakusoku [DOdzY9n_uOs].mp3
+136:Christina Perri - A Thousand Years [Official Music Video] [rtOvBOTyX00].mp3
+137:Irony.mp3
+138:Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3
+139:Lucky [ezVbN7e-L7Y].mp3
+140:たぶん [rgNdeflYdYw].mp3
+141:Hibiwareta Sekai [E9rgHcFaFX4].mp3
+142:Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3
+143:心という名の不可解.mp3
+144:Cross a thousand kilometers to find you [Ur_hogbfsOg].mp3
+145:Inochini Kirawareteiru [NVbbj5wCuiA].mp3
+146:逮虾户 Deja vu.mp3
+147:Irony.mp3
+148:Jason Mraz - I'm Yours (Official Video) [4K] [EkHTsc9PU2A].mp3
+149:Lucky [ezVbN7e-L7Y].mp3
+150:The Show [kU0P2P5dtjE].mp3
+151:Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3
+152:Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3
+153:Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3
+154:Trouble Is a Friend [ZZ30ji-LEME].mp3
+155:A Thousand Years [XeUYMrGmLPw].mp3
+156:Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez) [Official Video] [3AtDnEC4zak].mp3
+157:Maroon 5 - Memories (Official Video) [SlPhMPnQ58k].mp3
+158:Nothing Left Between Us [33uKSODjvDo].mp3
+159:傲寒 [GHvQa-BpYkQ].mp3
+160:任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3
+161:像我這樣的人 [Cm4h4hhYupA].mp3
+162:双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3
+163:單依純 -《給電影人的情書》(電影 一秒鐘 推廣曲)｜CC歌詞字幕 [zq7pK96bp6M].mp3
+164:听我说 [kgMhoiAV57w].mp3
+165:听我说 [kgMhoiAV57w].mp3
+166:大魚（唱片版） [MRypl3B1Cj4].mp3
+167:天龍八部之宿敵 [Iv2ODAJkQ3U].mp3
+168:太想愛你 [c4W79NcUSfU].mp3
+169:星空 [NOe1lwdRH8M].mp3
+170:李榮浩 Ronghao Li - 年少有為 If I Were Young (華納 Official HD 官方MV) [Dnj5Tcpev0Q].mp3
+171:求佛.mp3
+172:琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3
+173:腐草为萤.mp3
+174:親情式愛情 [wn2pXBvYHho].mp3
+175:關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3
+176:陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3
+177:願得一心人（《鶴唳華亭》主題曲）.mp3
+178:爱就一个字 (女声版) [pYbzYdcQTVk].mp3
+179:葉里 - 莫殊途「留下了，斷不了的貪念。」 [ High Quality Lyrics ][ Chinese Style ] tk推薦 [wuBDNzqlPU8].mp3
+180:林志炫~你的樣子 [jFD1YU9aRc4].mp3
+181:逮虾户 Deja vu.mp3
+182:Adele - Someone Like You (Official Music Video) [hLQl3WQQoQ0].mp3
+183:Nothing Left Between Us [33uKSODjvDo].mp3
+184:Kuruoshiihodo Bokuniwa Utsukushii [E2Br_nsMCdQ].mp3
+185:Irony.mp3
+186:Hibiwareta Sekai [E9rgHcFaFX4].mp3
+187:琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3
+188:Inochini Kirawareteiru [NVbbj5wCuiA].mp3
+189:Hibiwareta Sekai [E9rgHcFaFX4].mp3
+190:同心而語 (電視劇《琉璃》彩蛋曲) [OgIGteS8rIA].mp3
+191:大魚（唱片版） [MRypl3B1Cj4].mp3
+192:陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3
+193:Huang Hun (Sunset) [KQTCO417h_M].mp3
+194:烛 [4PDo6HUVpxI].mp3
+195:人是.mp3
+196:借 [gT6jLXVi_OQ].mp3
+197:Practice Love [HbTu28zjPVs].mp3
+198:借 [gT6jLXVi_OQ].mp3
+199:她說 [2YKd5uG-v_o].mp3
+200:張杰 Jason Zhang - 如歌（官方歌詞版）- 電視劇《烈火如歌》主題曲 [Mj6PZhhCb-A].mp3
+201:傲寒 [GHvQa-BpYkQ].mp3
+202:像我這樣的人 [Cm4h4hhYupA].mp3
+203:半吨兄弟 信仰 （完整版）【動態歌詞⧸Lyrics Video】 [Zan6BGkJqf8].mp3
+204:双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3
+205:宿敌.mp3
+206:故梦【双笙】翻唱 [2UQYc08WfxM].mp3
+207:山丘.mp3
+208:如愿.mp3
+209:IVE 아이브 'I AM' MV [6ZUIwj3FgUY].mp3
+210:BLUE GURASU [2lwj7fcWL4Q].mp3
+211:【抖音熱歌-懸溺（女生版）】有點特別哦！高音質⧸能動歌詞！ [G4SM62kTtAc].mp3
+212:FANTASY [HWNj9eYPo4E].mp3
+213:Ed Sheeran - Perfect (Official Music Video) [2Vv-BfVoq4g].mp3
+214:關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3
+215:我的一个道姑朋友 [iswLw33jj1I].mp3
 playlist_end

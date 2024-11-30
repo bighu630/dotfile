@@ -91,7 +91,7 @@ alias l='lsd'
 alias cp='cpv'
 
 
-alias ydl="cd /data/音乐 && yt-dlp  -f 'ba' -x --audio-format mp3"
+alias ydl="cd ~/音乐 && yt-dlp  -f 'ba' -x --audio-format mp3"
 
 alias xmod="xmodmap ~/.xmodmap"
 
