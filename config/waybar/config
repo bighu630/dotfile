@@ -8,7 +8,7 @@
     "margin-bottom": 0,
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "custom/weather","custom/spotify", "wlr/taskbar","hyprland/window"],
+    "modules-left": ["custom/launcher","cpu","memory","custom/spotify", "wlr/taskbar","hyprland/window"],
     "modules-center": ["hyprland/workspaces", "clock"],
     "modules-right": ["custom/speed", "backlight","tray", "pulseaudio", "battery", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
@@ -22,7 +22,7 @@
         "urgent": "",
         "default": ""
       },
-      "window-rewrite": {
+    "window-rewrite": {
         "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
         "class<firefox>": "", // Windows whose classes are "firefox"
         "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.

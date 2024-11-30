@@ -11,12 +11,12 @@ menu() {
 
 waybarUp() {
     while true; do
+        sleep 10
         # 检查 waybar 是否正在运行
         if ! pgrep waybar > /dev/null; then
             # 如果 waybar 未运行，则启动它
             waybar &
         fi
-        sleep 10
     done
 }
 
