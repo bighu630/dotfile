@@ -15,6 +15,10 @@ checkUpdate() {
 
 # 提交所有嵌套仓库的更改
 for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
+    update &
+done
+
+update() {
 	echo "Processing $dir"
 	cd $dir
     if [ "$(checkUpdate)" == "0" ]; then
@@ -24,8 +28,9 @@ for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
 	git add .
 	git commit -m "update $dir"
 	git push
-	cd - >/dev/null
-done
+}
+
+sleep 5
 
 
 if [ "$(checkUpdate)" == "0" ];then
