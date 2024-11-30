@@ -22,7 +22,7 @@ update() {
 	echo "Processing $dir"
 	cd $dir
     if [ "$(checkUpdate)" == "0" ]; then
-        continue
+        return
     fi
 	git pull
 	git add .
