@@ -8,9 +8,9 @@ checkUpdate() {
 
     # 比较本地和远程的提交
     if [ "$LOCAL" = "$REMOTE" ]; then
-        return 0
+        echo 0
     fi
-    return 1
+    echo 1
 }
 
 # 提交所有嵌套仓库的更改
