@@ -3,12 +3,17 @@ git pull
 commitMSG=$1
 
 checkUpdate() {
+    if git status --porcelain | grep -q '^[ M]'; then
+        echo 1
+        return
+    fi
     LOCAL=$(git rev-parse @)
     REMOTE=$(git rev-parse "$(git rev-parse --abbrev-ref @{upstream})")
 
     # 比较本地和远程的提交
-    if [ "$LOCAL" = "$REMOTE" ]; then
+    if [ "$LOCAL" == "$REMOTE" ]; then
         echo 0
+        return
     fi
     echo 1
 }
@@ -26,12 +31,12 @@ update() {
 }
 
 # 提交所有嵌套仓库的更改
-for dir in $(find . -maxdepth 2 -name ".git" | xargs dirname); do
+for dir in $(find . -mindepth 2 -maxdepth 2 -name ".git" | xargs dirname); do
     update &
 done
 
 
-sleep 5
+sleep 3
 
 
 if [ "$(checkUpdate)" == "0" ];then
