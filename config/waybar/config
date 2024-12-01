@@ -58,9 +58,10 @@
         }
     },
     "mpd": {
-        "format": "{stateIcon} {randomIcon}{title} ",
+        "format": "{stateIcon} {randomIcon}{repeatIcon}{singleIcon}{title} ",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped ",
+        "max-length": 20,
         "interval": 10,
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
@@ -83,7 +84,8 @@
         "tooltip-format-disconnected": "MPD (disconnected)",
         "on-double-click-left": "mpc prev",
         "on-click": "mpc toggle",
-        "on-double-click-right": "mpc next"
+        "on-double-click-right": "mpc next",
+        "on-click-right": "mpc random"
     },
     "cava": {
         "framerate": 800,
@@ -310,6 +312,7 @@
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped ",
         "interval": 10,
+        "max-length": 20,
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
         },
@@ -331,7 +334,8 @@
         "tooltip-format-disconnected": "MPD (disconnected)",
         "on-double-click-left": "mpc prev",
         "on-click": "mpc toggle",
-        "on-double-click-right": "mpc next"
+        "on-double-click-right": "mpc next",
+        "on-click-right": "mpc random"
     },
     "tray": {
         "spacing": 10
