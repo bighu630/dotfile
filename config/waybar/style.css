@@ -418,7 +418,7 @@ label:focus {
 }
 
 #mpd {
-  color: #2a5c45;
+  color: #51a37a;
 }
 
 #mpd.disconnected {
@@ -430,7 +430,7 @@ label:focus {
 }
 
 #mpd.paused {
-  color: #51a37a;
+  color: #2a5c45;
 }
 
 #language {

@@ -57,8 +57,8 @@
             "Alacritty": "Terminal"
         }
     },
-        "mpd": {
-        "format": "{stateIcon} {singleIcon}{title} ",
+    "mpd": {
+        "format": "{stateIcon} {randomIcon}{title} ",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped ",
         "interval": 10,
@@ -263,7 +263,7 @@
     "margin-bottom": 0,
     "margin-right": 8,
     "spacing": 3, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher",  "custom/spotify","wlr/taskbar","hyprland/window"],
+    "modules-left": ["custom/launcher", "mpd", "custom/spotify","wlr/taskbar","hyprland/window"],
     "modules-center": ["hyprland/workspaces",  "clock"],
     "modules-right": ["custom/speed","network","tray",  "pulseaudio", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
@@ -306,9 +306,9 @@
         }
     },
     "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+        "format": "{stateIcon} {singleIcon}{title} ",
         "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
+        "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped ",
         "interval": 10,
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
@@ -327,8 +327,11 @@
             "paused": "",
             "playing": ""
         },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
+        "tooltip-format": "{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+        "tooltip-format-disconnected": "MPD (disconnected)",
+        "on-double-click-left": "mpc prev",
+        "on-click": "mpc toggle",
+        "on-double-click-right": "mpc next"
     },
     "tray": {
         "spacing": 10
