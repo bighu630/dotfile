@@ -29,11 +29,11 @@ else
         if [[ $DIFF -eq 10 ]]; then
             echo 0
         else
-            swayidle -w timeout 1800 'systemctl suspend'
+            swayidle -w timeout 1799 'systemctl suspend'
             pgrep hyprlock || hyprlock
         fi
     else
-        swayidle -w timeout 1800 'systemctl suspend' &
+        swayidle -w timeout 1799 'systemctl suspend' &
         pgrep hyprlock || hyprlock
     fi
 fi
