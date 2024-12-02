@@ -1,30 +1,13 @@
 sw_volume: 100
 audio_device_state:0:Visualizer feed
 audio_device_state:1:Pulse Output
-state: pause
-current: 7
-time: 0.000000
+state: stop
 random: 1
 repeat: 0
-single: 1
+single: 0
 consume: 0
 crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:半吨兄弟 信仰 （完整版）【動態歌詞⧸Lyrics Video】 [Zan6BGkJqf8].mp3
-1:悟空 [YQdiyw_sB-U].mp3
-2:奔跑.mp3
-3:山丘.mp3
-4:林志炫 Terry Lin - 單身情歌 [QOPTkoK0MXI].mp3
-5:林志炫~你的樣子 [jFD1YU9aRc4].mp3
-6:像我這樣的人 [Cm4h4hhYupA].mp3
-7:求佛.mp3
-8:Nothing Left Between Us [33uKSODjvDo].mp3
-9:太想愛你 [c4W79NcUSfU].mp3
-10:關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3
-11:Huang Hun (Sunset) [KQTCO417h_M].mp3
-12:《权力的游戏》主题曲的交响曲现场版，超级震憾！ [mlT6hBH2tlg].mp3
-13:WATCHING THE WHEELS. (Ultimate Mix, 2020) - John Lennon (official music video HD) [uVXR2LYeFBI].mp3
-14:like241201/Jony J -山脚.mp3
 playlist_end
