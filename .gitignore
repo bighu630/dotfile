@@ -16,3 +16,5 @@ share/fcitx5/pinyin/
 *.dat
 *lock
 *.pyc
+*.log
+*.pid
