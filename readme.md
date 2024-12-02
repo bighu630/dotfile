@@ -120,7 +120,7 @@ hyprpm add https://github.com/Duckonaut/split-monitor-workspaces
 hyprpm add https://github.com/outfoxxed/hy3
 hyprpm add https://github.com/bighu630/hycov
 hyprpm add https://github.com/KZDKM/Hyprspace
-hyprpm add https://github.com/VortexCoyote/hyprfocus
+hyprpm add https://github.com/pyt0xic/hyprfocus
 hyprpm enable hy3
 hyprpm enable hycov
 hyprpm enable Hyprspace
