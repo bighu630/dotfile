@@ -1,9 +1,15 @@
 sw_volume: 100
 audio_device_state:0:Visualizer feed
 audio_device_state:1:Pulse Output
+<<<<<<< HEAD
 state: pause
 current: 10
 time: 92.248000
+=======
+state: play
+current: 26
+time: 120.049000
+>>>>>>> 186fcdc14646262f37e87c397391114224f62692
 random: 1
 repeat: 0
 single: 0
@@ -26,6 +32,7 @@ playlist_begin
 11:风缘.mp3
 12:腐草为萤.mp3
 13:故梦【双笙】翻唱 [2UQYc08WfxM].mp3
+<<<<<<< HEAD
 14:緣滅 [xN739Jdauzw].mp3
 15:双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3
 16:琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3
@@ -41,4 +48,22 @@ playlist_begin
 26:紅塵客棧 [GUvMWPHVfKM].mp3
 27:烟花易冷 (Live) [cufHI9v1v7I].mp3
 28:大魚（唱片版） [MRypl3B1Cj4].mp3
+=======
+14:歎服 [CL-9JJqp0Dg].mp3
+15:緣滅 [xN739Jdauzw].mp3
+16:双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3
+17:琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3
+18:【绝美戏腔】少年霜⧸提糯-非李 『猿声远，引鲛人落泪。一片月，已守尽千秋岁』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [JejyWLyn3Oc].mp3
+19:棠梨煎雪 [qkpIZgmDrqw].mp3
+20:我的一个道姑朋友 [iswLw33jj1I].mp3
+21:山水之間.mp3
+22:宿敌.mp3
+23:雅俗共賞 [gvwawFvCy0o].mp3
+24:海底 [h0lXcZtcEr0].mp3
+25:烛 [4PDo6HUVpxI].mp3
+26:髮如雪.mp3
+27:紅塵客棧 [GUvMWPHVfKM].mp3
+28:烟花易冷 (Live) [cufHI9v1v7I].mp3
+29:大魚（唱片版） [MRypl3B1Cj4].mp3
+>>>>>>> 186fcdc14646262f37e87c397391114224f62692
 playlist_end
