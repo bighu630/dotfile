@@ -11,7 +11,7 @@ checkUpdate() {
     REMOTE=$(git rev-parse "$(git rev-parse --abbrev-ref @{upstream})")
 
     # 比较本地和远程的提交
-    if [ "$LOCAL" == "$REMOTE" ]; then
+    if [ "$LOCAL" = "$REMOTE" ]; then
         echo 0
         return
     fi
