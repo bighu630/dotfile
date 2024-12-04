@@ -2,13 +2,8 @@ sw_volume: 100
 audio_device_state:0:Visualizer feed
 audio_device_state:1:Pulse Output
 state: pause
-<<<<<<< HEAD
-current: 4
-time: 165.864000
-=======
-current: 22
-time: 107.296000
->>>>>>> aaf3b7a2365c0787a0181f95ee72be5f7b450300
+current: 1
+time: 120.520000
 random: 1
 repeat: 0
 single: 0
@@ -17,49 +12,30 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-<<<<<<< HEAD
-0:like241201/💯 3ASiC 套路 Feat. Jony J 💯 ： Chinese Hip Hop Nanjing Rap 南京说唱 [ Lyric Video ] [Zxa3CPFCtpI].mp3
-1:套路 (feat. Jony J) [XhSp_Wz2kk8].mp3
-2:Jony J - 奴隸 「不幸的人又比著誰更無情，說由不得心說這叫做命。」 ♪ Karendaidai ♪ [elkJznytshA].mp3
-3:(CC字幕) 艾福杰尼 After Journey (高品質無損版) │九進六魔王踢館賽│中國有嘻哈 第九期 [D-bOzXcNPJU].mp3
-4:安全着陆 - 老弟和你 ♫動態歌詞lyrics♫ [fXX_MCnCEd0].mp3
-5:like241201/Jony J -山脚.mp3
-6:like241201/💯 3ASiC 套路 Feat. Jony J 💯 ： Chinese Hip Hop Nanjing Rap 南京说唱 [ Lyric Video ] [Zxa3CPFCtpI].mp3
-7:阿司匹林-王以太-演.说.家.mp3
-8:目不转睛-王以太-Feel_ _Sight.mp3
-9:人间天堂-王以太-演.说.家.m4a
-10:信仰-Jony_J-J_HOOD_Mixtape.mp3
-11:Lost -满舒克 Jony_J-Almost_Perfect.mp3
-12:庆功酒(Jungle Juice)-FOX胡天渝-福无双至章节一.mp3
-=======
-0:陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3
-1:悟空 [YQdiyw_sB-U].mp3
-2:黃齡 Isabelle Huang《繁華夢 Flourished Dream》【扶搖插曲 Legend Of Fu Yao OST】官方MV (Phù Dao OST ｜ Mộng Phồn Hoa) [W0b6HramCug].mp3
-3:曹操 (现场) [fT-uM_WeC0U].mp3
-4:她說 [2YKd5uG-v_o].mp3
-5:林俊傑 - 醉赤壁 (女聲版).mp3
+0:半吨兄弟 信仰 （完整版）【動態歌詞⧸Lyrics Video】 [Zan6BGkJqf8].mp3
+1:陳雪凝 - 假裝「故事開始總是很甜，歲月流逝人心轉變」動態歌詞版 [4C9_kSakeec].mp3
+2:在夜裡跳舞 [zenChTeAhhI].mp3
+3:Practice Love [HbTu28zjPVs].mp3
+4:林志炫 Terry Lin - 單身情歌 [QOPTkoK0MXI].mp3
+5:林志炫~你的樣子 [jFD1YU9aRc4].mp3
 6:林志炫-煙花易冷 (繁中歌詞) [Ur7aRrDWNak].mp3
-7:梅香如故 [wfdtg2UjdI0].mp3
-8:我從崖邊跌落 [lTeFfziL4Co].mp3
-9:任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3
-10:求佛.mp3
-11:风缘.mp3
-12:腐草为萤.mp3
-13:故梦【双笙】翻唱 [2UQYc08WfxM].mp3
-14:緣滅 [xN739Jdauzw].mp3
-15:双笙-栖枝 『一场雨，一寸被衾单。托金蝉，振翅莫飞远』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [9_p2riJFsl0].mp3
-16:琴师-双笙『听过最好听的版本』【动态Lyric⧸特效，一首超好听的古风歌曲】 [esZ18vBoBEQ].mp3
-17:【绝美戏腔】少年霜⧸提糯-非李 『猿声远，引鲛人落泪。一片月，已守尽千秋岁』 【动态Lyric⧸特效，一首超好听的古风歌曲】 [JejyWLyn3Oc].mp3
+7:魚仔 (He-R).mp3
+8:傲寒 [GHvQa-BpYkQ].mp3
+9:借 [gT6jLXVi_OQ].mp3
+10:牧馬城市.mp3
+11:一葷一素.mp3
+12:毛不易 - 呓语「 日月蹉跎小起大落 光陰裡有多少景色 」【cc字幕】 ♪ 高音質  ♪ MaHaMusic♪ [HUIFZNLTp38].mp3
+13:默.mp3
+14:任然 - 山外小樓夜聽雨『我獨酌山外小閣樓，聽一夜相思愁。』【動態歌詞Lyrics】 [0Svh0gj0rnQ].mp3
+15:海市蜃楼 [hv1U9t4DTls].mp3
+16:求佛.mp3
+17:腐草为萤.mp3
 18:棠梨煎雪 [qkpIZgmDrqw].mp3
-19:我的一个道姑朋友 [iswLw33jj1I].mp3
-20:山水之間.mp3
-21:宿敌.mp3
-22:雅俗共賞 [gvwawFvCy0o].mp3
-23:海底 [h0lXcZtcEr0].mp3
-24:烛 [4PDo6HUVpxI].mp3
-25:髮如雪.mp3
-26:紅塵客棧 [GUvMWPHVfKM].mp3
-27:烟花易冷 (Live) [cufHI9v1v7I].mp3
-28:大魚（唱片版） [MRypl3B1Cj4].mp3
->>>>>>> aaf3b7a2365c0787a0181f95ee72be5f7b450300
+19:海底 [h0lXcZtcEr0].mp3
+20:烛 [4PDo6HUVpxI].mp3
+21:太想愛你 [c4W79NcUSfU].mp3
+22:關不上的窗 -周傳雄 - 『超高无损音質』【動態歌詞Lyrics】 [-J9iEg2jHqA].mp3
+23:Huang Hun (Sunset) [KQTCO417h_M].mp3
+24:大魚（唱片版） [MRypl3B1Cj4].mp3
+25:願得一心人（《鶴唳華亭》主題曲）.mp3
 playlist_end
