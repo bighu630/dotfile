@@ -13,8 +13,10 @@ config/copyq/copyq_tabs.ini
 config/copyq/copyq_geometry.ini
 config/fcitx/dbus/
 share/fcitx5/pinyin/
+config/mpd/mpdstate
 *.dat
 *lock
 *.pyc
 *.log
 *.pid
+*.db
