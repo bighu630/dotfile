@@ -14,7 +14,7 @@
   "timeout-critical": 0,
   "fit-to-screen": false,
   "control-center-width": 500,
-  "control-center-height": 800,
+  "control-center-height": 600,
   "notification-window-width": 500,
   "keyboard-shortcuts": true,
   "image-visibility": "when-available",
@@ -37,7 +37,9 @@
   },
   "widgets": [
     "menubar#label",
+    "buttons-grid",
     "backlight",
+    "backlight#KB",
     "volume",
     "mpris",
     "title",
@@ -46,12 +48,12 @@
   ],
   "widget-config": {
     "title": {
-      "text": "通知",
+      "text": "Notifications",
       "clear-all-button": true,
-      "button-text": " 󰃢 "
+      "button-text": "Clear All"
     },
     "dnd": {
-      "text": "免打扰"
+      "text": "Do Not Disturb"
     },
     "label": {
       "max-lines": 1,
@@ -80,19 +82,19 @@
         "position": "right",
         "actions": [
           {
-            "label": "  重启",
+            "label": "  Reboot",
             "command": "systemctl reboot"
           },
           {
-            "label": "  锁定",
+            "label": "  Lock",
             "command": "hyprlock"
           },
           {
-            "label": "  注销",
+            "label": "  Logout",
             "command": "hyprctl dispatch exit"
           },
           {
-            "label": "  关机",
+            "label": "  Shut down",
             "command": "systemctl poweroff"
           }
         ]
@@ -102,18 +104,15 @@
         "position": "left",
         "actions": [
           {
-            "label": "性能",
-            "position": "left",
+            "label": "Performance",
             "command": "powerprofilesctl set performance"
           },
           {
-            "label": "平衡",
-            "position": "center",
+            "label": "Balanced",
             "command": "powerprofilesctl set balanced"
           },
           {
-            "label": "节能",
-            "position": "right",
+            "label": "Power-saver",
             "command": "powerprofilesctl set power-saver"
           }
         ]
@@ -127,6 +126,18 @@
           }
         ]
       }
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "直",
+          "command": "$HOME/.config/rofi/bin/wifi"
+        },
+        {
+          "label": "",
+          "command": "$HOME/.config/rofi/bin/bluetooth"
+        }
+      ]
     }
   }
 }
