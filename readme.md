@@ -14,7 +14,7 @@
 - swww
 - qutebrowser
 - grim
-- swappy
+- [swappy](https://github.com/bighu630/swappy)
 - slurp
 - wlogout
 - networkmanager
@@ -104,8 +104,7 @@ yay -S ksystemlog nitrogen nwg-display syncthing aliyundrive-webdav-bin
 ```bash
 git clone --recursive https://github.com/bighu630/dotfile.git
 mv dotfile ~ #dotfile 必须放在用户目录下，如果要修改需要修改用户dotfile目录下所有的 `~/dotfile`
-cd
-cd dotfile
+cd ~/dotfile
 ./install.sh
 ```
 
@@ -117,11 +116,11 @@ cd dotfile
 hyprpm update
 hyprpm add https://github.com/hyprwm/hyprland-plugins
 hyprpm add https://github.com/Duckonaut/split-monitor-workspaces
-hyprpm add https://github.com/outfoxxed/hy3
+# hyprpm add https://github.com/outfoxxed/hy3  # 用不管hy3
 hyprpm add https://github.com/bighu630/hycov
 hyprpm add https://github.com/KZDKM/Hyprspace
 hyprpm add https://github.com/pyt0xic/hyprfocus
-hyprpm enable hy3
+# hyprpm enable hy3
 hyprpm enable hycov
 hyprpm enable Hyprspace
 hyprpm enable hyprexpo
