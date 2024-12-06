@@ -79,7 +79,7 @@ settings:
       right: 8
       top: 1
   statusbar.show:
-    global: never
+    global: always
   tabs.indicator.padding:
     global:
       bottom: 0
