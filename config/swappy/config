@@ -1,0 +1,12 @@
+[Default]
+save_dir=$HOME/图片/screenshot
+save_filename_format=swappy-%Y%m%d-%H%M%S.png
+show_panel=false
+line_size=2
+text_size=15
+text_font=pingfang
+paint_mode=brush
+early_exit=false
+fill_shape=false
+auto_save=false
+picgo_path=/home/ivhu/.npm-packages/bin/picgo
