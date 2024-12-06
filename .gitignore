@@ -21,3 +21,4 @@ config/mpd/mpdstate
 *.log
 *.pid
 *.db
+*.sql
