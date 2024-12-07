@@ -88,7 +88,7 @@
             "command": "hyprlock"
           },
           {
-            "label": "  注销",
+            "label": " 注销",
             "command": "hyprctl dispatch exit"
           },
           {
