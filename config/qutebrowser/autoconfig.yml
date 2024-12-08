@@ -93,7 +93,7 @@ settings:
       right: 8
       top: 1
   url.default_page:
-    global: https://go.itab.link/
+    global: https://go.itab.link
   url.searchengines:
     global:
       DEFAULT: https://www.google.com/search?q={}
