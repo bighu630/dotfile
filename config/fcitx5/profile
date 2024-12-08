@@ -1,6 +1,6 @@
 [Groups/0]
 # Group Name
-Name=默认
+Name="分组 2"
 # Layout
 Default Layout=us
 # Default Input Method
@@ -18,6 +18,27 @@ Name=shuangpin
 # Layout
 Layout=
 
+[Groups/1]
+# Group Name
+Name="分组 1"
+# Layout
+Default Layout=us
+# Default Input Method
+DefaultIM=shuangpin
+
+[Groups/1/Items/0]
+# Name
+Name=keyboard-us
+# Layout
+Layout=
+
+[Groups/1/Items/1]
+# Name
+Name=shuangpin
+# Layout
+Layout=
+
 [GroupOrder]
-0=默认
+0="分组 2"
+1="分组 1"
 
