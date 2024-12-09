@@ -212,3 +212,4 @@ dufs http://192.168.3.244:5000/dufs/
 pip install failed https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3
 go pprof https://wxsm.space/2023/go-pprof-note/
 systemd进程保活 https://www.cnblogs.com/cjdty/p/15763002.html
+cfworker https://github.com/lukeed/awesome-cloudflare-workers
