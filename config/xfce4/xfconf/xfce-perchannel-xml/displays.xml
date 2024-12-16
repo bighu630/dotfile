@@ -20,11 +20,11 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="HDMI1" type="string" value="AOC International 24&quot;">
+    <property name="HDMI1" type="string" value="Philips Consumer Electronics Company 27&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="f942040d96a98a65235185813ac1acaa39d6ba66"/>
-      <property name="Resolution" type="string" value="1920x1080"/>
-      <property name="RefreshRate" type="double" value="60"/>
+      <property name="EDID" type="string" value="b1a4fcda20cb8522cd726098ce6f3b1df7dd5a2a"/>
+      <property name="Resolution" type="string" value="2560x1440"/>
+      <property name="RefreshRate" type="double" value="74.968100566667658"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
@@ -56,11 +56,11 @@
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
-    <property name="HDMI1" type="string" value="AOC International 24&quot;">
+    <property name="HDMI1" type="string" value="Philips Consumer Electronics Company 27&quot;">
       <property name="Active" type="bool" value="true"/>
-      <property name="EDID" type="string" value="f942040d96a98a65235185813ac1acaa39d6ba66"/>
-      <property name="Resolution" type="string" value="1920x1080"/>
-      <property name="RefreshRate" type="double" value="60"/>
+      <property name="EDID" type="string" value="b1a4fcda20cb8522cd726098ce6f3b1df7dd5a2a"/>
+      <property name="Resolution" type="string" value="2560x1440"/>
+      <property name="RefreshRate" type="double" value="74.968100566667658"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
       <property name="Primary" type="bool" value="false"/>
@@ -69,9 +69,10 @@
         <property name="Y" type="double" value="1"/>
       </property>
       <property name="Position" type="empty">
-        <property name="X" type="int" value="0"/>
+        <property name="X" type="int" value="1920"/>
         <property name="Y" type="int" value="0"/>
       </property>
     </property>
   </property>
+  <property name="Notify" type="int" value="1"/>
 </channel>
