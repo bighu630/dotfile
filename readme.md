@@ -82,11 +82,15 @@
 - nwg-display # 显示器管理
 - syncthing
 - aliyundrive-webdav-bin
+- keepassxc
+- power-profiles-daemon
+- neovide
+- oklur
 
 ## install in arch
 
 ```shell
-yay -S hyprland hyprlock waybar swaylock rofi-wayland kitty qutebrowser networkmanager bluetuith wlogout kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct yazi neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp cliphist swayidle lsd swaync fcitx5-configtool fcitx5-chinese-addons nwg-look tlp archlinux-xdg-menu hypridle
+yay -S hyprland hyprlock waybar swaylock rofi-wayland kitty qutebrowser networkmanager bluetuith wlogout kdeconnect fcitx5 wlsunset pavucontrol-qt bottom axel git daed tmux zsh qt6ct-kde yazi neovim vim nodejs fzf jq ripgrep fd kvantummanager lazygit swww grim swappy slurp cliphist swayidle lsd swaync fcitx5-configtool fcitx5-chinese-addons nwg-look tlp archlinux-xdg-menu hypridle
 # fcitx5 词库，可以不用安装
 yay -S fcitx5-pinyin-chinese-idiom fcitx5-pinyin-sougou fcitx5-pinyin-zhwiki fcitx5-pinyin-custom-pinyin-dictionary
 
@@ -94,7 +98,7 @@ yay -S fcitx5-pinyin-chinese-idiom fcitx5-pinyin-sougou fcitx5-pinyin-zhwiki fci
 yay -S yarn nodejs prettier wl-clipboard
 
 # 常用工具
-yay -S ksystemlog nitrogen nwg-display syncthing aliyundrive-webdav-bin
+yay -S ksystemlog nitrogen nwg-display syncthing aliyundrive-webdav-bin keepassxc power-profiles-daemon neovide oklur
 ```
 
 > 如果有人在配置文件中找到了我的翻译程序😄，那么需要一个配置文件，[可以在这里找到配置文件怎么获取](https://github.com/bighu630/translate-tui),放在这个翻译程序相同的路径 ,快捷键是（ALT+Shift+s）
