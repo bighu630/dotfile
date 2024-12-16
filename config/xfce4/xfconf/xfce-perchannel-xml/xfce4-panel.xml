@@ -5,6 +5,7 @@
   <property name="panels" type="array">
     <value type="int" value="1"/>
     <value type="int" value="2"/>
+    <value type="int" value="3"/>
     <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-1" type="empty">
       <property name="position" type="string" value="p=6;x=0;y=0"/>
@@ -26,23 +27,33 @@
         <value type="int" value="13"/>
         <value type="int" value="14"/>
       </property>
+      <property name="enter-opacity" type="uint" value="86"/>
+      <property name="leave-opacity" type="uint" value="86"/>
     </property>
     <property name="panel-2" type="empty">
       <property name="autohide-behavior" type="uint" value="1"/>
       <property name="position" type="string" value="p=10;x=0;y=0"/>
       <property name="length" type="uint" value="1"/>
       <property name="position-locked" type="bool" value="true"/>
-      <property name="size" type="uint" value="48"/>
+      <property name="size" type="uint" value="37"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="15"/>
         <value type="int" value="16"/>
-        <value type="int" value="17"/>
         <value type="int" value="18"/>
         <value type="int" value="19"/>
         <value type="int" value="20"/>
         <value type="int" value="21"/>
         <value type="int" value="22"/>
       </property>
+    </property>
+    <property name="panel-3" type="empty">
+      <property name="position" type="string" value="p=11;x=3005;y=25"/>
+      <property name="size" type="uint" value="27"/>
+      <property name="length" type="double" value="100"/>
+      <property name="mode" type="uint" value="0"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="enter-opacity" type="uint" value="96"/>
+      <property name="leave-opacity" type="uint" value="96"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -79,11 +90,6 @@
     <property name="plugin-14" type="string" value="actions"/>
     <property name="plugin-15" type="string" value="showdesktop"/>
     <property name="plugin-16" type="string" value="separator"/>
-    <property name="plugin-17" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="17343093701.desktop"/>
-      </property>
-    </property>
     <property name="plugin-18" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="17343093702.desktop"/>
