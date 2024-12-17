@@ -5,7 +5,9 @@
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
       <value type="string" value="networkmanager-dmenu"/>
+      <value type="string" value="org.qutebrowser.qutebrowser"/>
       <value type="string" value="xfce4-power-manager"/>
     </property>
   </property>
+  <property name="date-time-custom-format" type="string" value="%a %H:%M:%S"/>
 </channel>

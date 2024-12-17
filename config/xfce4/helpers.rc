@@ -1,4 +1,4 @@
-WebBrowser=firefox
+WebBrowser=custom-WebBrowser
 FileManager=custom-FileManager
 TerminalEmulator=custom-TerminalEmulator
 
