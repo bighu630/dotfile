@@ -50,6 +50,7 @@
     <property name="plugin-1" type="string" value="applicationsmenu"/>
     <property name="plugin-2" type="string" value="tasklist">
       <property name="grouping" type="uint" value="1"/>
+      <property name="flat-buttons" type="bool" value="false"/>
     </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
@@ -68,6 +69,16 @@
         <value type="string" value="Fcitx"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="wi-fi 网络连接“nic”已激活：nic (66%)"/>
+        <value type="string" value="wi-fi 网络连接“nic”已激活：nic (80%)"/>
+        <value type="string" value="wi-fi 网络连接“nic”已激活：nic (58%)"/>
+        <value type="string" value="wi-fi 网络连接“nic”已激活：nic (61%)"/>
+        <value type="string" value="wi-fi 网络连接“nic”已激活：nic (59%)"/>
+        <value type="string" value="wi-fi 网络连接“nic”已激活：nic (60%)"/>
+        <value type="string" value="fcitx5 tray window"/>
+        <value type="string" value="wi-fi 网络连接“nic”已激活：nic (62%)"/>
+        <value type="string" value="wi-fi 网络连接“nic”已激活：nic (63%)"/>
+        <value type="string" value="wi-fi 网络连接“nic”已激活：nic (67%)"/>
         <value type="string" value="wi-fi 网络连接“nic”已激活：nic (65%)"/>
       </property>
     </property>
