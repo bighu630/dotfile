@@ -143,6 +143,16 @@ function proxy_off(){
     echo -e "终端代理已关闭。"
 }
 
+SWITCH_ALT_WIN ()
+{
+ALT_WIN_SWITCH=$(cat ~/.config/hypr/configs/env_hidpi.conf | grep "kb_options=caps:escape,altwin:swap_lalt_lwin")
+if [ -z $ALT_WIN_SWITCH ];then
+    sed -i 's/caps:escape/caps:escape,altwin:swap_lalt_lwin/' ~/.config/hypr/configs/env_hidpi.conf
+else
+    sed -i 's/caps:escape,altwin:swap_lalt_lwin/caps:escape/' ~/.config/hypr/configs/env_hidpi.conf
+fi
+}
+
 
 function go_proxy(){
     # 配置 GOPROXY 环境变量
