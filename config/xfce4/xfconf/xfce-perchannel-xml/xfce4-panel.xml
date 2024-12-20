@@ -63,6 +63,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="remmina-icon"/>
         <value type="string" value="com.alibabainc.dingtalk"/>
         <value type="string" value="blueman"/>
         <value type="string" value="nm-applet"/>
