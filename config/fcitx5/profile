@@ -1,6 +1,6 @@
 [Groups/0]
 # Group Name
-Name="分组 1"
+Name="分组 2"
 # Layout
 Default Layout=us
 # Default Input Method
@@ -20,7 +20,7 @@ Layout=
 
 [Groups/1]
 # Group Name
-Name="分组 2"
+Name="分组 1"
 # Layout
 Default Layout=us
 # Default Input Method
