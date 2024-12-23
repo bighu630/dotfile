@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 
 <channel name="xfce4-desktop" version="1.0">
   <property name="backdrop" type="empty">
@@ -37,7 +37,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/ivhu/Sync/wallpapers/bg/【哲风壁纸】4K-世嘉创世纪.png"/>
+          <property name="last-image" type="string" value="/home/ivhu/Sync/wallpapers/bg/45.png"/>
           <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-timer" type="uint" value="15"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
@@ -100,4 +100,5 @@
     <property name="style" type="int" value="1"/>
     <property name="icon-size" type="uint" value="32"/>
   </property>
+  <property name="last-settings-migration-version" type="uint" value="1"/>
 </channel>
