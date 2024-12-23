@@ -53,6 +53,8 @@ settings:
   content.blocking.hosts.lists:
     global:
     - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/light.txt
+  content.javascript.clipboard:
+    https://chatgpt.com: access-paste
   content.notifications.enabled:
     https://www.teambition.com: true
   content.pdfjs:
