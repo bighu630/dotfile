@@ -43,7 +43,7 @@ settings:
         <Ctrl+Shift+e>: tab-prev
         <Ctrl+Shift+r>: tab-next
   colors.webpage.darkmode.enabled:
-    global: false
+    global: true
   content.autoplay:
     global: false
   content.blocking.adblock.lists:
