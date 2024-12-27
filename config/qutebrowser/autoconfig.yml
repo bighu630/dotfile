@@ -43,7 +43,7 @@ settings:
         <Ctrl+Shift+e>: tab-prev
         <Ctrl+Shift+r>: tab-next
   colors.webpage.darkmode.enabled:
-    global: false
+    global: true
   content.autoplay:
     global: false
   content.blocking.adblock.lists:
@@ -96,10 +96,12 @@ settings:
       top: 2
   tabs.padding:
     global:
-      bottom: 1
+      bottom: 2
       left: 8
       right: 8
-      top: 1
+      top: 2
+  tabs.title.elide:
+    global: none
   url.default_page:
     global: https://go.itab.link/
   url.searchengines:
