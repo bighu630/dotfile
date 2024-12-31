@@ -56,6 +56,7 @@ settings:
   content.javascript.clipboard:
     https://chatgpt.com: access-paste
     https://github.com: access-paste
+    https://web.telegram.org: access-paste
     https://y1cunhui.github.io: access-paste
   content.notifications.enabled:
     https://www.teambition.com: true
