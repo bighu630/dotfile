@@ -1,5 +1,7 @@
 # DotFile
 
+![look](https://s2.loli.net/2025/01/03/Nt2gp9HYs3Ax7Zy.png)
+
 ## assembly list
 
 ### 桌面环境
