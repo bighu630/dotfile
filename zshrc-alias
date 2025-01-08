@@ -96,3 +96,5 @@ alias ydl="cd ~/音乐 && yt-dlp  -f 'ba' -x --audio-format mp3"
 alias xmod="xmodmap ~/.xmodmap"
 
 unalias gg
+
+alias HH="Hyprland"

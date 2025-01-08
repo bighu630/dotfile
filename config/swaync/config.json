@@ -104,17 +104,17 @@
           {
             "label": "性能",
             "position": "left",
-            "command": "powerprofilesctl set performance && notify-send '性能模式'"
+            "command": "powerprofilesctl set performance"
           },
           {
             "label": "平衡",
             "position": "center",
-            "command": "powerprofilesctl set balanced && notify-send '平衡模式'"
+            "command": "powerprofilesctl set balanced"
           },
           {
             "label": "节能",
             "position": "right",
-            "command": "powerprofilesctl set power-saver && notify-send '节能模式'"
+            "command": "powerprofilesctl set power-saver"
           }
         ]
       },

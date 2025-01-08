@@ -1,5 +1,7 @@
 # DotFile
 
+![look](https://s2.loli.net/2025/01/03/Nt2gp9HYs3Ax7Zy.png)
+
 ## assembly list
 
 ### 桌面环境
@@ -151,3 +153,7 @@ cd ..
 ### WRAN
 
 非常不建议同步share目录中的内容，可能包含个人信息
+
+### 一些有用的网址（有些东西yay里面没有，就只能手动安装了,主要是一些主题文件）
+
+- [gtk-theme](https://github.com/vinceliuice/WhiteSur-gtk-theme)

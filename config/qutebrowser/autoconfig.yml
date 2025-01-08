@@ -53,6 +53,11 @@ settings:
   content.blocking.hosts.lists:
     global:
     - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/light.txt
+  content.javascript.clipboard:
+    https://chatgpt.com: access-paste
+    https://github.com: access-paste
+    https://web.telegram.org: access-paste
+    https://y1cunhui.github.io: access-paste
   content.notifications.enabled:
     https://www.teambition.com: true
   content.pdfjs:
@@ -93,10 +98,12 @@ settings:
       top: 2
   tabs.padding:
     global:
-      bottom: 1
+      bottom: 2
       left: 8
       right: 8
-      top: 1
+      top: 2
+  tabs.title.elide:
+    global: none
   url.default_page:
     global: https://go.itab.link
   url.searchengines:
