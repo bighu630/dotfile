@@ -119,6 +119,7 @@ cd ~/dotfile
 > 由于我配置文件配了这几个hyprland插件相关的东西，所以这几个插件必须安装(或者可以删除对应的配置)
 
 ```shell
+yay -S cmake meson cpio pkg-config
 hyprpm update
 hyprpm add https://github.com/hyprwm/hyprland-plugins
 hyprpm add https://github.com/Duckonaut/split-monitor-workspaces
