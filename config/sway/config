@@ -2,8 +2,8 @@
 # exec swaymsg output HDMI-A-1 resolution 3200x2000 position 1920 0
 
 input "type:keyboard" {
-    # xkb_options "caps:escape"
-    xkb_options "caps:escape,altwin:swap_alt_win"
+    xkb_options "caps:escape"
+    # xkb_options "caps:escape,altwin:swap_alt_win"
 }
 
 input "type:touchpad" {
