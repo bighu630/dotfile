@@ -43,7 +43,7 @@
 
 
 window#waybar {
-  background-color: rgba(26, 27, 38, 0.1);
+  background-color: rgba(26, 27, 38, 0.5);
   color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -67,6 +67,31 @@ window#waybar.hidden {
   border: none;
   border-radius: 0;
 }
+
+#workspaces button {
+  padding: 5px 10px;
+  margin: 0 3px;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #7984A4;
+  border: none;
+}
+
+#workspaces button.focused {
+  background-color: @sapphire;
+  color: #2E3440;
+}
+
+#workspaces button.urgent {
+  background-color: #BF616A;
+  color: #ECEFF4;
+}
+
+#workspaces button:hover {
+  background-color: #5E81AC;
+  color: #ECEFF4;
+}
+
 
 #taskbar {
     /* border-radius: 0px 8px 8px 0; */

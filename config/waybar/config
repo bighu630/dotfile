@@ -1,6 +1,6 @@
 [{
     "auto height": false,
-    "height": 24, // Waybar height (to be removed for auto height)
+    "height": 20, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
     "output": ["eDP-1"],
     "margin-top": 3,
@@ -8,8 +8,9 @@
     "margin-bottom": 0,
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher","memory","custom/spotify", "wlr/taskbar","hyprland/window"],
-    "modules-center": ["hyprland/workspaces","mpd" ,"clock"],
+    "modules-left": ["custom/launcher","memory","custom/spotify", "wlr/taskbar","sway/window"],
+    "modules-center": ["hyprland/workspaces","sway/workspaces","mpd" ,"clock"],
+    //  "modules-center": ["sway/workspaces","mpd" ,"clock"],
     "modules-right": ["custom/speed", "backlight","tray", "pulseaudio", "battery", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
       "format": "{icon}",
@@ -21,13 +22,35 @@
         "4": "4",
         "urgent": "",
         "default": ""
-      },
+      }
+    },
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": false,
+        "format": "{name}",
+        "format-focused": "<span color='#81A1C1'> {name}</span>",
+        "format-visible": "<span color='#88C0D0'> {name}</span>",
+        "format-urgent": "<span color='#BF616A'> {name}</span>",
+        "on-click": "swaymsg workspace {name}",
+        "on-scroll-up": "swaymsg workspace prev",
+        "on-scroll-down": "swaymsg workspace next"
+    },
     "window-rewrite": {
         "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
         "class<firefox>": "", // Windows whose classes are "firefox"
         "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
         "class<xfce4-terminal>": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
         "code": "󰨞",
+    },
+    "sway/window": {
+        "format": "{}",
+        "max-length": 50,
+        "all-outputs" : true,
+        "offscreen-css" : true,
+        "offscreen-css-text": "(inactive)",
+        "rewrite": {
+            "(.*) - Mozilla Firefox": " $1",
+            "(.*) - fish": "> [$1]"
         },
     },
     "hyprland/window": {
@@ -257,7 +280,7 @@
     },
 },
 {
-    "height": 24, // Waybar height (to be removed for auto height)
+    "height": 20, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
     "output": ["HDMI-A-1"],
     "margin-top": 2,
@@ -266,7 +289,8 @@
     "margin-right": 8,
     "spacing": 3, // Gaps between modules (4px)
     "modules-left": ["custom/launcher", "mpd", "custom/spotify","wlr/taskbar","hyprland/window"],
-    "modules-center": ["hyprland/workspaces",  "clock"],
+    "modules-center": ["hyprland/workspaces","sway/workspaces",  "clock"],
+    // "modules-center": ["sway/workspaces",  "clock"],
     "modules-right": ["custom/speed","network","tray",  "pulseaudio", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
       "format": "{icon}",
@@ -279,6 +303,17 @@
         "urgent": "",
         "default": ""
       }
+    },
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": false,
+        "format": "{name}",
+        "format-focused": "<span color='#81A1C1'> {name}</span>",
+        "format-visible": "<span color='#88C0D0'> {name}</span>",
+        "format-urgent": "<span color='#BF616A'> {name}</span>",
+        "on-click": "swaymsg workspace {name}",
+        "on-scroll-up": "swaymsg workspace prev",
+        "on-scroll-down": "swaymsg workspace next"
     },
     "hyprland/window": {
         "format": "{}",

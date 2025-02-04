@@ -43,7 +43,7 @@ settings:
         <Ctrl+Shift+e>: tab-prev
         <Ctrl+Shift+r>: tab-next
   colors.webpage.darkmode.enabled:
-    global: false
+    global: true
   content.autoplay:
     global: false
   content.blocking.adblock.lists:
@@ -54,9 +54,13 @@ settings:
     global:
     - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/light.txt
   content.javascript.clipboard:
+    http://127.0.0.1:8384: access-paste
     https://chatgpt.com: access-paste
+    https://draculatheme.com: access-paste
     https://github.com: access-paste
+    https://registry.hub.docker.com: access-paste
     https://web.telegram.org: access-paste
+    https://www.kdocs.cn: access-paste
     https://y1cunhui.github.io: access-paste
   content.notifications.enabled:
     https://www.teambition.com: true
