@@ -1,6 +1,3 @@
-# exec swaymsg output eDP-1 resolution 3200x2000 scale 1.666 position 0 0
-# exec swaymsg output HDMI-A-1 resolution 3200x2000 position 1920 0
-
 input "type:keyboard" {
     xkb_options "caps:escape"
     # xkb_options "caps:escape,altwin:swap_alt_win"
@@ -37,23 +34,22 @@ dim_inactive_colors.unfocused #000000FF
 dim_inactive_colors.urgent #900000FF
 
 # Move minimized windows into Scratchpad (enable|disable)
-scratchpad_minimize disable
+scratchpad_minimize enable
 
 output eDP-1 resolution 3200x2000 scale 1.5 position 0 0
 # output HDMI-A-1 resolution 3200x2000 position 1920 0
-# output eDP-1 workspace 1-5
 # TxGVNN <txgvnn@gmail.com> Name the wordspaces xprop to check window
 # xmodmap [ --pke ] view keymap
-set $tag1 
-set $tag2 
-set $tag3 
-set $tag4 
-set $tag5 
-set $tag6 
-set $tag7 
-set $tag8 
-set $tag9 
-set $tag0 
+# set $tag1 
+# set $tag2 
+# set $tag3 
+# set $tag4 
+# set $tag5 
+# set $tag6 
+# set $tag7 
+# set $tag8 
+# set $tag9 
+# set $tag0 
 
 # i3 config file (v4)
 #
@@ -161,7 +157,7 @@ bindsym $mod+z focus child
 # focus urgent lasted $mod+'='
 bindcode $mod+21 [urgent=latest] focus
 # focus follow mouse
-focus_follows_mouse no
+focus_follows_mouse yes
 # scratchpad
 bindsym $mod+minus scratchpad show
 bindsym $mod+Shift+minus move scratchpad
@@ -169,7 +165,8 @@ bindsym $mod+Shift+minus move scratchpad
 # key bind
 #
 bindsym $mod+b exec qutebrowser
-bindsym $mod+d exec foot -T float -e tmux
+bindsym $mod+d exec foot -T float -w 800x600 -e tmux
+bindsym $mod+shift+e exec dolphin
 bindsym $mod+shift+a exec grim -g "$(slurp)" - | swappy -f -
 bindsym ctrl+shift+p exec ~/.config/rofi/bin/cliphist
 bindsym $mod+shift+s exec foot -T Translate -w 800x400 -e ~/.config/hypr/scripts/translate/tui
@@ -180,7 +177,10 @@ bindsym $mod+shift+p exec playerctl play-pause || mpc toggle
 
 
 ## windows rules
-for_window [title="float"] floating enable,border pixel 2
+for_window [title="float"] floating enable,border none
+for_window [title="bluetui"] floating enable,border pixel 2
+for_window [app_id="org.kde.dolphin"] floating enable,border pixel 2
+for_window [class="com.alibabainc.dingtalk"] floating enable,border pixel 2
 for_window [title="Translate"] floating enable,border pixel 2
 
 # switch to workspace
@@ -207,43 +207,17 @@ bindsym $mod+Shift+8 move container to workspace number 8 $tag8
 bindsym $mod+Shift+9 move container to workspace number 9 $tag9
 bindsym $mod+Shift+0 move container to workspace $tag0
 
-# rename workspace
-# bindsym $mod+t exec ~/.i3/bin/tags num
-# bindsym $mod+Shift+t exec ~/.i3/bin/tags
-# bindsym $mod+n exec ~/.i3/bin/tags temp
-# bindsym $mod+Shift+n exec ~/.i3/bin/tags temp-move
-# reminder
-# bindsym $mod+apostrophe exec i3-input -F "exec sh -c 'sleep %s && notify-send Remember-%ss-ago!'" -P 'Remind after: '
-# # [move to] new workspace
-# bindsym $mod+i exec i3-input -F "workspace \"%s\"" -P 'Workspace: '
-# bindsym $mod+Shift+i exec i3-input -F "move container to workspace \"%s\"" -P 'Move to workspace: '
-# # mark container
-# bindsym $mod+m exec i3-input -F 'mark %s' -P 'Mark name: '
-# bindsym $mod+Shift+m exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '
-# copy to register ($mod+., $mod+Shift+.)
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
-# exit i3 (logs you out of your X session)
-#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-#bindsym $mod+Shift+e exit
-# mode "(l)ock (s) eep (h)ybernate (r)eboot (p)oweroff (e)xit-i3" {
-#         bindsym l exec ~/.i3/bin/i3lock.sh; mode "default"
-#         bindsym s exec ~/.i3/bin/i3lock.sh && systemctl suspend; mode "default"
-#         bindsym h exec ~/.i3/bin/i3lock.sh && systemctl hibernate; mode "default"
-#         bindsym p exec systemctl poweroff; mode "default"
-#         bindsym r exec systemctl reboot; mode "default"
-#         bindsym e exec --no-startup-id i3-msg exit; mode "default"
-#         bindsym Return mode "default"
-#         bindsym Escape mode "default"
-# }
-# bindsym $mod+Shift+e mode "(l)ock (s)leep (h)ybernate (r)eboot (p)oweroff (e)xit-i3"
+
+bindsym $mod+Shift+Escape exit
 
 # mouse mode
-mode "mouse" {
-}
-bindsym $mod+g mode "mouse"
+# mode "mouse" {
+# }
+# bindsym $mod+g mode "mouse"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -290,11 +264,6 @@ client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
 client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
 
 client.background       #F8F8F2
-# set some nice colors      border  background  text    indicator
-# client.focused              $id     $ac        $tx     $id
-# client.unfocused            $bg     $bg         $ia     $id
-# client.focused_inactive     $bg     $bg         $ac     $id
-#client.urgent               $yw     $yw         $tx     $id
 
 # start application
 exec --no-startup-id fcitx5 -D
@@ -308,55 +277,31 @@ exec --no-startup-id kwalletd6
 exec --no-startup-id syncthing
 exec --no-startup-id mpd
 exec --no-startup-id swww-daemon --format xrgb
-exec --no-startup-id wlsunset -l 39.9 -L 116.3 -t 5000 -T 6000
+exec --no-startup-id wlsunset -l 39.9 -L 116.3 -t 6000 -T 7000
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 exec --no-startup-id /bin/aliyundrive-webdav
 exec --no-startup-id /bin/autotiling
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q sset Master 3%+
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q sset Master 3%-
-bindsym XF86AudioMute exec --no-startup-id amixer -q sset Master toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/hypr/scripts/volume up
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/hypr/scripts/volume down
+bindsym XF86AudioMute exec --no-startup-id ~/.config/hypr/scripts/volume mute
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
-
-# Touchpad controls
-bindsym --release XF86Sleep exec ~/.i3/bin/i3lock.sh && systemctl suspend
+bindsym XF86MonBrightnessUp exec ~/.config/hypr/scripts/brightness up
+bindsym XF86MonBrightnessDown exec ~/.config/hypr/scripts/brightness down
 
 # Screenshot
 bindsym Print exec scrot -e 'mv $f /tmp/'
-bindsym $mod+Print exec gnome-screenshot -i -a
 workspace 1 output eDP-1
 workspace 2 output eDP-1
 workspace 3 output eDP-1
-workspace 4 output eDP-1
-workspace 5 output eDP-1
 
+workspace 4 output HDMI-A-1
+workspace 5 output HDMI-A-1
 workspace 6 output HDMI-A-1
-workspace 7 output HDMI-A-1
-workspace 8 output HDMI-A-1
-workspace 9 output HDMI-A-1
-workspace 10 output HDMI-A-1
 
-# Toggle fastly terminal
-# bindsym $mod+Escape exec ~/.i3/bin/fn esc
-# bindcode $mod+49 exec ~/.i3/bin/fn 0
-# bindsym $mod+F12 exec ~/.i3/bin/fn 12
-
-# More workspaces
-# bindsym $mod+F1 workspace number 11 F1
-# bindsym $mod+F2 workspace number 12 F2
-# bindsym $mod+F3 workspace number 13 F3
-# bindsym $mod+F4 workspace number 14 F4
-# bindsym $mod+F5 workspace number 15 F5
-# bindsym $mod+F6 workspace number 16 F6
-# bindsym $mod+F7 workspace number 17 F7
-# bindsym $mod+F8 workspace number 18 F8
-# bindsym $mod+F9 workspace number 19 F9
-# bindsym $mod+F10 workspace number 20 F10
-# bindsym $mod+F11 workspace number 21 F11
+for_window [floating] focus
 
 # Media player controls
 bindsym XF86AudioPlay exec mpc toggle
@@ -369,25 +314,7 @@ bindsym XF86Launch1 exec xset dpms force off
 # Assign workspace
 assign [class="keepassxc"] $tag0
 
-## shortcut
-# emacs
-# bindsym $mod+Mod1+i exec emacs
-# keepassx
-# bindsym $mod+Mod1+k exec keepassxc
-# email
-# bindsym $mod+Mod1+e exec thunderbird
-# browser
-# bindsym $mod+Mod1+n exec nyxt
-# bindsym $mod+Mod1+b exec firefox -P default
-# bindsym $mod+Mod1+Shift+b exec firefox -P default --private-window
-# bindsym $mod+Mod1+g exec chromium --temp-profile
-# bindsym $mod+Mod1+Shift+g exec chromium --temp-profile --incognito
-# gimp
-# bindsym $mod+Mod1+p exec gimp
-# # wicd
-# bindsym $mod+Mod1+w exec wicd-client -n
-
 bindcode $mod+90 [title="YouTube"] scratchpad show
 for_window [title="YouTube"] sticky enable
 
-exec i3-msg workspace 1 $tag1
+exec swaymsg workspace 1 $tag1

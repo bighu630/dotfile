@@ -8,9 +8,8 @@
     "margin-bottom": 0,
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher","memory","custom/spotify", "wlr/taskbar","sway/window"],
+    "modules-left": ["custom/launcher","memory","custom/spotify", "wlr/taskbar","hyprland/window","sway/window"],
     "modules-center": ["hyprland/workspaces","sway/workspaces","mpd" ,"clock"],
-    //  "modules-center": ["sway/workspaces","mpd" ,"clock"],
     "modules-right": ["custom/speed", "backlight","tray", "pulseaudio", "battery", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
       "format": "{icon}",
@@ -84,8 +83,8 @@
         "format": "{stateIcon} {randomIcon}{repeatIcon}{singleIcon}{title} ",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped ",
-        "max-length": 20,
-        "interval": 10,
+        "max-length": 10,
+        "interval": 5,
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
         },
@@ -288,9 +287,8 @@
     "margin-bottom": 0,
     "margin-right": 8,
     "spacing": 3, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "mpd", "custom/spotify","wlr/taskbar","hyprland/window"],
-    "modules-center": ["hyprland/workspaces","sway/workspaces",  "clock"],
-    // "modules-center": ["sway/workspaces",  "clock"],
+    "modules-left": ["custom/launcher", "custom/spotify","wlr/taskbar","hyprland/window","sway/window"],
+    "modules-center": ["hyprland/workspaces","sway/workspaces", "mpd",  "clock"],
     "modules-right": ["custom/speed","network","tray",  "pulseaudio", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
       "format": "{icon}",
@@ -346,8 +344,8 @@
         "format": "{stateIcon} {singleIcon}{title} ",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped ",
-        "interval": 10,
-        "max-length": 20,
+        "interval":5,
+        "max-length": 10,
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
         },
