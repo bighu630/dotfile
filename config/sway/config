@@ -40,16 +40,16 @@ output eDP-1 resolution 3200x2000 scale 1.5 position 0 0
 # output HDMI-A-1 resolution 3200x2000 position 1920 0
 # TxGVNN <txgvnn@gmail.com> Name the wordspaces xprop to check window
 # xmodmap [ --pke ] view keymap
-# set $tag1 
-# set $tag2 
-# set $tag3 
-# set $tag4 
-# set $tag5 
-# set $tag6 
-# set $tag7 
-# set $tag8 
-# set $tag9 
-# set $tag0 
+set $tag1 
+set $tag2 
+set $tag3 
+set $tag4 
+set $tag5 
+set $tag6 
+set $tag7 
+set $tag8 
+set $tag9 
+set $tag0 
 
 # i3 config file (v4)
 #
@@ -184,28 +184,27 @@ for_window [class="com.alibabainc.dingtalk"] floating enable,border pixel 2
 for_window [title="Translate"] floating enable,border pixel 2
 
 # switch to workspace
-bindsym $mod+1 workspace number 1 $tag1
-bindsym $mod+2 workspace number 2 $tag2
-bindsym $mod+3 workspace number 3 $tag3
-bindsym $mod+4 workspace number 4 $tag4
-bindsym $mod+5 workspace number 5 $tag5
-bindsym $mod+6 workspace number 6 $tag6
-bindsym $mod+7 workspace number 7 $tag7
-bindsym $mod+8 workspace number 8 $tag8
-bindsym $mod+9 workspace number 9 $tag9
-bindsym $mod+0 workspace $tag0
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace number 1 $tag1
-bindsym $mod+Shift+2 move container to workspace number 2 $tag2
-bindsym $mod+Shift+3 move container to workspace number 3 $tag3
-bindsym $mod+Shift+4 move container to workspace number 4 $tag4
-bindsym $mod+Shift+5 move container to workspace number 5 $tag5
-bindsym $mod+Shift+6 move container to workspace number 6 $tag6
-bindsym $mod+Shift+7 move container to workspace number 7 $tag7
-bindsym $mod+Shift+8 move container to workspace number 8 $tag8
-bindsym $mod+Shift+9 move container to workspace number 9 $tag9
-bindsym $mod+Shift+0 move container to workspace $tag0
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

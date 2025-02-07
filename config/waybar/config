@@ -43,7 +43,7 @@
     },
     "sway/window": {
         "format": "{}",
-        "max-length": 50,
+        "max-length": 20,
         "all-outputs" : true,
         "offscreen-css" : true,
         "offscreen-css-text": "(inactive)",
@@ -313,6 +313,18 @@
         "on-scroll-up": "swaymsg workspace prev",
         "on-scroll-down": "swaymsg workspace next"
     },
+    "sway/window": {
+        "format": "{}",
+        "max-length": 20,
+        "all-outputs" : true,
+        "offscreen-css" : true,
+        "offscreen-css-text": "(inactive)",
+        "rewrite": {
+            "(.*) - Mozilla Firefox": " $1",
+            "(.*) - fish": "> [$1]"
+        },
+    },
+
     "hyprland/window": {
         "format": "{}",
         "max-length": 20,
