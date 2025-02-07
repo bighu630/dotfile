@@ -83,7 +83,7 @@
         "format": "{stateIcon} {randomIcon}{repeatIcon}{singleIcon}{title} ",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped ",
-        "max-length": 10,
+        "max-length": 20,
         "interval": 5,
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
@@ -357,7 +357,7 @@
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped ",
         "interval":5,
-        "max-length": 10,
+        "max-length": 20,
         "consume-icons": {
             "on": " " // Icon shows only when "consume" is on
         },
