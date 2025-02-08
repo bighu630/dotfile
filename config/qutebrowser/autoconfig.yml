@@ -42,10 +42,20 @@ settings:
       passthrough:
         <Ctrl+Shift+e>: tab-prev
         <Ctrl+Shift+r>: tab-next
+  colors.tabs.bar.bg:
+    global: '#282A36'
+  colors.tabs.even.bg:
+    global: '#282A36'
   colors.tabs.indicator.system:
     global: hsl
+  colors.tabs.odd.bg:
+    global: '#282A36'
+  colors.tabs.selected.even.bg:
+    global: '#6272A4'
+  colors.tabs.selected.odd.bg:
+    global: '#6272A4'
   colors.webpage.darkmode.enabled:
-    global: true
+    global: false
   content.autoplay:
     global: false
   content.blocking.adblock.lists:
