@@ -15,7 +15,7 @@ input "type:touchpad" {
 
 ### Appearance
 # window corner radius in px
-corner_radius 10
+corner_radius 0
 
 # Window background blur
 blur on
@@ -61,7 +61,9 @@ set $mod Mod1
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:SFMono Nerd Font 8
+font pango:SFMono Nerd Font 10
+
+titlebar_padding 1
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -139,7 +141,7 @@ bindsym $mod+i split v
 bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -316,4 +318,4 @@ assign [class="keepassxc"] $tag0
 bindcode $mod+90 [title="YouTube"] scratchpad show
 for_window [title="YouTube"] sticky enable
 
-exec swaymsg workspace 1 $tag1
+exec swaymsg workspace 1

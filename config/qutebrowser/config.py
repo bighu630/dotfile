@@ -22,6 +22,9 @@ from qutebrowser.config.config import (
 config = config  # type: ConfigAPI # noqa: F821 pylint: disable=E0602,C0103
 c = c
 
+# 仅仅在in-mode下显示状态栏
+c.statusbar.show = 'in-mode'
+
 # Change the argument to True to still load settings configured via autoconfig.yml
 
 # Always restore open sites when qutebrowser is reopened. Without this
