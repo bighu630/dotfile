@@ -181,9 +181,13 @@ bindsym $mod+shift+p exec playerctl play-pause || mpc toggle
 ## windows rules
 for_window [title="float"] floating enable,border none
 for_window [title="bluetui"] floating enable,border pixel 2
-for_window [app_id="org.kde.dolphin"] floating enable,border pixel 2
-for_window [class="com.alibabainc.dingtalk"] floating enable,border pixel 2
 for_window [title="Translate"] floating enable,border pixel 2
+
+for_window [app_id="org.kde.dolphin"] floating enable,border pixel 2
+for_window [app_id="viewnior"] floating enable,border none
+
+
+for_window [class="com.alibabainc.dingtalk"] floating enable,border pixel 2
 
 # switch to workspace
 bindsym $mod+1 workspace number 1
@@ -271,6 +275,7 @@ exec --no-startup-id fcitx5 -D
 exec --no-startup-id swaync
 exec --no-startup-id hypridle
 exec --no-startup-id ~/.config/hypr/scripts/clip.sh
+exec --no-startup-id ~/.config/hypr/scripts/startCmd.sh
 
 exec --no-startup-id wl-paste --watch cliphist store
 exec --no-startup-id kdeconnectd
