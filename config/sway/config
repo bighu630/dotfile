@@ -1,6 +1,6 @@
 input "type:keyboard" {
-    # xkb_options "caps:escape"
-    xkb_options "caps:escape,altwin:swap_alt_win"
+    xkb_options "caps:escape"
+    # xkb_options "caps:escape,altwin:swap_alt_win"
 }
 
 input "type:touchpad" {
