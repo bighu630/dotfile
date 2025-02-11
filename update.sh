@@ -8,3 +8,4 @@ git add .
 git commit -m "Update submodules"
 git push
 
+ notify-send "update" -i "dcc_nav_update" -u low
