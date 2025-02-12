@@ -55,7 +55,7 @@ settings:
   colors.tabs.selected.odd.bg:
     global: '#6272A4'
   colors.webpage.darkmode.enabled:
-    global: false
+    global: true
   content.autoplay:
     global: false
   content.blocking.adblock.lists:
@@ -76,6 +76,7 @@ settings:
     https://www.kdocs.cn: access-paste
     https://y1cunhui.github.io: access-paste
   content.notifications.enabled:
+    https://app.follow.is: true
     https://www.teambition.com: true
   content.pdfjs:
     global: false
