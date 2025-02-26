@@ -55,7 +55,7 @@ settings:
   colors.tabs.selected.odd.bg:
     global: '#6272A4'
   colors.webpage.darkmode.enabled:
-    global: false
+    global: true
   content.autoplay:
     global: false
   content.blocking.adblock.lists:
