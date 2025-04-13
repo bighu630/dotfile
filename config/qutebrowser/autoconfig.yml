@@ -67,6 +67,8 @@ settings:
     - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/adblock/light.txt
   content.javascript.clipboard:
     http://127.0.0.1:8384: access-paste
+    https://app.creately.com: access-paste
+    https://chat.deepseek.com: access-paste
     https://chatgpt.com: access-paste
     https://draculatheme.com: access-paste
     https://github.com: access-paste

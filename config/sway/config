@@ -7,6 +7,7 @@ input "type:touchpad" {
     tap enabled                     # 启用点击代替物理按键
     # natural_scroll enabled          # 反向滚动（Mac 风格）
     dwt enabled                      # 启用打字时禁用触控板（Disable While Typing）
+    natural_scroll enabled
     middle_emulation enabled         # 允许通过双指同时按下模拟鼠标中键
     pointer_accel 0.2                # 指针加速度（-1 关闭加速，0.3 适中）
     scroll_factor 1.5                # 滚动速度倍数
