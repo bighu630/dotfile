@@ -20,5 +20,5 @@ waybarUp() {
     done
 }
 
-waybarUp &
+# waybarUp &
 menu
