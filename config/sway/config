@@ -24,7 +24,7 @@ blur_xray on
 blur_passes 2
 blur_radius 5
 
-shadows off
+shadows on
 shadows_on_csd on
 shadow_blur_radius 20
 shadow_color #0000007F
@@ -37,7 +37,7 @@ dim_inactive_colors.urgent #900000FF
 # Move minimized windows into Scratchpad (enable|disable)
 scratchpad_minimize enable
 
-output eDP-1 resolution 3200x2000 scale 1.5 position 0 0
+output eDP-1 resolution 3200x2000 scale 1.666 position 0 0
 # output HDMI-A-1 resolution 3200x2000 position 1920 0
 # TxGVNN <txgvnn@gmail.com> Name the wordspaces xprop to check window
 # xmodmap [ --pke ] view keymap
