@@ -279,7 +279,7 @@
     },
 },
 {
-    "height": 20, // Waybar height (to be removed for auto height)
+    "height": 18, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
     "output": ["HDMI-A-1"],
     "margin-top": 2,
@@ -294,10 +294,10 @@
       "format": "{icon}",
       "on-click": "activate",
       "format-icons": {
-        "5": "1",
-        "6": "2",
-        "7": "3",
-        "8": "4",
+        "11": "1",
+        "12": "2",
+        "13": "3",
+        "14": "4",
         "urgent": "",
         "default": ""
       }
@@ -330,7 +330,7 @@
         "max-length": 20,
         "separate-outputs": false,
         "icon": true,
-        "icon-size": 24,
+        "icon-size": 18,
     },
     "wlr/taskbar": {
         "format": " {icon}",
