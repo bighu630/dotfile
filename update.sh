@@ -1,6 +1,6 @@
 #!/bin/bash
 git pull
-git submodule update --recursive --remote
+git submodule update --init --recursive
 git submodule foreach git add .
 git submodule foreach git commit -m "Update submodule"
 git submodule foreach 'git push'
