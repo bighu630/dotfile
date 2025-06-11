@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0
 git pull
 git submodule update --recursive --remote
 git submodule foreach git add .

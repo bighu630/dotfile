@@ -36,8 +36,9 @@ dim_inactive_colors.urgent #900000FF
 
 # Move minimized windows into Scratchpad (enable|disable)
 scratchpad_minimize enable
+titlebar_separator enable
 
-output eDP-1 resolution 3200x2000 scale 1.666 position 0 0
+output eDP-1 resolution 3200x2000 scale 1.45 position 0 0
 # output HDMI-A-1 resolution 3200x2000 position 1920 0
 # TxGVNN <txgvnn@gmail.com> Name the wordspaces xprop to check window
 # xmodmap [ --pke ] view keymap
@@ -158,7 +159,7 @@ bindsym $mod+a focus parent
 # focus the child container
 bindsym $mod+z focus child
 # focus urgent lasted $mod+'='
-bindcode $mod+21 [urgent=latest] focus
+bindcode $mod+= [urgent=latest] focus
 # focus follow mouse
 focus_follows_mouse yes
 # scratchpad
@@ -312,6 +313,7 @@ exec --no-startup-id ~/.config/hypr/scripts/startCmd.sh
 
 exec --no-startup-id wl-paste --watch cliphist store
 exec --no-startup-id kdeconnectd
+exec --no-startup-id libinput-gestures
 exec --no-startup-id kwalletd6
 exec --no-startup-id syncthing
 exec --no-startup-id mpd
