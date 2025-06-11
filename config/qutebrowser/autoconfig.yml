@@ -68,6 +68,7 @@ settings:
   content.javascript.clipboard:
     http://127.0.0.1:8384: access-paste
     https://app.creately.com: access-paste
+    https://blog.whosworld.fun: access-paste
     https://chat.deepseek.com: access-paste
     https://chatgpt.com: access-paste
     https://draculatheme.com: access-paste
@@ -103,6 +104,8 @@ settings:
     global: 苹方
   fonts.web.family.standard:
     global: 苹方
+  spellcheck.languages:
+    global: null
   statusbar.padding:
     global:
       bottom: 1
@@ -112,7 +115,7 @@ settings:
   statusbar.position:
     global: bottom
   statusbar.show:
-    global: never
+    global: always
   tabs.indicator.padding:
     global:
       bottom: 0
@@ -127,12 +130,12 @@ settings:
     global: last
   tabs.padding:
     global:
-      bottom: 2
+      bottom: 0
       left: 8
       right: 8
-      top: 2
+      top: 0
   tabs.position:
-    global: bottom
+    global: top
   tabs.title.elide:
     global: none
   url.default_page:

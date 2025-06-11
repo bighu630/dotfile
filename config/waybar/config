@@ -1,6 +1,6 @@
 [{
     "auto height": false,
-    "height": 20, // Waybar height (to be removed for auto height)
+    "height": 24, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
     "output": ["eDP-1"],
     "margin-top": 3,
@@ -61,7 +61,7 @@
     },
     "wlr/taskbar": {
         "format": " {icon}",
-        "icon-size": 18,
+        "icon-size": 20,
         "tooltip-format": "{title}",
         "on-click": "activate",
         "icon-theme": "Papirus-Dark",
