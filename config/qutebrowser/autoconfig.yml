@@ -78,6 +78,7 @@ settings:
     https://registry.hub.docker.com: access-paste
     https://web.telegram.org: access-paste
     https://www.kdocs.cn: access-paste
+    https://www.postman.com: access-paste
     https://y1cunhui.github.io: access-paste
   content.notifications.enabled:
     https://app.follow.is: true
