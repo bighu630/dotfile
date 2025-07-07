@@ -18,6 +18,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source ~/.zshrc-alias
 source ~/.zsh_ai
+source ~/.zsh_api.zsh
 
 #npm配置
 # 定义npm存放的目录
