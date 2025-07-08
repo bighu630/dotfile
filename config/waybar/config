@@ -68,7 +68,8 @@
         "on-click-middle": "close",
         "active-first": false,
         "ignore-list": [
-            "Fcitx5 Input Window"
+            "Fcitx5 Input Window",
+            "Lyrics Overlay"
         ],
         "app_ids-mapping": {
             "firefoxdeveloperedition": "firefox-developer-edition",
@@ -341,7 +342,8 @@
         "active-first": false,
         "on-click-right": "close",
         "ignore-list": [
-            "Fcitx5 Input Window"
+            "Fcitx5 Input Window",
+            "Lyrics Overlay"
         ],
         "app_ids-mapping": {
             "firefoxdeveloperedition": "firefox-developer-edition"
