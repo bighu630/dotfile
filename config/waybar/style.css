@@ -43,7 +43,7 @@
 
 
 window#waybar {
-  background-color: rgba(26, 27, 38, 0.5);
+  background-color: rgba(26, 27, 38, 0.3);
   color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;

@@ -1,6 +1,6 @@
 [{
     "auto height": false,
-    "height": 24, // Waybar height (to be removed for auto height)
+    "height": 22, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
     "output": ["eDP-1"],
     "margin-top": 3,
@@ -8,9 +8,9 @@
     "margin-bottom": 0,
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher","memory","custom/spotify", "wlr/taskbar","hyprland/window","sway/window"],
-    "modules-center": ["hyprland/workspaces","sway/workspaces","mpd" ,"clock"],
-    "modules-right": ["custom/speed", "backlight","tray", "pulseaudio", "battery", "custom/power-menu","custom/notify"],
+    "modules-left": ["custom/launcher","memory", "wlr/taskbar","hyprland/window","sway/window"],
+    "modules-center": ["hyprland/workspaces","sway/workspaces" ,"clock"],
+    "modules-right": ["custom/speed","custom/spotify","mpd", "backlight","tray", "pulseaudio", "battery", "custom/power-menu","custom/notify"],
     "hyprland/workspaces": {
       "format": "{icon}",
       "on-click": "activate",
@@ -54,10 +54,10 @@
     },
     "hyprland/window": {
         "format": "{}",
-        "max-length": 20,
+        "max-length": 14,
         "separate-outputs": false,
         "icon": true,
-        "icon-size": 24,
+        "icon-size": 22,
     },
     "wlr/taskbar": {
         "format": " {icon}",
@@ -107,8 +107,8 @@
         "tooltip-format-disconnected": "MPD (disconnected)",
         "on-double-click-left": "mpc prev",
         "on-click": "mpc toggle",
-        "on-double-click-right": "mpc next",
-        "on-click-right": "mpc random"
+        "on-double-click-right": "mpc random",
+        "on-click-right": "mpc next"
     },
     "cava": {
         "framerate": 800,
