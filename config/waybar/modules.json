@@ -175,8 +175,8 @@
         "format-disconnected": "Disconnected  ",
     },
     "custom/lyrics": {
-        "format": " {}  ",
-        "exec": "~/.config/waybar/scripts/lyrics.sh",
+        "format": "   {}   ",
+        "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=30;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
         "interval": 1,
         "return-type": "text",
         "on-click": "playerctl play-pause || mpc toggle",
