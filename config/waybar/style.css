@@ -4,16 +4,7 @@
   font-size: 16px;
 }
 
-@define-color backgroundlight #000000;
-@define-color backgrounddark #000000;
-@define-color workspacesbackground1 #000000;
-@define-color workspacesbackground2 #222222;
-@define-color bordercolor #000000;
-@define-color textcolor1 #FFFFFF;
-@define-color textcolor2 #FFFFFF;
-@define-color textcolor3 #000000;
-@define-color iconcolor #000000;
-
+/* Catppuccin Macchiato Palette */
 @define-color rosewater #f4dbd6;
 @define-color flamingo #f0c6c6;
 @define-color pink #f5bde6;
@@ -28,7 +19,7 @@
 @define-color sapphire #7dc4e4;
 @define-color blue #8aadf4;
 @define-color lavender #b7bdf8;
-@define-color text #cad3f5;
+@define-color text #cad3f5; /* Primary text color */
 @define-color subtext1 #b8c0e0;
 @define-color subtext0 #a5adcb;
 @define-color overlay2 #939ab7;
@@ -37,13 +28,86 @@
 @define-color surface2 #5b6078;
 @define-color surface1 #494d64;
 @define-color surface0 #363a4f;
-@define-color base #24273a;
-@define-color mantle #1e2030;
-@define-color crust #181926;
+@define-color mantle #1e2030; /* Secondary background color, slightly darker than base */
+@define-color crust #181926; /* Darkest background color */
+@define-color hyprland rgb(80, 232, 204);
+
+/* Transparent Colors (derived from Catppuccin) */
+@define-color base_alpha_30 rgba(36, 39, 58, 0.3); /* For general window transparency */
+@define-color base_alpha_70 rgba(36, 39, 58, 0.7); /* For general window transparency */
+@define-color mantle_alpha_50 rgba(30, 32, 48, 0.5); /* For blink animation background */
+@define-color crust_alpha_20 rgba(24, 25, 38, 0.2); /* For general dark transparency, if needed */
+
+/* General Purpose Colors (some with transparency) */
+@define-color white #FFFFFF; /* Explicit white for clear text */
+@define-color black #000000; /* Explicit black for clear text */
+@define-color black_alpha_20 rgba(0, 0, 0, 0.2); /* For general transparent black */
+@define-color grey_alpha_30 rgba(120, 118, 117, 0.3); /* For taskbar background */
+@define-color grey_alpha_40 rgba(120, 118, 117, 0.4); /* For taskbar button background */
+
+/* Waybar Specific Module Colors (mapped to Catppuccin or custom) */
+@define-color workspaces_button_color @subtext0; /* Original #7984A4 - mapped to subtext0 */
+@define-color workspaces_focused_text @crust; /* Original #2E3440 - mapped to crust */
+@define-color workspaces_light_text @text; /* Original #ECEFF4 - mapped to text */
+@define-color workspaces_urgent_bg @red; /* Original #BF616A - mapped to red */
+@define-color workspaces_hover_bg @blue; /* Original #5E81AC - mapped to a blueish tone */
+@define-color workspaces_active_bg @sapphire; /* Original #63a1bf - mapped to sapphire */
+
+@define-color taskbar_active_bg #94727D; /* Custom reddish-brown */
+@define-color taskbar_active_shadow #24f3f2; /* Custom cyan */
+
+@define-color cava_visualizer_color @sky; /* Original #b3f1ff - mapped to sky */
+
+@define-color module_text_color @text; /* Original #e5e5e5 - for most module text */
+@define-color power_menu_bg @crust; /* Original #1b242b - mapped to crust */
+@define-color notify_pop_color @sky; /* Original #60caf5 - mapped to sky */
+@define-color launcher_icon_color @blue; /* Original #6a92d7 - mapped to blue */
+
+/* Weather module colors (mapped to Catppuccin or custom) */
+@define-color weather_severe_color @red; /* Original #eb937d - mapped to red */
+@define-color weather_sunny_color @yellow; /* Original #c2ca76 - mapped to yellow */
+@define-color weather_cloudy_color @teal; /* Original #c2ddda - mapped to teal */
+@define-color weather_rainy_color @green; /* Original #5aaca5 - mapped to green */
+@define-color weather_snowy_color @lavender; /* Original #d6e7e5 - mapped to lavender */
+@define-color weather_default_color @subtext0; /* Original #dbd9d8 - mapped to subtext0 */
+
+/* Specific Module Colors */
+@define-color cpu_monitor_color @peach; /* Original #fb958b - mapped to peach */
+@define-color disk_monitor_bg @surface1; /* Original #964b00 - mapped to surface1 (darker for background) */
+@define-color pulseaudio_icon_color @sapphire; /* Original #7d9bba - mapped to sapphire */
+@define-color backlight_icon_color @teal; /* Original #8fbcbb - mapped to teal */
+@define-color clock_icon_color @lavender; /* Original #c8d2e0 - mapped to lavender */
+@define-color battery_icon_color @mauve; /* Original #c0caf5 - mapped to mauve */
+@define-color battery_charging_icon_color @green; /* Original #26a65b - mapped to green */
+@define-color battery_critical_icon_color @red; /* Original #f53c3c - mapped to red */
+@define-color bluetooth_icon_color @overlay0; /* Original #707d9d - mapped to overlay0 */
+@define-color network_icon_color @pink; /* Original #b48ead - mapped to pink */
+@define-color memory_monitor_bg @mantle_alpha_50;
+
+@define-color media_player_bg @green; /* Original #66cc99 - mapped to green */
+@define-color media_player_text_color @crust; /* Original #2a5c45 - dark text for media */
+@define-color vlc_player_bg @peach; /* Original #ffa000 - mapped to peach */
+
+@define-color temperature_sensor_bg @peach; /* Original #f0932b - mapped to peach */
+@define-color temperature_critical_bg @red; /* Original #eb4d4b - mapped to red */
+
+@define-color idle_inhibitor_bg @crust; /* Original #2d3436 - mapped to crust */
+@define-color idle_inhibitor_activated_bg @white; /* Original #ecf0f1 - mapped to white */
+
+@define-color mpd_icon_color @green; /* Original #51a37a - mapped to green */
+@define-color mpd_stopped_color @peach; /* Original #f0932b - mapped to overlay0 */
+@define-color mpd_paused_color @peach; /* Original #f0932b - mapped to overlay0 */
+
+@define-color language_module_bg @teal; /* Original #00b093 - mapped to teal */
+@define-color language_module_text @maroon; /* Original #740864 - mapped to maroon */
+
+@define-color keyboard_state_bg @green; /* Original #97e1ad - mapped to green */
+
+@define-color spotify_text_color @subtext0; /* Original #abb2bf - mapped to subtext0 */
 
 
 window#waybar {
-  background-color: rgba(26, 27, 38, 0.3);
+  background-color: @base_alpha_30;
   color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -59,7 +123,7 @@ window#waybar.hidden {
 
 #workspaces button {
   padding: 0 5px;
-  color: #7984A4;
+  color: @workspaces_button_color;
   background-color: transparent;
   /* Use box-shadow instead of border so the text isn't offset */
   box-shadow: inset 0 -3px transparent;
@@ -68,28 +132,28 @@ window#waybar.hidden {
   border-radius: 0;
 }
 
-#workspaces button {
-  padding: 5px 10px;
-  margin: 0 3px;
-  border-radius: 8px;
-  background-color: transparent;
-  color: #7984A4;
-  border: none;
-}
+/* #workspaces button { */
+/*   padding: 5px 10px; */
+/*   margin: 0 3px; */
+/*   border-radius: 8px; */
+/*   background-color: transparent; */
+/*   color: #7984A4; */
+/*   border: none; */
+/* } */
 
 #workspaces button.focused {
   background-color: @sapphire;
-  color: #2E3440;
+  color: @workspaces_focused_text;
 }
 
 #workspaces button.urgent {
-  background-color: #BF616A;
-  color: #ECEFF4;
+  background-color: @workspaces_urgent_bg;
+  color: @workspaces_light_text;
 }
 
 #workspaces button:hover {
-  background-color: #5E81AC;
-  color: #ECEFF4;
+  background-color: @workspaces_hover_bg;
+  color: @workspaces_light_text;
 }
 
 
@@ -100,8 +164,8 @@ window#waybar.hidden {
     padding-left: 5px;
     /* padding: 0 3px; */
     margin: 0 0px;
-    color: #ffffff;
-    background-color: rgba(120,118,117,0.3);
+    color: @white;
+    background-color: @grey_alpha_30;
 }
 #taskbar button {
     min-width: 40px;
@@ -109,22 +173,22 @@ window#waybar.hidden {
     /* border-radius: 0px 0px 0px 0px; */
     padding: 0 0 0 0px;
     margin: 0 1 -2 -2px;
-    color: #ffffff;
-    background-color: rgba(120,118,117,0.4);
+    color: @white;
+    background-color: @grey_alpha_40;
 }
 
 #taskbar button:hover {
-    background: rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 3px #ffffff;
+    background: @black_alpha_20;
+    box-shadow: inset 0 3px @white;
 }
 
 #taskbar button.active {
-    background-color: #94727D;
-    box-shadow: inset 0 3px #24f3f2;
+    background-color: @taskbar_active_bg;
+    box-shadow: inset 0 3px @taskbar_active_shadow;
 }
 
 #cava {
-    color: #b3f1ff;
+    color: @cava_visualizer_color;
     font-size: 8px;
 }
 
@@ -143,14 +207,14 @@ window#waybar.hidden {
 #custom-weather.snowyIcyNight,
 #custom-weather.default {
   padding: 0 10px;
-  color: #e5e5e5;
+  color: @module_text_color;
   /* color: #bf616a; */
   border-radius: 6.5px;
   background-color: @surface0;
 }
 
 #tray{
-  background-color: @base;
+  background-color: @base_alpha_70;
   padding: 0 10px;
   color: #e5e5e5;
   border-radius: 6.5px;
@@ -159,17 +223,16 @@ window#waybar.hidden {
 
 #custom-power-menu{
   padding: 0 10px;
-  color: #e5e5e5;
-  /* color: #bf616a; */
+  color: @module_text_color;
   border-radius: 6.5px;
-  background-color: @mantle;
+  background-color: @power_menu_bg;
 }
 #pulseaudio{
   padding: 0 10px;
   color: #e5e5e5;
   /* color: #bf616a; */
   border-radius: 6.5px;
-  background-color: @base;
+  background-color: @base_alpha_70;
 }
 #backlight{
   padding: 0 10px;
@@ -184,7 +247,7 @@ window#waybar.hidden {
   color: #e5e5e5;
   /* color: #bf616a; */
   border-radius: 6.5px;
-  background-color: @base;
+  background-color: @base_alpha_70;
 }
 
 #battery,
@@ -199,14 +262,14 @@ window#waybar.hidden {
   color: #e5e5e5;
   /* color: #bf616a; */
   border-radius: 6.5px;
-  background-color: @base;
+  background-color: @base_alpha_70;
 }
 #custom-notify{
   padding: 0 10px;
-  color: @sky;
+  color: @notify_pop_color;
   /* color: #bf616a; */
   border-radius: 6.5px;
-  background-color: @base;
+  background-color: @base_alpha_70;
 }
 
 
@@ -217,69 +280,108 @@ window#waybar.hidden {
   background-color: rgba(26, 27, 38, 0.3);
 }
 
-
 #workspaces {
-    background: @mantle;
-    margin: -5px 1px -6px 1px;
-    padding: 0px 1px;
-    border-radius: 65px;
-    border: 0px;
-    font-weight: bold;
-    font-style: normal;
-    opacity: 0.8;
-    font-size: 16px;
-    color: @textcolor1;
+    background-color: @base_alpha_70;
+    margin: -3px 3px -4px 3px;
+    padding: 0px 4px;                    /* 减少上下 padding */
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 10px;                    /* 字体更小 */
+    color: #ffffff;
+    opacity: 0.95;
 }
 
 #workspaces button {
-    padding: 0px 5px;
-    margin: 4px 3px;
-    border-radius: 15px;
-    border: 0px;
-    color: @textcolor1;
-    background-color: @base;
-    transition: all 0.3s ease-in-out;
-    opacity: 0.4;
+    padding: 1px 5px;                   /* 上下 padding 缩小 */
+    margin: 2px 3px;                    /* 保持原 margin 不变 */
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.6);
+    min-height: 18px;                   /* 明确设置较小高度 */
+    min-width: 18px;
+    transition: all 0.15s ease-in-out;
+    opacity: 0.7;
 }
 
 #workspaces button.active {
-    color: @textcolor1;
-    background: #63a1bf;
-    border-radius: 15px;
-    min-width: 30px;
-    transition: all 0.3s ease-in-out;
-    opacity:1.0;
+    background-color: rgba(102, 153, 255, 0.85);
+    color: white;
+    border-radius: 50%;                 /* 圆形效果 */
+    padding: 2px;
+    min-width: 20px;
+    min-height: 20px;
+    opacity: 1.0;
 }
 
 #workspaces button:hover {
-    color: @textcolor1;
-    background: @surface0;
-    border-radius: 15px;
-    opacity:0.7;
+    background-color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    opacity: 0.9;
 }
+
+/* #workspaces { */
+/*     background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
+/*     margin: -5px 1px -6px 1px; */
+/*     padding: 0px 1px; */
+/*     border-radius: 65px; */
+/*     border: 0px; */
+/*     font-weight: bold; */
+/*     font-style: normal; */
+/*     opacity: 0.8; */
+/*     font-size: 16px; */
+/*     color: @white; */
+/* } */
+/**/
+/* #workspaces button { */
+/*     padding: 0px 5px; */
+/*     margin: 4px 3px; */
+/*     border-radius: 15px; */
+/*     border: 0px; */
+/*     color: @textcolor1; */
+/*     background-color: @base_alpha_70; */
+/*     transition: all 0.3s ease-in-out; */
+/*     opacity: 0.4; */
+/* } */
+/**/
+/* #workspaces button.active { */
+/*     color: @white; */
+/*     background: @workspaces_active_bg; */
+/*     border-radius: 15px; */
+/*     min-width: 30px; */
+/*     transition: all 0.3s ease-in-out; */
+/*     opacity:1.0; */
+/* } */
+/**/
+/* #workspaces button:hover { */
+/*     color: @textcolor1; */
+/*     background: @surface0; */
+/*     border-radius: 15px; */
+/*     opacity:0.7; */
+/* } */
 
 
 #cpu {
-  color: #fb958b;
+  color: @cpu_monitor_color;
   background-color: @surface1;
   border-radius: 7.5px;
 }
 
 #memory {
-  color: #ebcb8b;
-  background-color: @surface0;
+  color: @yellow;
+  background-color: @memory_monitor_bg;
   border-radius: 7.5px;
 }
 
 #custom-power-menu {
   border-radius: 9.5px;
-  background-color: #1b242b;
+  background-color: @power_menu_bg;
   border-radius: 7.5px;
   padding: 0 5px;
 }
 
 #custom-notify base{
-  color: #60caf5;
+  color: @notify_pop_color;
   border-radius: 8px;
   background-color: @crust;
   border-radius: 7.5px;
@@ -288,41 +390,41 @@ window#waybar.hidden {
 
 
 #custom-launcher {
-  background-color: @base;
-  color: #6a92d7;
+  background-color: @base_alpha_70;
+  color: @launcher_icon_color;
   border-radius: 7.5px;
   padding: 0 3px;
 }
 
 #custom-weather.severe {
-  color: #eb937d;
+  color: @weather_severe_color;
 }
 
 #custom-weather.sunnyDay {
-  color: #c2ca76;
+  color: @weather_sunny_color;
 }
 
 #custom-weather.clearNight {
-  color: #cad3f5;
+  color: @text;
 }
 
 #custom-weather.cloudyFoggyDay,
 #custom-weather.cloudyFoggyNight {
-  color: #c2ddda;
+  color: @weather_cloudy_color;
 }
 
 #custom-weather.rainyDay,
 #custom-weather.rainyNight {
-  color: #5aaca5;
+  color: @weather_rainy_color;
 }
 
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight {
-  color: #d6e7e5;
+  color: @weather_snowy_color;
 }
 
 #custom-weather.default {
-  color: #dbd9d8;
+  color: @weather_default_color;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -336,40 +438,40 @@ window#waybar.hidden {
 }
 
 #pulseaudio {
-  color: #7d9bba;
+  color: @pulseaudio_icon_color;
 }
 
 #backlight {
   /* color: #EBCB8B; */
-  color: #8fbcbb;
+  color: @backlight_icon_color;
 }
 
 #clock {
-  color: #c8d2e0;
+  color: @clock_icon_color;
   /* background-color: #14141e; */
 }
 
 #battery {
-  color: #c0caf5;
+  color: @battery_icon_color;
   /* background-color: #90b1b1; */
 }
 
 #battery.charging,
 #battery.full,
 #battery.plugged {
-  color: #26a65b;
+  color: @battery_charging_icon_color;
   /* background-color: #26a65b; */
 }
 
 @keyframes blink {
   to {
-    background-color: rgba(30, 34, 42, 0.5);
-    color: #abb2bf;
+    background-color: @mantle_alpha_50;
+    color: @spotify_text_color;
   }
 }
 
 #battery.critical:not(.charging) {
-  color: #f53c3c;
+  color: @battery_critical_icon_color;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -378,15 +480,15 @@ window#waybar.hidden {
 }
 
 label:focus {
-  background-color: #000000;
+  background-color: @black; /* Using opaque black for focus */
 }
 
 #disk {
-  background-color: #964b00;
+  background-color: @disk_monitor_bg;
 }
 
 #bluetooth {
-  color: #707d9d;
+  color: @bluetooth_icon_color;
 }
 
 #bluetooth.disconnected {
@@ -394,7 +496,7 @@ label:focus {
 }
 
 #network {
-  color: #b48ead;
+  color: @network_icon_color;
   background-color: @surface0;
   border-radius: 7.5px;
 }
@@ -403,8 +505,8 @@ label:focus {
 }
 
 #custom-media {
-  background-color: #66cc99;
-  color: #2a5c45;
+  background-color: @media_player_bg;
+  color: @media_player_text_color;
   min-width: 100px;
 }
 
@@ -413,15 +515,15 @@ label:focus {
 }
 
 #custom-media.custom-vlc {
-  background-color: #ffa000;
+  background-color: @vlc_player_bg;
 }
 
 #temperature {
-  background-color: #f0932b;
+  background-color: @temperature_sensor_bg;
 }
 
 #temperature.critical {
-  background-color: #eb4d4b;
+  background-color: @temperature_critical_bg;
 }
 
 #tray > .passive {
@@ -434,16 +536,16 @@ label:focus {
 }
 
 #idle_inhibitor {
-  background-color: #2d3436;
+  background-color: @idle_inhibitor_bg;
 }
 
 #idle_inhibitor.activated {
-  background-color: #ecf0f1;
-  color: #2d3436;
+  background-color: @idle_inhibitor_activated_bg;
+  color: @idle_inhibitor_bg;
 }
 
 #mpd {
-  color: #51a37a;
+  color: @mpd_icon_color;
 }
 
 #mpd.disconnected {
@@ -451,24 +553,24 @@ label:focus {
 }
 
 #mpd.stopped {
-  color: #90b1b1;
+  color: @mpd_stopped_color;
 }
 
 #mpd.paused {
-  color: #2a5c45;
+  color: @mpd_paused_color;
 }
 
 #language {
-  background: #00b093;
-  color: #740864;
+  background: @language_module_bg;
+  color: @language_module_text;
   padding: 0 5px;
   margin: 0 5px;
   min-width: 16px;
 }
 
 #keyboard-state {
-  background: #97e1ad;
-  color: #000000;
+  background: @keyboard_state_bg;
+  color: @black; /* Using opaque black for keyboard state */
   padding: 0 0px;
   margin: 0 5px;
   min-width: 16px;
@@ -482,9 +584,24 @@ label:focus {
   padding: 0 10px;
   margin: 0 4px;
   /* background-color: #1db954; */
-  color: #abb2bf;
+  color: @spotify_text_color;
+}
+#custom-lyrics{
+  background: linear-gradient(
+    to right,
+    /* rgba(255, 165, 0, 0.6), */
+    /* rgba(255, 0, 255, 0.7) */
+    rgba(51, 204, 255, 0.6),
+    rgba(0, 255, 153, 0.7)
+
+  );
+    color: white;
+    padding: 1px 2px;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 #keyboard-state > label.locked {
-  background: rgba(0, 0, 0, 0.2);
+  background: @black_alpha_20;
 }
