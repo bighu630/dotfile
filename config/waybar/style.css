@@ -587,19 +587,12 @@ label:focus {
   color: @spotify_text_color;
 }
 #custom-lyrics{
-    background: linear-gradient(30deg,
-    rgba(80, 36, 80,0.8),          /* 深紫 */
-    rgba(36, 36, 80,0.7),          /* 静谧深蓝 */
-    rgba(20, 20, 40,0.75)           /* 夜黑 */
-    );
-    /* rgba(51, 204, 255, 0.6), */
-    /* rgba(0, 255, 153, 0.7) */
-
-    color: rgba(51, 204, 255, 0.85);
+    background: linear-gradient(60deg,
+rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
+    color: white;
     padding: 1px 1px;
     font-size: 14px;
     border-radius: 10px;
-    font-weight: bold;
 }
 
 #keyboard-state > label.locked {
