@@ -184,7 +184,7 @@
         "interval": 1,
         "return-type": "text",
         "on-click": "playerctl play-pause || mpc toggle",
-        "on-double-click-right": "mpc | grep playing && mpc next || playerctl next",
+        "on-click-right": "mpc | grep playing && mpc next || playerctl next",
         "on-double-click-left": "mpc | grep playing && mpc prev || playerctl previous",
     },
     "custom/speed": {
