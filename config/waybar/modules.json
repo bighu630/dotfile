@@ -46,14 +46,14 @@
     },
     "hyprland/window": {
         "format": "{}",
-        "max-length": 14,
+        "max-length": 18,
         "separate-outputs": false,
         "icon": true,
-        "icon-size": 22,
+        "icon-size": 14,
     },
     "wlr/taskbar": {
         "format": " {icon}",
-        "icon-size": 20,
+        "icon-size": 18,
         "tooltip-format": "{title}",
         "on-click": "activate",
         "icon-theme": "Papirus-Dark",
@@ -180,7 +180,7 @@
     },
     "custom/lyrics": {
         "format": " ♪ {} ♪ ",
-        "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=30;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
+        "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=40;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
         "interval": 1,
         "return-type": "text",
         "on-click": "playerctl play-pause || mpc toggle",

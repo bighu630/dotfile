@@ -34,6 +34,8 @@
 
 /* Transparent Colors (derived from Catppuccin) */
 @define-color base_alpha_30 rgba(36, 39, 58, 0.3); /* For general window transparency */
+@define-color base_alpha_50 rgba(36, 39, 58, 0.5); /* For general window transparency */
+@define-color base_alpha_60 rgba(36, 39, 58, 0.6); /* For general window transparency */
 @define-color base_alpha_70 rgba(36, 39, 58, 0.7); /* For general window transparency */
 @define-color mantle_alpha_50 rgba(30, 32, 48, 0.5); /* For blink animation background */
 @define-color crust_alpha_20 rgba(24, 25, 38, 0.2); /* For general dark transparency, if needed */
@@ -159,13 +161,15 @@ window#waybar.hidden {
 
 #taskbar {
     /* border-radius: 0px 8px 8px 0; */
-    border-radius: 9px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 0 10px;
+    border-radius: 6.5px;
+    /* border-radius: 9px; */
+    /* padding-right: 5px; */
+    /* padding-left: 5px; */
     /* padding: 0 3px; */
     margin: 0 0px;
     color: @white;
-    background-color: @grey_alpha_30;
+    background-color: @base_alpha_70;
 }
 #taskbar button {
     min-width: 40px;
@@ -266,18 +270,19 @@ window#waybar.hidden {
 }
 #custom-notify{
   padding: 0 10px;
+  border-radius: 6.5px;
   color: @notify_pop_color;
   /* color: #bf616a; */
-  border-radius: 6.5px;
   background-color: @base_alpha_70;
 }
 
 
 #window {
-  padding: 0 10px;
-  color: @text;
-  border-radius: 6.5px;
-  background-color: rgba(26, 27, 38, 0.3);
+    padding: 0 10px;
+    color: @text;
+    font-size: 11px;
+    border-radius: 6.5px;
+    background-color: rgba(26, 27, 38, 0.7);
 }
 
 #workspaces {
@@ -496,12 +501,16 @@ label:focus {
 }
 
 #network {
+  background: @base_alpha_70;
   color: @network_icon_color;
-  background-color: @surface0;
-  border-radius: 7.5px;
+  padding: 0 10px;
+  border-radius: 6.5px;
+  /* border-radius: 7.5px; */
 }
 #custom-speed {
-  border-radius: 7.5px;
+  background: @base_alpha_60;
+  padding: 0 10px;
+  border-radius: 6.5px;
 }
 
 #custom-media {
@@ -591,7 +600,7 @@ label:focus {
 rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
     color: white;
     padding: 1px 1px;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 10px;
 }
 

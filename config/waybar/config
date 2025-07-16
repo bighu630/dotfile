@@ -23,7 +23,7 @@
     "margin-right": 8,
     "spacing": 3, // Gaps between modules (4px)
     "modules-left": ["custom/launcher", "wlr/taskbar","hyprland/window","sway/window","custom/lyrics"],
-    "modules-center": ["hyprland/workspaces","sway/workspaces",  "clock","mpd"],
-    "modules-right": ["custom/speed","network","tray",  "pulseaudio","custom/notify", "custom/power-menu"],
+    "modules-center": ["hyprland/workspaces","sway/workspaces",  "clock"],
+    "modules-right": ["custom/speed","network","mpd","tray",  "pulseaudio","custom/notify", "custom/power-menu"],
     "include": ["~/.config/waybar/modules.json"],
 }]
