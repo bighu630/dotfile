@@ -248,10 +248,10 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar
 bindsym $mod+shift+b bar mode toggle
 bar {
-    id bar-0
-    swaybar_command swaybar
-    status_command i3blocks
-    height 24
+    # id bar-0
+    swaybar_command waybar
+    # status_command i3blocks
+    # height 24
 	position top
 	# font pango:SFMono Nerd Font SemiBold 11
 	# # tray_output none
