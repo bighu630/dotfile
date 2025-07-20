@@ -1,6 +1,6 @@
 [{
     "auto height": false,
-    "height": 21, // Waybar height (to be removed for auto height)
+    "height": 22, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
     "output": ["eDP-1"],
     "margin-top": 3,
@@ -14,7 +14,7 @@
     "include": ["~/.config/waybar/modules.json"],
 },
 {
-    "height": 20, // Waybar height (to be removed for auto height)
+    "height": 22, // Waybar height (to be removed for auto height)
     "layer": "top", // Waybar at top layer
     "output": ["HDMI-A-1"],
     "margin-top": 2,

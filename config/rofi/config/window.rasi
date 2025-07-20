@@ -140,10 +140,10 @@ element selected {
 
 element selected.urgent {
     background-color:               @UGT;
-    text-color:                     @FG;
+    text-color:                     @SEL;
 }
 
 element selected.active {
     background-color:               @BGA;
-    color:                          @FG;
+    color:                          @SEL;
 }

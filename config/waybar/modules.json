@@ -21,7 +21,7 @@
         "format": "{name}",
         "format-focused": "<span color='#81A1C1'> {name}</span>",
         "format-visible": "<span color='#88C0D0'> {name}</span>",
-        "format-urgent": "<span color='#BF616A'> {name}</span>",
+        "format-urgent": "<span color='#cF318A'> {name}</span>",
         "on-click": "swaymsg workspace {name}",
         "on-scroll-up": "swaymsg workspace prev",
         "on-scroll-down": "swaymsg workspace next"
@@ -73,9 +73,9 @@
         }
     },
     "mpd": {
-        "format": "{stateIcon} {randomIcon}{repeatIcon}{singleIcon}{title} ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped ",
+        "format": "{stateIcon} {randomIcon}{repeatIcon}{singleIcon}{title}",
+        "format-disconnected": "Disconnected",
+        "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped",
         "max-length": 20,
         "interval": 5,
         "consume-icons": {
@@ -180,8 +180,9 @@
     },
     "custom/lyrics": {
         "format": " ♪ {} ♪ ",
-        "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=40;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
+        "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=60;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
         "interval": 1,
+        "max-length": 30,
         "return-type": "text",
         "on-click": "playerctl play-pause || mpc toggle",
         "on-click-right": "mpc | grep playing && mpc next || playerctl next",
@@ -245,13 +246,16 @@
       },
       "max-length": 20,
       "format": "{icon} {time}",
+      "format-time": "{H}:{M}",
       "format-warning": "{icon} {capacity}%",
       "format-critical": "{icon} {capacity}%",
-      "format-charging": "<span font-family='Font Awesome 6 Free'></span> {capacity}%",
-      "format-plugged": "  {capacity}%",
+      "format-charging": "{icon}󱐌{capacity}%",
+      "format-plugged": " {capacity}%",
       "format-alt": "{icon} {capacity}%",
-      "format-full": "  {capacity}%",
+      "format-full": " {capacity}%",
       "format-icons": [" ", " ", " ", " ", " "],
+      "format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
+      "on-click-right": "~/.config/waybar/scripts/power-profile-switcher.sh",
     },
     "custom/weather": {
       "exec": "python3 ~/.config/waybar/scripts/weather.py",

@@ -52,11 +52,12 @@ fi
 
 # Ask for confirmation
 rdialog () {
-rofi -dmenu\
-    -i\
-    -no-fixed-num-lines\
-    -p "Are You Sure? : "\
-    -theme "$ddir/confirm.rasi"
+    echo "yes"
+# rofi -dmenu\
+#     -i\
+#     -no-fixed-num-lines\
+#     -p "Are You Sure? : "\
+#     -theme "$ddir/confirm.rasi"
 }
 
 # Display Help

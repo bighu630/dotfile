@@ -109,7 +109,7 @@
 
 
 window#waybar {
-  background-color: @base_alpha_30;
+  background-color: transparent;
   color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -243,7 +243,7 @@ window#waybar.hidden {
   color: #e5e5e5;
   /* color: #bf616a; */
   border-radius: 6.5px;
-  background-color: @surface0;
+  background-color: @base_alpha_70;
 }
 
 #clock{
@@ -599,10 +599,13 @@ label:focus {
     background: linear-gradient(60deg,
 rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
     color: white;
-    padding: 1px 1px;
-    font-size: 15px;
+    padding: 0px 0px;
+    font-family: HackGen35 Console NF;
+    font-size: 16px;
     border-radius: 10px;
+    /* animation: scroll 10s linear infinite; */
 }
+
 
 #keyboard-state > label.locked {
   background: @black_alpha_20;
