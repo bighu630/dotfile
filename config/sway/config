@@ -81,7 +81,7 @@ floating_modifier $mod
 
 # start a terminal
 # default_border none
-default_border pixel 0
+default_border pixel 2
 # 设置窗口之间的内间隙（像素）
 gaps inner 3
 # 设置窗口与屏幕边缘的外间隙（像素）

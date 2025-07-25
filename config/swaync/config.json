@@ -58,7 +58,7 @@
       "text": "Controll Center"
     },
     "mpris": {
-      "image-size": 96,
+      "image-size": 72,
       "image-radius": 12
     },
     "backlight": {
@@ -88,7 +88,7 @@
             "command": "hyprlock"
           },
           {
-            "label": " 注销",
+            "label": "  注销",
             "command": "hyprctl dispatch exit"
           },
           {
