@@ -373,13 +373,13 @@ window#waybar.hidden {
 
 #cpu {
   color: @cpu_monitor_color;
-  background-color: @surface1;
+  background-color: @base_alpha_50;
   border-radius: 7.5px;
 }
 
 #memory {
   color: @yellow;
-  background-color: @memory_monitor_bg;
+  background-color: @base_alpha_50;
   border-radius: 7.5px;
 }
 
