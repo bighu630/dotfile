@@ -382,6 +382,11 @@ window#waybar.hidden {
   background-color: @base_alpha_50;
   border-radius: 7.5px;
 }
+#custom-system {
+  color: @cpu_monitor_color;
+  background-color: @base_alpha_70;
+  border-radius: 7.5px;
+}
 
 #custom-power-menu {
   border-radius: 9.5px;

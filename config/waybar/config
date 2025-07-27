@@ -8,9 +8,9 @@
     "margin-bottom": 0,
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
-    "modules-left": ["custom/launcher", "wlr/taskbar","hyprland/window","sway/window","custom/lyrics"],
+    "modules-left": ["custom/launcher","custom/system", "wlr/taskbar","hyprland/window","sway/window","custom/lyrics"],
     "modules-center": ["hyprland/workspaces","sway/workspaces" ,"clock"],
-    "modules-right": ["custom/speed","mpd","tray", "backlight", "pulseaudio","cpu","memory", "battery","custom/notify", "custom/power-menu"],
+    "modules-right": ["custom/speed","mpd","tray", "backlight", "pulseaudio", "battery","custom/notify", "custom/power-menu"],
     "include": ["~/.config/waybar/modules.json"],
 },
 {
