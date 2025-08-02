@@ -23,7 +23,7 @@ config = config  # type: ConfigAPI # noqa: F821 pylint: disable=E0602,C0103
 c = c
 
 # 仅仅在in-mode下显示状态栏
-c.statusbar.show = 'in-mode'
+c.statusbar.show = "in-mode"
 
 # Change the argument to True to still load settings configured via autoconfig.yml
 
@@ -39,12 +39,7 @@ c.auto_save.session = True
 c.completion.height = 300
 
 # catppuccin.setup(c, "macchiato", True)
-dracula.draw.blood(c, {
-    'spacing': {
-        'vertical': 1,
-        'horizontal': 8
-    }
-})
+dracula.draw.blood(c, {"spacing": {"vertical": 1, "horizontal": 8}})
 config.load_autoconfig(True)
 # Which cookies to accept. With QtWebEngine, this setting also controls
 # other features with tracking capabilities similar to those of cookies;
@@ -223,7 +218,7 @@ c.editor.command = ["nvim", "-f", "{file}", "-c", "normal {line}G{column0}l"]
 # Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 # for a blank page.
 # Type: FuzzyUrl
-c.url.default_page = "https://go.itab.link"
+c.url.default_page = "~/dotfile/startpage/index.html"
 
 # Search engines which can be used via the address bar.  Maps a search
 # engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
@@ -248,7 +243,7 @@ c.url.searchengines = {"DEFAULT": "https://www.google.com/search?q={}"}
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
-c.url.start_pages = "https://go.itab.link/"
+c.url.start_pages = "~/dotfile/startpage/index.html"
 
 c.fonts.tooltip = None
 
