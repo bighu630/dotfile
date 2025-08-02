@@ -120,6 +120,10 @@ settings:
     global: bottom
   statusbar.show:
     global: always
+  tabs.background:
+    global: false
+  tabs.close_mouse_button:
+    global: right
   tabs.indicator.padding:
     global:
       bottom: 0
@@ -140,6 +144,10 @@ settings:
       top: 0
   tabs.position:
     global: top
+  tabs.show:
+    global: always
+  tabs.title.alignment:
+    global: center
   tabs.title.elide:
     global: none
   url.default_page:

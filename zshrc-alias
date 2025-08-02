@@ -46,7 +46,6 @@ alias vimf='nvim $(fzf)'
 alias rm=trash-put
 alias rl=trash-list
 alias cp='cp -r'
-alias code='~/下载/VSCode-linux-x64/code'
 
 alias tmuxsw="tmux set -g status"
 alias wget="axel"

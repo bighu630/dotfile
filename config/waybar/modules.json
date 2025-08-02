@@ -157,7 +157,7 @@
     "custom/system": {
         "interval": 3,
         "exec": "echo \"$(grep 'cpu ' /proc/stat | awk '{u=$2+$4; t=$2+$4+$5} END {printf \"%.1f%%\", u*100/t}')|$(free -h | awk 'NR==2 {print $3}')\"",
-        "format": "  {} ",
+        "format": "{}",
     },
 
     "cpu": {

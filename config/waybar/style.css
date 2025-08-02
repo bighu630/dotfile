@@ -4,118 +4,46 @@
   font-size: 16px;
 }
 
-/* Catppuccin Macchiato Palette */
-@define-color rosewater #f4dbd6;
-@define-color flamingo #f0c6c6;
-@define-color pink #f5bde6;
-@define-color mauve #c6a0f6;
-@define-color red #ed8796;
-@define-color maroon #ee99a0;
-@define-color peach #f5a97f;
-@define-color yellow #eed49f;
-@define-color green #a6da95;
-@define-color teal #8bd5ca;
-@define-color sky #91d7e3;
-@define-color sapphire #7dc4e4;
-@define-color blue #8aadf4;
-@define-color lavender #b7bdf8;
-@define-color text #cad3f5; /* Primary text color */
-@define-color subtext1 #b8c0e0;
-@define-color subtext0 #a5adcb;
-@define-color overlay2 #939ab7;
-@define-color overlay1 #8087a2;
-@define-color overlay0 #6e738d;
-@define-color surface2 #5b6078;
-@define-color surface1 #494d64;
-@define-color surface0 #363a4f;
-@define-color mantle #1e2030; /* Secondary background color, slightly darker than base */
-@define-color crust #181926; /* Darkest background color */
-@define-color hyprland rgb(80, 232, 204);
+/* 基础颜色定义 - 按功能分组 */
 
-/* Transparent Colors (derived from Catppuccin) */
-@define-color base_alpha_30 rgba(36, 39, 58, 0.3); /* For general window transparency */
-@define-color base_alpha_50 rgba(36, 39, 58, 0.5); /* For general window transparency */
-@define-color base_alpha_60 rgba(36, 39, 58, 0.6); /* For general window transparency */
-@define-color base_alpha_70 rgba(36, 39, 58, 0.7); /* For general window transparency */
-@define-color mantle_alpha_50 rgba(30, 32, 48, 0.5); /* For blink animation background */
-@define-color crust_alpha_20 rgba(24, 25, 38, 0.2); /* For general dark transparency, if needed */
+/* 主要颜色 */
+@define-color primary_text #cad3f5;
+@define-color secondary_text #a5adcb;
+@define-color primary_bg #181926;
+@define-color secondary_bg #363a4f;
+@define-color accent_color #8aadf4;
 
-/* General Purpose Colors (some with transparency) */
-@define-color white #FFFFFF; /* Explicit white for clear text */
-@define-color black #000000; /* Explicit black for clear text */
-@define-color black_alpha_20 rgba(0, 0, 0, 0.2); /* For general transparent black */
-@define-color grey_alpha_30 rgba(120, 118, 117, 0.3); /* For taskbar background */
-@define-color grey_alpha_40 rgba(120, 118, 117, 0.4); /* For taskbar button background */
+/* 状态颜色 */
+@define-color success_color #a6da95;
+@define-color warning_color #eed49f;
+@define-color error_color #ed8796;
 
-/* Waybar Specific Module Colors (mapped to Catppuccin or custom) */
-@define-color workspaces_button_color @subtext0; /* Original #7984A4 - mapped to subtext0 */
-@define-color workspaces_focused_text @crust; /* Original #2E3440 - mapped to crust */
-@define-color workspaces_light_text @text; /* Original #ECEFF4 - mapped to text */
-@define-color workspaces_urgent_bg @red; /* Original #BF616A - mapped to red */
-@define-color workspaces_hover_bg @blue; /* Original #5E81AC - mapped to a blueish tone */
-@define-color workspaces_active_bg @sapphire; /* Original #63a1bf - mapped to sapphire */
+/* 透明背景 */
+@define-color bg_transparent_30 rgba(36, 39, 58, 0.3);
+@define-color bg_transparent_50 rgba(36, 39, 58, 0.5);
+@define-color bg_transparent_70 rgba(36, 39, 58, 0.7);
 
-@define-color taskbar_active_bg #94727D; /* Custom reddish-brown */
-@define-color taskbar_active_shadow #24f3f2; /* Custom cyan */
+/* 功能模块颜色 */
+@define-color workspace_active #8aadf4;
+@define-color workspace_inactive #a5adcb;
+@define-color taskbar_active #94727D;
+@define-color taskbar_hover rgba(255, 255, 255, 0.2);
+@define-color module_bg rgba(36, 39, 58, 0.7);
+@define-color system_monitor #eed49f;
+@define-color audio_color #7dc4e4;
+@define-color network_color #f5bde6;
+@define-color battery_normal #c6a0f6;
+@define-color battery_charging #a6da95;
+@define-color battery_critical #ed8796;
 
-@define-color cava_visualizer_color @sky; /* Original #b3f1ff - mapped to sky */
-
-@define-color module_text_color @text; /* Original #e5e5e5 - for most module text */
-@define-color power_menu_bg @crust; /* Original #1b242b - mapped to crust */
-@define-color notify_pop_color @sky; /* Original #60caf5 - mapped to sky */
-@define-color launcher_icon_color @blue; /* Original #6a92d7 - mapped to blue */
-
-/* Weather module colors (mapped to Catppuccin or custom) */
-@define-color weather_severe_color @red; /* Original #eb937d - mapped to red */
-@define-color weather_sunny_color @yellow; /* Original #c2ca76 - mapped to yellow */
-@define-color weather_cloudy_color @teal; /* Original #c2ddda - mapped to teal */
-@define-color weather_rainy_color @green; /* Original #5aaca5 - mapped to green */
-@define-color weather_snowy_color @lavender; /* Original #d6e7e5 - mapped to lavender */
-@define-color weather_default_color @subtext0; /* Original #dbd9d8 - mapped to subtext0 */
-
-/* Specific Module Colors */
-@define-color cpu_monitor_color @peach; /* Original #fb958b - mapped to peach */
-@define-color disk_monitor_bg @surface1; /* Original #964b00 - mapped to surface1 (darker for background) */
-@define-color pulseaudio_icon_color @sapphire; /* Original #7d9bba - mapped to sapphire */
-@define-color backlight_icon_color @teal; /* Original #8fbcbb - mapped to teal */
-@define-color clock_icon_color @lavender; /* Original #c8d2e0 - mapped to lavender */
-@define-color battery_icon_color @mauve; /* Original #c0caf5 - mapped to mauve */
-@define-color battery_charging_icon_color @green; /* Original #26a65b - mapped to green */
-@define-color battery_critical_icon_color @red; /* Original #f53c3c - mapped to red */
-@define-color bluetooth_icon_color @overlay0; /* Original #707d9d - mapped to overlay0 */
-@define-color network_icon_color @pink; /* Original #b48ead - mapped to pink */
-@define-color memory_monitor_bg @mantle_alpha_50;
-
-@define-color media_player_bg @green; /* Original #66cc99 - mapped to green */
-@define-color media_player_text_color @crust; /* Original #2a5c45 - dark text for media */
-@define-color vlc_player_bg @peach; /* Original #ffa000 - mapped to peach */
-
-@define-color temperature_sensor_bg @peach; /* Original #f0932b - mapped to peach */
-@define-color temperature_critical_bg @red; /* Original #eb4d4b - mapped to red */
-
-@define-color idle_inhibitor_bg @crust; /* Original #2d3436 - mapped to crust */
-@define-color idle_inhibitor_activated_bg @white; /* Original #ecf0f1 - mapped to white */
-
-@define-color mpd_icon_color @green; /* Original #51a37a - mapped to green */
-@define-color mpd_stopped_color @peach; /* Original #f0932b - mapped to overlay0 */
-@define-color mpd_paused_color @peach; /* Original #f0932b - mapped to overlay0 */
-
-@define-color language_module_bg @teal; /* Original #00b093 - mapped to teal */
-@define-color language_module_text @maroon; /* Original #740864 - mapped to maroon */
-
-@define-color keyboard_state_bg @green; /* Original #97e1ad - mapped to green */
-
-@define-color spotify_text_color @subtext0; /* Original #abb2bf - mapped to subtext0 */
-
-
+/* Waybar 主窗口 */
 window#waybar {
   background-color: transparent;
-  color: @text;
+  color: @primary_text;
   transition-property: background-color;
   transition-duration: 0.5s;
   border-top: 8px transparent;
   border-radius: 8px;
-  transition-duration: 0.5s;
   margin: 16px 16px;
 }
 
@@ -123,370 +51,144 @@ window#waybar.hidden {
   opacity: 0.2;
 }
 
-#workspaces button {
-  padding: 0 5px;
-  color: @workspaces_button_color;
-  background-color: transparent;
-  /* Use box-shadow instead of border so the text isn't offset */
-  box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each workspace name */
-  border: none;
-  border-radius: 0;
+/* 工作区 */
+#workspaces {
+  background-color: @module_bg;
+  margin: -3px 3px -4px 3px;
+  padding: 0px 4px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffffff;
+  opacity: 0.95;
 }
 
-/* #workspaces button { */
-/*   padding: 5px 10px; */
-/*   margin: 0 3px; */
-/*   border-radius: 8px; */
-/*   background-color: transparent; */
-/*   color: #7984A4; */
-/*   border: none; */
-/* } */
+#workspaces button {
+  padding: 1px 5px;
+  margin: 2px 3px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.6);
+  min-height: 18px;
+  min-width: 18px;
+  transition: all 0.15s ease-in-out;
+  opacity: 0.7;
+  border: none;
+  box-shadow: inset 0 -3px transparent;
+}
 
+#workspaces button.active,
 #workspaces button.focused {
-  background-color: @sapphire;
-  color: @workspaces_focused_text;
+  background-color: @workspace_active;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  min-width: 20px;
+  min-height: 20px;
+  opacity: 1.0;
 }
 
 #workspaces button.urgent {
-  background-color: @workspaces_urgent_bg;
-  color: @workspaces_light_text;
+  background-color: @error_color;
+  color: @primary_text;
 }
 
 #workspaces button:hover {
-  background-color: @workspaces_hover_bg;
-  color: @workspaces_light_text;
+  background-color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  opacity: 0.9;
 }
 
-
+/* 任务栏 */
 #taskbar {
-    /* border-radius: 0px 8px 8px 0; */
-    padding: 0 10px;
-    border-radius: 6.5px;
-    /* border-radius: 9px; */
-    /* padding-right: 5px; */
-    /* padding-left: 5px; */
-    /* padding: 0 3px; */
-    margin: 0 0px;
-    color: @white;
-    background-color: @base_alpha_70;
+  padding: 0 10px;
+  border-radius: 6.5px;
+  margin: 0 0px;
+  color: #ffffff;
+  background-color: @module_bg;
 }
+
 #taskbar button {
-    min-width: 40px;
-    border-radius: 4px;
-    /* border-radius: 0px 0px 0px 0px; */
-    padding: 0 0 0 0px;
-    margin: 0 1 -2 -2px;
-    color: @white;
-    background-color: @grey_alpha_40;
+  min-width: 40px;
+  border-radius: 4px;
+  padding: 0 0 0 0px;
+  margin: 0 1 -2 -2px;
+  color: #ffffff;
+  background-color: rgba(120, 118, 117, 0.4);
 }
 
 #taskbar button:hover {
-    background: @black_alpha_20;
-    box-shadow: inset 0 3px @white;
+  background: @taskbar_hover;
+  box-shadow: inset 0 3px #ffffff;
 }
 
 #taskbar button.active {
-    background-color: @taskbar_active_bg;
-    box-shadow: inset 0 3px @taskbar_active_shadow;
+  background-color: @taskbar_active;
+  box-shadow: inset 0 3px #24f3f2;
 }
 
-#cava {
-    color: @cava_visualizer_color;
-    font-size: 8px;
-}
-
-#disk,
-#temperature,
-#custom-hyprPicker,
-#custom-weather,
-#custom-weather.severe,
-#custom-weather.sunnyDay,
-#custom-weather.clearNight,
-#custom-weather.cloudyFoggyDay,
-#custom-weather.cloudyFoggyNight,
-#custom-weather.rainyDay,
-#custom-weather.rainyNight,
-#custom-weather.showyIcyDay,
-#custom-weather.snowyIcyNight,
-#custom-weather.default {
-  padding: 0 10px;
-  color: @module_text_color;
-  /* color: #bf616a; */
-  border-radius: 6.5px;
-  background-color: @surface0;
-}
-
-#tray{
-  background-color: @base_alpha_70;
-  padding: 0 10px;
-  color: #e5e5e5;
-  border-radius: 6.5px;
-  /* color: #bf616a; */
-}
-
-#custom-power-menu{
-  padding: 0 10px;
-  color: @module_text_color;
-  border-radius: 6.5px;
-  background-color: @power_menu_bg;
-}
-#pulseaudio{
-  padding: 0 10px;
-  color: #e5e5e5;
-  /* color: #bf616a; */
-  border-radius: 6.5px;
-  background-color: @base_alpha_70;
-}
-#backlight{
-  padding: 0 10px;
-  color: #e5e5e5;
-  /* color: #bf616a; */
-  border-radius: 6.5px;
-  background-color: @base_alpha_70;
-}
-
-#clock{
-  padding: 0 10px;
-  color: #e5e5e5;
-  /* color: #bf616a; */
-  border-radius: 6.5px;
-  background-color: @base_alpha_70;
-}
-
+/* 通用模块样式 */
 #battery,
 #pulseaudio,
+#backlight,
+#clock,
+#bluetooth,
 #custom-media,
 #mode,
 #idle_inhibitor,
 #custom-spotify,
-#bluetooth{
-    padding: 0 10px;
-    color: #e5e5e5;
-    border-radius: 6.5px;
-    background-color: @base_alpha_70;
+#tray,
+#custom-notify,
+#mpd {
+  padding: 0 10px;
+  color: @primary_text;
+  border-radius: 6.5px;
+  background-color: @module_bg;
 }
-#mpd{
-    padding: 0 10px;
-    color: #e5e5e5;
-    font-family: HackGen35 Console NF;
-    border-radius: 6.5px;
-    background-color: @base_alpha_70;
+
+/* 系统监控 */
+#cpu,
+#memory,
+#custom-system {
+  color: @system_monitor;
+  background-color: @bg_transparent_50;
+  border-radius: 6.5px;
+  padding: 0 10px;
 }
-#custom-notify{
+
+/* 音频模块 */
+#pulseaudio {
+  color: @audio_color;
+}
+
+/* 网络模块 */
+#network {
+  color: @network_color;
+  background-color: @module_bg;
   padding: 0 10px;
   border-radius: 6.5px;
-  color: @notify_pop_color;
-  /* color: #bf616a; */
-  background-color: @base_alpha_70;
 }
 
-
-#window {
-    padding: 0 10px;
-    color: @text;
-    font-size: 11px;
-    border-radius: 6.5px;
-    background-color: rgba(26, 27, 38, 0.7);
+#custom-speed {
+  background: @bg_transparent_50;
+  padding: 0 10px;
+  border-radius: 6.5px;
 }
 
-#workspaces {
-    background-color: @base_alpha_70;
-    margin: -3px 3px -4px 3px;
-    padding: 0px 4px;                    /* 减少上下 padding */
-    border-radius: 10px;
-    font-weight: 400;
-    font-size: 10px;                    /* 字体更小 */
-    color: #ffffff;
-    opacity: 0.95;
-}
-
-#workspaces button {
-    padding: 1px 5px;                   /* 上下 padding 缩小 */
-    margin: 2px 3px;                    /* 保持原 margin 不变 */
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.08);
-    color: rgba(255, 255, 255, 0.6);
-    min-height: 18px;                   /* 明确设置较小高度 */
-    min-width: 18px;
-    transition: all 0.15s ease-in-out;
-    opacity: 0.7;
-}
-
-#workspaces button.active {
-    background-color: rgba(102, 153, 255, 0.85);
-    color: white;
-    border-radius: 50%;                 /* 圆形效果 */
-    padding: 2px;
-    min-width: 20px;
-    min-height: 20px;
-    opacity: 1.0;
-}
-
-#workspaces button:hover {
-    background-color: rgba(255, 255, 255, 0.35);
-    color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    opacity: 0.9;
-}
-
-/* #workspaces { */
-/*     background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
-/*     margin: -5px 1px -6px 1px; */
-/*     padding: 0px 1px; */
-/*     border-radius: 65px; */
-/*     border: 0px; */
-/*     font-weight: bold; */
-/*     font-style: normal; */
-/*     opacity: 0.8; */
-/*     font-size: 16px; */
-/*     color: @white; */
-/* } */
-/**/
-/* #workspaces button { */
-/*     padding: 0px 5px; */
-/*     margin: 4px 3px; */
-/*     border-radius: 15px; */
-/*     border: 0px; */
-/*     color: @textcolor1; */
-/*     background-color: @base_alpha_70; */
-/*     transition: all 0.3s ease-in-out; */
-/*     opacity: 0.4; */
-/* } */
-/**/
-/* #workspaces button.active { */
-/*     color: @white; */
-/*     background: @workspaces_active_bg; */
-/*     border-radius: 15px; */
-/*     min-width: 30px; */
-/*     transition: all 0.3s ease-in-out; */
-/*     opacity:1.0; */
-/* } */
-/**/
-/* #workspaces button:hover { */
-/*     color: @textcolor1; */
-/*     background: @surface0; */
-/*     border-radius: 15px; */
-/*     opacity:0.7; */
-/* } */
-
-
-#cpu {
-  color: @cpu_monitor_color;
-  background-color: @base_alpha_50;
-  border-radius: 7.5px;
-}
-
-#memory {
-  color: @yellow;
-  background-color: @base_alpha_50;
-  border-radius: 7.5px;
-}
-#custom-system {
-  color: @cpu_monitor_color;
-  background-color: @base_alpha_70;
-  border-radius: 7.5px;
-}
-
-#custom-power-menu {
-  border-radius: 9.5px;
-  background-color: @power_menu_bg;
-  border-radius: 7.5px;
-  padding: 0 5px;
-}
-
-#custom-notify base{
-  color: @notify_pop_color;
-  border-radius: 8px;
-  background-color: @crust;
-  border-radius: 7.5px;
-  padding: 0 5px;
-}
-
-
-#custom-launcher {
-  background-color: @base_alpha_70;
-  color: @launcher_icon_color;
-  border-radius: 7.5px;
-  padding: 0 3px;
-}
-
-#custom-weather.severe {
-  color: @weather_severe_color;
-}
-
-#custom-weather.sunnyDay {
-  color: @weather_sunny_color;
-}
-
-#custom-weather.clearNight {
-  color: @text;
-}
-
-#custom-weather.cloudyFoggyDay,
-#custom-weather.cloudyFoggyNight {
-  color: @weather_cloudy_color;
-}
-
-#custom-weather.rainyDay,
-#custom-weather.rainyNight {
-  color: @weather_rainy_color;
-}
-
-#custom-weather.showyIcyDay,
-#custom-weather.snowyIcyNight {
-  color: @weather_snowy_color;
-}
-
-#custom-weather.default {
-  color: @weather_default_color;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-  margin-right: 0;
-}
-
-#pulseaudio {
-  color: @pulseaudio_icon_color;
-}
-
-#backlight {
-  /* color: #EBCB8B; */
-  color: @backlight_icon_color;
-}
-
-#clock {
-  color: @clock_icon_color;
-  /* background-color: #14141e; */
-}
-
+/* 电池模块 */
 #battery {
-  color: @battery_icon_color;
-  /* background-color: #90b1b1; */
+  color: @battery_normal;
 }
 
 #battery.charging,
 #battery.full,
 #battery.plugged {
-  color: @battery_charging_icon_color;
-  /* background-color: #26a65b; */
-}
-
-@keyframes blink {
-  to {
-    background-color: @mantle_alpha_50;
-    color: @spotify_text_color;
-  }
+  color: @battery_charging;
 }
 
 #battery.critical:not(.charging) {
-  color: @battery_critical_icon_color;
+  color: @battery_critical;
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -494,38 +196,17 @@ window#waybar.hidden {
   animation-direction: alternate;
 }
 
-label:focus {
-  background-color: @black; /* Using opaque black for focus */
+@keyframes blink {
+  to {
+    background-color: @bg_transparent_50;
+    color: @primary_text;
+  }
 }
 
-#disk {
-  background-color: @disk_monitor_bg;
-}
-
-#bluetooth {
-  color: @bluetooth_icon_color;
-}
-
-#bluetooth.disconnected {
-  color: #f53c3c;
-}
-
-#network {
-  background: @base_alpha_70;
-  color: @network_icon_color;
-  padding: 0 10px;
-  border-radius: 6.5px;
-  /* border-radius: 7.5px; */
-}
-#custom-speed {
-  background: @base_alpha_60;
-  padding: 0 10px;
-  border-radius: 6.5px;
-}
-
+/* 媒体播放器 */
 #custom-media {
-  background-color: @media_player_bg;
-  color: @media_player_text_color;
+  background-color: @success_color;
+  color: @primary_bg;
   min-width: 100px;
 }
 
@@ -534,15 +215,78 @@ label:focus {
 }
 
 #custom-media.custom-vlc {
-  background-color: @vlc_player_bg;
+  background-color: @warning_color;
+}
+
+#mpd {
+  color: @success_color;
+  font-family: HackGen35 Console NF;
+}
+
+#mpd.disconnected {
+  color: @error_color;
+}
+
+#mpd.stopped,
+#mpd.paused {
+  color: @warning_color;
+}
+
+/* 天气模块 */
+#disk,
+#temperature,
+#custom-hyprPicker,
+#custom-weather {
+  padding: 0 10px;
+  color: @primary_text;
+  border-radius: 6.5px;
+  background-color: @secondary_bg;
+}
+
+#custom-weather.severe {
+  color: @error_color;
+}
+
+#custom-weather.sunnyDay {
+  color: @warning_color;
+}
+
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight {
+  color: @audio_color;
+}
+
+#custom-weather.rainyDay,
+#custom-weather.rainyNight {
+  color: @success_color;
 }
 
 #temperature {
-  background-color: @temperature_sensor_bg;
+  background-color: @warning_color;
 }
 
 #temperature.critical {
-  background-color: @temperature_critical_bg;
+  background-color: @error_color;
+}
+
+/* 电源和启动器 */
+#custom-power-menu {
+  padding: 0 10px;
+  color: @primary_text;
+  border-radius: 6.5px;
+  background-color: @primary_bg;
+}
+
+#custom-launcher {
+  background-color: @module_bg;
+  color: @accent_color;
+  border-radius: 7.5px;
+  padding: 0 3px;
+}
+
+/* 其他功能模块 */
+#bluetooth.disconnected {
+  color: @error_color;
 }
 
 #tray > .passive {
@@ -551,45 +295,29 @@ label:focus {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: #eb4d4b;
+  background-color: @error_color;
 }
 
 #idle_inhibitor {
-  background-color: @idle_inhibitor_bg;
+  background-color: @primary_bg;
 }
 
 #idle_inhibitor.activated {
-  background-color: @idle_inhibitor_activated_bg;
-  color: @idle_inhibitor_bg;
-}
-
-#mpd {
-  color: @mpd_icon_color;
-}
-
-#mpd.disconnected {
-  color: #f53c3c;
-}
-
-#mpd.stopped {
-  color: @mpd_stopped_color;
-}
-
-#mpd.paused {
-  color: @mpd_paused_color;
+  background-color: #ffffff;
+  color: @primary_bg;
 }
 
 #language {
-  background: @language_module_bg;
-  color: @language_module_text;
+  background: @audio_color;
+  color: @primary_bg;
   padding: 0 5px;
   margin: 0 5px;
   min-width: 16px;
 }
 
 #keyboard-state {
-  background: @keyboard_state_bg;
-  color: @black; /* Using opaque black for keyboard state */
+  background: @success_color;
+  color: @primary_bg;
   padding: 0 0px;
   margin: 0 5px;
   min-width: 16px;
@@ -599,24 +327,52 @@ label:focus {
   padding: 0 5px;
 }
 
+#keyboard-state > label.locked {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* 自定义模块 */
 #custom-spotify {
   padding: 0 10px;
   margin: 0 4px;
-  /* background-color: #1db954; */
-  color: @spotify_text_color;
-}
-#custom-lyrics{
-    background: linear-gradient(60deg,
-rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
-    color: white;
-    padding: 0px 0px;
-    font-family: HackGen35 Console NF;
-    font-size: 16px;
-    border-radius: 10px;
-    /* animation: scroll 10s linear infinite; */
+  color: @secondary_text;
 }
 
+#custom-lyrics {
+  background: linear-gradient(60deg, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
+  color: white;
+  padding: 0px 0px;
+  font-family: HackGen35 Console NF;
+  font-size: 16px;
+  border-radius: 10px;
+}
 
-#keyboard-state > label.locked {
-  background: @black_alpha_20;
+#custom-notify {
+  color: @accent_color;
+}
+
+#window {
+  padding: 0 10px;
+  color: @primary_text;
+  font-size: 11px;
+  border-radius: 6.5px;
+  background-color: @bg_transparent_70;
+}
+
+#cava {
+  color: @accent_color;
+  font-size: 8px;
+}
+
+/* 边距调整 */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+label:focus {
+  background-color: #000000;
 }
