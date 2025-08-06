@@ -1,0 +1,74 @@
+#!/bin/bash
+# Temperature monitoring script for i3blocks
+
+# Function to get CPU temperature
+get_cpu_temp() {
+    # Try different methods to get CPU temperature
+    local temp=""
+
+    # Method 1: thermal_zone (most common)
+    if [[ -f /sys/class/thermal/thermal_zone0/temp ]]; then
+        temp=$(cat /sys/class/thermal/thermal_zone0/temp)
+        temp=$((temp / 1000))
+    # Method 2: hwmon (alternative)
+    elif [[ -f /sys/class/hwmon/hwmon0/temp1_input ]]; then
+        temp=$(cat /sys/class/hwmon/hwmon0/temp1_input)
+        temp=$((temp / 1000))
+    # Method 3: sensors command
+    elif command -v sensors &> /dev/null; then
+        temp=$(sensors | grep -E "Core 0|Package id 0" | grep -Eo '\+[0-9]+\.[0-9]+°C' | head -1 | tr -d '+°C')
+        temp=${temp%.*}  # Remove decimal part
+    # Method 4: acpi command
+    elif command -v acpi &> /dev/null; then
+        temp=$(acpi -t | head -1 | grep -Eo '[0-9]+\.[0-9]+' | head -1)
+        temp=${temp%.*}  # Remove decimal part
+    fi
+
+    echo "$temp"
+}
+
+# Get temperature
+TEMP=$(get_cpu_temp)
+
+# Default to 0 if no temperature found
+TEMP=${TEMP:-0}
+
+# Choose color based on temperature
+if [[ $TEMP -ge 85 ]]; then
+    COLOR="#ff5555"  # Red for dangerous temperature
+    ICON="🔥"
+elif [[ $TEMP -ge 75 ]]; then
+    COLOR="#ffb86c"  # Orange for high temperature
+    ICON="🌡️"
+elif [[ $TEMP -ge 65 ]]; then
+    COLOR="#f1fa8c"  # Yellow for warm temperature
+    ICON="🌡️"
+elif [[ $TEMP -ge 45 ]]; then
+    COLOR="#50fa7b"  # Green for normal temperature
+    ICON="🌡️"
+else
+    COLOR="#8be9fd"  # Blue for cool temperature
+    ICON="❄️"
+fi
+
+# Click actions
+case $BLOCK_BUTTON in
+    # 1) foot -e sensors ;;  # left click - show detailed temperature info
+    # 3) foot -e watch -n 1 'cat /sys/class/thermal/thermal_zone*/temp | while read temp; do echo "scale=1; $temp/1000" | bc; done' ;;  # right click - monitor temperature
+esac
+
+# Output
+if [[ $TEMP -gt 0 ]]; then
+    echo "$ICON ${TEMP}°C"
+    echo "${TEMP}°C"
+    echo "$COLOR"
+else
+    echo "🌡️ N/A"
+    echo "N/A"
+    echo "#6272a4"
+fi
+
+# Urgent notification for critical temperature
+if [[ $TEMP -ge 90 ]]; then
+    exit 33  # Urgent flag for i3blocks
+fi

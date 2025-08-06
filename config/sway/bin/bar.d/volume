@@ -1,0 +1,41 @@
+#!/bin/bash
+# Volume indicator for i3blocks
+
+case $BLOCK_BUTTON in
+    1) pavucontrol-qt ;;  # right click
+    2) pactl set-sink-mute @DEFAULT_SINK@ toggle ;;  # left click
+    3) foot -T float -e bluetuith ;;
+    4) pactl set-sink-volume @DEFAULT_SINK@ +5% ;;  # scroll up
+    5) pactl set-sink-volume @DEFAULT_SINK@ -5% ;;  # scroll down
+esac
+
+# Get default sink
+SINK=$(pactl get-default-sink)
+
+# Get volume percentage
+VOLUME=$(pactl get-sink-volume $SINK | grep -Po '\d+(?=%)' | head -1)
+
+# Check if muted
+MUTED=$(pactl get-sink-mute $SINK | grep -o 'yes')
+
+if [[ $MUTED == "yes" ]]; then
+    echo "🔇 Muted"
+    echo "🔇"
+    echo "#ff5555"
+elif [[ $VOLUME -ge 80 ]]; then
+    echo "🔊 $VOLUME%"
+    echo "🔊"
+    echo "#f8f8f2"
+elif [[ $VOLUME -ge 50 ]]; then
+    echo "🔉 $VOLUME%"
+    echo "🔉"
+    echo "#f8f8f2"
+elif [[ $VOLUME -gt 0 ]]; then
+    echo "🔈 $VOLUME%"
+    echo "🔈"
+    echo "#f8f8f2"
+else
+    echo "🔇 $VOLUME%"
+    echo "🔇"
+    echo "#ff5555"
+fi

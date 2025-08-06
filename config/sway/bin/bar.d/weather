@@ -1,0 +1,112 @@
+#!/bin/bash
+# Weather indicator for i3blocks
+
+# Configuration
+CITY="${BLOCK_INSTANCE:-Beijing}"  # Default city
+API_KEY=""  # Add your OpenWeatherMap API key here
+CACHE_DIR="$HOME/.cache/i3blocks"
+CACHE_FILE="$CACHE_DIR/weather_${CITY,,}"
+CACHE_DURATION=1800  # 30 minutes in seconds
+
+# Create cache directory if it doesn't exist
+mkdir -p "$CACHE_DIR"
+
+# Function to get weather from API
+get_weather_api() {
+    if [[ -z "$API_KEY" ]]; then
+        return 1
+    fi
+
+    local url="http://api.openweathermap.org/data/2.5/weather?q=${CITY}&appid=${API_KEY}&units=metric"
+    curl -s "$url" 2>/dev/null
+}
+
+# Function to get weather from wttr.in (backup)
+get_weather_wttr() {
+    curl -s "http://wttr.in/${CITY}?format=%C+%t" 2>/dev/null
+}
+
+# Function to parse OpenWeatherMap JSON
+parse_weather_json() {
+    local json="$1"
+    if command -v jq &> /dev/null; then
+        local temp=$(echo "$json" | jq -r '.main.temp // empty' | sed 's/\..*//')
+        local desc=$(echo "$json" | jq -r '.weather[0].description // empty')
+        local icon_code=$(echo "$json" | jq -r '.weather[0].icon // empty')
+
+        if [[ -n "$temp" && -n "$desc" ]]; then
+            # Convert weather icon code to emoji
+            local icon="🌤️"  # default
+            case "$icon_code" in
+                "01d") icon="☀️" ;;   # clear sky day
+                "01n") icon="🌙" ;;   # clear sky night
+                "02d"|"02n") icon="⛅" ;;  # few clouds
+                "03d"|"03n") icon="☁️" ;;  # scattered clouds
+                "04d"|"04n") icon="☁️" ;;  # broken clouds
+                "09d"|"09n") icon="🌧️" ;;  # shower rain
+                "10d"|"10n") icon="🌦️" ;;  # rain
+                "11d"|"11n") icon="⛈️" ;;  # thunderstorm
+                "13d"|"13n") icon="❄️" ;;  # snow
+                "50d"|"50n") icon="🌫️" ;;  # mist
+            esac
+
+            echo "$icon ${temp}°C"
+        fi
+    fi
+}
+
+# Check if cache file exists and is recent
+if [[ -f "$CACHE_FILE" ]]; then
+    CACHE_AGE=$(($(date +%s) - $(stat -c %Y "$CACHE_FILE" 2>/dev/null || echo 0)))
+    if [[ $CACHE_AGE -lt $CACHE_DURATION ]]; then
+        WEATHER_DATA=$(cat "$CACHE_FILE")
+    fi
+fi
+
+# If no cached data or cache is old, fetch new data
+if [[ -z "$WEATHER_DATA" ]]; then
+    # Try OpenWeatherMap API first
+    if [[ -n "$API_KEY" ]]; then
+        JSON_DATA=$(get_weather_api)
+        if [[ -n "$JSON_DATA" ]] && [[ "$JSON_DATA" != *"error"* ]]; then
+            WEATHER_DATA=$(parse_weather_json "$JSON_DATA")
+        fi
+    fi
+
+    # Fallback to wttr.in if API failed or no API key
+    if [[ -z "$WEATHER_DATA" ]]; then
+        WEATHER_DATA=$(get_weather_wttr)
+        # Clean up wttr.in output
+        WEATHER_DATA=$(echo "$WEATHER_DATA" | sed 's/+/ /g' | sed 's/°C/°C/' | head -1)
+    fi
+
+    # Cache the result if we got something
+    if [[ -n "$WEATHER_DATA" ]]; then
+        echo "$WEATHER_DATA" > "$CACHE_FILE"
+    fi
+fi
+
+# Click actions
+case $BLOCK_BUTTON in
+    1) # Left click - open weather website
+        if command -v xdg-open &> /dev/null; then
+            xdg-open "https://openweathermap.org/city" &
+        elif command -v firefox &> /dev/null; then
+            firefox "https://openweathermap.org/city" &
+        fi
+        ;;
+    3) # Right click - refresh weather data
+        rm -f "$CACHE_FILE"
+        ;;
+esac
+
+# Output
+if [[ -n "$WEATHER_DATA" ]]; then
+    echo "🌤️ $WEATHER_DATA"
+    echo "$WEATHER_DATA"
+    echo "#8be9fd"
+else
+    echo "🌤️ N/A"
+    echo "N/A"
+    echo "#6272a4"
+fi

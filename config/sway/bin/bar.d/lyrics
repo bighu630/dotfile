@@ -1,0 +1,31 @@
+#!/bin/bash
+# Lyrics display module for i3blocks
+
+# Read first line from lyrics file (max 60 characters)
+LYRICS_FILE="/dev/shm/lyrics"
+
+if [[ -f "$LYRICS_FILE" ]]; then
+    LYRICS=$(awk 'NR==1 {for(i=1;i<=length&&i<=30;i++) printf substr($0,i,1)}' "$LYRICS_FILE" 2>/dev/null)
+
+    # If lyrics is empty, show placeholder
+    if [[ -z "$LYRICS" ]]; then
+        LYRICS="♪ No lyrics"
+        COLOR="#6272a4"  # Dim color
+    else
+        COLOR="#bd93f9"  # Purple color for lyrics
+    fi
+else
+    LYRICS="♪ No lyrics file"
+    COLOR="#44475a"  # Gray color when file doesn't exist
+fi
+
+# Handle mouse clicks
+case $BLOCK_BUTTON in
+    1) playerctl play-pause || mpc toggle ;;
+    3) mpc | grep playing && mpc next || playerctl next ;;
+esac
+
+# Output for i3blocks
+echo "$LYRICS"
+echo "${LYRICS:0:20}..."  # Short text (first 20 chars + ...)
+echo "$COLOR"

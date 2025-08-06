@@ -1,0 +1,31 @@
+#!/bin/bash
+# Disk usage indicator for i3blocks
+
+# Default path to check (root filesystem)
+DIR="${BLOCK_INSTANCE:-/home/ivhu}"
+
+# Get disk usage info
+DISK_INFO=$(df -h "$DIR" | awk 'NR==2{printf "%s/%s", $3,$2}')
+# DISK_PERCENT=$(df "$DIR" | awk 'NR==2{printf "%.0f", $3*100/($3+$4)}')
+
+# Color based on usage
+if [[ $DISK_PERCENT -ge 90 ]]; then
+    COLOR="#ff5555"  # Red for very high usage
+elif [[ $DISK_PERCENT -ge 80 ]]; then
+    COLOR="#ffb86c"  # Orange for high usage
+elif [[ $DISK_PERCENT -ge 60 ]]; then
+    COLOR="#f1fa8c"  # Yellow for medium usage
+else
+    COLOR="#50fa7b"  # Green for low usage
+fi
+
+# Click actions
+case $BLOCK_BUTTON in
+    # 1) foot -e df -h ;;  # left click - show disk usage
+    3) dolphin "$DIR" ;;  # right click - open file manager
+esac
+
+# Output
+echo " $DISK_INFO"
+echo "$DISK_PERCENT%"
+echo "$COLOR"
