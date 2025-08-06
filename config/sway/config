@@ -326,12 +326,12 @@ exec --no-startup-id wl-paste --watch cliphist store
 exec --no-startup-id kdeconnectd
 exec --no-startup-id libinput-gestures
 exec --no-startup-id kwalletd6
-exec --no-startup-id syncthing
+# exec --no-startup-id syncthing
 exec --no-startup-id mpd
 exec --no-startup-id swww-daemon --format xrgb
 # exec --no-startup-id wlsunset -l 39.9 -L 116.3 -t 6000 -T 7000
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
-exec --no-startup-id /bin/aliyundrive-webdav
+# exec --no-startup-id /bin/aliyundrive-webdav
 exec --no-startup-id /bin/autotiling
 exec --no-startup-id /usr/local/bin/lyrics-backend
 exec --no-startup-id redis-server ~/.config/redis/redis.conf
