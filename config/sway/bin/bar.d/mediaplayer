@@ -55,7 +55,7 @@ get_playerctl_status() {
 
     local track_info=""
     if [[ -n "$artist" ]] && [[ -n "$title" ]]; then
-        track_info="$artist - $title"
+        track_info="$title_$artist"
     elif [[ -n "$title" ]]; then
         track_info="$title"
     else
@@ -134,8 +134,9 @@ fi
 # Output
 if [[ -n "$MEDIA_STATUS" ]]; then
     # Truncate long text
-    if [[ ${#MEDIA_STATUS} -gt 10 ]]; then
-        SHORT_TEXT=$(echo "$MEDIA_STATUS" | cut -c1-9).
+    if [[ ${#MEDIA_STATUS} -gt 20 ]]; then
+        SHORT_TEXT=$(echo "$MEDIA_STATUS" | cut -c1-19).
+        MEDIA_STATUS=$SHORT_TEXT
         echo "$MEDIA_STATUS"
         echo "$SHORT_TEXT"
     else
@@ -147,7 +148,7 @@ if [[ -n "$MEDIA_STATUS" ]]; then
     if [[ "$MEDIA_STATUS" == *"▶️"* ]]; then
         echo "#50fa7b"  # Green for playing
     elif [[ "$MEDIA_STATUS" == *"⏸️"* ]]; then
-        echo "#f1fa8c"  # Yellow for paused
+        echo "#f1aabc"  # Yellow for paused
     else
         echo "#6272a4"  # Blue for stopped
     fi

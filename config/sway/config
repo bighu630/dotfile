@@ -316,7 +316,8 @@ client.background       #F8F8F2
 
 # start application
 exec --no-startup-id fcitx5 -D
-exec --no-startup-id swaync
+# exec --no-startup-id swaync
+exec --no-startup-id dunst
 # exec --no-startup-id waybar
 exec --no-startup-id hypridle
 exec --no-startup-id ~/.config/hypr/scripts/clip.sh
