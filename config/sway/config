@@ -205,6 +205,7 @@ for_window [class="Lark"] floating enable
 for_window [title="Lark会议"] floating enable
 
 # 如果还有其他 (null) 窗口没有标题，但是固定 pid 的临时子窗口，可考虑用脚本匹配
+for_window [title="Select what to share"] floating enable
 
 
 for_window [class="com.alibabainc.dingtalk"] floating enable,border pixel 2
