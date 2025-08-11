@@ -304,7 +304,7 @@ interceptor.register(filter_js)
 
 c.content.autoplay = False
 config.bind(
-    "<Ctrl-m>",
+    "<Ctrl-M>",
     "spawn --userscript view_in_mpv",
     mode="normal",
 )
