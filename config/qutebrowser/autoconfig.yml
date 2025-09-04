@@ -86,6 +86,7 @@ settings:
   content.notifications.enabled:
     https://app.follow.is: true
     https://vsgmwiws0qtz.sg.larksuite.com: true
+    https://web3.okx.com: false
     https://www.teambition.com: true
   content.pdfjs:
     global: false
