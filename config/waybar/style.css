@@ -1,7 +1,7 @@
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   font-family: Liga SFMono Nerd Font;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* 基础颜色定义 - 按功能分组 */
@@ -38,10 +38,22 @@
 
 /* Waybar 主窗口 */
 window#waybar {
+  background-color: @bg_transparent_70;
+  color: @primary_text;
+  transition-property: background-color;
+  border-top: 4px transparent;
+  transition-duration: 0.5s;
+  border-radius: 8px;
+  /* margin: 16px 16px; */
+}
+window#waybar {
+  background-color: transparent;
   color: @primary_text;
   transition-property: background-color;
   transition-duration: 0.5s;
-  /* margin: 16px 16px; */
+  border-top: 8px transparent;
+  border-radius: 8px;
+  margin: 16px 16px;
 }
 
 window#waybar.hidden {
@@ -139,7 +151,7 @@ window#waybar.hidden {
 }
 
 #custom-speed {
-  background: @bg_transparent_50;
+  /* background: @bg_transparent_50; */
 }
 
 /* 电池模块 */
