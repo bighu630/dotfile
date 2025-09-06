@@ -52,7 +52,7 @@
         "icon-size": 14,
     },
     "wlr/taskbar": {
-        "format": " {icon}",
+        "format": "|{icon}",
         "icon-size": 18,
         "tooltip-format": "{title}",
         "on-click": "activate",
@@ -278,7 +278,7 @@
     "on-double-click-left": "playerctl previous",
     },
     "custom/power-menu": {
-        "format": " <span color='#6a92d7'>⏻ </span>",
+        "format": "<span color='#6a92d7'>⏻ </span>",
         // "on-click": "bash ~/.config/waybar/scripts/power-menu/powermenu.sh",
         "on-click": "/home/ivhu/.config/rofi/bin/powermenu"
 

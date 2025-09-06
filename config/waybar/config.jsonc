@@ -170,7 +170,8 @@
         "on-double-click-left": "playerctl previous",
     },
     "custom/power-menu": {
-        "format": " <span color='#6a92d7'>⏻ </span>",
+        // "format": "<span color='#6a92d7'>⏻ </span>",
+        "format": "⏻",
         "on-click": "bash ~/.config/waybar/scripts/power-menu/powermenu.sh",
     },
     "custom/launcher": {
