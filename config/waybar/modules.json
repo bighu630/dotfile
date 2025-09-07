@@ -190,9 +190,9 @@
         "interval": 1,
         "max-length": 40,
         "return-type": "text",
-        "on-click": "playerctl play-pause || mpc toggle",
-        "on-click-right": "mpc | grep playing && mpc next || playerctl next",
-        "on-double-click-left": "mpc | grep playing && mpc prev || playerctl previous",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "on-double-click-left": "playerctl previous",
     },
     "custom/speed": {
       "restart-interval": 1,

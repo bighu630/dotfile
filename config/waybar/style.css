@@ -43,17 +43,8 @@ window#waybar {
   transition-property: background-color;
   border-top: 4px transparent;
   transition-duration: 0.5s;
-  border-radius: 8px;
+  border-radius: 4px;
   /* margin: 16px 16px; */
-}
-window#waybar {
-  background-color: transparent;
-  color: @primary_text;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  border-top: 8px transparent;
-  border-radius: 8px;
-  margin: 16px 16px;
 }
 
 window#waybar.hidden {
@@ -297,7 +288,7 @@ window#waybar.hidden {
 #custom-lyrics {
   color: white;
   font-family: HackGen35 Console NF;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #custom-notify {
