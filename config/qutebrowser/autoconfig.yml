@@ -90,6 +90,8 @@ settings:
     https://www.teambition.com: true
   content.pdfjs:
     global: false
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: true
   fonts.default_size:
     global: 12pt
   fonts.statusbar:
