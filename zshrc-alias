@@ -12,6 +12,7 @@ alias ncp="echo "100" | sudo tee /sys/devices/system/cpu/intel_pstate/max_perf_p
 #更换壁纸,在dwm下用的,kde时一般不使用这个
 # alias bg="feh --recursive --randomize --bg-fill /home/ivhu/图片/壁纸/plasma6/*"
 alias bg="$DOTFILEs/hypr/scripts/wallpaper_x11.sh"
+alias sway="GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx  XMODIFIERS='@im=fcitx' GDK_SCALE=1 XCURSOR_THEME=Future-Dark XCURSOR_SIZE=24 XDG_MENU_PREFIX=plasma6- DOTFILE=/home/ivhu/dotfile QT_QPA_PLATFORMTHEME=qt6ct sway"
 
 #方便使用python3
 alias py='python3'
