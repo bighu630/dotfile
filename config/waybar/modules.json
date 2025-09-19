@@ -35,7 +35,7 @@
     },
     "sway/window": {
         "format": "{}",
-        "max-length": 20,
+        "max-length": 18,
         "all-outputs" : true,
         "offscreen-css" : true,
         "offscreen-css-text": "(inactive)",
@@ -53,7 +53,7 @@
     },
     "wlr/taskbar": {
         "format": "|{icon}",
-        "icon-size": 18,
+        "icon-size": 14,
         "tooltip-format": "{title}",
         "on-click": "activate",
         "icon-theme": "Papirus-Dark",
@@ -286,6 +286,6 @@
     "custom/launcher": {
         "format": " <span color='#6a92d7'> </span>",
         "on-click": "~/.config/rofi/bin/launcher",
-        "on-click-right": "bash ~/.config/waybar/scripts/warpaper.sh",
+        "on-click-right": "~/.local/bin/switchbg",
     },
 }
