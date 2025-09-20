@@ -78,19 +78,6 @@
         "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped",
         "max-length": 20,
         "interval": 5,
-        "consume-icons": {
-            "on": " " // Icon shows only when "consume" is on
-        },
-        "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
         "state-icons": {
             "paused": "",
             "playing": ""

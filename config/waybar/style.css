@@ -287,10 +287,18 @@ window#waybar.hidden {
   color: @secondary_text;
 }
 
+/* #custom-lyrics { */
+/*   color: white; */
+/*   font-family: HackGen35 Console NF; */
+/*   font-size: 14px; */
+/* } */
 #custom-lyrics {
+  background: linear-gradient(60deg, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
   color: white;
+  padding: 0px 0px;
   font-family: HackGen35 Console NF;
-  font-size: 14px;
+  font-size: 16px;
+  border-radius: 10px;
 }
 
 #custom-notify {
