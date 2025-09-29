@@ -160,7 +160,7 @@
         "max-length": 10,
     },
     "backlight": {
-        "device": "DP-1",
+        "device": "HDMI-A-1",
         "format": "{icon} {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-click": "",

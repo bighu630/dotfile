@@ -24,7 +24,7 @@
     "spacing": 3, // Gaps between modules (4px)
     "modules-left": ["custom/launcher", "wlr/taskbar","sway/window","custom/lyrics"],
     "modules-center": ["hyprland/workspaces","sway/workspaces",  "clock"],
-    "modules-right": ["custom/speed","network","mpd","tray",  "pulseaudio","custom/notify", "custom/power-menu"],
+    "modules-right": ["custom/speed","network","mpd","tray","backlight",  "pulseaudio","custom/notify", "custom/power-menu"],
     "include": ["~/.config/waybar/modules.json"],
     "clock": {
         "interval": 10,
@@ -52,5 +52,12 @@
             "on-scroll-up": "shift_up",
             "on-scroll-down": "shift_down"
         }
+    },
+
+    "backlight": {
+        "device": "HDMI-A-1",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-click": "",
     },
 }]
