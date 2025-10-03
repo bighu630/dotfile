@@ -41,7 +41,7 @@ titlebar_separator enable
 xwayland disable
 
 
-output eDP-1 resolution 3200x2000 scale 1.45 position 0 0
+output eDP-1 resolution 2240x1400 scale 1.25 position 0 0
 # output HDMI-A-1 resolution 3200x2000 position 1920 0
 # TxGVNN <txgvnn@gmail.com> Name the wordspaces xprop to check window
 # xmodmap [ --pke ] view keymap
