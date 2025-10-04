@@ -290,9 +290,12 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
+spawn-at-startup "hypridle"
+spawn-at-startup "syncthing"
 spawn-at-startup "fcitx5 -D"
 spawn-at-startup "wl-paste --watch cliphist store"
 spawn-at-startup "mako"
+spawn-at-startup "/usr/local/bin/lyrics-backend"
 spawn-at-startup "kwalletd6"
 spawn-at-startup "~/.local/bin/switchbg"
 spawn-sh-at-startup "mpd && sleep 5 && mpd-mpris"
