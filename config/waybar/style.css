@@ -41,9 +41,9 @@ window#waybar {
   background-color: @bg_transparent_70;
   color: @primary_text;
   transition-property: background-color;
-  border-top: 4px transparent;
+  border-top: 2px transparent;
   transition-duration: 0.5s;
-  border-radius: 4px;
+  border-radius: 2px;
   /* margin: 16px 16px; */
 }
 
