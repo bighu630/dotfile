@@ -13,6 +13,7 @@ ignore-timeout=0
 font="Liga SFMono Nerd Font" 12
 margin=12
 padding=12,20
+anchor=bottom-right
 
 [urgency=low]
 border-color=#cccccc
