@@ -167,6 +167,8 @@ layout {
         // fixed 1920
     }
 
+    background-color "#00000000"
+
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
 
@@ -393,6 +395,20 @@ window-rule {
     match title="float"
     open-floating true
 }
+
+layer-rule {
+    match namespace="^launcher$"
+
+    geometry-corner-radius 12
+}
+
+// Put swaybg inside the overview backdrop.
+layer-rule {
+    match namespace="^wallpaper$"
+
+    place-within-backdrop true
+}
+
 
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
