@@ -167,7 +167,7 @@ layout {
         // fixed 1920
     }
 
-    background-color "#00000000"
+    background-color "#00000010"
 
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
