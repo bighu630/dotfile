@@ -88,10 +88,10 @@ output "eDP-1" {
     // for the resolution.
     // If the mode is omitted altogether or is invalid, niri will pick one automatically.
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
-    mode "2240x1400@60"
+    mode "3200x2000@60"
 
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
-    scale 1.1
+    scale 1.4
 
     // Transform allows to rotate the output counter-clockwise, valid values are:
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
@@ -330,6 +330,7 @@ spawn-at-startup "mako"
 spawn-at-startup "/usr/local/bin/lyrics-backend"
 spawn-at-startup "kwalletd6"
 spawn-at-startup "~/.local/bin/switchbg"
+spawn-at-startup "niriswitcher"
 spawn-sh-at-startup "mpd && sleep 5 && mpd-mpris"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
@@ -391,6 +392,7 @@ window-rule {
 }
 window-rule {
     match title="^Lark会议$"
+    match title="^图片$"
     match app-id="" title="^$"
     match title="float"
     open-floating true
@@ -487,6 +489,8 @@ binds {
     Mod+J     { focus-window-down; }
     Mod+K     { focus-window-up; }
     Mod+L     { focus-column-right; }
+    Mod+E     { focus-column-left; }
+    Mod+R     { focus-column-right; }
 
     Mod+Ctrl+Left  { move-column-left; }
     Mod+Ctrl+Down  { move-window-down; }
@@ -629,7 +633,7 @@ binds {
     // Expel the bottom window from the focused column to the right.
     Mod+Period { expel-window-from-column; }
 
-    Mod+R { switch-preset-column-width; }
+    // Mod+R { switch-preset-column-width; }
     // Cycling through the presets in reverse order is also possible.
     // Mod+R { switch-preset-column-width-back; }
     Mod+Shift+R { switch-preset-window-height; }
@@ -699,6 +703,11 @@ binds {
     // Powers off the monitors. To turn them back on, do any input like
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
+
+    Alt+Tab repeat=false { spawn "niriswitcherctl" "show" "--window"; }
+    Alt+Shift+Tab repeat=false { spawn "niriswitcherctl" "show" "--window"; }
+    Alt+Grave repeat=false { spawn "niriswitcherctl" "show" "--workspace"; }
+    Alt+Shift+Grave repeat=false { spawn "niriswitcherctl" "show" "--workspace"; }
 }
 
 environment {
