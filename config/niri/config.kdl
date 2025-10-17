@@ -88,10 +88,12 @@ output "eDP-1" {
     // for the resolution.
     // If the mode is omitted altogether or is invalid, niri will pick one automatically.
     // Run `niri msg outputs` while inside a niri instance to list all outputs and their modes.
-    mode "3200x2000@60"
 
     // You can use integer or fractional scale, for example use 1.5 for 150% scale.
-    scale 1.4
+    // mode "3200x2000@60"
+    // scale 1.4
+    mode "2240x1400@60"
+    scale 1.2
 
     // Transform allows to rotate the output counter-clockwise, valid values are:
     // normal, 90, 180, 270, flipped, flipped-90, flipped-180 and flipped-270.
@@ -136,7 +138,7 @@ output "HDMI-A-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=2036 y=0
+    position x=1866 y=0
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -666,7 +668,7 @@ binds {
     Mod+Shift+Equal { set-window-height "+5%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    Mod+V       { toggle-window-floating; }
+    Mod+T       { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
