@@ -15,6 +15,7 @@ config/copyq/copyq_geometry.ini
 config/fcitx/dbus/
 share/fcitx5/pinyin/
 config/mpd/mpdstate
+./config/niri/monitor.kdl
 *.dat
 *lock
 *.pyc

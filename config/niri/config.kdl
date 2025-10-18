@@ -28,6 +28,8 @@ input {
     mod-key "Alt"
     mod-key-nested "Super"
 
+    focus-follows-mouse
+
     // Next sections include libinput settings.
     // Omitting settings disables them, or leaves them at their default values.
     // All commented-out settings here are examples, not defaults.
@@ -71,6 +73,8 @@ input {
     // Setting max-scroll-amount="0%" makes it work only on windows already fully on screen.
     // focus-follows-mouse max-scroll-amount="0%"
 }
+
+include "monitor.kdl"
 
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
@@ -144,7 +148,8 @@ output "HDMI-A-1" {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 2
+    gaps 4
+    always-center-single-column
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -191,7 +196,7 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        // off
+        off
 
         // How many logical pixels the ring extends out from the windows.
         width 2
@@ -230,10 +235,11 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
-        off
+        // off
 
-        width 1
-        active-color "#ffc87f"
+        width 2
+        // active-color "#ffc87f"
+        active-color "#7fc8ff"
         inactive-color "#505050"
 
         // Color of the border around windows that request your attention.
@@ -324,7 +330,7 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "hypridle"
 spawn-at-startup "syncthing"
-spawn-at-startup "fcitx5 -D"
+spawn-at-startup "fcitx5"
 spawn-at-startup "wl-paste --watch cliphist store"
 spawn-at-startup "mako"
 spawn-at-startup "/usr/local/bin/lyrics-backend"
