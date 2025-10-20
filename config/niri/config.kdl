@@ -28,7 +28,7 @@ input {
     mod-key "Alt"
     mod-key-nested "Super"
 
-    focus-follows-mouse
+    // focus-follows-mouse
 
     // Next sections include libinput settings.
     // Omitting settings disables them, or leaves them at their default values.
@@ -74,7 +74,7 @@ input {
     // focus-follows-mouse max-scroll-amount="0%"
 }
 
-include "monitor.kdl"
+// include "monitor.kdl"
 
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
