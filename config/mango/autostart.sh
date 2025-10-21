@@ -54,6 +54,7 @@ hypridle &
 syncthing &
 fcitx5 &
 mako &
+nm-applet &
 /usr/local/bin/lyrics-backend &
 kwalletd6 &
 ~/.local/bin/switchbg &
