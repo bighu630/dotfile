@@ -10,7 +10,7 @@ initial-tool = "brush"
 # Configure the command to be called on copy, for example `wl-copy`
 copy-command = "wl-copy"
 # Increase or decrease the size of the annotations
-annotation-size-factor = 2
+annotation-size-factor = 0.7
 # Filename to use for saving action. Omit to disable saving to file. Might contain format specifiers: https://docs.rs/chrono/latest/chrono/format/strftime/index.html
 # starting with 0.20.0, can contain leading tilde (~) for home directory
 output-filename = "/tmp/test-%Y-%m-%d_%H:%M:%S.png"
@@ -19,7 +19,7 @@ save-after-copy = false
 # Hide toolbars by default
 default-hide-toolbars = false
 # Experimental (since 0.20.0): whether window focus shows/hides toolbars. This does not affect initial state of toolbars, see default-hide-toolbars.
-focus-toggles-toolbars = false
+focus-toggles-toolbars = true
 # Fill shapes by default (since 0.20.0)
 default-fill-shapes = false
 # The primary highlighter to use, the other is accessible by holding CTRL at the start of a highlight [possible values: block, freehand]
@@ -52,7 +52,7 @@ pointer = "p"
 crop = "c"
 brush = "b"
 line = "i"
-arrow = "z"
+arrow = "a"
 rectangle = "r"
 ellipse = "e"
 text = "t"
