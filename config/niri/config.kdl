@@ -332,7 +332,7 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "hypridle"
 spawn-at-startup "syncthing"
-spawn-at-startup "fcitx5"
+spawn-at-startup "fcitx5 -D"
 spawn-at-startup "wl-paste --watch cliphist store"
 spawn-at-startup "swaync"
 spawn-at-startup "/usr/local/bin/lyrics-backend"
@@ -460,7 +460,7 @@ binds {
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+Return { spawn "alacritty"; }
     Mod+B { spawn "firefox"; }
-    Mod+Shift+A { spawn-sh "grim -g \"$(slurp)\" - | swappy -f -"; }
+    Mod+Shift+A { spawn-sh "grim -g \"$(slurp -b '#2E2A1E55' -c '#fb751bff')\" -t ppm - | satty -f -"; }
     Mod+Shift+S { spawn-sh "alacritty -T float -e ~/.config/hypr/scripts/translate/tui";}
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
@@ -722,7 +722,7 @@ environment {
     QT_IM_MODULE "fcitx"
     XMODIFIERS "@im=fcitx"
     SDL_IM_MODULE "fcitx"
-    GLFW_IM_MODULE "ibus"
+    GLFW_IM_MODULE "fcitx"
     GTK_IM_MODULE "fcitx"
 
     GOROOT "/home/ivhu/.go"
