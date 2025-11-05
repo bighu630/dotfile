@@ -403,6 +403,15 @@ window-rule {
     match title="^图片$"
     match app-id="" title="^$"
     match title="float"
+    match title="^图片查看器$"
+    match title="^预览$"
+    match title="^图片查看$"
+    match title="^选择文件$"
+    match title="^打开文件$"
+    match title="^broken$"
+    match app-id="Meeting"
+    match app-id="hyprland-share-picker"
+
     open-floating true
 }
 
