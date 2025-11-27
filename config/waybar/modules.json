@@ -1,0 +1,291 @@
+{
+    "ext/workspaces": {
+        "format": "{icon}",
+        "ignore-hidden": true,
+        "on-click": "activate",
+        "on-click-right": "deactivate",
+        "sort-by-id": true,
+    },
+    "dwl/tags": {
+        "num-tags":3,
+    },
+    "dwl/window": {
+        "format": "[{layout}]{title}"
+    },
+    "hyprland/workspaces": {
+      "format": "{icon}",
+      "on-click": "activate",
+      "format-icons": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "11": "11",
+        "12": "12",
+        "13": "13",
+        "14": "14",
+        "urgent": "",
+        "default": ""
+      }
+    },
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": false,
+        "format": "{name}",
+        "format-focused": "<span color='#81A1C1'> {name}</span>",
+        "format-visible": "<span color='#88C0D0'> {name}</span>",
+        "format-urgent": "<span color='#cF318A'> {name}</span>",
+        "on-click": "swaymsg workspace {name}",
+        "on-scroll-up": "swaymsg workspace prev",
+        "on-scroll-down": "swaymsg workspace next"
+    },
+    "window-rewrite": {
+        "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
+        "class<firefox>": "", // Windows whose classes are "firefox"
+        "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+        "class<xfce4-terminal>": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+        "code": "󰨞",
+    },
+    "sway/window": {
+        "format": "{}",
+        "max-length": 18,
+        "all-outputs" : true,
+        "offscreen-css" : true,
+        "offscreen-css-text": "(inactive)",
+        "rewrite": {
+            "(.*) - Mozilla Firefox": " $1",
+            "(.*) - fish": "> [$1]"
+        },
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 18,
+        "separate-outputs": false,
+        "icon": true,
+        "icon-size": 14,
+    },
+    "wlr/taskbar": {
+        "format": "|{icon}",
+        "icon-size": 14,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "icon-theme": "Papirus-Dark",
+        "on-click-middle": "close",
+        "active-first": false,
+        "ignore-list": [
+            "Fcitx5 Input Window",
+            "Lyrics Overlay"
+        ],
+        "app_ids-mapping": {
+            "firefoxdeveloperedition": "firefox-developer-edition",
+        },
+        "rewrite": {
+            "Firefox Web Browser": "Firefox",
+            "Foot Server": "Terminal",
+            "Alacritty": "Terminal"
+        }
+    },
+    "mpd": {
+        "format": "{stateIcon} {randomIcon}{repeatIcon}{singleIcon}{title}",
+        "format-disconnected": "Disconnected",
+        "format-stopped": "{consumeIcon}{repeatIcon}{singleIcon}Stopped",
+        "max-length": 20,
+        "interval": 5,
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ",
+        "tooltip-format-disconnected": "MPD (disconnected)",
+        "on-double-click-left": "mpc prev",
+        "on-click": "mpc toggle",
+        "on-double-click-right": "mpc random",
+        "on-click-right": "mpc next"
+    },
+    "cava": {
+        "framerate": 800,
+        "autosens": 1,
+        "sensitivity": 2,
+        "bars": 30,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 20000,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "clock": {
+        "interval": 10,
+        "format": "<span color='#bf616a'> </span>{:%H:%M}",
+        "format-alt": "<span color='#bf616a'> </span>{:%m/%d %R}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "month",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "on-click-right": "mode",
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+
+    "custom/system": {
+        "interval": 3,
+        "exec": "echo \"$(grep 'cpu ' /proc/stat | awk '{u=$2+$4; t=$2+$4+$5} END {printf \"%.1f%%\", u*100/t}')|$(free -h | awk 'NR==2 {print $3}')\"",
+        "format": "{}",
+    },
+
+    "cpu": {
+      "interval": 10,
+      "format": "{}%",
+      "max-length": 10,
+      "on-click": "",
+    },
+    "memory": {
+        "interval": 30,
+        "format": "|{}% ",
+        "format-alt":"|{used:0.1f}G",
+        "max-length": 10,
+    },
+    "backlight": {
+        "device": "HDMI-A-1",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "on-click": "",
+    },
+    "network": {
+        "format-wifi": "直 {signalStrength}%",
+        "format-ethernet": " wired",
+        "format-disconnected": "睊",
+        "format-disconnected": "Disconnected  ",
+    },
+    "custom/lyrics": {
+        "format": " ♪ {} ♪ ",
+        "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=60;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
+        "interval": 1,
+        "max-length": 40,
+        "return-type": "text",
+        "on-click": "playerctl play-pause",
+        "on-click-right": "playerctl next",
+        "on-double-click-left": "playerctl previous",
+    },
+    "custom/speed": {
+      "restart-interval": 1,
+      "exec": "bash ~/.config/waybar/scripts/net.sh",
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "  {volume}%",
+        "format-bluetooth-muted": " ",
+        "format-muted": "婢",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "~/.config/waybar/scripts/process.sh pavucontrol-qt",
+        "on-click-right": "~/.config/waybar/scripts/bluetui.sh"
+    },
+    "custom/notify": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+            "notification": " <span foreground='red'><sup></sup></span>",
+            "none": " ",
+            "dnd-notification": " <span foreground='red'><sup></sup></span>",
+            "dnd-none": " ",
+            "inhibited-notification": " <span foreground='red'><sup></sup></span>",
+            "inhibited-none": " ",
+            "dnd-inhibited-notification": " <span foreground='red'><sup></sup></span>",
+            "dnd-inhibited-none": " "
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+
+    "bluetooth": {
+        "on-click": "~/.config/waybar/scripts/rofi-bluetooth &",
+        "format": " {status}",
+    },
+
+    "battery": {
+      "bat": "BAT0",
+      "adapter": "ADP0",
+      "interval": 60,
+      "states": {
+          "warning": 30,
+          "critical": 15
+      },
+      "max-length": 20,
+      "format": "{icon} {time}",
+      "format-time": "{H}:{M}",
+      "format-warning": "{icon} {capacity}%",
+      "format-critical": "{icon} {capacity}%",
+      "format-charging": "{icon}󱐌{capacity}%",
+      "format-plugged": " {capacity}%",
+      "format-alt": "{icon} {capacity}%",
+      "format-full": " {capacity}%",
+      "format-icons": [" ", " ", " ", " ", " "],
+      "format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
+      "on-click-right": "~/.config/waybar/scripts/power-profile-switcher.sh",
+    },
+    "custom/weather": {
+      "exec": "python3 ~/.config/waybar/scripts/weather.py",
+      "restart-interval": 300,
+      "return-type": "json",
+    },
+
+   "custom/spotify": {
+    "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py",
+    "format": "  ",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-double-click-right": "playerctl next",
+    "on-double-click-left": "playerctl previous",
+    },
+    "custom/power-menu": {
+        "format": "<span color='#6a92d7'>⏻ </span>",
+        // "on-click": "bash ~/.config/waybar/scripts/power-menu/powermenu.sh",
+        "on-click": "/home/ivhu/.config/rofi/bin/powermenu"
+
+    },
+    "custom/launcher": {
+        "format": " <span color='#6a92d7'> </span>",
+        "on-click": "~/.config/rofi/bin/launcher",
+        "on-click-right": "~/.local/bin/switchbg",
+    },
+}

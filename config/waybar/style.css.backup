@@ -1,0 +1,378 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: Liga SFMono Nerd Font;
+  font-size: 16px;
+}
+
+/* 基础颜色定义 - 按功能分组 */
+
+/* 主要颜色 */
+@define-color primary_text #cad3f5;
+@define-color secondary_text #a5adcb;
+@define-color primary_bg #181926;
+@define-color secondary_bg #363a4f;
+@define-color accent_color #8aadf4;
+
+/* 状态颜色 */
+@define-color success_color #a6da95;
+@define-color warning_color #eed49f;
+@define-color error_color #ed8796;
+
+/* 透明背景 */
+@define-color bg_transparent_30 rgba(36, 39, 58, 0.3);
+@define-color bg_transparent_50 rgba(36, 39, 58, 0.5);
+@define-color bg_transparent_70 rgba(36, 39, 58, 0.7);
+
+/* 功能模块颜色 */
+@define-color workspace_active #8aadf4;
+@define-color workspace_inactive #a5adcb;
+@define-color taskbar_active #94727D;
+@define-color taskbar_hover rgba(255, 255, 255, 0.2);
+@define-color module_bg rgba(36, 39, 58, 0.7);
+@define-color system_monitor #eed49f;
+@define-color audio_color #7dc4e4;
+@define-color network_color #f5bde6;
+@define-color battery_normal #c6a0f6;
+@define-color battery_charging #a6da95;
+@define-color battery_critical #ed8796;
+
+/* Waybar 主窗口 */
+window#waybar {
+  background-color: transparent;
+  color: @primary_text;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-top: 8px transparent;
+  border-radius: 8px;
+  margin: 16px 16px;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/* 工作区 */
+#workspaces {
+  background-color: @module_bg;
+  margin: -3px 3px -4px 3px;
+  padding: 0px 4px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+#workspaces button {
+  padding: 1px 5px;
+  margin: 2px 3px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.6);
+  min-height: 18px;
+  min-width: 18px;
+  transition: all 0.15s ease-in-out;
+  opacity: 0.7;
+  border: none;
+  box-shadow: inset 0 -3px transparent;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+  background-color: @workspace_active;
+  color: white;
+  border-radius: 50%;
+  padding: 2px;
+  min-width: 20px;
+  min-height: 20px;
+  opacity: 1.0;
+}
+
+#workspaces button.urgent {
+  background-color: @error_color;
+  color: @primary_text;
+}
+
+#workspaces button:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+/* 任务栏 */
+#taskbar {
+  padding: 0 10px;
+  border-radius: 6.5px;
+  margin: 0 0px;
+  color: #ffffff;
+  background-color: @module_bg;
+}
+
+#taskbar button {
+  min-width: 40px;
+  border-radius: 4px;
+  padding: 0 0 0 0px;
+  margin: 0 1 -2 -2px;
+  color: #ffffff;
+  background-color: rgba(120, 118, 117, 0.4);
+}
+
+#taskbar button:hover {
+  background: @taskbar_hover;
+  box-shadow: inset 0 3px #ffffff;
+}
+
+#taskbar button.active {
+  background-color: @taskbar_active;
+  box-shadow: inset 0 3px #24f3f2;
+}
+
+/* 通用模块样式 */
+#battery,
+#pulseaudio,
+#backlight,
+#clock,
+#bluetooth,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#custom-spotify,
+#tray,
+#custom-notify,
+#mpd {
+  padding: 0 10px;
+  color: @primary_text;
+  border-radius: 6.5px;
+  background-color: @module_bg;
+}
+
+/* 系统监控 */
+#cpu,
+#memory,
+#custom-system {
+  color: @system_monitor;
+  background-color: @bg_transparent_50;
+  border-radius: 6.5px;
+  padding: 0 10px;
+}
+
+/* 音频模块 */
+#pulseaudio {
+  color: @audio_color;
+}
+
+/* 网络模块 */
+#network {
+  color: @network_color;
+  background-color: @module_bg;
+  padding: 0 10px;
+  border-radius: 6.5px;
+}
+
+#custom-speed {
+  background: @bg_transparent_50;
+  padding: 0 10px;
+  border-radius: 6.5px;
+}
+
+/* 电池模块 */
+#battery {
+  color: @battery_normal;
+}
+
+#battery.charging,
+#battery.full,
+#battery.plugged {
+  color: @battery_charging;
+}
+
+#battery.critical:not(.charging) {
+  color: @battery_critical;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  to {
+    background-color: @bg_transparent_50;
+    color: @primary_text;
+  }
+}
+
+/* 媒体播放器 */
+#custom-media {
+  background-color: @success_color;
+  color: @primary_bg;
+  min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+  background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+  background-color: @warning_color;
+}
+
+#mpd {
+  color: @success_color;
+  font-family: HackGen35 Console NF;
+}
+
+#mpd.disconnected {
+  color: @error_color;
+}
+
+#mpd.stopped,
+#mpd.paused {
+  color: @warning_color;
+}
+
+/* 天气模块 */
+#disk,
+#temperature,
+#custom-hyprPicker,
+#custom-weather {
+  padding: 0 10px;
+  color: @primary_text;
+  border-radius: 6.5px;
+  background-color: @secondary_bg;
+}
+
+#custom-weather.severe {
+  color: @error_color;
+}
+
+#custom-weather.sunnyDay {
+  color: @warning_color;
+}
+
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight {
+  color: @audio_color;
+}
+
+#custom-weather.rainyDay,
+#custom-weather.rainyNight {
+  color: @success_color;
+}
+
+#temperature {
+  background-color: @warning_color;
+}
+
+#temperature.critical {
+  background-color: @error_color;
+}
+
+/* 电源和启动器 */
+#custom-power-menu {
+  padding: 0 10px;
+  color: @primary_text;
+  border-radius: 6.5px;
+  background-color: @primary_bg;
+}
+
+#custom-launcher {
+  background-color: @module_bg;
+  color: @accent_color;
+  border-radius: 7.5px;
+  padding: 0 3px;
+}
+
+/* 其他功能模块 */
+#bluetooth.disconnected {
+  color: @error_color;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: @error_color;
+}
+
+#idle_inhibitor {
+  background-color: @primary_bg;
+}
+
+#idle_inhibitor.activated {
+  background-color: #ffffff;
+  color: @primary_bg;
+}
+
+#language {
+  background: @audio_color;
+  color: @primary_bg;
+  padding: 0 5px;
+  margin: 0 5px;
+  min-width: 16px;
+}
+
+#keyboard-state {
+  background: @success_color;
+  color: @primary_bg;
+  padding: 0 0px;
+  margin: 0 5px;
+  min-width: 16px;
+}
+
+#keyboard-state > label {
+  padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* 自定义模块 */
+#custom-spotify {
+  padding: 0 10px;
+  margin: 0 4px;
+  color: @secondary_text;
+}
+
+#custom-lyrics {
+  background: linear-gradient(60deg, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
+  color: white;
+  padding: 0px 0px;
+  font-family: HackGen35 Console NF;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+#custom-notify {
+  color: @accent_color;
+}
+
+#window {
+  padding: 0 10px;
+  color: @primary_text;
+  font-size: 11px;
+  border-radius: 6.5px;
+  background-color: @bg_transparent_70;
+}
+
+#cava {
+  color: @accent_color;
+  font-size: 8px;
+}
+
+/* 边距调整 */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+label:focus {
+  background-color: #000000;
+}

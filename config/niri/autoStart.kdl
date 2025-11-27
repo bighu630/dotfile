@@ -1,0 +1,18 @@
+// Add lines like this to spawn processes at startup.
+// Note that running niri as a session supports xdg-desktop-autostart,
+// which may be more convenient to use.
+// See the binds section below for more spawn examples.
+
+// This line starts waybar, a commonly used bar for Wayland compositors.
+spawn-at-startup "waybar"
+spawn-at-startup "hypridle"
+spawn-at-startup "syncthing"
+spawn-at-startup "fcitx5 -D"
+spawn-at-startup "wl-paste --watch cliphist store"
+spawn-at-startup "swaync"
+spawn-at-startup "/usr/local/bin/lyrics-backend"
+spawn-at-startup "kwalletd6"
+spawn-at-startup "~/.local/bin/switchbg"
+// spawn-at-startup "niriswitcher"
+spawn-sh-at-startup "mpd && sleep 5 && mpd-mpris"
+spawn-sh-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6"

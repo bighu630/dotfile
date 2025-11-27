@@ -1,0 +1,112 @@
+// Window rules let you adjust behavior for individual windows.
+// Find more information on the wiki:
+// https://yalter.github.io/niri/Configuration:-Window-Rules
+
+// Work around WezTerm's initial configure bug
+// by setting an empty default-column-width.
+
+window-rule {
+    // 将此规则应用于所有窗口 (因为没有 match 条件)
+
+    // 圆角
+    geometry-corner-radius 1
+    clip-to-geometry true
+    // 对，niri绘制s
+    draw-border-with-background false
+
+    // 新窗口默认不最大化
+    open-maximized false
+    // 新窗口默认平铺，而非浮动
+    //open-floating false
+
+    // 全局默认宽度设置为屏幕宽度的 80%
+    // default-column-width { proportion 0.8; }
+    default-window-height {
+		proportion 1.0;
+	}
+}
+
+
+window-rule {
+    // This regular expression is intentionally made as specific as possible,
+    // since this is the default config, and we want no false positives.
+    // You can get away with just app-id="wezterm" if you want.
+    match app-id=r#"^org\.wezfurlong\.wezterm$"#
+    default-column-width {}
+}
+
+// Open the Firefox picture-in-picture player as floating by default.
+window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+window-rule {
+    match title="^Lark会议$"
+    match title="^图片$"
+    match title="^$"
+    match title="float"
+    match title="^图片查看器$"
+    match title="^预览$"
+    match title="^图片查看$"
+    match title="^选择文件$"
+    match title="^打开文件$"
+    match title="^broken$"
+    match app-id="Meeting"
+    match app-id="hyprland-share-picker"
+
+    open-floating true
+}
+
+// 在右上角打开窗口
+window-rule {
+    match title="^音量控制$"
+    match app-id="^pavucontrol$"
+    match app-id="^nm-*"
+    match title="^bluetui$"
+    default-floating-position x=0 y=0 relative-to="top-right"
+    open-floating true
+}
+
+window-rule {
+    match title="^Lark会议$"
+    default-floating-position x=1000 y=000 relative-to="bottom-left"
+    open-floating true
+}
+
+
+layer-rule {
+    match namespace="^launcher$"
+
+    geometry-corner-radius 12
+}
+
+// Put swaybg inside the overview backdrop.
+layer-rule {
+    match namespace="^wallpaper$"
+
+    place-within-backdrop true
+}
+
+
+// Example: block out two password managers from screen capture.
+// (This example rule is commented out with a "/-" in front.)
+window-rule {
+    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
+    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+
+    block-out-from "screen-capture"
+
+    // Use this instead if you want them visible on third-party screenshot tools.
+    // block-out-from "screencast"
+}
+
+// Example: enable rounded corners for all windows.
+// (This example rule is commented out with a "/-" in front.)
+/-window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}

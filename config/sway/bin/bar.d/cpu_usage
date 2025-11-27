@@ -1,0 +1,41 @@
+#!/bin/bash
+# CPU usage indicator for i3blocks
+
+# Get CPU usage percentage
+CPU_USAGE=$(LANG=C top -bn1 | grep "Cpu(s)" | sed "s/.*, *\([0-9.]*\)%* id.*/\1/" | awk '{print 100 - $1}')
+
+# Alternative method using /proc/stat
+if [[ -z "$CPU_USAGE" ]]; then
+    # Read CPU stats
+    CPU_STATS=$(grep '^cpu ' /proc/stat)
+    CPU_IDLE=$(echo $CPU_STATS | awk '{print $5}')
+    CPU_TOTAL=$(echo $CPU_STATS | awk '{print $2+$3+$4+$5+$6+$7+$8}')
+
+    # Calculate usage percentage
+    CPU_USAGE=$(awk "BEGIN {printf \"%.1f\", (($CPU_TOTAL-$CPU_IDLE)/$CPU_TOTAL)*100}")
+fi
+
+# Round to integer
+CPU_USAGE=$(printf "%.0f" "$CPU_USAGE")
+
+# Color based on usage
+if [[ $CPU_USAGE -ge 90 ]]; then
+    COLOR="#ff5555"  # Red for very high usage
+elif [[ $CPU_USAGE -ge 75 ]]; then
+    COLOR="#ffb86c"  # Orange for high usage
+elif [[ $CPU_USAGE -ge 50 ]]; then
+    COLOR="#f1fa8c"  # Yellow for medium usage
+else
+    COLOR="#50fa7b"  # Green for low usage
+fi
+
+# Click actions
+case $BLOCK_BUTTON in
+    1) foot -T float -w 800x600 -e btop ;;  # left click - open htop
+    3) foot -T float -w 800x600 -e btop ;;  # right click - open htop
+esac
+
+# Output
+echo "⚙️ $CPU_USAGE%"
+echo "$CPU_USAGE%"
+echo "$COLOR"

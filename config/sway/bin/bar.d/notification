@@ -1,0 +1,66 @@
+#!/bin/bash
+# Swaync notification module for i3blocks
+
+# Get notification count from swaync
+NOTIF_COUNT=$(swaync-client -c 2>/dev/null || echo "0")
+
+# Get Do Not Disturb status
+DND_STATUS=$(swaync-client -D 2>/dev/null)
+
+# Choose display based on status and count
+if [[ "$DND_STATUS" == "true" ]]; then
+    # Do Not Disturb is enabled
+    ICON="🔕"
+    DISPLAY="$ICON DND"
+    COLOR="#6272a4"  # Muted blue for DND
+elif [[ $NOTIF_COUNT -gt 0 ]]; then
+    # Has notifications
+    ICON="🔔"
+    if [[ $NOTIF_COUNT -ge 10 ]]; then
+        DISPLAY="$ICON 9+"
+    else
+        DISPLAY="$ICON $NOTIF_COUNT"
+    fi
+    COLOR="#ffb86c"  # Orange when there are notifications
+else
+    # No notifications
+    ICON="🔔"
+    DISPLAY="$ICON"
+    COLOR="#44475a"  # Dim gray when no notifications
+fi
+
+# Handle mouse clicks
+case $BLOCK_BUTTON in
+    1) # Left click - Toggle notification panel
+        swaync-client -t -sw
+        ;;
+    2) # Middle click - Toggle Do Not Disturb
+        swaync-client -d -sw
+        ;;
+    3) # Right click - Clear all notifications
+        if [[ $NOTIF_COUNT -gt 0 ]]; then
+            swaync-client -C
+        else
+            # If no notifications, open notification settings
+            swaync-client -t -sw
+        fi
+        ;;
+    4) # Scroll up - Show notification history
+        swaync-client -t -sw
+        ;;
+    5) # Scroll down - Dismiss latest notification
+        if [[ $NOTIF_COUNT -gt 0 ]]; then
+            swaync-client -cp
+        fi
+        ;;
+esac
+
+# Output for i3blocks
+echo "$DISPLAY"
+echo "$NOTIF_COUNT"
+echo "$COLOR"
+
+# Mark as urgent if there are many notifications (and DND is off)
+if [[ "$DND_STATUS" != "true" && $NOTIF_COUNT -gt 5 ]]; then
+    exit 33  # Urgent flag for i3blocks
+fi

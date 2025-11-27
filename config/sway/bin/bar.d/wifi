@@ -1,0 +1,74 @@
+#!/bin/bash
+# WiFi status indicator for i3blocks
+
+# Default interface
+INTERFACE="${BLOCK_INSTANCE:-wlan0}"
+
+# Check if interface exists
+if ! ip link show "$INTERFACE" &> /dev/null; then
+    echo "📶 N/A"
+    echo "N/A"
+    echo "#6272a4"
+    exit 0
+fi
+
+# Get connection status
+OPERSTATE=$(cat /sys/class/net/$INTERFACE/operstate 2>/dev/null)
+
+if [[ $OPERSTATE != "up" ]]; then
+    echo "📶 Down"
+    echo "Down"
+    echo "#ff5555"
+    exit 0
+fi
+
+# Get WiFi info using iw
+WIFI_INFO=$(iw dev $INTERFACE link 2>/dev/null)
+
+if [[ -z "$WIFI_INFO" ]]; then
+    echo "📶 No WiFi"
+    echo "No WiFi"
+    echo "#ff5555"
+    exit 0
+fi
+
+# Extract SSID and signal strength
+SSID=$(echo "$WIFI_INFO" | grep -Po 'SSID: \K.*' | head -1)
+SIGNAL=$(echo "$WIFI_INFO" | grep -Po 'signal: \K-?\d+' | head -1)
+
+# Get IP address
+IP=$(ip addr show $INTERFACE | grep -Po 'inet \K[\d.]+' | head -1)
+
+# Color based on signal strength
+if [[ $SIGNAL -ge -30 ]]; then
+    COLOR="#50fa7b"  # Excellent signal
+    ICON="📶"
+elif [[ $SIGNAL -ge -50 ]]; then
+    COLOR="#f1fa8c"  # Good signal
+    ICON="📶"
+elif [[ $SIGNAL -ge -70 ]]; then
+    COLOR="#ffb86c"  # Fair signal
+    ICON="📶"
+else
+    COLOR="#ff5555"  # Poor signal
+    ICON="📶"
+fi
+
+
+# Click actions
+case $BLOCK_BUTTON in
+    1) foot -T float -e nmtui ;;  # left click - open network manager
+    3) foot -T float -e iwconfig ;;  # right click - show detailed wifi info
+esac
+
+# Output
+if [[ -n "$SSID" ]]; then
+    # echo "$ICON $SSID|$SIGNAL"
+    ~/.config/waybar/scripts/net.sh
+    echo "$ICON $SSID"
+    echo "$COLOR"
+else
+    echo "$ICON Connected"
+    echo "$ICON"
+    echo "$COLOR"
+fi

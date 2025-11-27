@@ -1,0 +1,94 @@
+#!/bin/bash
+# Battery status indicator for i3blocks
+
+# Find battery path
+BATTERY_PATH="/sys/class/power_supply/BAT0"
+if [[ ! -d "$BATTERY_PATH" ]]; then
+    BATTERY_PATH="/sys/class/power_supply/BAT1"
+fi
+
+if [[ ! -d "$BATTERY_PATH" ]]; then
+    echo "🔋 N/A"
+    echo "N/A"
+    echo "#6272a4"
+    exit 0
+fi
+
+# Get battery info
+CAPACITY=$(cat "$BATTERY_PATH/capacity" 2>/dev/null)
+STATUS=$(cat "$BATTERY_PATH/status" 2>/dev/null)
+
+# Default values if files don't exist
+CAPACITY=${CAPACITY:-0}
+STATUS=${STATUS:-Unknown}
+
+# Choose icon based on status and capacity
+case $STATUS in
+    "Charging")
+        if [[ $CAPACITY -ge 95 ]]; then
+            ICON="🔋"  # Full
+        elif [[ $CAPACITY -ge 75 ]]; then
+            ICON="🔋"  # High
+        elif [[ $CAPACITY -ge 50 ]]; then
+            ICON="🔋"  # Medium
+        elif [[ $CAPACITY -ge 25 ]]; then
+            ICON="🔋"  # Low
+        else
+            ICON="🔋"  # Critical
+        fi
+        STATUS_TEXT="⚡"
+        ;;
+    "Discharging"|"Not charging")
+        if [[ $CAPACITY -ge 95 ]]; then
+            ICON="🔋"  # Full
+        elif [[ $CAPACITY -ge 75 ]]; then
+            ICON="🔋"  # High
+        elif [[ $CAPACITY -ge 50 ]]; then
+            ICON="🔋"  # Medium
+        elif [[ $CAPACITY -ge 25 ]]; then
+            ICON="🔋"  # Low
+        else
+            ICON="🪫"  # Critical
+        fi
+        STATUS_TEXT=""
+        ;;
+    "Full")
+        ICON="🔋"
+        STATUS_TEXT="✓"
+        ;;
+    *)
+        ICON="🔋"
+        STATUS_TEXT="?"
+        ;;
+esac
+
+# Color based on capacity and status
+if [[ $STATUS == "Charging" ]]; then
+    COLOR="#50fa7b"  # Green when charging
+elif [[ $CAPACITY -le 10 ]]; then
+    COLOR="#ff5555"  # Red for critical
+elif [[ $CAPACITY -le 20 ]]; then
+    COLOR="#ffb86c"  # Orange for low
+elif [[ $CAPACITY -le 50 ]]; then
+    COLOR="#f1fa8c"  # Yellow for medium
+else
+    COLOR="#f8f8f2"  # White for good
+fi
+
+# Click actions
+case $BLOCK_BUTTON in
+    1) foot -e upower -i $(upower -e | grep 'BAT') ;;  # left click - detailed battery info
+    3) ~/.config/waybar/scripts/power-profile-switcher.sh ;;
+    4) ~/.config/hypr/scripts/brightness up ;;  # scroll up - increase brightness
+    5) ~/.config/hypr/scripts/brightness down ;;  # scroll down - decrease brightness
+esac
+
+# Output
+echo "$ICON $CAPACITY%$STATUS_TEXT"
+echo "$CAPACITY%"
+echo "$COLOR"
+
+# Urgent notification for critical battery
+if [[ $STATUS != "Charging" && $CAPACITY -le 5 ]]; then
+    exit 33  # Urgent flag for i3blocks
+fi

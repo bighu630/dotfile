@@ -1,0 +1,103 @@
+alias www="export WINEARCH=win64 WINEPREFIX=~/公共/wine"
+alias ww="export WINEARCH=win32 WINEPREFIX=~/.wine"
+alias deepin="WINEARCH=win64 WINEPREFIX=~/.deepinwine deepin-wine8-stable"
+alias keymod="echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode"
+
+alias sgo='sudo /home/ivhu/.go/bin/go'
+
+alias c="echo "60" | sudo tee /sys/devices/system/cpu/amd_pstate/max_perf_pct"
+alias cc="echo "50" | sudo tee /sys/devices/system/cpu/amd_pstate/max_perf_pct"
+alias ncp="echo "100" | sudo tee /sys/devices/system/cpu/amd_pstate/max_perf_pct"
+
+#更换壁纸,在dwm下用的,kde时一般不使用这个
+# alias bg="feh --recursive --randomize --bg-fill /home/ivhu/图片/壁纸/plasma6/*"
+alias bg="$DOTFILEs/hypr/scripts/wallpaper_x11.sh"
+alias sway="GTK_IM_MODULE=fcitx QT_IM_MODULE=fcitx  XMODIFIERS='@im=fcitx' GDK_SCALE=1 XCURSOR_THEME=Future-Dark XCURSOR_SIZE=24 XDG_MENU_PREFIX=plasma6- DOTFILE=/home/ivhu/dotfile QT_QPA_PLATFORMTHEME=qt6ct sway"
+
+#方便使用python3
+alias py='python3'
+alias pys="python3 -m http.server"
+#下载工具
+alias ad='aria2c'
+# --dir=~/下载/aria2'
+# 终端文件管理
+alias ra='ranger'
+alias yz='yazi'
+# 使用一种更新的cat
+# alias cat='bat'
+# 带有图标的ls
+alias ls='lsd'
+#连接服务器
+# alias server='ssh -i ~/.ssh/id_rsa -p 22 ivhu@39.103.230.97'
+# alias ssh='kitty +kitten ssh'
+# alias diff='kitty +kitten diff'
+#清屏
+alias cl='clear'
+#退出
+alias q='exit'
+#使用代理
+alias d='proxychains'
+#使用fzf搜索文件
+alias cdf='cd $(find * -type d | fzf)'
+#使用fzf打开文件
+alias vi="/bin/vim"
+alias vim="nvim"
+alias vimf='nvim $(fzf)'
+# 修改rm命令将文件删除至回收站
+alias rm=trash-put
+alias rl=trash-list
+alias cp='cp -r'
+
+alias tmuxsw="tmux set -g status"
+alias wget="axel"
+
+alias mod1=setkeymod1
+
+# alias dl='export http_proxy=http://127.0.0.1:7890 && export https_proxy=https://127.0.0.1:7890'
+alias dl=proxy_on
+alias ndl=proxy_off
+alias godl=go_proxy
+
+# alias wget='proxychains wget'
+alias neo="neofetch | lolcat"
+
+alias rwin="tmux rename-window"
+
+
+#快速打开笔记
+alias vimm='cd /data/文档/md && nvim .'
+
+#切换到指定路经
+alias cdd='cd /data/code/'
+alias cds='cd ~/文档/区块链/src'
+alias cdc='cd /data/code/cross'
+alias cdr='cd ~/文档/区块链/fabric-Restaurant'
+alias cdm='cd ~/文档/md'
+
+#创造文件
+alias mk='mkdir'
+
+#burpsuite的启动方法
+alias burpcn='cd /home/ivhu/下载/burpcn && java -javaagent:BurpSuiteCn.jar -Xbootclasspath/p:burp-loader-keygen.jar  -Xmx1024m -jar burpsuite_pro_v1.7.37.jar'
+alias burp='cd /home/ivhu/下载/burp && /usr/lib/jvm/java-11-openjdk/bin/java -javaagent:BurpLoaderKeygen.jar -noverify -jar burpsuite_pro.jar'
+
+#快速复制输出
+alias x="xclip -selection c"
+
+alias reboot="sync && reboot"
+alias pg="pkill gopls"
+
+# some more ls aliases
+alias ll='lsd -l'
+alias la='lsd -a'
+alias l='lsd'
+alias cp='cpv'
+
+
+alias ydl="cd ~/音乐 && yt-dlp  -f 'ba' -x --audio-format mp3"
+
+alias xmod="xmodmap ~/.xmodmap"
+
+unalias gg
+
+alias HH="Hyprland"

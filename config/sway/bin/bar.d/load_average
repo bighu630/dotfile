@@ -1,0 +1,51 @@
+#!/bin/bash
+# Load average indicator for i3blocks
+
+# Get load averages
+LOAD=$(uptime | grep -ohe 'load average[s:][: ].*' | awk '{ print $3 }' | sed 's/,//')
+LOAD_1MIN=$(echo "$LOAD" | cut -d',' -f1)
+LOAD_5MIN=$(echo "$LOAD" | cut -d',' -f2 | xargs)
+LOAD_15MIN=$(echo "$LOAD" | cut -d',' -f3 | xargs)
+
+# Get number of CPU cores
+CPU_CORES=$(nproc)
+
+# Calculate load percentage (1-minute load average)
+LOAD_PERCENT=$(echo "$LOAD_1MIN $CPU_CORES" | awk '{printf "%.0f", ($1/$2)*100}')
+
+# Alternative method if the above doesn't work
+if [[ -z "$LOAD_1MIN" ]]; then
+    LOAD_AVERAGES=$(cat /proc/loadavg | awk '{print $1, $2, $3}')
+    LOAD_1MIN=$(echo "$LOAD_AVERAGES" | awk '{print $1}')
+    LOAD_5MIN=$(echo "$LOAD_AVERAGES" | awk '{print $2}')
+    LOAD_15MIN=$(echo "$LOAD_AVERAGES" | awk '{print $3}')
+    LOAD_PERCENT=$(echo "$LOAD_1MIN $CPU_CORES" | awk '{printf "%.0f", ($1/$2)*100}')
+fi
+
+# Color based on load percentage
+if [[ $LOAD_PERCENT -ge 100 ]]; then
+    COLOR="#ff5555"  # Red for overloaded system
+elif [[ $LOAD_PERCENT -ge 80 ]]; then
+    COLOR="#ffb86c"  # Orange for high load
+elif [[ $LOAD_PERCENT -ge 60 ]]; then
+    COLOR="#f1fa8c"  # Yellow for medium load
+else
+    COLOR="#50fa7b"  # Green for low load
+fi
+
+# Click actions
+case $BLOCK_BUTTON in
+    1) foot -e htop ;;  # left click - open htop
+    3) foot -e uptime ;;  # right click - show detailed uptime info
+esac
+
+# Output
+# echo "📊 $LOAD_1MIN ($LOAD_PERCENT%)"
+echo "$LOAD_PERCENT%"
+echo "$LOAD_1MIN"
+echo "$COLOR"
+
+# Urgent notification for very high load
+if [[ $LOAD_PERCENT -ge 150 ]]; then
+    exit 33  # Urgent flag for i3blocks
+fi

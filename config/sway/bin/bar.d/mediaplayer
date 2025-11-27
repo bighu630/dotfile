@@ -1,0 +1,159 @@
+#!/bin/bash
+# Media player status indicator for i3blocks
+
+# Default player instance
+INSTANCE="${BLOCK_INSTANCE:-mpd}"
+
+# Function to get MPD status
+get_mpd_status() {
+    if ! command -v mpc &> /dev/null; then
+        echo ""
+        return 1
+    fi
+
+    local status=$(mpc status 2>/dev/null)
+    if [[ -z "$status" ]]; then
+        echo ""
+        return 1
+    fi
+
+    local current=$(mpc current 2>/dev/null)
+    local state=$(echo "$status" | grep -E '\[(playing|paused)\]' | grep -o '\[.*\]' | tr -d '[]')
+
+    if [[ -n "$current" ]]; then
+        case $state in
+            "playing")
+                echo "▶️ $current"
+                ;;
+            "paused")
+                echo "⏸️ $current"
+                ;;
+            *)
+                echo "⏹️ $current"
+                ;;
+        esac
+    else
+        echo ""
+    fi
+}
+
+# Function to get playerctl status
+get_playerctl_status() {
+    if ! command -v playerctl &> /dev/null; then
+        echo ""
+        return 1
+    fi
+
+    local status=$(playerctl status 2>/dev/null)
+    local title=$(playerctl metadata title 2>/dev/null)
+    local artist=$(playerctl metadata artist 2>/dev/null)
+
+    if [[ -z "$status" ]] || [[ "$status" == "No players found" ]]; then
+        echo ""
+        return 1
+    fi
+
+    local track_info=""
+    if [[ -n "$artist" ]] && [[ -n "$title" ]]; then
+        track_info="$title_$artist"
+    elif [[ -n "$title" ]]; then
+        track_info="$title"
+    else
+        track_info="Unknown"
+    fi
+
+    case $status in
+        "Playing")
+            echo "▶️ $track_info"
+            ;;
+        "Paused")
+            echo "⏸️ $track_info"
+            ;;
+        *)
+            echo "⏹️ $track_info"
+            ;;
+    esac
+}
+
+# Click actions
+case $BLOCK_BUTTON in
+    1) # left click - play/pause
+        if [[ "$INSTANCE" == "mpd" ]]; then
+            mpc toggle 2>/dev/null || playerctl play-pause 2>/dev/null
+        else
+            playerctl play-pause 2>/dev/null || mpc toggle 2>/dev/null
+        fi
+        ;;
+    2) # middle click - stop
+        if [[ "$INSTANCE" == "mpd" ]]; then
+            mpc stop 2>/dev/null || playerctl stop 2>/dev/null
+        else
+            playerctl stop 2>/dev/null || mpc stop 2>/dev/null
+        fi
+        ;;
+    3) # right click - open music player
+        if command -v ncmpcpp &> /dev/null; then
+            foot -e ncmpcpp
+        elif command -v cantata &> /dev/null; then
+            cantata
+        elif command -v rhythmbox &> /dev/null; then
+            rhythmbox
+        else
+            foot -e mpc
+        fi
+        ;;
+    4) # scroll up - previous track
+        if [[ "$INSTANCE" == "mpd" ]]; then
+            mpc prev 2>/dev/null || playerctl previous 2>/dev/null
+        else
+            playerctl previous 2>/dev/null || mpc prev 2>/dev/null
+        fi
+        ;;
+    5) # scroll down - next track
+        if [[ "$INSTANCE" == "mpd" ]]; then
+            mpc next 2>/dev/null || playerctl next 2>/dev/null
+        else
+            playerctl next 2>/dev/null || mpc next 2>/dev/null
+        fi
+        ;;
+esac
+
+# Get media player status
+if [[ "$INSTANCE" == "mpd" ]]; then
+    MEDIA_STATUS=$(get_mpd_status)
+    if [[ -z "$MEDIA_STATUS" ]]; then
+        MEDIA_STATUS=$(get_playerctl_status)
+    fi
+else
+    MEDIA_STATUS=$(get_playerctl_status)
+    if [[ -z "$MEDIA_STATUS" ]]; then
+        MEDIA_STATUS=$(get_mpd_status)
+    fi
+fi
+
+# Output
+if [[ -n "$MEDIA_STATUS" ]]; then
+    # Truncate long text
+    if [[ ${#MEDIA_STATUS} -gt 20 ]]; then
+        SHORT_TEXT=$(echo "$MEDIA_STATUS" | cut -c1-19).
+        MEDIA_STATUS=$SHORT_TEXT
+        echo "$MEDIA_STATUS"
+        echo "$SHORT_TEXT"
+    else
+        echo "$MEDIA_STATUS"
+        echo "$MEDIA_STATUS"
+    fi
+
+    # Color based on status
+    if [[ "$MEDIA_STATUS" == *"▶️"* ]]; then
+        echo "#50fa7b"  # Green for playing
+    elif [[ "$MEDIA_STATUS" == *"⏸️"* ]]; then
+        echo "#f1aabc"  # Yellow for paused
+    else
+        echo "#6272a4"  # Blue for stopped
+    fi
+else
+    echo "🎵 No Music"
+    echo "No Music"
+    echo "#6272a4"
+fi

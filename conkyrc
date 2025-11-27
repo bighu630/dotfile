@@ -1,0 +1,89 @@
+conky.config = {
+    alignment = 'top_right',
+    background = true,
+    border_width = 1,
+    cpu_avg_samples = 2,
+    default_color = '#85f9f5',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    color1 = '#3ff898',
+    color2 = '#ffa8f8',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    font = 'Liga SFMono Nerd Font:size=11',
+    gap_x = 30,
+    gap_y = 50,
+    minimum_height = 400,
+    minimum_width = 460,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_ncurses = false,
+    out_to_stderr = false,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_type = 'override',
+    own_window_transparent = true,
+    show_graph_range = false,
+    show_graph_scale = false,
+    stippled_borders = 0,
+    update_interval = 3.0,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+    xinerama_head = 1,
+}
+
+
+conky.text = [[
+${color1}${font ConkySymbols:size=16}a${font} ${voffset -10}GNU/Linux $hr ${color}
+${color1}${goto 35}OS    : ${color}${execi 86400 cat `ls -atr /etc/*-release | tail -2` | grep "DISTRIB_ID" | cut -d= -f2 |  sed 's/"//g'}
+${color1}${goto 35}Kernel: ${color}$kernel on $machine
+
+${color1}${font ConkySymbols:size=16}f${font} ${voffset -10} System $hr${color}
+${color1}${goto 35}CPU: ${color}${exec cat /proc/cpuinfo | grep 'model name' | head -n1 | awk '{gsub(/model.*: /,"");print}' | awk '{gsub(/@.*/,"");print}'}
+
+${color1}${goto 35}Core 0: ${#f84382}${freq_g 1}GHz ${alignr}${cpu cpu0}% ${cpubar cpu0 4,100}
+${color1}${goto 35}Core 1: ${#76f3a4}${freq_g 2}GHz ${alignr}${cpu cpu1}% ${cpubar cpu1 4,100}
+${color1}${goto 35}Core 2: ${#a395f8}${freq_g 3}GHz ${alignr}${cpu cpu2}% ${cpubar cpu2 4,100}
+${color1}${goto 35}Core 3: ${#b3d945}${freq_g 4}GHz ${alignr}${cpu cpu3}% ${cpubar cpu3 4,100}
+
+${color1}${goto 35}Uptime: ${color}$uptime_short ${alignr}${color1}Load: ${color}${loadavg}
+
+${color1}${font ConkySymbols:size=16}h${font} ${voffset -10} Temperature $hr${color}
+${color1}${goto 35}CPU 1: ${color}${exec sensors | grep 'Core 0' | awk 'NR==1{print $3}'}${color1}${goto 300}CPU 1: ${color}${exec sensors | grep 'Core 1' | awk 'NR==1{print $3}'}
+${color1}${goto 35}CPU 2: ${color}${exec sensors | grep 'Core 2' | awk 'NR==1{print $3}'}${color1}${goto 300}CPU 3: ${color}${exec sensors | grep 'Core 3' | awk 'NR==1{print $3}'}
+
+${color1}${font ConkySymbols:size=18}J${font} ${voffset -10}Memory $hr${color}
+${color1}${goto 35}RAM : ${color}$mem / $memmax ${alignr}$memperc% ${membar 4,100}
+
+${color1}${font ConkySymbols:size=15}n${font} ${voffset -10} Processes $hr${color}
+
+${color1}${goto 35}CPU usage ${goto 260}Memory usage${alignr}${color}
+${color1}${goto 35}${stippled_hr}${color}
+${goto 35}${color2}${top name 1}${top cpu 1}%${goto 260}${color}${top_mem name 1}${alignr}${top_mem mem_res 1}
+${goto 35}${color2}${top name 2}${top cpu 2}%${goto 260}${color}${top_mem name 2}${alignr}${top_mem mem_res 2}
+${goto 35}${color2}${top name 3}${top cpu 3}%${goto 260}${color}${top_mem name 3}${alignr}${top_mem mem_res 3}
+${goto 35}${color2}${top name 4}${top cpu 4}%${goto 260}${color}${top_mem name 4}${alignr}${top_mem mem_res 4}
+${goto 35}${color2}${top name 5}${top cpu 5}%${goto 260}${color}${top_mem name 5}${alignr}${top_mem mem_res 5}
+${goto 35}${color2}${top name 6}${top cpu 6}%${goto 260}${color}${top_mem name 6}${alignr}${top_mem mem_res 6}
+${goto 35}${color2}${top name 7}${top cpu 7}%${goto 260}${color}${top_mem name 7}${alignr}${top_mem mem_res 7}
+${goto 35}${color2}${top name 8}${top cpu 8}%${goto 260}${color}${top_mem name 8}${alignr}${top_mem mem_res 8}
+${goto 35}${color2}${top name 9}${top cpu 9}%${goto 260}${color}${top_mem name 9}${alignr}${top_mem mem_res 9}
+
+${color1}${goto 35}Processes: ${color}$processes ${color1}Running: ${color}$running_processes
+
+${color1}${font ConkySymbols:size=16}k${font} ${voffset -10} Storage $hr${color}
+${color1}${goto 35}root : ${color}${fs_used /} / ${fs_size /} ${alignr}${fs_used_perc /}% ${fs_bar 4,100 /}
+
+
+${color1}${font ConkySymbols:size=16}g${font} ${voffset -10} Network $hr${color}
+${color1}${goto 35}INET: ${color}${exec ifconfig | grep '192.168' | awk '{print $2}' | cut -d/ -f1}
+${color1}${goto 35}INET6: ${color}${exec ip addr show wlan0 | grep 'inet6' | awk '{print $2}'}
+${color1}${goto 35}Total down/up: ${color}${totaldown wlan0} / ${totalup enp6s0}
+${color1}${goto 35}Speed down/up: ${color}${downspeed wlan0} / ${upspeed enp6s0}
+]]

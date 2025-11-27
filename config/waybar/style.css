@@ -1,0 +1,328 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  font-family: Liga SFMono Nerd Font;
+  font-size: 15px;
+}
+
+/* 基础颜色定义 - 按功能分组 */
+
+/* 主要颜色 */
+@define-color primary_text #cad3f5;
+@define-color secondary_text #a5adcb;
+@define-color primary_bg #181926;
+@define-color secondary_bg #363a4f;
+@define-color accent_color #8aadf4;
+
+/* 状态颜色 */
+@define-color success_color #a6da95;
+@define-color warning_color #eed49f;
+@define-color error_color #ed8796;
+
+/* 透明背景 */
+@define-color bg_transparent_30 rgba(36, 39, 58, 0.3);
+@define-color bg_transparent_50 rgba(36, 39, 58, 0.5);
+@define-color bg_transparent_70 rgba(36, 39, 58, 0.7);
+
+/* 功能模块颜色 */
+@define-color workspace_active #8aadf4;
+@define-color workspace_inactive #a5adcb;
+@define-color taskbar_active #94727D;
+@define-color taskbar_hover rgba(255, 255, 255, 0.2);
+@define-color module_bg rgba(36, 39, 58, 0.7);
+@define-color system_monitor #eed49f;
+@define-color audio_color #7dc4e4;
+@define-color network_color #f5bde6;
+@define-color battery_normal #c6a0f6;
+@define-color battery_charging #a6da95;
+@define-color battery_critical #ed8796;
+
+/* Waybar 主窗口 */
+window#waybar {
+  background-color: @bg_transparent_50;
+  color: @primary_text;
+  transition-property: background-color;
+  border-top: 2px transparent;
+  transition-duration: 0.5s;
+  border-radius: 2px;
+  /* margin: 16px 16px; */
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+/* 工作区 */
+#workspaces {
+  font-weight: 400;
+  font-size: 10px;
+  color: #ffffff;
+  opacity: 0.95;
+}
+
+#workspaces button {
+  color: rgba(255, 255, 255, 0.6);
+  min-height: 18px;
+  min-width: 18px;
+  padding: 0 2px;
+  transition: all 0.15s ease-in-out;
+  opacity: 0.7;
+  border: none;
+  box-shadow: inset 0 -3px transparent;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+  color: white;
+  min-width: 20px;
+  min-height: 20px;
+  opacity: 1.0;
+}
+
+#workspaces button.urgent {
+  color: @primary_text;
+}
+
+#workspaces button:hover {
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 0.9;
+}
+
+/* 任务栏 */
+#taskbar {
+  margin: 0 0px;
+  font-size: 11px;
+  color: #ffffff;
+}
+
+#taskbar button {
+  min-width: 30px;
+  font-size: 11px;
+  margin: 0 1 -4 -4px;
+  padding: 0 2px;
+  color: #ffffff;
+}
+
+#taskbar button:hover {
+  box-shadow: inset 0 3px #ffffff;
+}
+
+#taskbar button.active {
+  box-shadow: inset 0 3px #24f3f2;
+}
+
+/* 通用模块样式 */
+#battery,
+#pulseaudio,
+#backlight,
+#clock,
+#bluetooth,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#custom-spotify,
+#tray,
+#custom-notify,
+#mpd {
+  color: @primary_text;
+}
+
+/* 系统监控 */
+#cpu,
+#memory,
+#custom-system {
+  color: @system_monitor;
+}
+
+/* 音频模块 */
+#pulseaudio {
+  color: @audio_color;
+}
+
+/* 网络模块 */
+#network {
+  color: @network_color;
+}
+
+#custom-speed {
+  /* background: @bg_transparent_50; */
+}
+
+/* 电池模块 */
+#battery {
+  color: @battery_normal;
+}
+
+#battery.charging,
+#battery.full,
+#battery.plugged {
+  color: @battery_charging;
+}
+
+#battery.critical:not(.charging) {
+  color: @battery_critical;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  to {
+  }
+}
+
+/* 媒体播放器 */
+#custom-media {
+  color: @primary_bg;
+  min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+}
+
+#custom-media.custom-vlc {
+}
+
+#mpd {
+  color: @success_color;
+  font-family: HackGen35 Console NF;
+}
+
+#mpd.disconnected {
+  color: @error_color;
+}
+
+#mpd.stopped,
+#mpd.paused {
+  color: @warning_color;
+}
+
+/* 天气模块 */
+#disk,
+#temperature,
+#custom-hyprPicker,
+#custom-weather {
+  color: @primary_text;
+}
+
+#custom-weather.severe {
+  color: @error_color;
+}
+
+#custom-weather.sunnyDay {
+  color: @warning_color;
+}
+
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight {
+  color: @audio_color;
+}
+
+#custom-weather.rainyDay,
+#custom-weather.rainyNight {
+  color: @success_color;
+}
+
+#temperature {
+}
+
+#temperature.critical {
+}
+
+/* 电源和启动器 */
+#custom-power-menu {
+  color: @primary_text;
+}
+
+#custom-launcher {
+  color: @accent_color;
+}
+
+/* 其他功能模块 */
+#bluetooth.disconnected {
+  color: @error_color;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+}
+
+#idle_inhibitor {
+}
+
+#idle_inhibitor.activated {
+  color: @primary_bg;
+}
+
+#language {
+  background: @audio_color;
+  color: @primary_bg;
+  padding: 0 5px;
+  margin: 0 5px;
+  min-width: 16px;
+}
+
+#keyboard-state {
+  background: @success_color;
+  color: @primary_bg;
+  margin: 0 5px;
+  min-width: 16px;
+}
+
+#keyboard-state > label {
+  padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+}
+
+/* 自定义模块 */
+#custom-spotify {
+  margin: 0 4px;
+  color: @secondary_text;
+}
+
+/* #custom-lyrics { */
+/*   color: white; */
+/*   font-family: HackGen35 Console NF; */
+/*   font-size: 14px; */
+/* } */
+#custom-lyrics {
+  background: linear-gradient(60deg, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
+  color: white;
+  padding: 0px 0px;
+  font-family: HackGen35 Console NF;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+#custom-notify {
+  color: @accent_color;
+}
+
+#window {
+  color: @primary_text;
+  font-size: 11px;
+}
+
+#cava {
+  color: @accent_color;
+  font-size: 8px;
+}
+
+/* 边距调整 */
+.modules-left > widget:first-child > #workspaces {
+  margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+  margin-right: 0;
+}
+
+label:focus {
+}

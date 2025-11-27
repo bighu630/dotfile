@@ -1,0 +1,132 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "right",
+  "positionY": "bottom",
+  "control-center-margin-top": 10,
+  "control-center-margin-bottom": 1000,
+  "control-center-margin-right": 10,
+  "control-center-margin-left": 0,
+  "notification-icon-size": 48,
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 200,
+  "timeout": 10,
+  "timeout-low": 5,
+  "timeout-critical": 0,
+  "fit-to-screen": false,
+  "control-center-width": 500,
+  "control-center-height": 800,
+  "notification-window-width": 500,
+  "keyboard-shortcuts": true,
+  "image-visibility": "when-available",
+  "transition-time": 200,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+  "script-fail-notify": true,
+  "scripts": {
+    "example-script": {
+      "exec": "echo 'Do something...'",
+      "urgency": "Normal"
+    }
+  },
+  "notification-visibility": {
+    "example-name": {
+      "state": "muted",
+      "urgency": "Low",
+      "app-name": "Spotify"
+    }
+  },
+  "widgets": [
+    "menubar#label",
+    "backlight",
+    "volume",
+    "mpris",
+    "title",
+    "dnd",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "通知",
+      "clear-all-button": true,
+      "button-text": " 󰃢 "
+    },
+    "dnd": {
+      "text": "免打扰"
+    },
+    "label": {
+      "max-lines": 1,
+      "text": "Controll Center"
+    },
+    "mpris": {
+      "image-size": 72,
+      "image-radius": 12
+    },
+    "backlight": {
+      "label": "",
+      "device": "intel_backlight",
+      "min": 10
+    },
+    "backlight#KB": {
+      "label": " ",
+      "device": "asus::kbd_backlight",
+      "subsystem": "leds"
+    },
+    "volume": {
+      "label": ""
+    },
+    "menubar#label": {
+      "menu#power-buttons": {
+        "label": "",
+        "position": "right",
+        "actions": [
+          {
+            "label": "  重启",
+            "command": "systemctl reboot"
+          },
+          {
+            "label": "  锁定",
+            "command": "hyprlock"
+          },
+          {
+            "label": "  注销",
+            "command": "hyprctl dispatch exit"
+          },
+          {
+            "label": "  关机",
+            "command": "systemctl poweroff"
+          }
+        ]
+      },
+      "menu#powermode-buttons": {
+        "label": "",
+        "position": "left",
+        "actions": [
+          {
+            "label": "性能",
+            "position": "left",
+            "command": "powerprofilesctl set performance && notify-send '性能模式'"
+          },
+          {
+            "label": "平衡",
+            "position": "center",
+            "command": "powerprofilesctl set balanced && notify-send '平衡模式'"
+          },
+          {
+            "label": "节能",
+            "position": "right",
+            "command": "powerprofilesctl set power-saver && notify-send '节能模式'"
+          }
+        ]
+      },
+      "buttons#topbar-buttons": {
+        "position": "left",
+        "actions": [
+          {
+            "label": "",
+            "command": "grim"
+          }
+        ]
+      }
+    }
+  }
+}
