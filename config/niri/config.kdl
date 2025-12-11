@@ -93,8 +93,8 @@ input {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 2
-    // always-center-single-column
+    gaps 3
+    always-center-single-column
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -117,13 +117,13 @@ layout {
         // fixed 1920
     }
 
-    background-color "#00000000"
+    background-color "#00000010"
 
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.7; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
@@ -141,10 +141,10 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        // off
+        off
 
         // How many logical pixels the ring extends out from the windows.
-        width 1
+        width 2
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -182,7 +182,7 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         // off
 
-        width 1
+        width 2
         // active-color "#ffc87f"
         active-color "#7fc8ff"
         inactive-color "#505050"
@@ -238,11 +238,11 @@ layout {
         // off
         hide-when-single-tab
         place-within-column
-        gap 1
+        gap 2
         width 5
         length total-proportion=1.0
         position "left"
-        gaps-between-tabs 12
+        gaps-between-tabs 10
         corner-radius 8
         active-color "yellow"
         inactive-color "gray"
@@ -314,10 +314,10 @@ recent-windows {
     open-delay-ms 150
 
     highlight {
-        active-color "#9999997f"
-        urgent-color "#ff99996f"
+        active-color "#999999ff"
+        urgent-color "#ff9999ff"
         padding 30
-        corner-radius 12
+        corner-radius 0
     }
 
     previews {
