@@ -6,7 +6,6 @@ oh-my-zsh/plugins/zsh-autosuggestions
 oh-my-zsh/plugins/zsh-syntax-highlighting
 config/hypr/wallpapers
 config/hypr/configs/monitor.conf
-config/hypr/scripts/translate/config.toml
 config/hypr/configs/env_hidpi.conf
 config/fcitx5/conf/notifications.conf
 config/qutebrowser/qsettings/

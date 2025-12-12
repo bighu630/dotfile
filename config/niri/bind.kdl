@@ -21,7 +21,7 @@ binds {
     Mod+B { spawn "firefox"; }
     // Mod+B { spawn "qutebrowser"; }
     // Mod+Shift+A { spawn-sh "grim -g \"$(slurp -b '#2E2A1E55' -c '#fb751bff')\" -t ppm - | satty -f -"; }
-    Mod+Shift+S { spawn-sh "alacritty -T float -e ~/.config/hypr/scripts/translate/tui";}
+    Mod+Shift+S { spawn-sh "alacritty -T float -e /bin/tui";}
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
