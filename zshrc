@@ -8,10 +8,10 @@ ZSH_THEME="mytheme"
 plugins=(
     colored-man-pages
     colorize
+    cp
     git
     vi-mode
     z
-    cp
     zsh-autosuggestions
     zsh-syntax-highlighting
 )
