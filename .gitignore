@@ -24,4 +24,6 @@ config/mango/monitor.conf
 *.pid
 *.db
 *.sql
+*cache/
 config/niri/monitor.kdl
+oh-my-zsh/cache
