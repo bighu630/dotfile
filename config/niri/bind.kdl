@@ -254,7 +254,7 @@ binds {
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
     // Mod+Shift+A { spawn-sh "rm -f /tmp/screenshot.png && niri msg action screenshot --show-pointer=false"; }
-    Mod+Shift+A { spawn-sh "rm -f /dev/shm/screenshot.png && niri msg action screenshot --show-pointer=false && while [ ! -f /dev/shm/screenshot.png ]; do sleep 0.05; done && satty -f /tmp/screenshot.png"; }
+    Mod+Shift+A { spawn-sh "rm -f /dev/shm/screenshot.png && niri msg action screenshot --show-pointer=false && while [ ! -f /dev/shm/screenshot.png ]; do sleep 0.5; done && satty -f /dev/shm/screenshot.png"; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
