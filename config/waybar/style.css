@@ -38,7 +38,7 @@
 
 /* Waybar 主窗口 */
 window#waybar {
-  background-color: @bg_transparent_50;
+  background-color: @bg_transparent_70;
   color: @primary_text;
   transition-property: background-color;
   border-top: 2px transparent;

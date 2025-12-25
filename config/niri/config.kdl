@@ -33,7 +33,7 @@ input {
     mod-key "Alt"
     mod-key-nested "Super"
 
-    // focus-follows-mouse
+    focus-follows-mouse
 
     // Next sections include libinput settings.
     // Omitting settings disables them, or leaves them at their default values.
@@ -117,13 +117,13 @@ layout {
         // fixed 1920
     }
 
-    background-color "#00000010"
+    background-color "#00000000"
 
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.7; }
+    default-column-width { proportion 0.5; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
@@ -286,7 +286,7 @@ hotkey-overlay {
 // A ~ at the front will be expanded to the home directory.
 // The path is formatted with strftime(3) to give you the screenshot date and time.
 // screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-screenshot-path "/tmp/screenshot.png"
+screenshot-path "/dev/shm/screenshot.png"
 
 // You can also set this to null to disable saving screenshots to disk.
 // screenshot-path null

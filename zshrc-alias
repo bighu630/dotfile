@@ -42,6 +42,7 @@ alias cdf='cd $(find * -type d | fzf)'
 #使用fzf打开文件
 alias vi="/bin/vim"
 alias vim="nvim"
+#alias nvim="vim"
 alias vimf='nvim $(fzf)'
 # 修改rm命令将文件删除至回收站
 alias rm=trash-put
