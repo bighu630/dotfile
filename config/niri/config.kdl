@@ -33,7 +33,7 @@ input {
     mod-key "Alt"
     mod-key-nested "Super"
 
-    // focus-follows-mouse
+    focus-follows-mouse
 
     // Next sections include libinput settings.
     // Omitting settings disables them, or leaves them at their default values.
@@ -117,13 +117,13 @@ layout {
         // fixed 1920
     }
 
-    background-color "#00000010"
+    background-color "#00000000"
 
     // You can also customize the heights that "switch-preset-window-height" (Mod+Shift+R) toggles between.
     // preset-window-heights { }
 
     // You can change the default width of the new windows.
-    default-column-width { proportion 0.7; }
+    default-column-width { proportion 0.5; }
     // If you leave the brackets empty, the windows themselves will decide their initial width.
     // default-column-width {}
 
