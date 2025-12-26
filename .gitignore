@@ -26,3 +26,4 @@ config/mango/monitor.conf
 *cache/
 config/niri/monitor.kdl
 oh-my-zsh/cache
+config/hypr/scripts/translate/config.toml
