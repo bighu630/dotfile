@@ -27,3 +27,4 @@ config/mango/monitor.conf
 config/niri/monitor.kdl
 oh-my-zsh/cache
 config/hypr/scripts/translate/config.toml
+share/fcitx5/themes/plasma
