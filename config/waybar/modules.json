@@ -188,7 +188,7 @@
         "format": " ♪ {} ♪ ",
         "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=60;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
         "interval": 1,
-        "max-length": 40,
+        "max-length": 60,
         "return-type": "text",
         "on-click": "playerctl play-pause",
         "on-click-right": "playerctl next",
