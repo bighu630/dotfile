@@ -16,12 +16,12 @@ input "type:touchpad" {
 
 ### Appearance
 # window corner radius in px
-corner_radius 0
+corner_radius 3
 
 # Window background blur
 blur on
 blur_xray off
-blur_passes 2
+blur_passes 3
 blur_radius 5
 
 shadows off
@@ -38,10 +38,10 @@ dim_inactive_colors.urgent #900000FF
 scratchpad_minimize enable
 titlebar_separator enable
 
-xwayland disable
+# xwayland disable
 
 
-output eDP-1 resolution 2240x1400 scale 1.25 position 0 0
+output eDP-1 resolution 2240x1400 scale 1.4 position 0 0
 # output HDMI-A-1 resolution 3200x2000 position 1920 0
 # TxGVNN <txgvnn@gmail.com> Name the wordspaces xprop to check window
 # xmodmap [ --pke ] view keymap
@@ -333,13 +333,13 @@ exec --no-startup-id libinput-gestures
 exec --no-startup-id kwalletd6
 # exec --no-startup-id syncthing
 exec --no-startup-id mpd
-exec --no-startup-id swww-daemon --format xrgb
 # exec --no-startup-id wlsunset -l 39.9 -L 116.3 -t 6000 -T 7000
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 # exec --no-startup-id /bin/aliyundrive-webdav
 exec --no-startup-id /bin/autotiling
 exec --no-startup-id /usr/local/bin/lyrics-backend
-exec --no-startup-id redis-server ~/.config/redis/redis.conf
+# exec --no-startup-id redis-server ~/.config/redis/redis.conf
+exec --no-startup-id  ~/.local/bin/switchbg
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/hypr/scripts/volume up
@@ -377,3 +377,6 @@ bindcode $mod+90 [title="YouTube"] scratchpad show
 for_window [title="YouTube"] sticky enable
 
 exec swaymsg workspace 1
+
+exec hash dbus-update-activation-environment 2>/dev/null && \
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
