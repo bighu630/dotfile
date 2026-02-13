@@ -162,19 +162,19 @@
 
     "cpu": {
       "interval": 10,
-      "format": "{}%",
+      "format": "{}",
       "max-length": 10,
       "on-click": "",
     },
     "memory": {
         "interval": 30,
-        "format": "|{}% ",
+        "format": "|{}",
         "format-alt":"|{used:0.1f}G",
         "max-length": 10,
     },
     "backlight": {
         "device": "HDMI-A-1",
-        "format": "{icon} {percent}%",
+        "format": "{icon} {percent}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
         "on-click": "",
     },
@@ -200,8 +200,8 @@
     },
 
     "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-bluetooth": "  {volume}%",
+        "format": "{icon} {volume}",
+        "format-bluetooth": "  {volume}",
         "format-bluetooth-muted": " ",
         "format-muted": "婢",
         "format-icons": {
@@ -253,12 +253,12 @@
       "max-length": 20,
       "format": "{icon} {time}",
       "format-time": "{H}:{M}",
-      "format-warning": "{icon} {capacity}%",
-      "format-critical": "{icon} {capacity}%",
-      "format-charging": "{icon}󱐌{capacity}%",
+      "format-warning": "{icon} {capacity}",
+      "format-critical": "{icon} {capacity}",
+      "format-charging": "{icon}󱐌{capacity}",
       "format-plugged": " {capacity}%",
-      "format-alt": "{icon} {capacity}%",
-      "format-full": " {capacity}%",
+      "format-alt": "{icon} {capacity}",
+      "format-full": " {capacity}",
       "format-icons": [" ", " ", " ", " ", " "],
       "format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾","󰁿","󰂀","󰂁","󰂂","󰁹"],
       "on-click-right": "~/.config/waybar/scripts/power-profile-switcher.sh",
