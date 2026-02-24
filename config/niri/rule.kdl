@@ -7,6 +7,12 @@
 
 window-rule {
     // 将此规则应用于所有窗口 (因为没有 match 条件)
+    background-effect {
+        xray true
+        blur {
+            on
+        }
+    }
 
     // 圆角
     geometry-corner-radius 1
@@ -21,9 +27,9 @@ window-rule {
 
     // 全局默认宽度设置为屏幕宽度的 80%
     // default-column-width { proportion 0.8; }
-    default-window-height {
-		proportion 1.0;
-	}
+	//    default-window-height {
+	// 	proportion 1.0;
+	// }
 }
 
 
