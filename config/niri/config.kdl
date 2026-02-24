@@ -309,13 +309,6 @@ gestures{
     }
 }
 
-blur {
-    passes 3
-    offset 3
-    noise 0.2
-    saturation 1.5
-
-}
 
 recent-windows {
     // off

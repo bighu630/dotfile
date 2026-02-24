@@ -5,13 +5,18 @@
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 
+blur {
+    passes 3
+    offset 3
+    noise 0.01
+    saturation 0.7
+}
+
 window-rule {
     // 将此规则应用于所有窗口 (因为没有 match 条件)
     background-effect {
         xray true
-        blur {
-            on
-        }
+        blur true
     }
 
     // 圆角
