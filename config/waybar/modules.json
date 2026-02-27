@@ -185,7 +185,7 @@
         "format-disconnected": "Disconnected  ",
     },
     "custom/lyrics": {
-        "format": " ♪ {} ♪ ",
+        "format": "  {}  ",
         "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=60;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
         "interval": 1,
         "max-length": 60,
