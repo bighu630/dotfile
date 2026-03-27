@@ -143,7 +143,7 @@
                 },
                 {
                     "colorizeIcons": false,
-                    "hideMode": "transparent",
+                    "hideMode": "hidden",
                     "id": "ActiveWindow",
                     "maxWidth": 85,
                     "scrollingMode": "hover",
@@ -245,7 +245,7 @@
                 "output": "HDMI-A-1"
             }
         ],
-        "brightnessStep": 2,
+        "brightnessStep": 1,
         "enableDdcSupport": true,
         "enforceMinimum": true
     },
