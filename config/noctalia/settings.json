@@ -97,7 +97,7 @@
                     "showApplicationsHover": false,
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
-                    "unfocusedIconsOpacity": 0.45
+                    "unfocusedIconsOpacity": 0.7000000000000001
                 },
                 {
                     "clockColor": "none",
@@ -298,7 +298,7 @@
                 "id": "audio-card"
             },
             {
-                "enabled": false,
+                "enabled": true,
                 "id": "brightness-card"
             },
             {

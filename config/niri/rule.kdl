@@ -35,9 +35,9 @@ window-rule {
 
     // 全局默认宽度设置为屏幕宽度的 80%
     default-column-width { proportion 0.5; }
-	   default-window-height {
-		proportion 1.0;
-	}
+	//    default-window-height {
+	// 	proportion 1.0;
+	// }
 }
 
 
