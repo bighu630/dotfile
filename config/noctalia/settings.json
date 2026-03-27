@@ -678,7 +678,7 @@
     "wallpaper": {
         "automationEnabled": true,
         "directory": "/data/Sync/wallpapers/bg",
-        "enableMultiMonitorDirectories": false,
+        "enableMultiMonitorDirectories": true,
         "enabled": true,
         "favorites": [
         ],

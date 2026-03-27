@@ -14,6 +14,6 @@ spawn-sh-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6"
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // spawn-at-startup "waybar"
 // spawn-at-startup "hypridle"
-spawn-at-startup "~/.local/bin/switchbg"
+// spawn-at-startup "~/.local/bin/switchbg"
 // spawn-at-startup "niriswitcher"
 // spawn-at-startup "swaync"
