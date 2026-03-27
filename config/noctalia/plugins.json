@@ -1,0 +1,33 @@
+{
+    "sources": [
+        {
+            "enabled": true,
+            "name": "Noctalia Plugins",
+            "url": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        {
+            "enabled": true,
+            "name": "noctalia_text_sync",
+            "url": "https://github.com/bighu630/noctalia_text_sync"
+        }
+    ],
+    "states": {
+        "kde-connect": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "network-manager-vpn": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "niri-animation-picker": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "noctalia_text_sync": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/bighu630/noctalia_text_sync"
+        }
+    },
+    "version": 2
+}

@@ -5,22 +5,25 @@
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 
-blur {
-    passes 3
-    offset 3
-    noise 0.01
-    saturation 0.7
-}
+// blur {
+//     passes 3
+//     offset 3
+//     noise 0.01
+//     saturation 0.7
+// }
+
+// window-rule{
+//     match app-id=r#"foot"#
+//     background-effect {
+//         xray false
+//         blur false
+//     }
+// }
+//
 
 window-rule {
-    // 将此规则应用于所有窗口 (因为没有 match 条件)
-    background-effect {
-        xray true
-        blur true
-    }
-
     // 圆角
-    geometry-corner-radius 1
+    geometry-corner-radius 12
     clip-to-geometry true
     // 对，niri绘制s
     draw-border-with-background false
@@ -31,10 +34,10 @@ window-rule {
     //open-floating false
 
     // 全局默认宽度设置为屏幕宽度的 80%
-    // default-column-width { proportion 0.8; }
-	//    default-window-height {
-	// 	proportion 1.0;
-	// }
+    default-column-width { proportion 0.5; }
+	   default-window-height {
+		proportion 1.0;
+	}
 }
 
 

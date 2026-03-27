@@ -3,6 +3,7 @@ include "./rule.kdl"
 include "./bind.kdl"
 include "./env.kdl"
 include "./autoStart.kdl"
+include "./animation.kdl"
 // This config is in the KDL format: https://kdl.dev
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
@@ -182,7 +183,7 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         // off
 
-        width 2
+        width 3
         // active-color "#ffc87f"
         active-color "#7fc8ff"
         inactive-color "#505050"

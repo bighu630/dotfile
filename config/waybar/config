@@ -9,7 +9,7 @@
     "margin-right": 7,
     "spacing": 5, // Gaps between modules (4px)
     "modules-left": ["custom/launcher","cpu","memory","wlr/taskbar","sway/window","custom/lyrics"],
-    "modules-center": ["hyprland/workspaces","ext/workspaces","sway/workspaces" ,"clock"],
+    "modules-center": ["ext/workspaces","sway/workspaces" ,"clock"],
     "modules-right": ["custom/speed","mpd","tray", "backlight", "pulseaudio", "battery","custom/notify", "custom/power-menu"],
     "include": ["~/.config/waybar/modules.json"],
 },
@@ -23,7 +23,7 @@
     "margin-right": 8,
     "spacing": 3, // Gaps between modules (4px)
     "modules-left": ["custom/launcher", "wlr/taskbar","sway/window","custom/lyrics"],
-    "modules-center": ["hyprland/workspaces","ext/workspaces","sway/workspaces",  "clock"],
+    "modules-center": ["ext/workspaces","sway/workspaces",  "clock"],
     "modules-right": ["custom/speed","network","mpd","tray","backlight",  "pulseaudio","custom/notify", "custom/power-menu"],
     "include": ["~/.config/waybar/modules.json"],
     "clock": {

@@ -296,8 +296,8 @@ window#waybar.hidden {
   background: linear-gradient(60deg, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
   color: white;
   padding: 0px 0px;
-  font-family: HackGen35 Console NF;
-  font-size: 16px;
+  font-family: "Liga SFMono Nerd Font";
+  font-size: 14px;
   border-radius: 10px;
 }
 

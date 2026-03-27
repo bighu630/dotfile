@@ -16,12 +16,14 @@
   "control-center-width": 500,
   "control-center-height": 800,
   "notification-window-width": 500,
-  "keyboard-shortcuts": true,
+  "keyboard-shortcuts": false,
   "image-visibility": "when-available",
   "transition-time": 200,
   "hide-on-clear": false,
   "hide-on-action": true,
   "script-fail-notify": true,
+  "notification-2fa-action": false,
+  "notification-inline-replies": false,
   "scripts": {
     "example-script": {
       "exec": "echo 'Do something...'",
