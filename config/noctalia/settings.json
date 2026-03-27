@@ -196,14 +196,6 @@
                     "id": "plugin:kde-connect"
                 },
                 {
-                    "defaultSettings": {
-                        "connectedColor": "primary",
-                        "disconnectedColor": "none",
-                        "displayMode": "onhover"
-                    },
-                    "id": "plugin:network-manager-vpn"
-                },
-                {
                     "hideWhenZero": false,
                     "hideWhenZeroUnread": false,
                     "iconColor": "none",
@@ -236,9 +228,9 @@
                 },
                 {
                     "colorizeDistroLogo": false,
-                    "colorizeSystemIcon": "none",
+                    "colorizeSystemIcon": "tertiary",
                     "customIconPath": "",
-                    "enableColorization": false,
+                    "enableColorization": true,
                     "icon": "noctalia",
                     "id": "ControlCenter",
                     "useDistroLogo": false
@@ -479,7 +471,7 @@
     "location": {
         "analogClockInCalendar": false,
         "firstDayOfWeek": -1,
-        "hideWeatherCityName": false,
+        "hideWeatherCityName": true,
         "hideWeatherTimezone": false,
         "name": "macheng",
         "showCalendarEvents": true,
@@ -516,12 +508,12 @@
     },
     "notifications": {
         "backgroundOpacity": 0.85,
-        "clearDismissed": true,
+        "clearDismissed": false,
         "criticalUrgencyDuration": 15,
         "density": "default",
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
-        "enableMarkdown": false,
+        "enableMarkdown": true,
         "enableMediaToast": false,
         "enabled": true,
         "location": "bottom_right",
@@ -558,6 +550,7 @@
         ],
         "location": "top_right",
         "monitors": [
+            "eDP-1"
         ],
         "overlayLayer": true
     },
