@@ -1,0 +1,24 @@
+{
+  "pages": [
+    {
+      "id": 0,
+      "name": "General"
+    }
+  ],
+  "current_page_id": 0,
+  "todos": [],
+  "count": 0,
+  "completedCount": 0,
+  "isExpanded": false,
+  "useCustomColors": false,
+  "exportPath": "/home/ivhu/文档",
+  "exportFormat": "markdown",
+  "exportEmptySections": false,
+  "priorityColors": {
+    "high": "#f16c75",
+    "medium": "#37f499",
+    "low": "#abb4da"
+  },
+  "showCompleted": true,
+  "showBackground": true
+}
