@@ -213,6 +213,18 @@
                     "showPowerProfiles": false
                 },
                 {
+                    "displayMode": "alwaysHide",
+                    "iconColor": "none",
+                    "id": "Network",
+                    "textColor": "none"
+                },
+                {
+                    "displayMode": "onhover",
+                    "iconColor": "none",
+                    "id": "Bluetooth",
+                    "textColor": "none"
+                },
+                {
                     "displayMode": "onhover",
                     "iconColor": "none",
                     "id": "Volume",
@@ -273,6 +285,7 @@
         "monitorForColors": "",
         "predefinedScheme": "Eldritch",
         "schedulingMode": "off",
+        "syncGsettings": true,
         "useWallpaperColors": false
     },
     "controlCenter": {
@@ -440,6 +453,7 @@
         "showHibernateOnLockScreen": true,
         "showScreenCorners": true,
         "showSessionButtonsOnLockScreen": true,
+        "smoothScrollEnabled": true,
         "telemetryEnabled": false
     },
     "hooks": {
