@@ -32,6 +32,10 @@
             "enabled": true,
             "sourceUrl": "https://github.com/bighu630/noctalia_text_sync"
         },
+        "noctalia_wl_screenrec": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/bighu630/noctalia_wl_screenrec"
+        },
         "todo": {
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"

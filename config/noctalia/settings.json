@@ -192,6 +192,22 @@
                 },
                 {
                     "defaultSettings": {
+                        "bitrate": "5M",
+                        "codec": "auto",
+                        "filePattern": "recording_{datetime}",
+                        "isRecording": false,
+                        "recordAudio": false,
+                        "recordingFile": "",
+                        "recordingStartTime": 0,
+                        "saveDirectory": "~/Videos",
+                        "selectedMonitor": "",
+                        "selectedRegion": "",
+                        "videoFormat": "mp4"
+                    },
+                    "id": "plugin:noctalia_wl_screenrec"
+                },
+                {
+                    "defaultSettings": {
                         "enableTodoIntegration": false,
                         "notecardsEnabled": true,
                         "pincardsEnabled": true,
