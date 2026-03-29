@@ -3,6 +3,7 @@
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
+spawn-at-startup "xwayland-satellite"
 spawn-at-startup "syncthing"
 spawn-at-startup "fcitx5 -D"
 spawn-at-startup "wl-paste --watch cliphist store"

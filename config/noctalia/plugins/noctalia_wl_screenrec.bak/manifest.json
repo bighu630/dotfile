@@ -1,0 +1,35 @@
+{
+  "id": "wl-screenrec",
+  "name": "Screen Recorder",
+  "version": "1.0.0",
+  "minNoctaliaVersion": "4.6.6",
+  "author": "ivhu",
+  "license": "MIT",
+  "description": "Screen recording plugin powered by wl-screenrec with audio and region selection support.",
+  "tags": [
+    "Bar",
+    "Panel",
+    "Utility"
+  ],
+  "entryPoints": {
+    "main": "Main.qml",
+    "barWidget": "BarWidget.qml",
+    "panel": "Panel.qml",
+    "settings": "Settings.qml"
+  },
+  "metadata": {
+    "defaultSettings": {
+      "isRecording": false,
+      "recordAudio": false,
+      "selectedMonitor": "",
+      "selectedRegion": "",
+      "videoFormat": "mp4",
+      "codec": "auto",
+      "bitrate": "5M",
+      "saveDirectory": "~/Videos",
+      "filePattern": "recording_{datetime}",
+      "recordingFile": "",
+      "recordingStartTime": 0
+    }
+  }
+}
