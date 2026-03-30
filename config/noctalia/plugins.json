@@ -21,7 +21,7 @@
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "network-manager-vpn": {
-            "enabled": true,
+            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "niri-animation-picker": {
@@ -30,11 +30,11 @@
         },
         "noctalia_text_sync": {
             "enabled": true,
-            "sourceUrl": "https://github.com/bighu630/noctalia_text_sync"
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "noctalia_wl_screenrec": {
             "enabled": true,
-            "sourceUrl": "https://github.com/bighu630/noctalia_wl_screenrec"
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "todo": {
             "enabled": true,

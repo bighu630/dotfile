@@ -208,15 +208,6 @@
                 },
                 {
                     "defaultSettings": {
-                        "enableTodoIntegration": false,
-                        "notecardsEnabled": true,
-                        "pincardsEnabled": true,
-                        "showCloseButton": true
-                    },
-                    "id": "plugin:clipper"
-                },
-                {
-                    "defaultSettings": {
                         "completedCount": 0,
                         "count": 0,
                         "current_page_id": 0,
@@ -242,11 +233,6 @@
                         "useCustomColors": false
                     },
                     "id": "plugin:todo"
-                },
-                {
-                    "defaultSettings": {
-                    },
-                    "id": "plugin:kde-connect"
                 },
                 {
                     "hideWhenZero": false,

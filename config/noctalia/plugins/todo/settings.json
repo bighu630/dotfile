@@ -12,6 +12,24 @@
   "current_page_id": 0,
   "todos": [
     {
+      "id": 1774840059196,
+      "text": "流动性变化计算价值",
+      "completed": false,
+      "createdAt": "2026-03-30T03:07:39.196Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1774839896659,
+      "text": "token税费查询",
+      "completed": false,
+      "createdAt": "2026-03-30T03:04:56.659Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
       "id": 1774745095933,
       "text": "noctalia配置obs",
       "completed": true,
@@ -28,10 +46,19 @@
       "pageId": 0,
       "priority": "medium",
       "details": ""
+    },
+    {
+      "id": 1774839914170,
+      "text": "热门榜pair税费校对",
+      "completed": true,
+      "createdAt": "2026-03-30T03:05:14.170Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
     }
   ],
-  "count": 2,
-  "completedCount": 2,
+  "count": 5,
+  "completedCount": 3,
   "isExpanded": false,
   "useCustomColors": false,
   "exportPath": "/home/ivhu/文档",
