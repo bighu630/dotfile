@@ -192,22 +192,6 @@
                 },
                 {
                     "defaultSettings": {
-                        "bitrate": "5M",
-                        "codec": "auto",
-                        "filePattern": "recording_{datetime}",
-                        "isRecording": false,
-                        "recordAudio": false,
-                        "recordingFile": "",
-                        "recordingStartTime": 0,
-                        "saveDirectory": "~/Videos",
-                        "selectedMonitor": "",
-                        "selectedRegion": "",
-                        "videoFormat": "mp4"
-                    },
-                    "id": "plugin:noctalia_wl_screenrec"
-                },
-                {
-                    "defaultSettings": {
                         "completedCount": 0,
                         "count": 0,
                         "current_page_id": 0,
@@ -233,6 +217,21 @@
                         "useCustomColors": false
                     },
                     "id": "plugin:todo"
+                },
+                {
+                    "defaultSettings": {
+                        "codec": "auto",
+                        "filePattern": "recording_{datetime}",
+                        "isRecording": false,
+                        "quality": "high",
+                        "recordAudio": false,
+                        "recordingFile": "",
+                        "recordingStartTime": 0,
+                        "saveDirectory": "~/Videos",
+                        "selectedMonitor": "",
+                        "videoFormat": "mp4"
+                    },
+                    "id": "plugin:noctalia_wl_screenrec"
                 },
                 {
                     "hideWhenZero": false,
