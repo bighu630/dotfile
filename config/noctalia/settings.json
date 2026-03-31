@@ -220,6 +220,15 @@
                 },
                 {
                     "defaultSettings": {
+                        "enableTodoIntegration": false,
+                        "notecardsEnabled": true,
+                        "pincardsEnabled": true,
+                        "showCloseButton": true
+                    },
+                    "id": "plugin:clipper"
+                },
+                {
+                    "defaultSettings": {
                     },
                     "id": "plugin:kde-connect"
                 },
