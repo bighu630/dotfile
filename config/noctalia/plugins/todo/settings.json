@@ -1,15 +1,4 @@
 {
-  "pages": [
-    {
-      "id": 0,
-      "name": "工作"
-    },
-    {
-      "id": 1,
-      "name": "其他"
-    }
-  ],
-  "current_page_id": 0,
   "todos": [
     {
       "id": 1774919048552,
@@ -75,18 +64,29 @@
       "details": ""
     }
   ],
+  "pages": [
+    {
+      "id": 0,
+      "name": "工作"
+    },
+    {
+      "id": 1,
+      "name": "其他"
+    }
+  ],
+  "current_page_id": 0,
   "count": 7,
   "completedCount": 6,
+  "showCompleted": true,
+  "showBackground": true,
   "isExpanded": false,
   "useCustomColors": false,
-  "exportPath": "/home/ivhu/文档",
-  "exportFormat": "markdown",
-  "exportEmptySections": false,
   "priorityColors": {
     "high": "#f16c75",
     "medium": "#37f499",
     "low": "#abb4da"
   },
-  "showCompleted": true,
-  "showBackground": true
+  "exportPath": "/home/ivhu/文档",
+  "exportFormat": "markdown",
+  "exportEmptySections": false
 }
