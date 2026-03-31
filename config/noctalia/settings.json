@@ -152,7 +152,7 @@
                     "useFixedWidth": true
                 },
                 {
-                    "compactMode": false,
+                    "compactMode": true,
                     "hideMode": "hidden",
                     "hideWhenIdle": false,
                     "id": "MediaMini",
@@ -217,6 +217,11 @@
                         "useCustomColors": false
                     },
                     "id": "plugin:todo"
+                },
+                {
+                    "defaultSettings": {
+                    },
+                    "id": "plugin:kde-connect"
                 },
                 {
                     "defaultSettings": {
