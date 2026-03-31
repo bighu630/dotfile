@@ -271,13 +271,13 @@
                     "textColor": "none"
                 },
                 {
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysHide",
                     "iconColor": "none",
                     "id": "Bluetooth",
                     "textColor": "none"
                 },
                 {
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysHide",
                     "iconColor": "none",
                     "id": "Volume",
                     "middleClickCommand": "pwvucontrol || pavucontrol",
@@ -285,7 +285,7 @@
                 },
                 {
                     "applyToAllMonitors": false,
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysHide",
                     "iconColor": "none",
                     "id": "Brightness",
                     "textColor": "none"
@@ -723,7 +723,7 @@
         "boxBorderEnabled": false,
         "fontDefault": "苹方 粗体",
         "fontDefaultScale": 1,
-        "fontFixed": "monospace",
+        "fontFixed": "Liga SFMono Nerd Font",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.93,
         "panelsAttachedToBar": true,
