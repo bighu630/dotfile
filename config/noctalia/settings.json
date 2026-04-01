@@ -166,6 +166,16 @@
                     "textColor": "none",
                     "useFixedWidth": false,
                     "visualizerType": "linear"
+                },
+                {
+                    "defaultSettings": {
+                        "filePath": "",
+                        "fontFamily": "",
+                        "maxWidth": 30,
+                        "refreshInterval": 1000,
+                        "textColor": "none"
+                    },
+                    "id": "plugin:0b558a:text-sync"
                 }
             ],
             "right": [
