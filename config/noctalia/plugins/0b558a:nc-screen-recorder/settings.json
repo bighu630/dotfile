@@ -1,5 +1,5 @@
 {
-  "isRecording": false,
+  "isRecording": true,
   "audioSource": "none",
   "selectedMonitor": "",
   "videoFormat": "mp4",
@@ -8,9 +8,9 @@
   "framerate": "60",
   "saveDirectory": "~/Videos",
   "filePattern": "recording_{datetime}",
-  "recordingFile": "",
-  "recordingStartTime": 0,
-  "lastRecordingFile": "",
+  "recordingFile": "/home/ivhu/Videos/recording_2026-04-01_20-54-14.mp4",
+  "recordingStartTime": 1775048054845,
+  "lastRecordingFile": "/home/ivhu/Videos/recording_2026-04-01_20-49-22.mp4",
   "streamDestinations": {},
   "streamDestination": "",
   "selectedRegion": ""

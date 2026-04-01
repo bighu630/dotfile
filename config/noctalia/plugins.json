@@ -20,9 +20,6 @@
             "enabled": true,
             "sourceUrl": "https://github.com/bighu630/noctalia_plugins.git"
         },
-        "6f4d9f:nc-screen-recorder": {
-            "enabled": false
-        },
         "clipper": {
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"

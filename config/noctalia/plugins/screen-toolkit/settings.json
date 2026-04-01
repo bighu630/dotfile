@@ -1,7 +1,7 @@
 {
   "stateIsRunning": false,
-  "stateActiveTool": "measure",
+  "stateActiveTool": "",
   "transAvailable": false,
-  "detectedRecorder": "",
+  "detectedRecorder": "wl-screenrec",
   "stateMirrorVisible": false
 }

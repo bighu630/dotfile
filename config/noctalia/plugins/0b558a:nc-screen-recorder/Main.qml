@@ -10,6 +10,11 @@ Item {
 
   readonly property var cfg: pluginApi?.pluginSettings ?? ({})
 
+  // Region selector state
+  property string selectedRegionGeometry: ""
+  property var regionScreen: null
+  property bool waitingForRegion: false
+
   Component.onCompleted: {
     if (pluginApi) {
       pluginApi.pluginSettings.isRecording = false;
@@ -48,10 +53,17 @@ Item {
     }
 
     // Use portal if no monitor selected, otherwise use selected monitor
-    createDirAndRecord(!(cfg.selectedMonitor && cfg.selectedMonitor !== ""));
+    var usePortal = !(cfg.selectedMonitor && cfg.selectedMonitor !== "");
+
+    if (usePortal) {
+      // Use RegionSelector instead of portal
+      showRegionSelectorForRecording();
+    } else {
+      createDirAndRecord(false);
+    }
   }
 
-  // Region recording: slurp + mkdir + wl-screenrec all in script
+  // Region recording: use RegionSelector instead of slurp script
   function startRegionRecording() {
     if (pluginApi?.pluginSettings?.isRecording) return;
 
@@ -59,7 +71,7 @@ Item {
       pluginApi.closePanel();
     }
 
-    runRegionScript();
+    showRegionSelectorForRecording();
   }
 
   function stopRecording() {
@@ -132,10 +144,14 @@ Item {
     }
 
     // Window/monitor selection
-    if (usePortal) {
-      cmd += " -w portal";
-    } else if (cfg.selectedMonitor && cfg.selectedMonitor !== "") {
+    if (cfg.selectedMonitor && cfg.selectedMonitor !== "") {
       cmd += " -w " + cfg.selectedMonitor;
+    } else if (selectedRegionGeometry !== "") {
+      // Use selected region geometry instead of portal
+      // Format: -region WxH+X+Y
+
+      cmd += " -w region";
+      cmd += " -region " + selectedRegionGeometry;
     } else {
       cmd += " -w screen";
     }
@@ -332,5 +348,64 @@ Item {
       "echo \"\" | notify-send -a wl-screenrec -i video -t 0 -A \"openFolder=" + openFolderText + "\" \"" + title + "\" \"" + body + "\""
     ];
     notificationProcess.running = true;
+  }
+
+  // ── Region Selector Integration ───────────────────────────────────
+
+  function showRegionSelectorForRecording() {
+    if (waitingForRegion) return;
+    waitingForRegion = true;
+
+    if (pluginApi) {
+      pluginApi.withCurrentScreen(screen => {
+        regionSelector.show(screen);
+      });
+    } else {
+      regionSelector.show(null);
+    }
+  }
+
+  function startRecordingWithRegion(x, y, w, h, screen) {
+    waitingForRegion = false;
+
+    // Convert screen-local coordinates to global geometry for gpu-screen-recorder
+    // gpu-screen-recorder uses format: -region WxH+X+Y
+    var scale = screen?.devicePixelRatio ?? 1.0;
+    var screenX = screen?.x ?? 0;
+    var screenY = screen?.y ?? 0;
+
+    var globalX = Math.round(screenX + x / scale);
+    var globalY = Math.round(screenY + y / scale);
+    var globalW = Math.round(w / scale);
+    var globalH = Math.round(h / scale);
+
+    selectedRegionGeometry = globalW + "x" + globalH + "+" + globalX + "+" + globalY;
+    regionScreen = screen;
+
+    // Create directory and start recording with selected region
+    createDirAndRecord(false);
+  }
+
+  function cancelRegionSelection() {
+    waitingForRegion = false;
+    selectedRegionGeometry = "";
+    regionScreen = null;
+    ToastService.showNotice(pluginApi?.tr("notification.regionSelectionCancelled") || "Region selection cancelled");
+  }
+
+  // ── Region Selector Component ─────────────────────────────────────
+
+  RegionSelector {
+    id: regionSelector
+
+    onRegionSelected: function(x, y, w, h, screen) {
+      console.log("Region selected:", x, y, w, h, "screen:", screen?.name);
+      startRecordingWithRegion(x, y, w, h, screen);
+    }
+
+    onCancelled: {
+      console.log("Region selection cancelled");
+      cancelRegionSelection();
+    }
   }
 }

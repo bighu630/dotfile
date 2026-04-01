@@ -191,6 +191,18 @@
                     ]
                 },
                 {
+                    "defaultSettings": {
+                        "colorHistory": [
+                        ],
+                        "detectedRecorder": "",
+                        "installedLangs": [
+                            "eng"
+                        ],
+                        "paletteColors": [
+                        ],
+                        "selectedOcrLang": "eng",
+                        "transAvailable": false
+                    },
                     "id": "plugin:screen-toolkit"
                 },
                 {
@@ -232,11 +244,6 @@
                 },
                 {
                     "defaultSettings": {
-                    },
-                    "id": "plugin:kde-connect"
-                },
-                {
-                    "defaultSettings": {
                         "audioSource": "none",
                         "codec": "auto",
                         "filePattern": "recording_{datetime}",
@@ -254,6 +261,11 @@
                         "videoFormat": "mp4"
                     },
                     "id": "plugin:0b558a:nc-screen-recorder"
+                },
+                {
+                    "defaultSettings": {
+                    },
+                    "id": "plugin:kde-connect"
                 },
                 {
                     "hideWhenZero": false,
