@@ -1,0 +1,64 @@
+{
+  "menu": {
+    "settings": "小部件设置"
+  },
+  "widget": {
+    "tooltip": "屏幕录制",
+    "tooltipRecording": "录制中..."
+  },
+  "panel": {
+    "recording": "录制中",
+    "startRecording": "开始录制",
+    "stopRecording": "停止录制",
+    "settings": "设置",
+    "audio": "音频",
+    "audioNone": "无",
+    "audioMic": "麦克风",
+    "audioDesktop": "桌面音频",
+    "audioBoth": "两者",
+    "recordingTarget": "录制目标",
+    "targetRegion": "区域选择",
+    "targetFullScreen": "全屏",
+    "codec": "编码器",
+    "codecAuto": "自动",
+    "quality": "质量",
+    "framerate": "帧率",
+    "streamDestination": "推流到",
+    "noStream": "不推流（保存到文件）"
+  },
+  "settings": {
+    "saveDirectory": {
+      "label": "保存目录",
+      "placeholder": "~/Videos"
+    },
+    "filePattern": {
+      "label": "文件名模式",
+      "description": "使用 {datetime} 作为时间戳",
+      "placeholder": "recording_{datetime}"
+    },
+    "videoFormat": {
+      "label": "默认格式"
+    },
+    "codec": {
+      "label": "默认编码器"
+    },
+    "streamDestinations": {
+      "label": "推流目标",
+      "description": "配置 RTMP/RTSP 推流地址",
+      "namePlaceholder": "名称（如： Twitch、B站）",
+      "urlPlaceholder": "推流地址（如：rtmp://live.twitch.tv/app/...）",
+      "addButton": "添加目标",
+      "removeButton": "删除"
+    }
+  },
+  "notification": {
+    "recordingStarted": "录制已开始",
+    "recordingSaved": "录制已保存",
+    "recordingSavedWithPath": "录制已保存：{file}",
+    "recordingFailed": "录制失败（退出代码：{code}）",
+    "failedToCreateDirectory": "创建保存目录失败",
+    "openFolder": "打开所在文件夹",
+    "streamingStarted": "推流已开始",
+    "streamingStopped": "推流已停止"
+  }
+}
