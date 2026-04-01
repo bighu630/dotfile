@@ -214,6 +214,9 @@
                     "id": "plugin:kde-connect"
                 },
                 {
+                    "id": "plugin:0b558a:nc-screen-recorder"
+                },
+                {
                     "hideWhenZero": false,
                     "hideWhenZeroUnread": false,
                     "iconColor": "none",
