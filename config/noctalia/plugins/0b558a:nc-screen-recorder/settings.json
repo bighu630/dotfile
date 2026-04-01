@@ -1,6 +1,6 @@
 {
   "isRecording": false,
-  "audioSource": "desktop",
+  "audioSource": "none",
   "selectedMonitor": "eDP-1",
   "videoFormat": "mp4",
   "codec": "auto",
@@ -10,7 +10,6 @@
   "filePattern": "recording_{datetime}",
   "recordingFile": "",
   "recordingStartTime": 0,
-  "lastRecordingFile": "/home/ivhu/视频/recording_2026-04-01_21-13-45.mp4",
   "streamDestinations": {},
   "streamDestination": "",
   "selectedRegion": ""

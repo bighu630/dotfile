@@ -14,11 +14,11 @@
     "states": {
         "0b558a:nc-screen-recorder": {
             "enabled": true,
-            "sourceUrl": "https://github.com/bighu630/noctalia_plugins.git"
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "0b558a:text-sync": {
             "enabled": true,
-            "sourceUrl": "https://github.com/bighu630/noctalia_plugins.git"
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "clipper": {
             "enabled": true,
@@ -29,10 +29,6 @@
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "niri-animation-picker": {
-            "enabled": true,
-            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
-        },
-        "screen-toolkit": {
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
