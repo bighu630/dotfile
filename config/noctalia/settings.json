@@ -224,24 +224,7 @@
                     "id": "plugin:kde-connect"
                 },
                 {
-                    "defaultSettings": {
-                        "audioSource": "none",
-                        "codec": "auto",
-                        "filePattern": "recording_{datetime}",
-                        "framerate": "60",
-                        "isRecording": false,
-                        "lastRecordingFile": "",
-                        "quality": "high",
-                        "recordingFile": "",
-                        "recordingStartTime": 0,
-                        "saveDirectory": "~/Videos",
-                        "selectedMonitor": "",
-                        "streamDestination": "",
-                        "streamDestinations": {
-                        },
-                        "videoFormat": "mp4"
-                    },
-                    "id": "plugin:0b558a:screen-recorder"
+                    "id": "plugin:0b558a:nc-screen-recorder"
                 },
                 {
                     "hideWhenZero": false,

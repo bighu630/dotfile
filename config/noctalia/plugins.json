@@ -12,7 +12,7 @@
         }
     ],
     "states": {
-        "0b558a:screen-recorder": {
+        "0b558a:nc-screen-recorder": {
             "enabled": true,
             "sourceUrl": "https://github.com/bighu630/noctalia_plugins.git"
         },

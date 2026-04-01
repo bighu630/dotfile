@@ -1,15 +1,6 @@
 {
   "todos": [
     {
-      "id": 1775013226092,
-      "text": "流动性事件数据问题排查",
-      "completed": false,
-      "createdAt": "2026-04-01T03:13:46.092Z",
-      "pageId": 0,
-      "priority": "high",
-      "details": ""
-    },
-    {
       "id": 1774745095933,
       "text": "noctalia配置obs",
       "completed": true,
@@ -71,10 +62,19 @@
       "pageId": 0,
       "priority": "medium",
       "details": ""
+    },
+    {
+      "id": 1775013226092,
+      "text": "流动性事件数据问题排查",
+      "completed": true,
+      "createdAt": "2026-04-01T03:13:46.092Z",
+      "pageId": 0,
+      "priority": "high",
+      "details": ""
     }
   ],
   "count": 8,
-  "completedCount": 7,
+  "completedCount": 8,
   "pages": [
     {
       "id": 0,

@@ -1,6 +1,6 @@
 {
-  "id": "screen-recorder",
-  "name": "Screen Recorder",
+  "id": "nc-screen-recorder",
+  "name": "Screen Recorder 2",
   "version": "1.0.1",
   "minNoctaliaVersion": "4.6.6",
   "author": "Bighu630",
