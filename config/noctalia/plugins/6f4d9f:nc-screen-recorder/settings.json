@@ -1,19 +1,17 @@
 {
   "isRecording": false,
-  "audioSource": "desktop",
-  "selectedMonitor": "eDP-1",
+  "audioSource": "none",
+  "selectedMonitor": "",
   "videoFormat": "mp4",
   "codec": "auto",
-  "quality": "very_high",
+  "quality": "high",
   "framerate": "60",
-  "saveDirectory": "~/视频",
+  "saveDirectory": "~/Videos",
   "filePattern": "recording_{datetime}",
   "recordingFile": "",
   "recordingStartTime": 0,
   "lastRecordingFile": "",
-  "streamDestinations": {
-    "local_test": "rtmp://localhost/mystream"
-  },
+  "streamDestinations": {},
   "streamDestination": "",
   "selectedRegion": ""
 }

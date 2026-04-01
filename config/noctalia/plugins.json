@@ -12,12 +12,13 @@
         }
     ],
     "states": {
-        "0b558a:nc-screen-recorder": {
-            "enabled": true,
-            "sourceUrl": "https://github.com/bighu630/noctalia_plugins.git"
-        },
         "0b558a:text-sync": {
-            "enabled": false
+            "enabled": false,
+            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
+        },
+        "6f4d9f:nc-screen-recorder": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/bighu630/noctalia_text_sync"
         },
         "clipper": {
             "enabled": true,
@@ -25,10 +26,6 @@
         },
         "kde-connect": {
             "enabled": true,
-            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
-        },
-        "network-manager-vpn": {
-            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "niri-animation-picker": {
