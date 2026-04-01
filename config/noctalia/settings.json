@@ -267,7 +267,7 @@
                     "textColor": "none"
                 },
                 {
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysHide",
                     "iconColor": "none",
                     "id": "Bluetooth",
                     "textColor": "none"
@@ -545,7 +545,6 @@
         "weatherShowEffects": true
     },
     "network": {
-        "airplaneModeEnabled": false,
         "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
@@ -562,7 +561,7 @@
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
-        "nightTemp": "4000"
+        "nightTemp": "5075"
     },
     "noctaliaPerformance": {
         "disableDesktopWidgets": true,
@@ -720,7 +719,7 @@
         "boxBorderEnabled": false,
         "fontDefault": "苹方 粗体",
         "fontDefaultScale": 1,
-        "fontFixed": "monospace",
+        "fontFixed": "Liga SFMono Nerd Font",
         "fontFixedScale": 1,
         "panelBackgroundOpacity": 0.93,
         "panelsAttachedToBar": true,
@@ -740,6 +739,7 @@
         "fillColor": "#000000",
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
+        "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
             {
                 "directory": "/data/Sync/wallpapers/bg",
