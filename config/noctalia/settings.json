@@ -191,6 +191,9 @@
                     ]
                 },
                 {
+                    "id": "plugin:screen-toolkit"
+                },
+                {
                     "defaultSettings": {
                         "completedCount": 0,
                         "count": 0,
@@ -217,6 +220,15 @@
                         "useCustomColors": false
                     },
                     "id": "plugin:todo"
+                },
+                {
+                    "defaultSettings": {
+                        "enableTodoIntegration": false,
+                        "notecardsEnabled": true,
+                        "pincardsEnabled": true,
+                        "showCloseButton": true
+                    },
+                    "id": "plugin:clipper"
                 },
                 {
                     "defaultSettings": {
