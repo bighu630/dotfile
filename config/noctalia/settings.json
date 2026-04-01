@@ -166,16 +166,6 @@
                     "textColor": "none",
                     "useFixedWidth": false,
                     "visualizerType": "linear"
-                },
-                {
-                    "defaultSettings": {
-                        "filePath": "",
-                        "fontFamily": "",
-                        "maxWidth": 30,
-                        "refreshInterval": 1000,
-                        "textColor": "none"
-                    },
-                    "id": "plugin:0b558a:text-sync"
                 }
             ],
             "right": [
@@ -222,26 +212,6 @@
                     "defaultSettings": {
                     },
                     "id": "plugin:kde-connect"
-                },
-                {
-                    "defaultSettings": {
-                        "audioSource": "none",
-                        "codec": "auto",
-                        "filePattern": "recording_{datetime}",
-                        "framerate": "60",
-                        "isRecording": false,
-                        "lastRecordingFile": "",
-                        "quality": "high",
-                        "recordingFile": "",
-                        "recordingStartTime": 0,
-                        "saveDirectory": "~/Videos",
-                        "selectedMonitor": "",
-                        "streamDestination": "",
-                        "streamDestinations": {
-                        },
-                        "videoFormat": "mp4"
-                    },
-                    "id": "plugin:0b558a:screen-recorder"
                 },
                 {
                     "hideWhenZero": false,
@@ -545,7 +515,6 @@
         "weatherShowEffects": true
     },
     "network": {
-        "airplaneModeEnabled": false,
         "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
@@ -740,6 +709,7 @@
         "fillColor": "#000000",
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
+        "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
             {
                 "directory": "/data/Sync/wallpapers/bg",
