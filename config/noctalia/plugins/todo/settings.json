@@ -12,12 +12,12 @@
   "current_page_id": 0,
   "todos": [
     {
-      "id": 1774919048552,
-      "text": "流动性事件接口文档与kafka文档",
+      "id": 1775013226092,
+      "text": "流动性事件数据问题排查",
       "completed": false,
-      "createdAt": "2026-03-31T01:04:08.552Z",
+      "createdAt": "2026-04-01T03:13:46.092Z",
       "pageId": 0,
-      "priority": "medium",
+      "priority": "high",
       "details": ""
     },
     {
@@ -73,10 +73,19 @@
       "pageId": 0,
       "priority": "medium",
       "details": ""
+    },
+    {
+      "id": 1774919048552,
+      "text": "流动性事件接口文档与kafka文档",
+      "completed": true,
+      "createdAt": "2026-03-31T01:04:08.552Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
     }
   ],
-  "count": 7,
-  "completedCount": 6,
+  "count": 8,
+  "completedCount": 7,
   "isExpanded": false,
   "useCustomColors": false,
   "exportPath": "/home/ivhu/文档",

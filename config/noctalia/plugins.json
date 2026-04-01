@@ -7,11 +7,19 @@
         },
         {
             "enabled": true,
-            "name": "noctalia_text_sync",
-            "url": "https://github.com/bighu630/noctalia_text_sync"
+            "name": "Bighu630 Plugins",
+            "url": "https://github.com/bighu630/noctalia_plugins.git"
         }
     ],
     "states": {
+        "0b558a:screen-recorder": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/bighu630/noctalia_plugins.git"
+        },
+        "0b558a:text-sync": {
+            "enabled": true,
+            "sourceUrl": "https://github.com/bighu630/noctalia_plugins.git"
+        },
         "clipper": {
             "enabled": true,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
@@ -26,18 +34,6 @@
         },
         "niri-animation-picker": {
             "enabled": true,
-            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
-        },
-        "noctalia_text_sync": {
-            "enabled": true,
-            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
-        },
-        "noctalia_wl_screenrec": {
-            "enabled": true,
-            "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
-        },
-        "screen-recorder": {
-            "enabled": false,
             "sourceUrl": "https://github.com/noctalia-dev/noctalia-plugins"
         },
         "todo": {

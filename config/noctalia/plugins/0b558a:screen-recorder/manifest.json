@@ -1,0 +1,38 @@
+{
+  "id": "screen-recorder",
+  "name": "Screen Recorder",
+  "version": "1.0.1",
+  "minNoctaliaVersion": "4.6.6",
+  "author": "Bighu630",
+  "license": "MIT",
+  "description": "Screen recording plugin powered by gpu-screen-recorder with audio, quality presets, and portal-based region selection.",
+  "tags": [
+    "Bar",
+    "Panel",
+    "Utility"
+  ],
+  "entryPoints": {
+    "main": "Main.qml",
+    "barWidget": "BarWidget.qml",
+    "panel": "Panel.qml",
+    "settings": "Settings.qml"
+  },
+  "metadata": {
+    "defaultSettings": {
+      "isRecording": false,
+      "audioSource": "none",
+      "selectedMonitor": "",
+      "videoFormat": "mp4",
+      "codec": "auto",
+      "quality": "high",
+      "framerate": "60",
+      "saveDirectory": "~/Videos",
+      "filePattern": "recording_{datetime}",
+      "recordingFile": "",
+      "recordingStartTime": 0,
+      "lastRecordingFile": "",
+      "streamDestinations": {},
+      "streamDestination": ""
+    }
+  }
+}

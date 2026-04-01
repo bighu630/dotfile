@@ -171,11 +171,11 @@
                     "defaultSettings": {
                         "filePath": "",
                         "fontFamily": "",
-                        "maxWidth": 0,
+                        "maxWidth": 30,
                         "refreshInterval": 1000,
                         "textColor": "none"
                     },
-                    "id": "plugin:noctalia_text_sync"
+                    "id": "plugin:0b558a:text-sync"
                 }
             ],
             "right": [
@@ -220,32 +220,28 @@
                 },
                 {
                     "defaultSettings": {
-                        "enableTodoIntegration": false,
-                        "notecardsEnabled": true,
-                        "pincardsEnabled": true,
-                        "showCloseButton": true
-                    },
-                    "id": "plugin:clipper"
-                },
-                {
-                    "defaultSettings": {
                     },
                     "id": "plugin:kde-connect"
                 },
                 {
                     "defaultSettings": {
+                        "audioSource": "none",
                         "codec": "auto",
                         "filePattern": "recording_{datetime}",
+                        "framerate": "60",
                         "isRecording": false,
+                        "lastRecordingFile": "",
                         "quality": "high",
-                        "recordAudio": false,
                         "recordingFile": "",
                         "recordingStartTime": 0,
                         "saveDirectory": "~/Videos",
                         "selectedMonitor": "",
+                        "streamDestination": "",
+                        "streamDestinations": {
+                        },
                         "videoFormat": "mp4"
                     },
-                    "id": "plugin:noctalia_wl_screenrec"
+                    "id": "plugin:0b558a:screen-recorder"
                 },
                 {
                     "hideWhenZero": false,
@@ -277,7 +273,7 @@
                     "textColor": "none"
                 },
                 {
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysHide",
                     "iconColor": "none",
                     "id": "Volume",
                     "middleClickCommand": "pwvucontrol || pavucontrol",
@@ -285,7 +281,7 @@
                 },
                 {
                     "applyToAllMonitors": false,
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysHide",
                     "iconColor": "none",
                     "id": "Brightness",
                     "textColor": "none"
