@@ -1,6 +1,17 @@
 {
   "isRecording": false,
+  "audioSource": "none",
+  "selectedMonitor": "",
+  "videoFormat": "mp4",
+  "codec": "auto",
+  "quality": "high",
+  "framerate": "60",
+  "saveDirectory": "~/Videos",
+  "filePattern": "recording_{datetime}",
   "recordingFile": "",
   "recordingStartTime": 0,
+  "lastRecordingFile": "",
+  "streamDestinations": {},
+  "streamDestination": "",
   "selectedRegion": ""
 }
