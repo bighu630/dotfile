@@ -166,16 +166,6 @@
                     "textColor": "none",
                     "useFixedWidth": false,
                     "visualizerType": "linear"
-                },
-                {
-                    "defaultSettings": {
-                        "filePath": "",
-                        "fontFamily": "",
-                        "maxWidth": 30,
-                        "refreshInterval": 1000,
-                        "textColor": "none"
-                    },
-                    "id": "plugin:0b558a:text-sync"
                 }
             ],
             "right": [
@@ -545,6 +535,7 @@
         "weatherShowEffects": true
     },
     "network": {
+        "airplaneModeEnabled": false,
         "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
@@ -739,7 +730,6 @@
         "fillColor": "#000000",
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
-        "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
             {
                 "directory": "/data/Sync/wallpapers/bg",

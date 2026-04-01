@@ -127,7 +127,7 @@ Item {
                 pointSize:   root.barFontSize
                 font.family: root.fontFamily !== "" ? root.fontFamily : font.family
                 text: {
-                    if (root.filePath === "") return pluginApi?.tr("widget.noFile") ?? "No file"
+                    if (root.filePath === "") return pluginApi?.tr("widget.noFile") ?? ""
                     if (root.displayText === "") return "…"
                     return root.displayText
                 }
@@ -155,7 +155,7 @@ Item {
         id: contextMenu
         model: [
             {
-                "label": pluginApi?.tr("menu.settings") ?? "Settings",
+                "label": pluginApi?.tr("menu.settings") ?? "",
                 "action": "settings",
                 "icon":   "settings"
             }

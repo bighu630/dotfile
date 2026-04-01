@@ -1,0 +1,33 @@
+{
+  "menu": {
+    "settings": "Widget settings"
+  },
+  "widget": {
+    "tooltip": "Text Sync",
+    "noFile": "No file"
+  },
+  "settings": {
+    "filePath": {
+      "label": "File Path",
+      "desc": "Absolute path of the file to read",
+      "placeholder": "/tmp/status.txt"
+    },
+    "refreshInterval": {
+      "label": "Refresh Interval (ms)",
+      "desc": "How often to re-read the file. Minimum 100 ms (0.1 s)."
+    },
+    "textColor": {
+      "label": "Text Color",
+      "desc": "Color of the displayed text"
+    },
+    "fontFamily": {
+      "label": "Font Family",
+      "desc": "Font family name (leave empty to use the bar default)",
+      "placeholder": "monospace"
+    },
+    "maxWidth": {
+      "label": "Max Width (chars)",
+      "desc": "Maximum string length in characters. Text longer than this will scroll. Set to 0 for no limit."
+    }
+  }
+}

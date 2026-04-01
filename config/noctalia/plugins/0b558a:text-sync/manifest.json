@@ -1,7 +1,7 @@
 {
   "id": "text-sync",
   "name": "Text Sync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minNoctaliaVersion": "4.4.4",
   "author": "Bighu630",
   "license": "MIT",

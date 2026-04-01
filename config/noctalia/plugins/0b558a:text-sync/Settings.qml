@@ -31,9 +31,9 @@ ColumnLayout {
 
         NTextInput {
             Layout.fillWidth: true
-            label:           pluginApi?.tr("settings.filePath.label")       ?? "File Path"
-            description:     pluginApi?.tr("settings.filePath.desc")        ?? "Absolute path of the file to read"
-            placeholderText: pluginApi?.tr("settings.filePath.placeholder") ?? "/tmp/status.txt"
+            label:           pluginApi?.tr("settings.filePath.label")       ?? ""
+            description:     pluginApi?.tr("settings.filePath.desc")        ?? ""
+            placeholderText: pluginApi?.tr("settings.filePath.placeholder") ?? ""
             text:            root.valueFilePath
             onTextChanged:   root.valueFilePath = text
         }
@@ -46,8 +46,8 @@ ColumnLayout {
 
         NTextInput {
             Layout.fillWidth: true
-            label:           pluginApi?.tr("settings.refreshInterval.label")       ?? "Refresh Interval (ms)"
-            description:     pluginApi?.tr("settings.refreshInterval.desc")        ?? "How often to re-read the file. Minimum 100 ms (0.1 s)."
+            label:           pluginApi?.tr("settings.refreshInterval.label")       ?? ""
+            description:     pluginApi?.tr("settings.refreshInterval.desc")        ?? ""
             placeholderText: "1000"
             text:            root.valueRefreshInterval.toString()
             inputMethodHints: Qt.ImhDigitsOnly
@@ -65,8 +65,8 @@ ColumnLayout {
         Layout.fillWidth: true
 
         NComboBox {
-            label:       pluginApi?.tr("settings.textColor.label") ?? "Text Color"
-            description: pluginApi?.tr("settings.textColor.desc")  ?? "Color of the displayed text"
+            label:       pluginApi?.tr("settings.textColor.label") ?? ""
+            description: pluginApi?.tr("settings.textColor.desc")  ?? ""
             model:       Color.colorKeyModel
             currentKey:  root.valueTextColor
             onSelected:  key => root.valueTextColor = key
@@ -80,9 +80,9 @@ ColumnLayout {
 
         NTextInput {
             Layout.fillWidth: true
-            label:           pluginApi?.tr("settings.fontFamily.label")       ?? "Font Family"
-            description:     pluginApi?.tr("settings.fontFamily.desc")        ?? "Font family name (leave empty to use the bar default)"
-            placeholderText: pluginApi?.tr("settings.fontFamily.placeholder") ?? "monospace"
+            label:           pluginApi?.tr("settings.fontFamily.label")       ?? ""
+            description:     pluginApi?.tr("settings.fontFamily.desc")        ?? ""
+            placeholderText: pluginApi?.tr("settings.fontFamily.placeholder") ?? ""
             text:            root.valueFontFamily
             onTextChanged:   root.valueFontFamily = text
         }
@@ -95,8 +95,8 @@ ColumnLayout {
 
         NTextInput {
             Layout.fillWidth: true
-            label:           pluginApi?.tr("settings.maxWidth.label")       ?? "Max Width (chars)"
-            description:     pluginApi?.tr("settings.maxWidth.desc")        ?? "Maximum string length in characters. Text longer than this will scroll. Set to 0 for no limit."
+            label:           pluginApi?.tr("settings.maxWidth.label")       ?? ""
+            description:     pluginApi?.tr("settings.maxWidth.desc")        ?? ""
             placeholderText: "30"
             text:            root.valueMaxWidth.toString()
             inputMethodHints: Qt.ImhDigitsOnly

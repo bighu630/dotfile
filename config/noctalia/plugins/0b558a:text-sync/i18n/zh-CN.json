@@ -1,0 +1,33 @@
+{
+  "menu": {
+    "settings": "小部件设置"
+  },
+  "widget": {
+    "tooltip": "文本同步",
+    "noFile": "未选择文件"
+  },
+  "settings": {
+    "filePath": {
+      "label": "文件路径",
+      "desc": "要读取的文件的绝对路径",
+      "placeholder": "/tmp/status.txt"
+    },
+    "refreshInterval": {
+      "label": "刷新间隔（毫秒）",
+      "desc": "重新读取文件的频率。最小 100 毫秒（0.1 秒）。"
+    },
+    "textColor": {
+      "label": "文本颜色",
+      "desc": "显示文本的颜色"
+    },
+    "fontFamily": {
+      "label": "字体",
+      "desc": "字体名称（留空则使用状态栏默认字体）",
+      "placeholder": "monospace"
+    },
+    "maxWidth": {
+      "label": "最大宽度（字符）",
+      "desc": "最大字符串长度（字符）。超过此长度的文本将滚动。设为 0 表示不限制。"
+    }
+  }
+}
