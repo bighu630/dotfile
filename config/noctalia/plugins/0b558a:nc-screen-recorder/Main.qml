@@ -172,7 +172,7 @@ Item {
       } else if (cfg.audioSource === "desktop") {
         cmd += " -a default_output";
       } else if (cfg.audioSource === "both") {
-        cmd += " -a default_output -a default_input";
+        cmd += " -a 'default_output|default_input'";
       }
     }
 
