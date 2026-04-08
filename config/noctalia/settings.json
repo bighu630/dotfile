@@ -192,6 +192,36 @@
                 },
                 {
                     "defaultSettings": {
+                        "barCycleIntervalSec": 5,
+                        "barDisplayMode": "active",
+                        "barMetric": "prompts",
+                        "providers": {
+                            "claude": {
+                                "credentialsPath": "~/.claude/.credentials.json",
+                                "enabled": false,
+                                "statsPath": "~/.claude/stats-cache.json"
+                            },
+                            "codex": {
+                                "enabled": false
+                            },
+                            "copilot": {
+                                "enabled": false
+                            },
+                            "openrouter": {
+                                "apiKey": "",
+                                "enabled": false
+                            },
+                            "zen": {
+                                "apiKey": "",
+                                "enabled": false
+                            }
+                        },
+                        "refreshIntervalSec": 30
+                    },
+                    "id": "plugin:model-usage"
+                },
+                {
+                    "defaultSettings": {
                         "completedCount": 0,
                         "count": 0,
                         "current_page_id": 0,
@@ -303,36 +333,6 @@
                     "icon": "noctalia",
                     "id": "ControlCenter",
                     "useDistroLogo": false
-                },
-                {
-                    "defaultSettings": {
-                        "barCycleIntervalSec": 5,
-                        "barDisplayMode": "active",
-                        "barMetric": "prompts",
-                        "providers": {
-                            "claude": {
-                                "credentialsPath": "~/.claude/.credentials.json",
-                                "enabled": false,
-                                "statsPath": "~/.claude/stats-cache.json"
-                            },
-                            "codex": {
-                                "enabled": false
-                            },
-                            "copilot": {
-                                "enabled": false
-                            },
-                            "openrouter": {
-                                "apiKey": "",
-                                "enabled": false
-                            },
-                            "zen": {
-                                "apiKey": "",
-                                "enabled": false
-                            }
-                        },
-                        "refreshIntervalSec": 30
-                    },
-                    "id": "plugin:model-usage"
                 }
             ]
         }

@@ -1,6 +1,24 @@
 {
   "todos": [
     {
+      "id": 1775616187421,
+      "text": "solana链上pair税费介入开发",
+      "completed": false,
+      "createdAt": "2026-04-08T02:43:07.421Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1775616175072,
+      "text": "heaven合约升级适配",
+      "completed": false,
+      "createdAt": "2026-04-08T02:42:55.072Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
       "id": 1774745095933,
       "text": "noctalia配置obs",
       "completed": true,
@@ -80,10 +98,19 @@
       "pageId": 0,
       "priority": "medium",
       "details": ""
+    },
+    {
+      "id": 1775616164679,
+      "text": "pump agent上线",
+      "completed": true,
+      "createdAt": "2026-04-08T02:42:44.679Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
     }
   ],
-  "count": 9,
-  "completedCount": 9,
+  "count": 12,
+  "completedCount": 10,
   "pages": [
     {
       "id": 0,
