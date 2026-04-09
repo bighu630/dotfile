@@ -44,6 +44,16 @@ Item {
         ? resolvedAnimDir.replace(/\/+$/, "").split("/").pop()
         : "animations"
 
+    // Relative path from the target file's directory to the animations folder
+    // e.g. target=~/.config/niri/modules/animations.kdl, animDir=~/.config/niri/animations
+    // → relativePath = "../animations"
+    readonly property string relativePath: {
+        if (resolvedAnimDir === "" || resolvedTargetFile === "") return folderName
+        var targetDir = resolvedTargetFile.split("/").slice(0, -1).join("/")
+        // Will be computed properly via python in applyFile, this is just for display
+        return resolvedAnimDir
+    }
+
     // ── Processes ─────────────────────────────────────────────────────────────
 
     Process {
@@ -57,8 +67,9 @@ Item {
                     `ls "${root.resolvedAnimDir}"/*.kdl 2>/dev/null | xargs -n1 basename 2>/dev/null | grep -v "^${targetBasename}$"`]
                 listFiles.running = true
 
+                // Read current include match any path ending with folder name and kdl
                 readCurrentInclude.command = ["bash", "-c",
-                    `grep -oP '${root.folderName}/[^"/]+\\.kdl' "${root.resolvedTargetFile}" 2>/dev/null | head -1 | xargs -I{} basename {} 2>/dev/null || true`]
+                    `grep -oP 'include "\\K[^"]+/${root.folderName}/[^"]+\\.kdl(?=")' "${root.resolvedTargetFile}" 2>/dev/null | head -1 | xargs -I{} basename {} 2>/dev/null || true`]
                 readCurrentInclude.running = true
             }
         }
@@ -112,12 +123,32 @@ Item {
         root.writing = true
         root.statusMessage = ""
 
-        var folder = root.folderName
+        var animDir = root.resolvedAnimDir
         var target = root.resolvedTargetFile
+        var folder = root.folderName
 
         writeInclude.command = [
-            "bash", "-c",
-            `sed -i '/^include "\\.\\/` + folder + `\\/.*\\.kdl"$/d' '` + target + `' && sed -i -e '$a\\' '` + target + `' && printf 'include "./${folder}/${filename}"\\n' >> '` + target + `'`
+            "python3", "-c",
+            "import sys, os, re\n" +
+            "anim_dir = sys.argv[1]\n" +
+            "target   = sys.argv[2]\n" +
+            "filename = sys.argv[3]\n" +
+            "folder   = sys.argv[4]\n" +
+            "target_dir = os.path.dirname(os.path.abspath(target))\n" +
+            "rel = os.path.relpath(anim_dir, target_dir)\n" +
+            "include_line = f'include \"./{rel}/{filename}\"'\n" +
+            "try:\n" +
+            "    f = open(target); lines = f.readlines(); f.close()\n" +
+            "except FileNotFoundError:\n" +
+            "    lines = []\n" +
+            // Remove lines that match any relative path ending in folder name + kdl 
+            "pat = re.compile(r'^include \"[^\"]*/' + folder + r'/[^\"]+\\.kdl\"\\s*$')\n" +
+            "lines = [l for l in lines if not pat.match(l.strip())]\n" +
+            "if lines and not lines[-1].endswith('\\n'):\n" +
+            "    lines[-1] += '\\n'\n" +
+            "lines.append(include_line + '\\n')\n" +
+            "f = open(target, 'w'); f.writelines(lines); f.close()",
+            animDir, target, filename, folder
         ]
         writeInclude.running = true
     }
