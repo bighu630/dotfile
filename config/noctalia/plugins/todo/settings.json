@@ -1,6 +1,15 @@
 {
   "todos": [
     {
+      "id": 1775716445724,
+      "text": "流动性事件添加symbol+platform",
+      "completed": false,
+      "createdAt": "2026-04-09T06:34:05.724Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
       "id": 1775702534289,
       "text": "web3-token数据删除策略",
       "completed": false,
@@ -118,7 +127,7 @@
       "details": ""
     }
   ],
-  "count": 13,
+  "count": 14,
   "completedCount": 11,
   "pages": [
     {
