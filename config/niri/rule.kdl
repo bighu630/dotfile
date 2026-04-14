@@ -6,10 +6,10 @@
 // by setting an empty default-column-width.
 
 blur {
-    passes 3
-    offset 3
+    passes 2
+    offset 2
     noise 0.01
-    saturation 0.7
+    saturation 0.6
 }
 
 window-rule{

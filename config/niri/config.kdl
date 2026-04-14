@@ -183,7 +183,7 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         // off
 
-        width 2.5
+        width 1.5
         // active-color "#ffc87f"
         active-color "#7fc8ff"
         inactive-color "#505050"
@@ -306,7 +306,7 @@ animations {
 
 gestures{
     hot-corners {
-        off
+        // off
     }
 }
 
