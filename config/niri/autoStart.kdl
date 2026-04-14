@@ -4,13 +4,13 @@
 // See the binds section below for more spawn examples.
 
 spawn-at-startup "qs" "-c" "noctalia-shell"
-spawn-at-startup "xwayland-satellite"
+// spawn-at-startup "xwayland-satellite"
 spawn-at-startup "syncthing"
 spawn-at-startup "fcitx5 -D"
-spawn-at-startup "wl-paste --watch cliphist store"
 spawn-at-startup "/usr/local/bin/lyrics-backend"
 spawn-at-startup "kwalletd6"
 spawn-at-startup "~/.local/bin/switchbg"
+spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6"
 spawn-sh-at-startup "mpd && sleep 5 && mpd-mpris"
 // This line starts waybar, a commonly used bar for Wayland compositors.

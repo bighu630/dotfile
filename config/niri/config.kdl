@@ -339,3 +339,6 @@ recent-windows {
         Mod+Shift+grave { previous-window filter="app-id"; }
     }
 }
+
+include "./noctalia.kdl"
+
