@@ -5,20 +5,20 @@
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
 
-// blur {
-//     passes 3
-//     offset 3
-//     noise 0.01
-//     saturation 0.7
-// }
+blur {
+    passes 3
+    offset 3
+    noise 0.01
+    saturation 0.7
+}
 
-// window-rule{
-//     match app-id=r#"foot"#
-//     background-effect {
-//         xray false
-//         blur false
-//     }
-// }
+window-rule{
+    // match app-id=r#"foot"#
+    background-effect {
+        xray false
+        blur true
+    }
+}
 //
 
 window-rule {
