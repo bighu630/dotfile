@@ -80,7 +80,7 @@
             "center": [
                 {
                     "characterCount": 2,
-                    "colorizeIcons": false,
+                    "colorizeIcons": true,
                     "emptyColor": "secondary",
                     "enableScrollWheel": true,
                     "focusedColor": "primary",
@@ -142,7 +142,7 @@
                     "usePadding": false
                 },
                 {
-                    "colorizeIcons": false,
+                    "colorizeIcons": true,
                     "hideMode": "hidden",
                     "id": "ActiveWindow",
                     "maxWidth": 85,

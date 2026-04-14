@@ -3,5 +3,6 @@
   "stateActiveTool": "",
   "transAvailable": false,
   "detectedRecorder": "wl-screenrec",
-  "stateMirrorVisible": false
+  "stateMirrorVisible": false,
+  "detectedCompositor": "niri"
 }
