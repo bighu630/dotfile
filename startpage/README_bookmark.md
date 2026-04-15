@@ -1,6 +1,6 @@
 # 书签添加工具使用说明
 
-这个Python脚本可以帮你快速添加书签到startpage，自动下载网站的favicon图标。
+这个Python脚本可以帮你管理 startpage 书签，支持自动下载网站 favicon、解析 base64 内联图标，以及删除已有书签。
 
 ## 安装依赖
 
@@ -11,6 +11,14 @@ pip install -r requirements.txt
 ## 使用方法
 
 ### 方法1: 命令行模式
+
+```bash
+python add_bookmark.py add <网址> <列数> [-n 自定义名称] [-p 行数]
+python add_bookmark.py remove [--url 网址 | --name 名称] [-c 列数]
+python add_bookmark.py refresh-icons
+```
+
+兼容旧写法，下面这种命令仍然可用：
 
 ```bash
 python add_bookmark.py <网址> <列数> [-n 自定义名称] [-p 行数]
@@ -38,6 +46,18 @@ python add_bookmark.py github.com 2 -p 3 -n "GitHub"
 
 # 添加完整URL到第3列末尾
 python add_bookmark.py https://www.example.com 3
+
+# 按 URL 删除书签
+python add_bookmark.py remove --url https://www.example.com
+
+# 按显示名称删除书签
+python add_bookmark.py remove --name "Stack Overflow"
+
+# 只在第2列中查找并删除
+python add_bookmark.py remove --name "GitHub" -c 2
+
+# 刷新全部 logo，有新图标就覆盖原文件，拿不到就保持原样
+python add_bookmark.py refresh-icons
 ```
 
 ### 方法2: 交互模式
@@ -67,10 +87,13 @@ python add_bookmark.py
 ### 🎯 自动功能
 - **自动获取网站标题**: 解析网页title标签作为书签名称
 - **智能favicon检测**: 自动查找多种favicon格式
+- **支持 base64 favicon**: 可保存 `data:image/...;base64,...` 内联图标
   - `<link rel="icon">`
   - `<link rel="shortcut icon">`
   - `<link rel="apple-touch-icon">`
   - `/favicon.ico` (默认位置)
+- **删除书签**: 支持按 URL 或名称删除，并自动清理不再使用的本地图标
+- **批量刷新图标**: 遍历全部书签，拿到新 logo 才覆盖，失败时保留原图
 - **安全文件名**: 自动生成安全的图标文件名
 - **重复检测**: 如果图标已存在会询问是否覆盖
 
@@ -123,6 +146,7 @@ startpage有4列书签，每列可以有多行：
 - 检查网络连接
 - 某些网站可能阻止爬虫访问
 - 脚本会尝试多个favicon URL
+- 对 `data:image/...;base64,...` 图标会直接解码保存
 
 **2. 网站名称不准确**
 - 使用 `-n` 参数自定义名称
@@ -183,15 +207,21 @@ $ python3 add_bookmark.py
 
 2. 运行脚本：
    ```bash
-   # 交互模式
-    python3 add_bookmark.py
-   
    # 命令行模式 - 添加到末尾
    python3 add_bookmark.py github.com 1
    
    # 命令行模式 - 插入到指定位置
    python3 add_bookmark.py github.com 1 -p 2
    
+   # 子命令写法
+   python3 add_bookmark.py add github.com 1
+
+   # 删除书签
+   python3 add_bookmark.py remove --url https://github.com
+
+   # 刷新全部图标
+   python3 add_bookmark.py refresh-icons
+
    # 完整示例 - 所有参数
    python3 add_bookmark.py stackoverflow.com 2 -n "Stack Overflow" -p 1
    ```
