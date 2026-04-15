@@ -29,6 +29,31 @@ class BookmarkAdder:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
 
+    def get_bookmark_column_count(self):
+        """读取当前HTML中的书签列数"""
+        try:
+            with open(self.index_file, 'r', encoding='utf-8') as f:
+                soup = BeautifulSoup(f.read(), 'html.parser')
+
+            bookmarks_section = soup.find('section', id='bookmarks')
+            if not bookmarks_section:
+                raise ValueError("找不到bookmarks部分")
+
+            return len(bookmarks_section.find_all('ul', recursive=False))
+        except Exception as e:
+            raise ValueError(f"无法读取书签列数: {e}") from e
+
+    def format_html(self, soup):
+        """格式化HTML输出"""
+        formatted_html = soup.prettify(formatter="minimal")
+
+        if formatted_html.lstrip().lower().startswith('<!doctype html>'):
+            lines = formatted_html.splitlines()
+            lines[0] = '<!doctype html>'
+            formatted_html = '\n'.join(lines)
+
+        return formatted_html + '\n'
+
     def get_site_name(self, url):
         """从URL获取网站名称"""
         try:
@@ -180,10 +205,8 @@ class BookmarkAdder:
                     # 在指定位置插入
                     existing_items[position - 2].insert_after(new_li)
 
-            # 写回文件，保持原有格式
-            formatted_html = str(soup)
-            # 修复BeautifulSoup的格式问题
-            formatted_html = formatted_html.replace('<!DOCTYPE html>', '<!doctype html>')
+            # 写回文件并格式化HTML
+            formatted_html = self.format_html(soup)
 
             with open(self.index_file, 'w', encoding='utf-8') as f:
                 f.write(formatted_html)
@@ -237,19 +260,20 @@ class BookmarkAdder:
 def main():
     parser = argparse.ArgumentParser(description='快速添加书签到startpage')
     parser.add_argument('url', help='要添加的网址')
-    parser.add_argument('column', type=int, help='添加到第几列 (1-4)')
+    parser.add_argument('column', type=int, help='添加到第几列')
     parser.add_argument('-n', '--name', help='自定义网站名称')
     parser.add_argument('-p', '--position', type=int, help='插入到第几行 (从1开始，默认添加到末尾)')
 
     args = parser.parse_args()
 
+    adder = BookmarkAdder()
+    max_columns = adder.get_bookmark_column_count()
+
     # 验证列数
-    if args.column < 1 or args.column > 4:
-        print("❌ 列数必须在1-4之间")
+    if args.column < 1 or args.column > max_columns:
+        print(f"❌ 列数必须在1-{max_columns}之间")
         return
 
-    # 创建BookmarkAdder实例并添加书签
-    adder = BookmarkAdder()
     success = adder.add_bookmark(args.url, args.column, args.name, args.position)
 
     if not success:
@@ -264,6 +288,7 @@ if __name__ == "__main__":
 
         try:
             adder = BookmarkAdder()
+            max_columns = adder.get_bookmark_column_count()
 
             while True:
                 print("\n" + "="*50)
@@ -271,11 +296,11 @@ if __name__ == "__main__":
                 if not url:
                     continue
 
-                column = input("请输入列数 (1-4): ").strip()
+                column = input(f"请输入列数 (1-{max_columns}): ").strip()
                 try:
                     column = int(column)
-                    if column < 1 or column > 4:
-                        print("❌ 列数必须在1-4之间")
+                    if column < 1 or column > max_columns:
+                        print(f"❌ 列数必须在1-{max_columns}之间")
                         continue
                 except ValueError:
                     print("❌ 请输入有效的数字")

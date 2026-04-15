@@ -84,7 +84,7 @@
                     "emptyColor": "secondary",
                     "enableScrollWheel": true,
                     "focusedColor": "primary",
-                    "followFocusedScreen": false,
+                    "followFocusedScreen": true,
                     "fontWeight": "bold",
                     "groupedBorderOpacity": 0.85,
                     "hideUnoccupied": true,
@@ -95,7 +95,7 @@
                     "pillSize": 0.55,
                     "showApplications": true,
                     "showApplicationsHover": false,
-                    "showBadge": false,
+                    "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 0.7000000000000001
                 },

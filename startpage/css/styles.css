@@ -365,7 +365,7 @@ aside svg {
 
     #traichu {
         padding: 0;
-        width: 45rem; /* 720px */
+        width: min(56rem, calc(100vw - 4rem));
     }
 
     aside img,
