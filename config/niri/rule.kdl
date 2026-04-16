@@ -73,6 +73,7 @@ window-rule {
     match title="^broken$"
     match app-id="Meeting"
     match app-id="hyprland-share-picker"
+    match app-id="^com.gabm.satty$"
 
     open-floating true
 }

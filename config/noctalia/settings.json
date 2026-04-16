@@ -747,6 +747,18 @@
             {
                 "enabled": true,
                 "id": "code"
+            },
+            {
+                "enabled": true,
+                "id": "zed"
+            },
+            {
+                "enabled": true,
+                "id": "yazi"
+            },
+            {
+                "enabled": true,
+                "id": "kcolorscheme"
             }
         ],
         "enableUserTheming": false
