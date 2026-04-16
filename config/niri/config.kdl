@@ -34,7 +34,8 @@ input {
     mod-key "Alt"
     mod-key-nested "Super"
 
-    // focus-follows-mouse
+    focus-follows-mouse
+    warp-mouse-to-focus
 
     // Next sections include libinput settings.
     // Omitting settings disables them, or leaves them at their default values.
@@ -341,4 +342,3 @@ recent-windows {
 }
 
 include "./noctalia.kdl"
-

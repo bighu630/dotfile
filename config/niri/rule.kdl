@@ -13,9 +13,11 @@ blur {
 }
 
 window-rule{
+
+    opacity 0.95
     // match app-id=r#"foot"#
     background-effect {
-        xray false
+        xray true
         blur true
     }
 }
