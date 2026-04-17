@@ -34,7 +34,7 @@ input {
     mod-key "Alt"
     mod-key-nested "Super"
 
-    focus-follows-mouse
+    // focus-follows-mouse
     warp-mouse-to-focus
 
     // Next sections include libinput settings.
