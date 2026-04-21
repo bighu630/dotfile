@@ -222,6 +222,15 @@
                 },
                 {
                     "defaultSettings": {
+                        "enableTodoIntegration": false,
+                        "notecardsEnabled": true,
+                        "pincardsEnabled": true,
+                        "showCloseButton": true
+                    },
+                    "id": "plugin:clipper"
+                },
+                {
+                    "defaultSettings": {
                         "audioSource": "none",
                         "codec": "auto",
                         "filePattern": "recording_{datetime}",
