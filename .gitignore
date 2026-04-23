@@ -29,3 +29,9 @@ oh-my-zsh/cache
 config/hypr/scripts/translate/config.toml
 share/fcitx5/themes/plasma
 */setting.json
+/config/foot/themes/noctalia
+/config/niri/noctalia.kdl
+/config/noctalia/colors.json
+/config/qt5ct/colors/noctalia.conf
+/config/qt6ct/colors/noctalia.conf
+/config/yazi/flavors/noctalia.yazi/flavor.toml
