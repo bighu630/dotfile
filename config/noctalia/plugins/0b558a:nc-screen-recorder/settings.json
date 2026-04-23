@@ -10,8 +10,8 @@
   "filePattern": "recording_{datetime}",
   "recordingFile": "",
   "recordingStartTime": 0,
+  "lastRecordingFile": "/home/ivhu/视频/recording_2026-04-13_11-26-01.mp4",
   "streamDestinations": {},
   "streamDestination": "",
-  "selectedRegion": "",
-  "lastRecordingFile": "/home/ivhu/视频/recording_2026-04-13_11-26-01.mp4"
+  "selectedRegion": ""
 }

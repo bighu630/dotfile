@@ -1,8 +1,18 @@
 {
+  "colorHistory": [],
+  "paletteColors": [],
+  "installedLangs": [
+    "eng"
+  ],
+  "transAvailable": false,
+  "selectedOcrLang": "eng",
+  "screenshotPath": "",
+  "videoPath": "",
+  "filenameFormat": "",
+  "detectedRecorder": "wf-recorder",
+  "detectedCompositor": "niri",
   "stateIsRunning": false,
   "stateActiveTool": "",
-  "transAvailable": false,
-  "detectedRecorder": "wl-screenrec",
-  "stateMirrorVisible": false,
-  "detectedCompositor": "niri"
+  "stateMirrorVisible": false
 }
+

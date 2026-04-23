@@ -127,8 +127,6 @@
       "details": ""
     }
   ],
-  "count": 14,
-  "completedCount": 11,
   "pages": [
     {
       "id": 0,
@@ -140,6 +138,8 @@
     }
   ],
   "current_page_id": 0,
+  "count": 14,
+  "completedCount": 11,
   "showCompleted": true,
   "showBackground": true,
   "isExpanded": false,
