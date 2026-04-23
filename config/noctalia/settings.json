@@ -329,7 +329,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "vibrant",
+        "generationMethod": "fruit-salad",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
@@ -560,7 +560,7 @@
     "nightLight": {
         "autoSchedule": true,
         "dayTemp": "6500",
-        "enabled": true,
+        "enabled": false,
         "forced": false,
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -595,13 +595,13 @@
             "normal": true
         },
         "sounds": {
-            "criticalSoundFile": "/home/ivhu/dotfile/data/xm4114.wav",
+            "criticalSoundFile": "/home/ivhu/dotfile/data/xm4114.mp3",
             "enabled": true,
-            "excludedApps": "discord,firefox,chrome,chromium,edge",
-            "lowSoundFile": "/home/ivhu/dotfile/data/xm4114.wav",
-            "normalSoundFile": "/home/ivhu/dotfile/data/xm4114.wav",
-            "separateSounds": false,
-            "volume": 1
+            "excludedApps": "",
+            "lowSoundFile": "/home/ivhu/dotfile/data/xm4114.mp3",
+            "normalSoundFile": "/home/ivhu/dotfile/data/xm4114.mp3",
+            "separateSounds": true,
+            "volume": 0.67
         }
     },
     "osd": {
