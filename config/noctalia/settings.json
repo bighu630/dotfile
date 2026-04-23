@@ -578,12 +578,13 @@
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
         "enableMarkdown": true,
-        "enableMediaToast": false,
+        "enableMediaToast": true,
         "enabled": true,
-        "location": "bottom_right",
+        "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
-            "eDP-1"
+            "eDP-1",
+            "HDMI-A-1"
         ],
         "normalUrgencyDuration": 8,
         "overlayLayer": true,
