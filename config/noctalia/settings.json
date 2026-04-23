@@ -221,6 +221,12 @@
                     "id": "plugin:model-usage"
                 },
                 {
+                    "id": "plugin:sticky-notes"
+                },
+                {
+                    "id": "plugin:clipboard"
+                },
+                {
                     "defaultSettings": {
                         "audioSource": "none",
                         "codec": "auto",
@@ -547,7 +553,6 @@
         "weatherShowEffects": true
     },
     "network": {
-        "airplaneModeEnabled": false,
         "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
@@ -779,6 +784,7 @@
         "fillColor": "#000000",
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
+        "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
             {
                 "directory": "/data/Sync/wallpapers/bg",
