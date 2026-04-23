@@ -329,7 +329,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "generationMethod": "tonal-spot",
+        "generationMethod": "vibrant",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
@@ -571,10 +571,10 @@
         "disableWallpaper": true
     },
     "notifications": {
-        "backgroundOpacity": 0.85,
+        "backgroundOpacity": 0.68,
         "clearDismissed": false,
         "criticalUrgencyDuration": 15,
-        "density": "default",
+        "density": "compact",
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
         "enableMarkdown": true,
@@ -595,13 +595,13 @@
             "normal": true
         },
         "sounds": {
-            "criticalSoundFile": "",
-            "enabled": false,
+            "criticalSoundFile": "/home/ivhu/dotfile/data/xm4114.wav",
+            "enabled": true,
             "excludedApps": "discord,firefox,chrome,chromium,edge",
-            "lowSoundFile": "",
-            "normalSoundFile": "",
+            "lowSoundFile": "/home/ivhu/dotfile/data/xm4114.wav",
+            "normalSoundFile": "/home/ivhu/dotfile/data/xm4114.wav",
             "separateSounds": false,
-            "volume": 0.5
+            "volume": 1
         }
     },
     "osd": {
