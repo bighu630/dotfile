@@ -578,7 +578,7 @@
     "notifications": {
         "backgroundOpacity": 0.68,
         "clearDismissed": false,
-        "criticalUrgencyDuration": 15,
+        "criticalUrgencyDuration": 10,
         "density": "compact",
         "enableBatteryToast": true,
         "enableKeyboardLayoutToast": true,
@@ -591,7 +591,7 @@
             "eDP-1",
             "HDMI-A-1"
         ],
-        "normalUrgencyDuration": 8,
+        "normalUrgencyDuration": 5,
         "overlayLayer": true,
         "respectExpireTimeout": false,
         "saveToHistory": {
@@ -602,7 +602,7 @@
         "sounds": {
             "criticalSoundFile": "/home/ivhu/dotfile/data/xm4114.mp3",
             "enabled": true,
-            "excludedApps": "",
+            "excludedApps": "ncmpcpp",
             "lowSoundFile": "/home/ivhu/dotfile/data/xm4114.mp3",
             "normalSoundFile": "/home/ivhu/dotfile/data/xm4114.mp3",
             "separateSounds": true,

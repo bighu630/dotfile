@@ -5,9 +5,10 @@ alias keymod="echo 2 | sudo tee /sys/module/hid_apple/parameters/fnmode"
 
 alias sgo='sudo /home/ivhu/.go/bin/go'
 
-alias c="echo "60" | sudo tee /sys/devices/system/cpu/amd_pstate/max_perf_pct"
-alias cc="echo "50" | sudo tee /sys/devices/system/cpu/amd_pstate/max_perf_pct"
-alias ncp="echo "100" | sudo tee /sys/devices/system/cpu/amd_pstate/max_perf_pct"
+# alias c="echo "60" | sudo tee /sys/devices/system/cpu/amd_pstate/max_perf_pct"
+# alias cc="echo "50" | sudo tee /sys/devices/system/cpu/amd_pstate/max_perf_pct"
+# alias ncp="echo "100" | sudo tee /sys/devices/system/cpu/amd_pstate/max_perf_pct"
+alias nc='ncmpcpp'
 
 #更换壁纸,在dwm下用的,kde时一般不使用这个
 # alias bg="feh --recursive --randomize --bg-fill /home/ivhu/图片/壁纸/plasma6/*"
