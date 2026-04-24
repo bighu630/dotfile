@@ -614,7 +614,7 @@
         "sounds": {
             "criticalSoundFile": "/home/ivhu/dotfile/data/xm4114.mp3",
             "enabled": true,
-            "excludedApps": "",
+            "excludedApps": "KDE Connect",
             "lowSoundFile": "/home/ivhu/dotfile/data/xm4114.mp3",
             "normalSoundFile": "/home/ivhu/dotfile/data/xm4114.mp3",
             "separateSounds": true,
