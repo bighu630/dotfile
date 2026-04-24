@@ -64,7 +64,7 @@ current_item_inactive_column_prefix = $b$(white)$r
 now_playing_prefix = "$b$3"
 now_playing_suffix = "$b$9"
 main_window_color = white
-execute_on_song_change = bash ~/.config/ncmpcpp/song.sh
+# execute_on_song_change = bash ~/.config/ncmpcpp/song.sh
 
 playlist_display_mode = "classic"
 user_interface = classic
