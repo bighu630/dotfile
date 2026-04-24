@@ -221,9 +221,20 @@
                     "id": "plugin:model-usage"
                 },
                 {
+                    "defaultSettings": {
+                        "githubGistId": "",
+                        "githubToken": "",
+                        "notes": "[]",
+                        "syncEnabled": false
+                    },
                     "id": "plugin:sticky-notes"
                 },
                 {
+                    "defaultSettings": {
+                        "density": "comfortable",
+                        "maxHistorySize": 100,
+                        "showImagePreviews": true
+                    },
                     "id": "plugin:clipboard"
                 },
                 {
@@ -553,6 +564,7 @@
         "weatherShowEffects": true
     },
     "network": {
+        "airplaneModeEnabled": false,
         "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
         "bluetoothHideUnnamedDevices": false,
@@ -784,7 +796,6 @@
         "fillColor": "#000000",
         "fillMode": "crop",
         "hideWallpaperFilenames": false,
-        "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
             {
                 "directory": "/data/Sync/wallpapers/bg",
