@@ -9,9 +9,10 @@
   "screenshotPath": "",
   "videoPath": "",
   "filenameFormat": "",
-  "detectedRecorder": "wl-screenrec",
+  "detectedRecorder": "wf-recorder",
   "detectedCompositor": "niri",
   "stateIsRunning": false,
   "stateActiveTool": "",
   "stateMirrorVisible": false
 }
+
