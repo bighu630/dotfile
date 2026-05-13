@@ -4,7 +4,7 @@
 // See the binds section below for more spawn examples.
 
 spawn-at-startup "qs" "-c" "noctalia-shell"
-// spawn-at-startup "xwayland-satellite"
+spawn-at-startup "xwayland-satellite"
 spawn-at-startup "syncthing"
 spawn-at-startup "fcitx5 -D"
 spawn-at-startup "/usr/local/bin/lyrics-backend"
@@ -17,5 +17,5 @@ spawn-sh-at-startup "mpd && sleep 5 && mpd-mpris"
 // spawn-at-startup "waybar"
 // spawn-at-startup "hypridle"
 // spawn-at-startup "swaync"
-spawn-sh-at-startup "claude-code-ui"
+// spawn-sh-at-startup "claude-code-ui"
 spawn-sh-at-startup "cd /home/ivhu/dotfile && ./update.sh"
