@@ -789,7 +789,7 @@
         "automationEnabled": true,
         "directory": "/data/Sync/wallpapers/bg",
         "enableMultiMonitorDirectories": true,
-        "enabled": true,
+        "enabled": false,
         "favorites": [
         ],
         "fillColor": "#000000",
