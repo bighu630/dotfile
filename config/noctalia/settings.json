@@ -735,10 +735,6 @@
         "activeTemplates": [
             {
                 "enabled": true,
-                "id": "foot"
-            },
-            {
-                "enabled": true,
                 "id": "niri"
             },
             {
