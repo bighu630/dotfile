@@ -92,11 +92,11 @@
                 {
                     "colorizeSystemIcon": "none",
                     "customIconPath": "",
-                    "enableColorization": false,
+                    "enableColorization": true,
                     "icon": "rocket",
                     "iconColor": "none",
                     "id": "Launcher",
-                    "useDistroLogo": false
+                    "useDistroLogo": true
                 },
                 {
                     "characterCount": 2,
@@ -353,7 +353,7 @@
         "predefinedScheme": "Eldritch",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": true
+        "useWallpaperColors": false
     },
     "controlCenter": {
         "cards": [
@@ -790,7 +790,7 @@
         "automationEnabled": true,
         "directory": "/data/Sync/wallpapers/bg",
         "enableMultiMonitorDirectories": true,
-        "enabled": true,
+        "enabled": false,
         "favorites": [
         ],
         "fillColor": "#000000",
