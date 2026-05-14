@@ -253,7 +253,10 @@ binds {
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
-    Mod+Shift+A { spawn-sh "rm -f /tmp/screenshot.png && niri msg action screenshot --show-pointer=false"; }
+    // Mod+Shift+A { spawn-sh "rm -f /tmp/screenshot.png && niri msg action screenshot --show-pointer=false"; }
+    Mod+Shift+A {
+        spawn "sh" "-c" "grim -g \"$(slurp)\" - | satty --filename -";
+    }
     // Mod+Shift+A { spawn-sh "flock -n /tmp/niri-screenshot.lock sh -c '
     //     rm -f /dev/shm/screenshot.png
     //     niri msg action screenshot --show-pointer=false

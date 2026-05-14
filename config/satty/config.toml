@@ -19,9 +19,9 @@ save-after-copy = false
 # Hide toolbars by default
 default-hide-toolbars = false
 # Experimental (since 0.20.0): whether window focus shows/hides toolbars. This does not affect initial state of toolbars, see default-hide-toolbars.
-focus-toggles-toolbars = true
+focus-toggles-toolbars = false
 # Fill shapes by default (since 0.20.0)
-default-fill-shapes = false
+default-fill-shapes = true
 # The primary highlighter to use, the other is accessible by holding CTRL at the start of a highlight [possible values: block, freehand]
 primary-highlighter = "block"
 # Disable notifications
