@@ -353,7 +353,7 @@
         "predefinedScheme": "Eldritch",
         "schedulingMode": "off",
         "syncGsettings": true,
-        "useWallpaperColors": false
+        "useWallpaperColors": true
     },
     "controlCenter": {
         "cards": [
@@ -786,7 +786,7 @@
         "automationEnabled": true,
         "directory": "/data/Sync/wallpapers/bg",
         "enableMultiMonitorDirectories": true,
-        "enabled": false,
+        "enabled": true,
         "favorites": [
         ],
         "fillColor": "#000000",
