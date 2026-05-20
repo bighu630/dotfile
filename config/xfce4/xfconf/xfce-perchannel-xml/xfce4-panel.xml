@@ -63,6 +63,7 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-items" type="array">
+        <value type="string" value="alisase1"/>
         <value type="string" value="remmina-icon"/>
         <value type="string" value="com.alibabainc.dingtalk"/>
         <value type="string" value="blueman"/>
@@ -70,6 +71,7 @@
         <value type="string" value="Fcitx"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="saseui"/>
         <value type="string" value="网络管理器小程序"/>
         <value type="string" value="wi-fi 网络连接“nic”已激活：nic (66%)"/>
         <value type="string" value="wi-fi 网络连接“nic”已激活：nic (80%)"/>
