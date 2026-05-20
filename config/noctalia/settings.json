@@ -92,11 +92,11 @@
                 {
                     "colorizeSystemIcon": "none",
                     "customIconPath": "",
-                    "enableColorization": false,
+                    "enableColorization": true,
                     "icon": "rocket",
                     "iconColor": "none",
                     "id": "Launcher",
-                    "useDistroLogo": false
+                    "useDistroLogo": true
                 },
                 {
                     "characterCount": 2,
@@ -313,6 +313,27 @@
                     "icon": "noctalia",
                     "id": "ControlCenter",
                     "useDistroLogo": false
+                },
+                {
+                    "defaultSettings": {
+                        "colorHistory": [
+                        ],
+                        "detectedRecorder": "",
+                        "filenameFormat": "",
+                        "gifMaxSeconds": 30,
+                        "installedLangs": [
+                            "eng"
+                        ],
+                        "paletteColors": [
+                        ],
+                        "recordCopyToClipboard": false,
+                        "recordSkipConfirmation": false,
+                        "screenshotPath": "",
+                        "selectedOcrLang": "eng",
+                        "transAvailable": false,
+                        "videoPath": ""
+                    },
+                    "id": "plugin:screen-toolkit"
                 }
             ]
         }
@@ -734,10 +755,6 @@
         "activeTemplates": [
             {
                 "enabled": true,
-                "id": "foot"
-            },
-            {
-                "enabled": true,
                 "id": "niri"
             },
             {
@@ -789,7 +806,7 @@
         "automationEnabled": true,
         "directory": "/data/Sync/wallpapers/bg",
         "enableMultiMonitorDirectories": true,
-        "enabled": false,
+        "enabled": true,
         "favorites": [
         ],
         "fillColor": "#000000",
