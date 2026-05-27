@@ -118,6 +118,8 @@ export PATH=$PATH:/data/pyfile
 export PATH=$PATH:${HOME}/.local/share/nvim/mason/bin
 export TERM=xterm-256color
 
+export PATH="/home/ivhu/.bun/bin:$PATH"
+
 #自定义
 #限制频率60%
 
