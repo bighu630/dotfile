@@ -12,6 +12,15 @@ blur {
     saturation 0.6
 }
 
+layer-rule{
+    match namespace="waybar"
+    opacity 0.8
+    background-effect {
+        xray true
+        blur true
+    }
+}
+
 window-rule{
 
     opacity 0.95
