@@ -217,7 +217,7 @@
         "on-click-right": "~/.config/waybar/scripts/bluetui.sh"
     },
     "custom/notify": {
-        "tooltip": false,
+        "tooltip": true,
         "format": "{icon}",
         "format-icons": {
             "notification": " <span foreground='red'><sup></sup></span>",
