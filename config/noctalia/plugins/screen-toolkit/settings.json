@@ -9,7 +9,7 @@
   "screenshotPath": "",
   "videoPath": "",
   "filenameFormat": "",
-  "detectedRecorder": "wf-recorder",
+  "detectedRecorder": "wl-screenrec",
   "recordSkipConfirmation": false,
   "recordCopyToClipboard": false,
   "gifMaxSeconds": 30,
