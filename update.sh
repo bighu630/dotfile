@@ -6,8 +6,6 @@
 set -e
 
 echo "🚀 Starting dotfile push process..."
-git add .
-git commit -m "chore: Update main"
 
 # 1. Pull latest changes for the main repository to avoid conflicts.
 echo "⬇️  Pulling latest changes for the main repository..."
