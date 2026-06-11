@@ -202,8 +202,9 @@
     },
     "custom/lyrics": {
         "format": "  {}  ",
-        "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=60;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
-        "interval": 0.5,
+        // "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=60;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
+        "exec": "cat /dev/shm/lyrics",
+        "interval": 1,
         "max-length": 60,
         "return-type": "text",
         "on-click": "playerctl play-pause",
@@ -211,7 +212,7 @@
         "on-double-click-left": "playerctl previous",
     },
     "custom/speed": {
-      "restart-interval": 1,
+      "restart-interval": 2,
       "exec": "bash ~/.config/waybar/scripts/net.sh",
     },
 
