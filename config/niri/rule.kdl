@@ -67,6 +67,7 @@ window-rule {
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     match app-id="com.follow.clash"
+    match app-id="org.kde.dolphin"
     open-floating true
 }
 
