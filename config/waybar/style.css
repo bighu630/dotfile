@@ -289,14 +289,13 @@ window#waybar.hidden {
 
 /* #custom-lyrics { */
 /*   color: white; */
-/*   font-family: HackGen35 Console NF; */
 /*   font-size: 14px; */
 /* } */
 #custom-lyrics {
-  background: linear-gradient(60deg, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
-  color: white;
+  /* background: linear-gradient(60deg, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153)); */
+  color: @battery_normal;
   padding: 0px 0px;
-  font-family: "Liga SFMono Nerd Font";
+  font-family: 'HackGen35 Console NF';
   font-size: 14px;
   border-radius: 10px;
 }

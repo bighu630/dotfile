@@ -57,6 +57,22 @@
             "(.*) - fish": "> [$1]"
         },
     },
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
+    },
+    "niri/window": {
+    	"format": "  {app_id}",
+        "max-length": 18,
+    	"rewrite": {
+    		"(.*) - Mozilla Firefox": "🌎 $1",
+    		"(.*) - google-chrome-canary": "🌎 $1",
+    		"(.*) - foot": "> [$1]"
+    	}
+    },
     "hyprland/window": {
         "format": "{}",
         "max-length": 18,
@@ -65,8 +81,8 @@
         "icon-size": 14,
     },
     "wlr/taskbar": {
-        "format": "| {icon}",
-        "icon-size": 14,
+        "format": "▕▏{icon} ",
+        "icon-size": 16,
         "tooltip-format": "{title}",
         "on-click": "activate",
         "icon-theme": "Papirus-Dark",
@@ -187,7 +203,7 @@
     "custom/lyrics": {
         "format": "  {}  ",
         "exec": "awk 'NR==1 {for(i=1;i<=length&&i<=60;i++) printf substr($0,i,1)}' /dev/shm/lyrics",
-        "interval": 1,
+        "interval": 0.5,
         "max-length": 60,
         "return-type": "text",
         "on-click": "playerctl play-pause",
@@ -242,6 +258,17 @@
         "format": " {status}",
     },
 
+    "power-profiles-daemon": {
+        "format": "{icon} ",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
     "battery": {
       "bat": "BAT0",
       "adapter": "ADP0",
