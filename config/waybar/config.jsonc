@@ -90,7 +90,7 @@
     },
 
     "custom/speed": {
-      "restart-interval": 1,
+      "restart-interval": 2,
       "exec": "bash ~/.config/waybar/scripts/net.sh",
     },
 
