@@ -72,6 +72,21 @@ window-rule {
 }
 
 window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"com.hyprland.lyrics$"#
+    open-floating true
+    border {
+        off
+    }
+    background-effect {
+        xray false
+        blur false
+    }
+}
+
+window-rule {
     match title="^Lark会议$"
     match title="^图片$"
     match title="^$"
