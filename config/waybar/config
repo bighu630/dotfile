@@ -10,7 +10,7 @@
     "spacing": 5, // Gaps between modules (4px)
     "modules-left": ["custom/launcher","cpu","memory","wlr/taskbar","niri/window","custom/lyrics"],
     "modules-center": ["niri/workspaces","sway/workspaces" ,"clock"],
-    "modules-right": ["custom/speed","mpd","tray", "backlight", "pulseaudio", "power-profiles-daemon", "battery","custom/notify", "custom/power-menu"],
+    "modules-right": ["network","mpd","tray", "backlight", "pulseaudio", "power-profiles-daemon", "battery","custom/notify", "custom/power-menu"],
     "include": ["~/.config/waybar/modules.json"],
 },
 {
