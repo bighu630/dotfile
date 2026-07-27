@@ -12,6 +12,15 @@ blur {
     saturation 0.6
 }
 
+layer-rule{
+    match namespace="waybar"
+    opacity 0.8
+    background-effect {
+        xray true
+        blur true
+    }
+}
+
 window-rule{
 
     opacity 0.95
@@ -57,7 +66,24 @@ window-rule {
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    match app-id="com.follow.clash"
+    match app-id="org.kde.dolphin"
     open-floating true
+}
+
+window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"com.hyprland.lyrics$"#
+    open-floating true
+    border {
+        off
+    }
+    background-effect {
+        xray false
+        blur false
+    }
 }
 
 window-rule {

@@ -31,7 +31,8 @@
 @define-color module_bg rgba(36, 39, 58, 0.7);
 @define-color system_monitor #eed49f;
 @define-color audio_color #7dc4e4;
-@define-color network_color #f5bde6;
+/* @define-color network_color #f5bde6; */
+@define-color network_color white;
 @define-color battery_normal #c6a0f6;
 @define-color battery_charging #a6da95;
 @define-color battery_critical #ed8796;
@@ -289,14 +290,13 @@ window#waybar.hidden {
 
 /* #custom-lyrics { */
 /*   color: white; */
-/*   font-family: HackGen35 Console NF; */
 /*   font-size: 14px; */
 /* } */
 #custom-lyrics {
-  background: linear-gradient(60deg, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153));
-  color: white;
+  /* background: linear-gradient(60deg, rgb(170, 75, 107), rgb(107, 107, 131), rgb(59, 141, 153)); */
+  color: @battery_normal;
   padding: 0px 0px;
-  font-family: "Liga SFMono Nerd Font";
+  font-family: 'HackGen35 Console NF';
   font-size: 14px;
   border-radius: 10px;
 }
