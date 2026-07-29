@@ -190,16 +190,16 @@ directory = "/data/Sync/wallpapers/bg"
     enabled = true
 
     [wallpaper.default]
-    path = "/data/Sync/wallpapers/bg_less/bg/【哲风壁纸】Fate系列-二次元.jpeg"
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】夜景-富士山.png"
 
     [wallpaper.last]
-    path = "/data/Sync/wallpapers/bg_less/bg/【哲风壁纸】Fate系列-二次元.jpeg"
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】夜景-富士山.png"
 
     [wallpaper.monitors.HDMI-A-1]
     path = "/data/Sync/wallpapers/bg/【哲风壁纸】云-天空-插图.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/data/Sync/wallpapers/bg_less/bg/【哲风壁纸】Fate系列-二次元.jpeg"
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】夜景-富士山.png"
 
 [widget.battery]
 capsule = true
