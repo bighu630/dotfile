@@ -160,7 +160,7 @@ screen_time_enabled = true
     [shell.panel]
     clipboard_placement = "attached"
     control_center_placement = "attached"
-    launcher_position = "auto"
+    launcher_position = "center"
     open_near_click_clipboard = true
     open_near_click_control_center = true
     open_near_click_session = true
@@ -173,9 +173,10 @@ screen_time_enabled = true
 [templates]
 
 [theme]
-community_palette = "Oxocarbon"
+community_palette = "Catppuccin Frappe Mauve"
 custom_palette = "wallpaper-mc"
-source = "wallpaper"
+mode = "dark"
+source = "community"
 wallpaper_scheme = "m3-fruit-salad"
 
     [theme.templates]
@@ -183,7 +184,7 @@ wallpaper_scheme = "m3-fruit-salad"
     community_ids = [ "rofi" ]
 
 [wallpaper]
-directory = "/data/Sync/wallpapers/bg_less/bg"
+directory = "/data/Sync/wallpapers/bg"
 
     [wallpaper.automation]
     enabled = true
