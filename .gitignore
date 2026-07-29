@@ -37,3 +37,4 @@ share/fcitx5/themes/plasma
 /config/yazi/flavors/noctalia.yazi/flavor.toml
 /config/gtk-3.0/noctalia.css
 /config/gtk-4.0/noctalia.css
+/config/fcitx5/conf/classicui.conf
