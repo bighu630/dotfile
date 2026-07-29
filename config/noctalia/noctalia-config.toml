@@ -190,24 +190,6 @@ per_monitor_directories = true
     [wallpaper.automation]
     enabled = true
 
-    [wallpaper.default]
-    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
-
-    [wallpaper.last]
-    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
-
-    [wallpaper.monitor.HDMI-A-1]
-    directory = "/data/Sync/wallpapers/bg"
-
-    [wallpaper.monitor.eDP-1]
-    directory = "/data/Sync/wallpapers/bg"
-
-    [wallpaper.monitors.HDMI-A-1]
-    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
-
-    [wallpaper.monitors.eDP-1]
-    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
-
 [widget.battery]
 capsule = true
 
