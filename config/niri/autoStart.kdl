@@ -11,7 +11,7 @@ spawn-at-startup "lyrics"
 spawn-at-startup "mpd"
 spawn-at-startup "sleep 5 && mpd-mpris"
 spawn-at-startup "kwalletd6"
-// spawn-at-startup "~/.local/bin/switchbg"
+spawn-at-startup "~/.local/bin/switchbg"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6"
 // This line starts waybar, a commonly used bar for Wayland compositors.

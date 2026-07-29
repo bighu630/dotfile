@@ -1,5 +1,5 @@
 [bar.default]
-background_opacity = 0.5599999874830246
+background_opacity = 0.58999998681247234
 capsule = true
 capsule_opacity = 0.68999998457729816
 center = [ "clock", "workspaces" ]
@@ -13,13 +13,12 @@ end = [
     "volume",
     "brightness",
     "battery",
-    "control-center",
-    "session"
+    "control-center"
 ]
-margin_edge = 4
+margin_edge = 3
 margin_ends = 4
 margin_opposite_edge = 2
-padding = 6
+padding = 2
 radius = 0
 radius_bottom_left = 7
 radius_bottom_right = 7
@@ -69,7 +68,7 @@ address = "麻城"
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1" ]
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -103,8 +102,8 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 229.0
     box_width = 810.0
-    cx = 1000.0
-    cy = 1051.5
+    cx = 934.0
+    cy = 968.5
     output = "eDP-1"
     rotation = 0.0
     type = "login_box"
@@ -132,7 +131,7 @@ background_opacity = 0.3899999912828207
 position = "top_right"
 
 [plugins]
-enabled = [ "bighu630/text-sync" ]
+enabled = [ "noctalia/screen_recorder", "bighu630/text-sync" ]
 
     [[plugins.source]]
     kind = "git"
@@ -159,8 +158,8 @@ screen_time_enabled = true
 
     [shell.panel]
     clipboard_placement = "attached"
-    control_center_placement = "attached"
-    launcher_position = "center"
+    control_center_placement = "floating"
+    launcher_position = "auto"
     open_near_click_clipboard = true
     open_near_click_control_center = true
     open_near_click_session = true
@@ -173,8 +172,8 @@ screen_time_enabled = true
 [templates]
 
 [theme]
-community_palette = "Catppuccin Frappe Mauve"
-custom_palette = "wallpaper-mc"
+community_palette = "Catppuccin Macchiato Sapphire"
+custom_palette = "31-mut"
 mode = "dark"
 source = "community"
 wallpaper_scheme = "m3-fruit-salad"
@@ -185,21 +184,29 @@ wallpaper_scheme = "m3-fruit-salad"
 
 [wallpaper]
 directory = "/data/Sync/wallpapers/bg"
+enabled = false
+per_monitor_directories = true
 
     [wallpaper.automation]
     enabled = true
 
     [wallpaper.default]
-    path = "/data/Sync/wallpapers/bg_less/bg/【哲风壁纸】Fate系列-二次元.jpeg"
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
 
     [wallpaper.last]
-    path = "/data/Sync/wallpapers/bg_less/bg/【哲风壁纸】Fate系列-二次元.jpeg"
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
+
+    [wallpaper.monitor.HDMI-A-1]
+    directory = "/data/Sync/wallpapers/bg"
+
+    [wallpaper.monitor.eDP-1]
+    directory = "/data/Sync/wallpapers/bg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/data/Sync/wallpapers/bg/【哲风壁纸】云-天空-插图.png"
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/data/Sync/wallpapers/bg_less/bg/【哲风壁纸】Fate系列-二次元.jpeg"
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
 
 [widget.battery]
 capsule = true
@@ -211,6 +218,12 @@ enabled = false
 color = "secondary"
 format = "{:%H:%M:%S}"
 icon_color = "on_secondary"
+
+[widget.launcher]
+glyph = "navigation-search"
+
+    [widget.launcher.actions]
+    right = "exec ~/.local/bin/switchbg"
 
 [widget.text_sync]
 file_path = "/dev/shm/lyrics"
