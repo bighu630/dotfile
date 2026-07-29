@@ -1,5 +1,5 @@
 [bar.default]
-background_opacity = 0.58999998681247234
+background_opacity = 0.22999999485909939
 capsule = true
 capsule_opacity = 0.68999998457729816
 center = [ "clock", "workspaces" ]
@@ -15,8 +15,8 @@ end = [
     "battery",
     "control-center"
 ]
-margin_edge = 3
-margin_ends = 4
+margin_edge = 0
+margin_ends = 124
 margin_opposite_edge = 2
 padding = 2
 radius = 0
@@ -27,12 +27,19 @@ radius_top_right = 10
 scale = 1.0500000081956387
 start = [ "launcher", "wallpaper", "taskbar", "media", "text_sync" ]
 thickness = 26
+widget_spacing = 3
 
 [battery]
 warning_threshold = 15
 
 [brightness]
 enable_ddcutil = true
+
+[calendar]
+enabled = true
+
+    [calendar.account.bighunb666]
+    type = "google"
 
 [config]
 
@@ -64,6 +71,10 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
 
 [location]
 address = "麻城"
+
+[lockscreen]
+fingerprint = false
+wallpaper = "/data/Sync/wallpapers/bg/【哲风壁纸】夜景-富士山.png"
 
 [lockscreen_widgets]
 enabled = false
@@ -158,7 +169,7 @@ screen_time_enabled = true
 
     [shell.panel]
     clipboard_placement = "attached"
-    control_center_placement = "floating"
+    control_center_placement = "attached"
     launcher_position = "auto"
     open_near_click_clipboard = true
     open_near_click_control_center = true
@@ -189,6 +200,24 @@ per_monitor_directories = true
 
     [wallpaper.automation]
     enabled = true
+
+    [wallpaper.default]
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
+
+    [wallpaper.last]
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
+
+    [wallpaper.monitor.HDMI-A-1]
+    directory = "/data/Sync/wallpapers/bg"
+
+    [wallpaper.monitor.eDP-1]
+    directory = "/data/Sync/wallpapers/bg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
 
 [widget.battery]
 capsule = true
