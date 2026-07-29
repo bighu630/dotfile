@@ -25,7 +25,7 @@ radius_bottom_right = 7
 radius_top_left = 10
 radius_top_right = 10
 scale = 1.0500000081956387
-start = [ "launcher", "wallpaper", "taskbar", "media", "text_sync" ]
+start = [ "launcher", "wallpaper", "media", "text_sync", "taskbar" ]
 thickness = 26
 widget_spacing = 3
 
@@ -205,7 +205,7 @@ per_monitor_directories = true
     path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
 
     [wallpaper.last]
-    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】云-天空-抽烟.png"
 
     [wallpaper.monitor.HDMI-A-1]
     directory = "/data/Sync/wallpapers/bg"
@@ -214,10 +214,10 @@ per_monitor_directories = true
     directory = "/data/Sync/wallpapers/bg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】女生-报纸墙1.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】云-天空-抽烟.png"
 
 [widget.battery]
 capsule = true
@@ -236,14 +236,21 @@ glyph = "navigation-search"
     [widget.launcher.actions]
     right = "exec ~/.local/bin/switchbg"
 
+[widget.taskbar]
+pinned = [ "chrome-majiogicmcnmdhhlgmkahaleckhjbmlk-Default", "google-chrome-canary" ]
+
 [widget.text_sync]
 file_path = "/dev/shm/lyrics"
 refresh_interval = 100
 text_color = "primary"
 type = "bighu630/text-sync:text_sync"
 
+    [widget.text_sync.actions]
+    left = "media toggle"
+    right = "media next"
+
 [widget.wallpaper]
-enabled = true
+enabled = false
 
 [widget.workspaces]
 display = "none"
