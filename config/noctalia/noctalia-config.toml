@@ -1,0 +1,204 @@
+[bar.default]
+background_opacity = 0.58999998681247234
+capsule = true
+center = [ "clock", "workspaces" ]
+end = [
+    "network_rx",
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "battery",
+    "control-center",
+    "session"
+]
+margin_edge = 3
+margin_ends = 4
+margin_opposite_edge = 2
+padding = 2
+radius = 0
+radius_bottom_left = 7
+radius_bottom_right = 7
+radius_top_left = 10
+radius_top_right = 10
+scale = 1.0500000081956387
+start = [ "launcher", "wallpaper", "taskbar", "media" ]
+thickness = 26
+
+[battery]
+warning_threshold = 15
+
+[brightness]
+enable_ddcutil = true
+
+[config]
+
+[control_center]
+sidebar = "none"
+
+[dock]
+background_opacity = 0.67999998480081558
+layer = "overlay"
+smart_auto_hide = true
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[location]
+address = "麻城"
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 229.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 881.5
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 229.0
+    box_width = 810.0
+    cx = 934.0
+    cy = 968.5
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_weather = true
+
+[osd]
+background_opacity = 0.3899999912828207
+position = "top_right"
+
+[plugins]
+enabled = [ "noctalia/screen_recorder" ]
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/official-plugins"
+    name = "official"
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/noctalia-dev/community-plugins"
+    name = "community"
+
+    [[plugins.source]]
+    kind = "git"
+    location = "https://github.com/bighu630/noctalia_plugins"
+    name = "bighu630"
+
+[shell]
+font_family = "PingFang SC Medium"
+niri_overview_type_to_launch_enabled = true
+panel_anchor_bar = "default"
+polkit_agent = true
+screen_time_enabled = true
+
+    [shell.panel]
+    control_center_placement = "floating"
+    launcher_position = "auto"
+    open_near_click_control_center = true
+    open_near_click_session = true
+    session_placement = "floating"
+    transparency_mode = "soft"
+
+    [shell.screenshot]
+    directory = "/home/ivhu/图片/屏幕截图"
+
+[templates]
+
+[theme]
+community_palette = "Oxocarbon"
+custom_palette = "31-mut"
+source = "wallpaper"
+wallpaper_scheme = "m3-fruit-salad"
+
+[wallpaper]
+directory = "/data/Sync/wallpapers/bg"
+
+    [wallpaper.automation]
+    enabled = true
+
+    [wallpaper.default]
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
+
+    [wallpaper.last]
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】云-天空-插图.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/data/Sync/wallpapers/bg/【哲风壁纸】2024-11-19 20:35:25.png"
+
+[widget.bluetooth]
+enabled = false
+
+[widget.clock]
+color = "secondary"
+format = "{:%H:%M:%S}"
+icon_color = "on_secondary"
+
+[widget.wallpaper]
+enabled = false
+
+[widget.workspaces]
+display = "none"
