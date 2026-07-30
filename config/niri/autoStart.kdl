@@ -3,6 +3,8 @@
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
+spawn-at-startup "noctalia"
+spawn-at-startup "~/.local/bin/switchbg"
 spawn-at-startup "kwalletd6"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "XDG_MENU_PREFIX=arch- kbuildsycoca6"
@@ -12,8 +14,6 @@ spawn-at-startup "fcitx5 -D"
 spawn-at-startup "lyrics"
 spawn-at-startup "mpd"
 spawn-sh-at-startup "mpd-mpris"
-spawn-at-startup "noctalia"
-spawn-at-startup "~/.local/bin/switchbg"
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // spawn-at-startup "waybar"
 // spawn-at-startup "hypridle"

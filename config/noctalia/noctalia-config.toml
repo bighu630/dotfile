@@ -42,8 +42,7 @@ order = [ "default" ]
         "volume",
         "brightness",
         "battery",
-        "control-center",
-        "session"
+        "control-center"
     ]
     font_weight = 500
     hover_highlight = true
@@ -64,7 +63,7 @@ order = [ "default" ]
     shadow = true
     show_on_workspace_switch = true
     smart_auto_hide = false
-    start = [ "launcher", "wallpaper", "media", "text_sync", "taskbar" ]
+    start = [ "launcher", "taskbar", "wallpaper", "media", "text_sync" ]
     thickness = 26
     widget_spacing = 3
 
@@ -577,7 +576,7 @@ swap_pct_critical_threshold = 80.0
 
 [theme]
 builtin = "Noctalia"
-community_palette = "Catppuccin Frappe Mauve"
+community_palette = "Catppuccin Frappe Blue"
 custom_palette = "wallpaper-mc"
 mode = "dark"
 pure_black_dark = false
@@ -713,7 +712,7 @@ type = "sysmon"
 [widget.text_sync]
 file_path = "/dev/shm/lyrics"
 refresh_interval = 100
-text_color = "primary"
+text_color = "tertiary"
 type = "bighu630/text-sync:text_sync"
 
     [widget.text_sync.actions]
