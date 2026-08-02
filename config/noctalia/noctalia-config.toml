@@ -63,7 +63,7 @@ order = [ "default" ]
     shadow = true
     show_on_workspace_switch = true
     smart_auto_hide = false
-    start = [ "launcher", "taskbar", "wallpaper", "media", "text_sync" ]
+    start = [ "launcher", "taskbar", "wallpaper", "media", "text_sync", "global_menu" ]
     thickness = 26
     widget_spacing = 3
 
@@ -354,7 +354,7 @@ scale = 1.0
 
 [plugins]
 auto_update = true
-enabled = [ "bighu630/text-sync" ]
+enabled = [ "bighu630/text-sync", "bighu630/global-menu" ]
 
     [[plugins.source]]
     enabled = true
@@ -708,6 +708,9 @@ type = "taskbar"
 [widget.temp]
 stat = "cpu_temp"
 type = "sysmon"
+
+[widget.global_menu]
+type = "bighu630/global-menu:global_menu"
 
 [widget.text_sync]
 file_path = "/dev/shm/lyrics"
