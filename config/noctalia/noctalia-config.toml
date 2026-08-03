@@ -33,6 +33,7 @@ order = [ "default" ]
     contact_shadow = false
     enabled = true
     end = [
+        "global_menu",
         "network_rx",
         "tray",
         "notifications",
@@ -63,7 +64,7 @@ order = [ "default" ]
     shadow = true
     show_on_workspace_switch = true
     smart_auto_hide = false
-    start = [ "launcher", "taskbar", "wallpaper", "media", "text_sync", "global_menu" ]
+    start = [ "launcher", "taskbar", "wallpaper", "media", "text_sync" ]
     thickness = 26
     widget_spacing = 3
 
