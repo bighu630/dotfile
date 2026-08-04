@@ -595,12 +595,12 @@ community_palette = "Catppuccin Frappe Blue"
 custom_palette = "wallpaper-mc"
 mode = "dark"
 pure_black_dark = false
-source = "community"
+source = "wallpaper"
 wallpaper_scheme = "m3-fruit-salad"
 
     [theme.templates]
-    builtin_ids = [ "foot", "niri", "qt" ]
-    community_ids = [ "rofi" ]
+    builtin_ids = [ "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    community_ids = [ "neovim", "vscode", "rofi", "lazygit", "yazi" ]
     enable_builtin_templates = true
     enable_community_templates = true
 
@@ -609,7 +609,7 @@ directory = "/data/Sync/wallpapers/bg"
 directory_dark = ""
 directory_light = ""
 edge_smoothness = 0.30000001192092896
-enabled = false
+enabled = true
 fill_color = ""
 fill_mode = "crop"
 per_monitor_directories = true
@@ -658,6 +658,10 @@ format = "{:%H:%M:%S}"
 icon_color = "on_secondary"
 type = "clock"
 
+[widget.control-center]
+color = "tertiary"
+type = "control-center"
+
 [widget.cpu]
 stat = "cpu_usage"
 type = "sysmon"
@@ -678,11 +682,12 @@ hide_when_single_layout = false
 type = "keyboard_layout"
 
 [widget.launcher]
+color = "secondary"
 glyph = "navigation-search"
 type = "launcher"
 
     [widget.launcher.actions]
-    right = "exec ~/.local/bin/switchbg"
+    right = "none"
 
 [widget.lock_keys]
 display = "short"
@@ -751,7 +756,7 @@ type = "bighu630/text-sync:text_sync"
 type = "nightwatch75/todo:todo"
 
 [widget.wallpaper]
-enabled = false
+enabled = true
 type = "wallpaper"
 
 [widget.workspaces]
