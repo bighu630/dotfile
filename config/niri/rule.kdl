@@ -7,9 +7,9 @@
 
 blur {
     passes 2
-    offset 2
+    offset 3
     noise 0.01
-    saturation 0.6
+    saturation 0.8
 }
 
 layer-rule{
@@ -130,6 +130,7 @@ layer-rule {
 // Put swaybg inside the overview backdrop.
 layer-rule {
     match namespace="^wallpaper$"
+    match namespace="^noctalia-wallpaper$"
 
     place-within-backdrop true
 }

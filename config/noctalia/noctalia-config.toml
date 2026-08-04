@@ -19,25 +19,24 @@ order = [ "default" ]
 
     [bar.default]
     auto_hide = false
-    background_opacity = 0.22999998927116394
+    background_opacity = 0.62000000476837158
     border = "outline"
     border_width = 0.0
     capsule = true
     capsule_fill = "surface_variant"
-    capsule_group = []
     capsule_opacity = 1.0
     capsule_padding = 6.0
     capsule_thickness = 0.75999999046325684
-    center = [ "clock", "workspaces" ]
+    center = [ "group:g1" ]
     concave_edge_corners = true
     contact_shadow = false
     enabled = true
     end = [
-        "global_menu",
         "network_rx",
         "tray",
         "notifications",
         "clipboard",
+        "todo",
         "network",
         "bluetooth",
         "volume",
@@ -64,11 +63,20 @@ order = [ "default" ]
     shadow = true
     show_on_workspace_switch = true
     smart_auto_hide = false
-    start = [ "launcher", "taskbar", "wallpaper", "media", "text_sync" ]
+    start = [ "launcher", "wallpaper", "media", "taskbar", "text_sync" ]
     thickness = 26
     widget_spacing = 3
 
         [bar.default.dead_zone]
+
+        [[bar.default.capsule_group]]
+        border = ""
+        enabled = true
+        fill = "on_primary"
+        id = "g1"
+        members = [ "clock", "workspaces" ]
+        opacity = 0.55000001192092896
+        padding = 6.0
 
 [battery]
 warning_threshold = 15
@@ -241,9 +249,12 @@ pre_action_fade_seconds = 2.0
 
 [keybinds]
 cancel = [ "Escape" ]
+copy = [ "Ctrl+c" ]
+delete = [ "Delete" ]
 down = [ "Down" ]
 left = [ "Left" ]
 right = [ "Right" ]
+save = [ "Ctrl+s" ]
 tab_next = [ "Tab" ]
 tab_previous = [ "Shift+ISO_Left_Tab" ]
 up = [ "Up" ]
@@ -323,7 +334,7 @@ show_actions = true
 show_app_name = true
 
 [osd]
-background_opacity = 0.38999998569488525
+background_opacity = 0.78999996185302734
 border = true
 enabled = true
 monitors = []
@@ -351,11 +362,12 @@ scale = 1.0
     volume_output = true
     wifi = true
 
-[plugin_settings]
+[plugin_settings."nightwatch75/todo"]
+todo_folder = "/home/ivhu/dotfile/config/noctalia/plugins"
 
 [plugins]
 auto_update = true
-enabled = [ "bighu630/text-sync", "bighu630/global-menu" ]
+enabled = [ "bighu630/text-sync", "nightwatch75/todo", "bighu630/global-menu" ]
 
     [[plugins.source]]
     enabled = true
@@ -437,6 +449,7 @@ time_format = "{:%H:%M}"
     clipboard_position = "center"
     control_center_placement = "attached"
     control_center_position = "auto"
+    floating_layer = "overlay"
     floating_offset = 8
     launcher_placement = "floating"
     launcher_position = "center"
@@ -472,6 +485,7 @@ time_format = "{:%H:%M}"
     freeze_screen = true
     pipe_command = ""
     pipe_to_command = false
+    remember_last_region = false
     save_to_file = true
     show_cursor = false
 
@@ -652,6 +666,9 @@ type = "sysmon"
 format = "{:%a %d %b}"
 type = "clock"
 
+[widget.global_menu]
+type = "bighu630/global-menu:global_menu"
+
 [widget.input_volume]
 device = "input"
 type = "volume"
@@ -677,10 +694,15 @@ type = "lock_keys"
 
 [widget.media]
 art_size = 16.0
+enabled = false
 max_length = 220.0
 min_length = 80.0
 title_scroll = "none"
 type = "media"
+
+[widget.network]
+scale = 0.90000000000000013
+type = "network"
 
 [widget.network_rx]
 stat = "net_rx"
@@ -703,25 +725,30 @@ interactive = false
 type = "spacer"
 
 [widget.taskbar]
-pinned = [ "chrome-majiogicmcnmdhhlgmkahaleckhjbmlk-Default", "google-chrome-canary" ]
+pinned = []
 type = "taskbar"
 
 [widget.temp]
 stat = "cpu_temp"
 type = "sysmon"
 
-[widget.global_menu]
-type = "bighu630/global-menu:global_menu"
-
 [widget.text_sync]
 file_path = "/dev/shm/lyrics"
+max_chars = 37
 refresh_interval = 100
 text_color = "tertiary"
 type = "bighu630/text-sync:text_sync"
 
     [widget.text_sync.actions]
-    left = "media toggle"
-    right = "media next"
+    back = "media previous"
+    forward = "media next"
+    left = "panel-toggle control-center media"
+    right = "media toggle"
+    scroll_down = "media previous"
+    scroll_up = "media next"
+
+[widget.todo]
+type = "nightwatch75/todo:todo"
 
 [widget.wallpaper]
 enabled = false
