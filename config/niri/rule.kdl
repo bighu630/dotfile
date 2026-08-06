@@ -23,7 +23,7 @@ layer-rule{
 
 window-rule{
 
-    opacity 0.93
+    opacity 0.97
     // match app-id=r#"foot"#
     background-effect {
         xray false

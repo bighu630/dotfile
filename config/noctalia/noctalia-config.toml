@@ -70,6 +70,8 @@ order = [ "default" ]
         [bar.default.dead_zone]
 
         [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
         border = ""
         enabled = true
         fill = "on_primary"
@@ -367,7 +369,7 @@ todo_folder = "/home/ivhu/dotfile/config/noctalia/plugins"
 
 [plugins]
 auto_update = true
-enabled = [ "bighu630/text-sync", "nightwatch75/todo", "bighu630/global-menu" ]
+enabled = [ "bighu630/text-sync", "nightwatch75/todo", "noctalia/translator" ]
 
     [[plugins.source]]
     enabled = true
@@ -427,6 +429,8 @@ time_format = "{:%H:%M}"
 
     [shell.greeter_sync]
     auto_sync = false
+
+    [shell.keyboard_layout]
 
     [shell.launcher]
     app_grid = false
@@ -596,18 +600,18 @@ custom_palette = "wallpaper-mc"
 mode = "dark"
 pure_black_dark = false
 source = "wallpaper"
-wallpaper_scheme = "m3-fruit-salad"
+wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "neovim", "vscode", "rofi", "lazygit", "yazi" ]
+    builtin_ids = [ "alacritty", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    community_ids = [ "neovim", "vscode", "zed", "steam", "rofi", "obs", "papirus-icons", "yazi" ]
     enable_builtin_templates = true
     enable_community_templates = true
 
 [wallpaper]
 directory = "/data/Sync/wallpapers/bg"
-directory_dark = ""
-directory_light = ""
+directory_dark = "/data/Sync/wallpapers/bgn"
+directory_light = "/data/Sync/wallpapers/bgl"
 edge_smoothness = 0.30000001192092896
 enabled = true
 fill_color = ""
@@ -629,6 +633,8 @@ transition_on_startup = false
 
     [wallpaper.monitor.eDP-1]
     directory = "/data/Sync/wallpapers/bg"
+    directory_dark = "/data/Sync/wallpapers/bgn"
+    directory_light = "/data/Sync/wallpapers/bgl"
     match = "eDP-1"
 
 [weather]
@@ -758,7 +764,3 @@ type = "nightwatch75/todo:todo"
 [widget.wallpaper]
 enabled = true
 type = "wallpaper"
-
-[widget.workspaces]
-display = "none"
-type = "workspaces"
