@@ -32,7 +32,6 @@ order = [ "default" ]
     contact_shadow = false
     enabled = true
     end = [
-        "network_rx",
         "tray",
         "notifications",
         "clipboard",
@@ -63,7 +62,7 @@ order = [ "default" ]
     shadow = true
     show_on_workspace_switch = true
     smart_auto_hide = false
-    start = [ "launcher", "wallpaper", "media", "taskbar", "text_sync" ]
+    start = [ "launcher", "wallpaper", "media", "taskbar", "network_rx", "text_sync" ]
     thickness = 26
     widget_spacing = 3
 
@@ -114,7 +113,7 @@ width = 700
     [control_center.calendar]
     event_date_format = "%A %e %B"
     event_time_format = "%H:%M"
-    show_events_card = true
+    show_events_card = false
     show_week_numbers = false
 
     [[control_center.shortcuts]]
@@ -198,8 +197,8 @@ rebooting = []
 session_locked = []
 session_unlocked = []
 shutting_down = []
-started = []
-theme_mode_changed = []
+started = [ "~/.config/noctalia/hooks/start_hook.sh" ]
+theme_mode_changed = [ "~/.config/noctalia/hooks/theme_switch_hook.sh" ]
 wallpaper_changed = []
 wifi_disabled = []
 wifi_enabled = []
@@ -275,6 +274,7 @@ blur_intensity = 0.5
 blurred_desktop = false
 enabled = true
 fingerprint = false
+lock_before_suspend = true
 monitors = []
 tint_intensity = 0.30000001192092896
 wallpaper = "/data/Sync/wallpapers/bg/【哲风壁纸】夜景-富士山.png"
@@ -327,6 +327,7 @@ collapse_on_dismiss = true
 enable_daemon = true
 history_retention_hours = 0
 layer = "top"
+max_visible = 0
 monitors = []
 offset_x = 20
 offset_y = 8
@@ -417,6 +418,7 @@ popup_borders = true
 popup_shadows = true
 screen_time_enabled = true
 settings_show_advanced = true
+settings_window_translucent = false
 setup_wizard_enabled = true
 shared_gl_context = true
 show_location = true
@@ -597,13 +599,13 @@ swap_pct_critical_threshold = 80.0
 builtin = "Noctalia"
 community_palette = "Catppuccin Frappe Blue"
 custom_palette = "wallpaper-mc"
-mode = "dark"
+mode = "auto"
 pure_black_dark = false
 source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "foot", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    builtin_ids = [ "alacritty", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
     community_ids = [ "neovim", "vscode", "zed", "steam", "rofi", "obs", "papirus-icons", "yazi" ]
     enable_builtin_templates = true
     enable_community_templates = true
@@ -760,6 +762,11 @@ type = "bighu630/text-sync:text_sync"
 
 [widget.todo]
 type = "nightwatch75/todo:todo"
+
+[widget.tray]
+match_adjacent_spacing = true
+scale = 0.94999999999999996
+type = "tray"
 
 [widget.wallpaper]
 enabled = true
