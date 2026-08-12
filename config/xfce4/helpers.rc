@@ -1,5 +1,4 @@
-WebBrowser=custom-WebBrowser
+WebBrowser=firefox
 FileManager=custom-FileManager
-TerminalEmulator=custom-TerminalEmulator
-TerminalEmulatorDismissed=true
+TerminalEmulator=alacritty
 
