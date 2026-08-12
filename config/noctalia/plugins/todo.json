@@ -1,0 +1,18 @@
+{
+  "sort": "priority",
+  "tasks": [
+    {
+      "done": true,
+      "id": 1,
+      "priority": "low",
+      "text": "noctalia颜色切换钩子"
+    },
+    {
+      "done": false,
+      "id": 2,
+      "priority": "medium",
+      "text": "piplus支持多模态模型代理处理图片"
+    }
+  ],
+  "version": 2
+}

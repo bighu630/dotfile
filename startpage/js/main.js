@@ -40,39 +40,59 @@ function weatherBalloon(cityID) {
     });
 }
 
-function initTheme() {
-  // 从 localStorage 获取保存的主题，如果没有则使用系统偏好
-  const savedTheme = localStorage.getItem("theme");
-  const systemPrefersDark = window.matchMedia(
-    "(prefers-color-scheme: dark)",
-  ).matches;
+function getSystemTheme() {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+}
 
-  if (savedTheme) {
-    document.documentElement.setAttribute("data-theme", savedTheme);
-  } else if (systemPrefersDark) {
-    document.documentElement.setAttribute("data-theme", "dark");
+// 当前模式: "auto"(跟随系统) / "dark" / "light"(手动)
+function getThemeMode() {
+  const saved = localStorage.getItem("theme");
+  return saved === "dark" || saved === "light" ? saved : "auto";
+}
+
+// 实际生效的主题:手动设置优先，否则取系统偏好
+function getEffectiveTheme() {
+  const mode = getThemeMode();
+  return mode === "auto" ? getSystemTheme() : mode;
+}
+
+function initTheme() {
+  const mode = getThemeMode();
+
+  if (mode === "auto") {
+    // 自动模式:不设置 data-theme，由 CSS media query 自动跟随系统
+    document.documentElement.removeAttribute("data-theme");
   } else {
-    document.documentElement.setAttribute("data-theme", "light");
+    // 手动模式:应用用户选择的主题
+    document.documentElement.setAttribute("data-theme", mode);
   }
 
   updateThemeIcon();
 }
 
 function updateThemeIcon() {
-  const currentTheme = document.documentElement.getAttribute("data-theme");
+  const mode = getThemeMode();
   const themeIcon = document.getElementById("theme-icon");
 
   if (!themeIcon) {
     return;
   }
 
-  if (currentTheme === "dark") {
-    // 月亮图标 (暗色模式)
+  if (mode === "auto") {
+    // 半太阳 + 月牙:自动跟随系统
+    themeIcon.innerHTML = `
+      <path d="M12 2a10 10 0 0 0 0 20"></path>
+      <path d="M18 7a7 7 0 0 1 0 10a5 5 0 0 0 0-10z"></path>
+    `;
+  } else if (mode === "dark") {
+    // 月亮图标 (手动深色)
     themeIcon.innerHTML = `
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
     `;
   } else {
-    // 太阳图标 (亮色模式)
+    // 太阳图标 (手动浅色)
     themeIcon.innerHTML = `
       <circle cx="12" cy="12" r="5"></circle>
       <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -85,14 +105,41 @@ function updateThemeIcon() {
       <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
     `;
   }
+
+  // 更新按钮提示与模式标记
+  const themeToggleBtn = document.getElementById("theme-toggle-btn");
+  if (themeToggleBtn) {
+    themeToggleBtn.setAttribute("data-mode", mode);
+    const titles = {
+      auto:
+        "自动跟随系统 (当前: " +
+        (getSystemTheme() === "dark" ? "深色" : "浅色") +
+        ") · 点击切换",
+      dark: "手动深色模式 · 点击切换",
+      light: "手动浅色模式 · 点击切换",
+    };
+    themeToggleBtn.title = titles[mode];
+  }
 }
 
 function toggleTheme() {
-  const currentTheme = document.documentElement.getAttribute("data-theme");
-  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  const mode = getThemeMode();
+  // 三态循环: auto → dark → light → auto
+  let newMode;
+  if (mode === "auto") {
+    newMode = "dark";
+  } else if (mode === "dark") {
+    newMode = "light";
+  } else {
+    newMode = "auto";
+  }
 
-  document.documentElement.setAttribute("data-theme", newTheme);
-  localStorage.setItem("theme", newTheme);
+  if (newMode === "auto") {
+    document.documentElement.removeAttribute("data-theme");
+  } else {
+    document.documentElement.setAttribute("data-theme", newMode);
+  }
+  localStorage.setItem("theme", newMode);
   updateThemeIcon();
 }
 
@@ -108,13 +155,11 @@ function initThemeToggle() {
   }
 
   // 监听系统主题变化
+  // 自动模式下，颜色由 CSS media query 自动跟随系统，这里只需更新图标和提示
   window
     .matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", (e) => {
-      // 只有在用户没有手动设置主题时才跟随系统变化
-      if (!localStorage.getItem("theme")) {
-        const newTheme = e.matches ? "dark" : "light";
-        document.documentElement.setAttribute("data-theme", newTheme);
+    .addEventListener("change", () => {
+      if (getThemeMode() === "auto") {
         updateThemeIcon();
       }
     });
