@@ -79,6 +79,23 @@ header {
     border-color: var(--color-orange);
 }
 
+/* 自动模式标记：虚线边框 + 橙色小圆点 */
+#theme-toggle-btn[data-mode="auto"] {
+    border-style: dashed;
+    position: relative;
+}
+
+#theme-toggle-btn[data-mode="auto"]::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-orange);
+}
+
 #theme-icon {
     width: 1.25rem;
     height: 1.25rem;

@@ -16,6 +16,15 @@
   <script src="js/main.js">
   </script>
   <link href="css/main.css" rel="stylesheet"/>
+  <script>
+    // 首帧前应用已保存的手动主题，避免闪烁；auto/未保存时由 CSS 跟随系统
+    (function () {
+      var t = localStorage.getItem("theme");
+      if (t === "dark" || t === "light") {
+        document.documentElement.setAttribute("data-theme", t);
+      }
+    })();
+  </script>
   <title>
    _traichu
   </title>
@@ -34,7 +43,7 @@
      </h2>
     </section>
     <section id="theme-toggle">
-     <button aria-label="Toggle dark mode" id="theme-toggle-btn">
+     <button aria-label="Toggle theme" id="theme-toggle-btn">
       <svg fill="none" id="theme-icon" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
        <circle cx="12" cy="12" r="5">
        </circle>
