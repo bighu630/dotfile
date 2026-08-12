@@ -37,3 +37,6 @@ share/fcitx5/themes/plasma
 /config/yazi/flavors/noctalia.yazi/flavor.toml
 /config/gtk-3.0/noctalia.css
 /config/gtk-4.0/noctalia.css
+/config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+/config/xfce4/desktop/accels.scm
+/oh-my-zsh/themes/mytheme.zsh-theme
