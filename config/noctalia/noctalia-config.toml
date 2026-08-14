@@ -19,14 +19,14 @@ order = [ "default" ]
 
     [bar.default]
     auto_hide = false
-    background_opacity = 0.62000000476837158
+    background_opacity = 0.22999998927116394
     border = "outline"
     border_width = 0.0
     capsule = true
     capsule_fill = "surface_variant"
-    capsule_opacity = 1.0
+    capsule_opacity = 0.61000001430511475
     capsule_padding = 6.0
-    capsule_thickness = 0.75999999046325684
+    capsule_thickness = 0.80000001192092896
     center = [ "group:g1" ]
     concave_edge_corners = true
     contact_shadow = false
@@ -35,7 +35,6 @@ order = [ "default" ]
         "tray",
         "notifications",
         "clipboard",
-        "todo",
         "network",
         "bluetooth",
         "volume",
@@ -232,6 +231,7 @@ pre_action_fade_seconds = 2.0
     action = "lock"
     command = ""
     enabled = true
+    locked_timeout = 0.0
     resume_command = ""
     timeout = 600.0
 
@@ -239,6 +239,7 @@ pre_action_fade_seconds = 2.0
     action = "lock_and_suspend"
     command = ""
     enabled = true
+    locked_timeout = 0.0
     resume_command = ""
     timeout = 900.0
 
@@ -246,6 +247,7 @@ pre_action_fade_seconds = 2.0
     action = "screen_off"
     command = ""
     enabled = true
+    locked_timeout = 0.0
     resume_command = ""
     timeout = 660.0
 
@@ -266,8 +268,8 @@ validate = [ "Return", "KP_Enter", "space" ]
 address = "麻城"
 auto_locate = false
 custom_schedule = false
-sunrise = ""
-sunset = ""
+sunrise = "07:00"
+sunset = "19:00"
 
 [lockscreen]
 allow_empty_password = false
@@ -283,18 +285,43 @@ wallpaper = "/data/Sync/wallpapers/bg/【哲风壁纸】夜景-富士山.png"
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1" ]
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
 
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 229.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 881.5
+    enabled = true
+    output = "HDMI-A-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_weather = true
+
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 229.0
     box_width = 810.0
-    cx = 1000.0
-    cy = 1051.5
+    cx = 934.0
+    cy = 968.5
     enabled = true
     output = "eDP-1"
     rotation = 0.0
@@ -338,7 +365,7 @@ show_actions = true
 show_app_name = true
 
 [osd]
-background_opacity = 0.78999996185302734
+background_opacity = 0.68999999761581421
 border = true
 enabled = true
 monitors = []
@@ -371,7 +398,7 @@ todo_folder = "/home/ivhu/dotfile/config/noctalia/plugins"
 
 [plugins]
 auto_update = true
-enabled = [ "bighu630/text-sync", "nightwatch75/todo", "noctalia/translator" ]
+enabled = [ "noctalia/screen_recorder", "bighu630/text-sync" ]
 
     [[plugins.source]]
     enabled = true
@@ -441,6 +468,7 @@ time_format = "{:%H:%M}"
     categories = true
     compact = false
     fetch_exchange_rates = true
+    pinned = []
     provider_prefix = "/"
     show_icons = true
     sort_by_usage = true
@@ -600,16 +628,16 @@ swap_pct_critical_threshold = 80.0
 
 [theme]
 builtin = "Noctalia"
-community_palette = "Catppuccin Frappe Blue"
-custom_palette = "wallpaper-mc"
+community_palette = "Catppuccin Macchiato Sapphire"
+custom_palette = "31-mut"
 mode = "auto"
 pure_black_dark = false
 source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "neovim", "vscode", "zed", "steam", "rofi", "obs", "papirus-icons", "yazi" ]
+    builtin_ids = [ "alacritty", "gtk3", "gtk4", "kcolorscheme", "niri", "qt" ]
+    community_ids = [ "vscode", "zed", "steam", "rofi", "obs", "papirus-icons", "yazi" ]
     enable_builtin_templates = true
     enable_community_templates = true
 
@@ -634,6 +662,8 @@ transition_on_startup = false
 
     [wallpaper.monitor.HDMI-A-1]
     directory = "/data/Sync/wallpapers/bg"
+    directory_dark = "/data/Sync/wallpapers/bgn"
+    directory_light = "/data/Sync/wallpapers/bgl"
     match = "HDMI-A-1"
 
     [wallpaper.monitor.eDP-1]
@@ -698,7 +728,7 @@ glyph = "navigation-search"
 type = "launcher"
 
     [widget.launcher.actions]
-    right = "none"
+    right = "exec ~/.local/bin/switchbg"
 
 [widget.lock_keys]
 display = "short"
@@ -749,6 +779,8 @@ stat = "cpu_temp"
 type = "sysmon"
 
 [widget.text_sync]
+capsule = true
+capsule_fill = "surface_variant"
 file_path = "/dev/shm/lyrics"
 max_chars = 37
 refresh_interval = 100
