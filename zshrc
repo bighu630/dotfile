@@ -170,10 +170,3 @@ fi
 # ============================================================
 source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# D-Bus 会话总线：SSH/tty 登录缺少桌面会话环境时，
-# 自动指向当前用户的运行时总线（playerctl / 桌面媒体控件需要）。
-if [[ -z "$DBUS_SESSION_BUS_ADDRESS" && -S "/run/user/$(id -u)/bus" ]]; then
-    export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
-fi
-[[ -z "$XDG_RUNTIME_DIR" && -d "/run/user/$(id -u)" ]] && export XDG_RUNTIME_DIR="/run/user/$(id -u)"
