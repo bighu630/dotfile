@@ -1,5 +1,2 @@
 [General]
-theme=WhiteSurDark
-
-[Applications]
-WhiteSurDark=dolphin, konsole
+theme=WhiteSur
