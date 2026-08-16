@@ -8,7 +8,7 @@
       "text": "noctalia颜色切换钩子"
     },
     {
-      "done": false,
+      "done": true,
       "id": 2,
       "priority": "medium",
       "text": "piplus支持多模态模型代理处理图片"
