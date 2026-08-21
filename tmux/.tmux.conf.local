@@ -460,3 +460,12 @@ tmux_conf_uninstall_plugins_on_reload=true
 #
 # "$@"
 # # /!\ do not remove the previous line
+
+
+# == 用户覆盖：music-tui kitty 图形协议（tmux 3.5+ 中继 APC 给外层）==
+# tmux 需知道外层终端支持 kitty 才中继。music-tui 会先查 client_termname
+# 确认外层是 kitty 再发送协议序列（foot 等外层不会被误发乱码）。
+set -g default-terminal "tmux-256color"
+set -as terminal-features 'xterm-256color:kitty'
+set -as terminal-features 'xterm-kitty:kitty'
+set -g allow-passthrough on

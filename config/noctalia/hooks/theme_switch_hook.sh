@@ -21,6 +21,7 @@ if [[ "$theme" == "dark" ]]; then
             sed -i 's/^widgetStyle=.*/widgetStyle=kvantum-dark/' "$file"
         fi
     done
+    sed -i "s/^background_opacity.*/background_opacity 0.8/" ~/.config/kitty/kitty.conf
 else
     kvantummanager --set WhiteSur
     for config in "${configs[@]}"; do
@@ -30,4 +31,5 @@ else
             sed -i 's/^widgetStyle=.*/widgetStyle=kvantum/' "$file"
         fi
     done
+    sed -i "s/^background_opacity.*/background_opacity 0.99/" ~/.config/kitty/kitty.conf
 fi

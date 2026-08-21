@@ -19,12 +19,12 @@ order = [ "default" ]
 
     [bar.default]
     auto_hide = false
-    background_opacity = 0.22999998927116394
+    background_opacity = 0.62000000476837158
     border = "outline"
     border_width = 0.0
     capsule = true
     capsule_fill = "surface_variant"
-    capsule_opacity = 0.61000001430511475
+    capsule_opacity = 1.0
     capsule_padding = 6.0
     capsule_thickness = 0.80000001192092896
     center = [ "group:g1" ]
@@ -35,7 +35,9 @@ order = [ "default" ]
         "tray",
         "notifications",
         "clipboard",
+        "todo",
         "network",
+        "network_rx",
         "bluetooth",
         "volume",
         "brightness",
@@ -61,7 +63,7 @@ order = [ "default" ]
     shadow = true
     show_on_workspace_switch = true
     smart_auto_hide = false
-    start = [ "launcher", "wallpaper", "media", "taskbar", "network_rx", "text_sync" ]
+    start = [ "launcher", "wallpaper", "media", "taskbar", "text_sync" ]
     thickness = 26
     widget_spacing = 3
 
@@ -197,7 +199,7 @@ rebooting = []
 session_locked = []
 session_unlocked = []
 shutting_down = []
-started = [ "~/.config/noctalia/hooks/start_hook.sh" ]
+started = []
 theme_mode_changed = [ "~/.config/noctalia/hooks/theme_switch_hook.sh" ]
 wallpaper_changed = []
 wifi_disabled = []
@@ -231,7 +233,6 @@ pre_action_fade_seconds = 2.0
     action = "lock"
     command = ""
     enabled = true
-    locked_timeout = 0.0
     resume_command = ""
     timeout = 600.0
 
@@ -239,7 +240,6 @@ pre_action_fade_seconds = 2.0
     action = "lock_and_suspend"
     command = ""
     enabled = true
-    locked_timeout = 0.0
     resume_command = ""
     timeout = 900.0
 
@@ -247,7 +247,6 @@ pre_action_fade_seconds = 2.0
     action = "screen_off"
     command = ""
     enabled = true
-    locked_timeout = 0.0
     resume_command = ""
     timeout = 660.0
 
@@ -267,7 +266,7 @@ validate = [ "Return", "KP_Enter", "space" ]
 [location]
 address = "麻城"
 auto_locate = false
-custom_schedule = false
+custom_schedule = true
 sunrise = "07:00"
 sunset = "19:00"
 
@@ -293,10 +292,10 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
     visible = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
-    box_height = 229.0
+    box_height = 196.0
     box_width = 810.0
     cx = 960.0
-    cy = 881.5
+    cy = 898.0
     enabled = true
     output = "HDMI-A-1"
     rotation = 0.0
@@ -315,13 +314,14 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
         show_login_button = true
         show_media = true
         show_session_buttons = true
+        show_unlock_hint = true
         show_weather = true
 
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
-    box_height = 229.0
+    box_height = 196.0
     box_width = 810.0
-    cx = 934.0
-    cy = 968.5
+    cx = 1000.0
+    cy = 1051.5
     enabled = true
     output = "eDP-1"
     rotation = 0.0
@@ -340,6 +340,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
         show_login_button = true
         show_media = true
         show_session_buttons = true
+        show_unlock_hint = true
         show_weather = true
 
 [nightlight]
@@ -349,7 +350,7 @@ temperature_day = 6500
 temperature_night = 4000
 
 [notification]
-background_opacity = 0.89999997615814209
+background_opacity = 0.84999996423721313
 border = true
 collapse_on_dismiss = true
 enable_daemon = true
@@ -365,7 +366,7 @@ show_actions = true
 show_app_name = true
 
 [osd]
-background_opacity = 0.68999999761581421
+background_opacity = 0.78999996185302734
 border = true
 enabled = true
 monitors = []
@@ -398,7 +399,7 @@ todo_folder = "/home/ivhu/dotfile/config/noctalia/plugins"
 
 [plugins]
 auto_update = true
-enabled = [ "noctalia/screen_recorder", "bighu630/text-sync" ]
+enabled = [ "bighu630/text-sync", "nightwatch75/todo", "noctalia/translator", "bighu630/shell-command" ]
 
     [[plugins.source]]
     enabled = true
@@ -468,7 +469,6 @@ time_format = "{:%H:%M}"
     categories = true
     compact = false
     fetch_exchange_rates = true
-    pinned = []
     provider_prefix = "/"
     show_icons = true
     sort_by_usage = true
@@ -628,16 +628,16 @@ swap_pct_critical_threshold = 80.0
 
 [theme]
 builtin = "Noctalia"
-community_palette = "Catppuccin Macchiato Sapphire"
-custom_palette = "31-mut"
+community_palette = "Catppuccin Frappe Blue"
+custom_palette = "wallpaper-mc"
 mode = "auto"
 pure_black_dark = false
 source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "gtk3", "gtk4", "kcolorscheme", "niri", "qt" ]
-    community_ids = [ "vscode", "zed", "steam", "rofi", "obs", "papirus-icons", "yazi" ]
+    builtin_ids = [ "alacritty", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    community_ids = [ "pi-agent", "vscode", "zed", "steam", "rofi", "obs", "papirus-icons", "yazi" ]
     enable_builtin_templates = true
     enable_community_templates = true
 
@@ -728,7 +728,7 @@ glyph = "navigation-search"
 type = "launcher"
 
     [widget.launcher.actions]
-    right = "exec ~/.local/bin/switchbg"
+    right = "none"
 
 [widget.lock_keys]
 display = "short"
@@ -747,12 +747,17 @@ title_scroll = "none"
 type = "media"
 
 [widget.network]
+enabled = false
 scale = 0.90000000000000013
 type = "network"
 
 [widget.network_rx]
 stat = "net_rx"
 type = "sysmon"
+
+    [widget.network_rx.actions]
+    left = "panel-toggle control-center network"
+    right = "panel-toggle control-center system"
 
 [widget.network_tx]
 stat = "net_tx"
@@ -784,7 +789,7 @@ capsule_fill = "surface_variant"
 file_path = "/dev/shm/lyrics"
 max_chars = 37
 refresh_interval = 100
-text_color = "tertiary"
+text_color = "error"
 type = "bighu630/text-sync:text_sync"
 
     [widget.text_sync.actions]
