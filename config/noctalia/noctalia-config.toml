@@ -398,7 +398,7 @@ scale = 1.0
 todo_folder = "/home/ivhu/dotfile/config/noctalia/plugins"
 
 [plugins]
-auto_update = true
+auto_update = "all"
 enabled = [ "bighu630/text-sync", "nightwatch75/todo", "noctalia/translator", "bighu630/shell-command" ]
 
     [[plugins.source]]
