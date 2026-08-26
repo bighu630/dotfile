@@ -19,12 +19,12 @@ order = [ "default" ]
 
     [bar.default]
     auto_hide = false
-    background_opacity = 0.62000000476837158
+    background_opacity = 0.22999998927116394
     border = "outline"
     border_width = 0.0
     capsule = true
     capsule_fill = "surface_variant"
-    capsule_opacity = 1.0
+    capsule_opacity = 0.61000001430511475
     capsule_padding = 6.0
     capsule_thickness = 0.80000001192092896
     center = [ "group:g1" ]
@@ -32,18 +32,20 @@ order = [ "default" ]
     contact_shadow = false
     enabled = true
     end = [
+        "group:g2",
         "tray",
         "notifications",
         "clipboard",
-        "todo",
+        "recorder",
         "network",
-        "network_rx",
         "bluetooth",
         "volume",
         "brightness",
         "battery",
         "control-center"
     ]
+    font_family = "PingFang SC Medium"
+    font_scale = 1.0
     font_weight = 500
     hover_highlight = true
     layer = "top"
@@ -78,6 +80,16 @@ order = [ "default" ]
         id = "g1"
         members = [ "clock", "workspaces" ]
         opacity = 0.55000001192092896
+        padding = 6.0
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        enabled = true
+        fill = "surface_variant"
+        id = "g2"
+        members = [ "widget", "network_rx" ]
+        opacity = 0.61000001430511475
         padding = 6.0
 
 [battery]
@@ -233,6 +245,7 @@ pre_action_fade_seconds = 2.0
     action = "lock"
     command = ""
     enabled = true
+    locked_timeout = 0.0
     resume_command = ""
     timeout = 600.0
 
@@ -240,6 +253,7 @@ pre_action_fade_seconds = 2.0
     action = "lock_and_suspend"
     command = ""
     enabled = true
+    locked_timeout = 0.0
     resume_command = ""
     timeout = 900.0
 
@@ -247,6 +261,7 @@ pre_action_fade_seconds = 2.0
     action = "screen_off"
     command = ""
     enabled = true
+    locked_timeout = 0.0
     resume_command = ""
     timeout = 660.0
 
@@ -295,9 +310,11 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
     box_height = 196.0
     box_width = 810.0
     cx = 960.0
-    cy = 898.0
+    cy = 881.5
     enabled = true
     output = "HDMI-A-1"
+    placement_height = 0.0
+    placement_width = 0.0
     rotation = 0.0
     type = "login_box"
 
@@ -320,10 +337,12 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 196.0
     box_width = 810.0
-    cx = 1000.0
-    cy = 1051.5
+    cx = 934.0
+    cy = 968.5
     enabled = true
     output = "eDP-1"
+    placement_height = 1273.0
+    placement_width = 2036.0
     rotation = 0.0
     type = "login_box"
 
@@ -366,7 +385,7 @@ show_actions = true
 show_app_name = true
 
 [osd]
-background_opacity = 0.78999996185302734
+background_opacity = 0.68999999761581421
 border = true
 enabled = true
 monitors = []
@@ -394,12 +413,24 @@ scale = 1.0
     volume_output = true
     wifi = true
 
+[plugin_settings."mdj2812/mihomo-control"]
+panel_open_near_click = true
+panel_placement = "attached"
+secret = "c274b972b29ae89f54152c09d273cfb4"
+
 [plugin_settings."nightwatch75/todo"]
 todo_folder = "/home/ivhu/dotfile/config/noctalia/plugins"
 
 [plugins]
 auto_update = "all"
-enabled = [ "bighu630/text-sync", "nightwatch75/todo", "noctalia/translator", "bighu630/shell-command" ]
+enabled = [
+    "bighu630/text-sync",
+    "cleboost/ssh-launcher",
+    "bighu630/shell-command",
+    "bighu630/nc-screen-recorder",
+    "mdj2812/mihomo-control",
+    "nightwatch75/todo"
+]
 
     [[plugins.source]]
     enabled = true
@@ -469,7 +500,10 @@ time_format = "{:%H:%M}"
     categories = true
     compact = false
     fetch_exchange_rates = true
+    pinned = []
     provider_prefix = "/"
+    show_app_actions = false
+    show_app_origin_indicator = true
     show_icons = true
     sort_by_usage = true
 
@@ -628,16 +662,16 @@ swap_pct_critical_threshold = 80.0
 
 [theme]
 builtin = "Noctalia"
-community_palette = "Catppuccin Frappe Blue"
-custom_palette = "wallpaper-mc"
+community_palette = "Catppuccin Macchiato Sapphire"
+custom_palette = "31-mut"
 mode = "auto"
 pure_black_dark = false
 source = "wallpaper"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
-    builtin_ids = [ "alacritty", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "pi-agent", "vscode", "zed", "steam", "rofi", "obs", "papirus-icons", "yazi" ]
+    builtin_ids = [ "alacritty", "gtk3", "gtk4", "kcolorscheme", "niri", "qt" ]
+    community_ids = [ "vscode", "zed", "steam", "rofi", "obs", "papirus-icons" ]
     enable_builtin_templates = true
     enable_community_templates = true
 
@@ -728,7 +762,7 @@ glyph = "navigation-search"
 type = "launcher"
 
     [widget.launcher.actions]
-    right = "none"
+    right = "exec ~/.local/bin/switchbg"
 
 [widget.lock_keys]
 display = "short"
@@ -752,6 +786,7 @@ scale = 0.90000000000000013
 type = "network"
 
 [widget.network_rx]
+highlight_color = "on_tertiary"
 stat = "net_rx"
 type = "sysmon"
 
@@ -770,6 +805,9 @@ type = "volume"
 [widget.ram]
 stat = "ram_used"
 type = "sysmon"
+
+[widget.recorder]
+type = "bighu630/nc-screen-recorder:recorder"
 
 [widget.spacer]
 interactive = false
@@ -811,3 +849,8 @@ type = "tray"
 [widget.wallpaper]
 enabled = true
 type = "wallpaper"
+
+[widget.widget]
+icon_color_mode = "custom"
+label_content = "download"
+type = "mdj2812/mihomo-control:widget"
