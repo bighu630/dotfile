@@ -36,6 +36,7 @@ order = [ "default" ]
         "tray",
         "notifications",
         "clipboard",
+        "todo_2",
         "recorder",
         "network",
         "bluetooth",
@@ -839,6 +840,9 @@ type = "bighu630/text-sync:text_sync"
     scroll_up = "media next"
 
 [widget.todo]
+type = "nightwatch75/todo:todo"
+
+[widget.todo_2]
 type = "nightwatch75/todo:todo"
 
 [widget.tray]
