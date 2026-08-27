@@ -71,6 +71,12 @@ window-rule {
     open-floating true
 }
 
+// Zoom 会议窗口悬浮
+window-rule {
+    match app-id="zoom"
+    open-floating true
+}
+
 window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")
