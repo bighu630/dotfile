@@ -846,8 +846,8 @@ type = "nightwatch75/todo:todo"
 type = "nightwatch75/todo:todo"
 
 [widget.tray]
-match_adjacent_spacing = true
-scale = 0.94999999999999996
+match_adjacent_spacing = false
+scale = 1.4000000000000001
 type = "tray"
 
 [widget.wallpaper]
