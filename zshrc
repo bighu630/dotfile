@@ -93,38 +93,8 @@ function setjava20() {
 # --- 其他工具函数 ---
 function sayhello() { /data/pyfile/read }
 
-function connect_3_51() {
-    tmux rename-window 3.51
-    ssh fabric@192.168.3.51
-}
-function connect_1_20() {
-    tmux rename-window 1.20
-    sshpass -p "hfcas1-1=0" fabric@192.168.1.20
-}
-function work(){
-    connect_3_51
-    tmux new-window
-    connect_1_20
-    tmux new-window
-    tmux rename-window local
-}
-
-# --- 键盘设置 ---
-function setkeymod1 () {
-    setxkbmap
-    xmodmap ~/.xmodmap
-}
 
 # --- 代理函数 ---
-function proxy_on() {
-    export http_proxy=http://192.168.3.244:7890
-    export https_proxy=$http_proxy
-    echo -e "终端代理已开启。"
-}
-function proxy_off(){
-    unset http_proxy https_proxy
-    echo -e "终端代理已关闭。"
-}
 function go_proxy(){
     export GOPROXY=https://proxy.golang.com.cn,direct
     export GOPRIVATE=git.mycompany.com,github.com/my/private

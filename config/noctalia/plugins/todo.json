@@ -10,7 +10,7 @@
     {
       "done": true,
       "id": 2,
-      "priority": "medium",
+      "priority": "low",
       "text": "piplus支持多模态模型代理处理图片"
     }
   ],
