@@ -36,6 +36,7 @@ order = [ "default" ]
         "tray",
         "notifications",
         "clipboard",
+        "todo_2",
         "recorder",
         "network",
         "bluetooth",
@@ -841,9 +842,12 @@ type = "bighu630/text-sync:text_sync"
 [widget.todo]
 type = "nightwatch75/todo:todo"
 
+[widget.todo_2]
+type = "nightwatch75/todo:todo"
+
 [widget.tray]
-match_adjacent_spacing = true
-scale = 0.94999999999999996
+match_adjacent_spacing = false
+scale = 1.4000000000000001
 type = "tray"
 
 [widget.wallpaper]
