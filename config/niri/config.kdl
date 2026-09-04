@@ -34,6 +34,13 @@ input {
     mod-key "Alt"
     mod-key-nested "Super"
 
+    // Don't take over the power button (niri issue #2233): when the power
+    // button is used to wake the laptop, niri receives the same key event
+    // right after resume and treats it as a suspend request, causing the
+    // "wakes up then immediately black screens" loop. The power key is
+    // handled by systemd-logind instead (HandlePowerKey=suspend).
+    disable-power-key-handling
+
     // focus-follows-mouse
     warp-mouse-to-focus
 
