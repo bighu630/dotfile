@@ -21,7 +21,8 @@ binds {
 
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
     Mod+Return { spawn "foot"; }
-    Mod+B { spawn "google-chrome-canary"; }
+    // Mod+B { spawn "google-chrome-canary"; }
+    Mod+B { spawn "firefox"; }
     // Mod+B { spawn "qutebrowser"; }
     // Mod+Shift+A { spawn-sh "grim -g \"$(slurp -b '#2E2A1E55' -c '#fb751bff')\" -t ppm - | satty -f -"; }
     Mod+Shift+S { spawn-sh "foot -T float -e /bin/tui";}

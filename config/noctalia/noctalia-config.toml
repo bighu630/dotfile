@@ -125,12 +125,6 @@ sidebar = "compact"
 sidebar_section = "compact"
 width = 700
 
-    [control_center.calendar]
-    event_date_format = "%A %e %B"
-    event_time_format = "%H:%M"
-    show_events_card = false
-    show_week_numbers = false
-
     [[control_center.shortcuts]]
     type = "wifi"
 
