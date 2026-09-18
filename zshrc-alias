@@ -103,3 +103,14 @@ alias xmod="xmodmap ~/.xmodmap"
 unalias gg
 
 alias HH="Hyprland"
+
+# --- Intel CPU 调频模式 (intel_pstate) ---
+# 休眠唤醒后若 CPU 卡在 400MHz 不升频，执行 cpuperf 急救
+cpuperf() {
+    echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor >/dev/null
+    echo "CPU 已切换 performance (高性能)"
+}
+cpusave() {
+    echo powersave | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor >/dev/null
+    echo "CPU 已切换 powersave (省电)"
+}
