@@ -4,8 +4,8 @@ ui_scale = 1.0
 
 [audio]
 enable_overdrive = false
-enable_sounds = true
-notification_sound = "/usr/share/noctalia/assets/sounds/notification.wav"
+enable_sounds = false
+notification_sound = ""
 sound_volume = 0.5
 volume_change_sound = ""
 

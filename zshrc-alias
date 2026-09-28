@@ -114,3 +114,9 @@ cpusave() {
     echo powersave | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor >/dev/null
     echo "CPU 已切换 powersave (省电)"
 }
+cpureset() {
+    echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor >/dev/null
+    sleep 1
+    echo powersave | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor >/dev/null
+    echo "CPU 已切换 powersave (省电)"
+}

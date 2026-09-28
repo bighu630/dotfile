@@ -1,6 +1,32 @@
 {
+  "hideCompleted": false,
+  "showCount": false,
   "sort": "priority",
   "tasks": [
+    {
+      "done": false,
+      "id": 6,
+      "priority": "medium",
+      "text": "redis 持久化方案 以及redlock"
+    },
+    {
+      "done": true,
+      "id": 5,
+      "priority": "medium",
+      "text": "重点看看redis 缓存+数据库写入这一块"
+    },
+    {
+      "done": true,
+      "id": 4,
+      "priority": "medium",
+      "text": "看看go的gmp调度方案"
+    },
+    {
+      "done": false,
+      "id": 3,
+      "priority": "medium",
+      "text": "在看一下web3-token这个项目"
+    },
     {
       "done": true,
       "id": 1,
