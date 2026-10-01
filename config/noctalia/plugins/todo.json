@@ -1,10 +1,10 @@
 {
-  "hideCompleted": true,
+  "hideCompleted": false,
   "showCount": false,
   "sort": "priority",
   "tasks": [
     {
-      "done": false,
+      "done": true,
       "id": 6,
       "priority": "medium",
       "text": "redis 持久化方案 以及redlock"
@@ -22,7 +22,7 @@
       "text": "看看go的gmp调度方案"
     },
     {
-      "done": false,
+      "done": true,
       "id": 3,
       "priority": "medium",
       "text": "在看一下web3-token这个项目"
