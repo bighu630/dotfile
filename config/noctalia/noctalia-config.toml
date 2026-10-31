@@ -23,7 +23,7 @@ order = [ "default" ]
     [bar.default]
     auto_hide = false
     background_opacity = 0.18999999761581421
-    border = "outline"
+    border = "outline_variant"
     border_width = 0.0
     capsule = true
     capsule_border_width = 1.0
