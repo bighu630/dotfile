@@ -3,6 +3,7 @@ high_contrast = false
 ui_scale = 1.0
 
 [audio]
+colorize_icons = false
 enable_notification_sounds = true
 enable_overdrive = false
 enable_power_sounds = true
@@ -11,6 +12,7 @@ enable_sounds = true
 enable_volume_sounds = true
 sound_theme = "freedesktop"
 sound_volume = 1.0
+spectrum_frame_rate = 60
 
 [backdrop]
 blur_intensity = 0.5
@@ -22,6 +24,8 @@ order = [ "default" ]
 
     [bar.default]
     auto_hide = false
+    auto_hide_delay_ms = 0
+    auto_hide_reserve_space = false
     background_opacity = 0.18999999761581421
     border = "outline_variant"
     border_width = 0.0
@@ -77,6 +81,7 @@ order = [ "default" ]
     widget_spacing = 3
 
         [bar.default.dead_zone]
+        click_through = false
 
         [[bar.default.capsule_group]]
         accordion = false
@@ -95,7 +100,7 @@ order = [ "default" ]
         accordion_direction = "end"
         border_width = 1.0
         enabled = true
-        fill = "surface_variant"
+        fill = "surface_container"
         id = "g2"
         members = [ "widget", "network_rx" ]
         opacity = 0.61000001430511475
@@ -106,7 +111,7 @@ order = [ "default" ]
         accordion_direction = "end"
         border_width = 1.0
         enabled = true
-        fill = "surface_variant"
+        fill = "surface_container"
         id = "g3"
         members = [ "widget_2", "network_rx" ]
         opacity = 1.0
@@ -115,10 +120,17 @@ order = [ "default" ]
 [battery]
 warning_threshold = 15
 
+[bluetooth]
+connect_when_enabled = false
+connection_notifications = false
+
 [brightness]
 enable_ddcutil = true
+enable_scheduled_brightness = false
 ignore_mmids = []
 minimum_brightness = 0.0
+scheduled_day_brightness = 1.0
+scheduled_night_brightness = 0.5
 sync_all_monitors = false
 
 [calendar]
@@ -131,6 +143,8 @@ refresh_minutes = 15
 
     [calendar.account.bighunb666]
     calendars = []
+    client_cert_file = ""
+    client_key_file = ""
     color = ""
     credential_source = "secret-service"
     name = ""
@@ -149,6 +163,7 @@ refresh_minutes = 15
 
 [control_center]
 hidden_tabs = []
+show_avatar_border = true
 show_session_button = true
 show_shortcut_labels = true
 sidebar = "compact"
@@ -156,8 +171,14 @@ sidebar_section = "compact"
 width = 700
 
     [control_center.calendar]
+    hide_past_events = false
+    past_events_threshold_minutes = 30
     show_events_card = true
+    show_events_location = false
     show_week_numbers = false
+
+    [control_center.media]
+    show_visualizer = true
 
     [[control_center.shortcuts]]
     type = "wifi"
@@ -191,12 +212,17 @@ active_monitor_only = false
 active_opacity = 1.0
 active_scale = 1.0
 auto_hide = false
+auto_hide_reveal_delay_ms = 250
 background_opacity = 0.68000000715255737
-border = "outline"
+border = "outline_variant"
 border_width = 0.0
+colorize_icons = false
+compositor_blur = true
 concave_edge_corners = true
 cross_axis_padding = 8
 enabled = false
+icon_saturation = 1.0
+icon_shadow = false
 icon_size = 48
 inactive_opacity = 0.85000002384185791
 inactive_scale = 0.85000002384185791
@@ -295,12 +321,15 @@ pre_action_fade_seconds = 2.0
 
 [keybinds]
 cancel = [ "Escape" ]
+category_next = [ "Ctrl+Tab" ]
+category_previous = [ "Ctrl+Shift+ISO_Left_Tab" ]
 copy = [ "Ctrl+c" ]
 delete = [ "Delete" ]
 down = [ "Down" ]
 left = [ "Left" ]
 right = [ "Right" ]
 save = [ "Ctrl+s" ]
+select_all = [ "Ctrl+a" ]
 tab_next = [ "Tab" ]
 tab_previous = [ "Shift+ISO_Left_Tab" ]
 up = [ "Up" ]
@@ -317,12 +346,14 @@ sunset = "19:00"
 allow_empty_password = false
 blur_intensity = 0.5
 blurred_desktop = false
+dnd = false
 edge_smoothness = 0.30000001192092896
 enabled = true
 fingerprint = false
 grace_period_seconds = 0
 lock_before_suspend = true
 monitors = []
+tint_color = "surface"
 tint_intensity = 0.30000001192092896
 transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb" ]
 transition_duration = 1500.0
@@ -351,7 +382,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -362,6 +393,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -369,17 +401,17 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 196.0
     box_width = 810.0
-    cx = 1000.0
-    cy = 1051.5
+    cx = 1066.5
+    cy = 1121.3197021484375
     enabled = true
     output = "eDP-1"
-    placement_height = 1250.0
-    placement_width = 2000.0
+    placement_height = 1333.0
+    placement_width = 2133.0
     rotation = 0.0
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -390,6 +422,7 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1" ]
         show_keyboard_layout = true
         show_login_button = true
         show_media = true
+        show_password_reveal = true
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
@@ -403,28 +436,32 @@ temperature_night = 4400
 [notification]
 background_opacity = 0.84999996423721313
 border = true
-border_color = "outline"
+border_color = "outline_variant"
 border_width = 1.0
 collapse_on_dismiss = true
+colorize_icons = false
 enable_daemon = true
 follow_focused_output = false
+group_by_app = true
 history_retention_hours = 0
 keep_dismissed_in_history = true
 layer = "top"
 max_visible = 0
 monitors = []
+newest_on_edge = false
 offset_x = 20
 offset_y = 8
 position = "top_right"
 scale = 1.0
 show_actions = true
 show_app_name = true
+show_progress_bar = true
 width = 360
 
 [osd]
 background_opacity = 0.78999996185302734
 border = true
-border_color = "outline"
+border_color = "outline_variant"
 border_width = 1.0
 enabled = true
 follow_focused_output = false
@@ -441,11 +478,13 @@ scale = 1.0
     bluetooth = true
     brightness = true
     caffeine = true
+    custom = true
     dnd = true
     keyboard_backlight = true
     keyboard_layout = true
     lock_keys = true
     media = true
+    media_volume = true
     nightlight = true
     power_profile = true
     privacy = true
@@ -501,10 +540,10 @@ enabled = [
     name = "bighu630"
 
 [shell]
-app_icon_colorize = false
 avatar_path = ""
 button_borders = true
 card_borders = true
+circular_avatar = true
 clipboard_auto_paste = "auto"
 clipboard_confirm_clear_history = true
 clipboard_enabled = true
@@ -519,14 +558,17 @@ font_family = "PingFang SC Medium"
 input_borders = true
 launch_apps_as_systemd_services = true
 launch_apps_custom_command = ""
+niri_overview_close_on_launch_enabled = false
 niri_overview_type_to_launch_enabled = true
 offline_mode = false
 panel_anchor_bar = "default"
 password_style = "random"
 polkit_agent = true
+polkit_colorize_icons = false
 popup_borders = true
 popup_shadows = true
 readline_shortcuts = false
+screen_time_colorize_icons = false
 screen_time_enabled = true
 settings_expand_all_groups = false
 settings_show_advanced = true
@@ -537,6 +579,8 @@ show_close_buttons = true
 show_location = true
 telemetry_enabled = false
 time_format = "{:%H:%M}"
+umbriel_audio_provider_enabled = false
+umbriel_overview_close_on_launch_enabled = false
 umbriel_overview_type_to_launch_enabled = false
 
     [shell.animation]
@@ -551,19 +595,25 @@ umbriel_overview_type_to_launch_enabled = false
     [shell.launcher]
     app_grid = false
     auto_paste = "auto"
+    categories = true
     category_icons_only = false
+    colorize_icons = false
     compact = false
     default_view = "recent"
     fetch_exchange_rates = true
+    ignore_mouse = false
+    layout = "full"
     pinned = []
     provider_prefix = "/"
     search_position = "bottom"
     show_app_actions = false
     show_app_origin_indicator = true
     show_icons = true
+    show_navigation_labels = true
     show_session_button = true
     show_settings_button = true
     sort_by_usage = true
+    track_usage = true
     width = 760
 
         [shell.launcher.dmenu]
@@ -575,7 +625,7 @@ umbriel_overview_type_to_launch_enabled = false
     blacklist = []
 
     [shell.panel]
-    border_color = "outline"
+    border_color = "outline_variant"
     border_width = 1.0
     borders = true
     clipboard_placement = "attached"
@@ -613,18 +663,27 @@ umbriel_overview_type_to_launch_enabled = false
 
     [shell.screenshot]
     annotate = false
+    append_mode_suffix = true
     close_on_copy = true
     close_on_save = true
     confirm_region = false
+    copy_on_close = false
     copy_to_clipboard = true
     directory = "/home/ivhu/图片/屏幕截图"
     filename_pattern = ""
+    format = "png"
     freeze_screen = true
     pipe_command = ""
     pipe_to_command = false
+    quality = 90
+    region_border_width = 2.0
+    region_dim_opacity = 0.64999997615814209
+    region_modifier = "none"
     remember_last_region = false
     save_to_file = true
     show_cursor = false
+    show_region_dimensions = true
+    show_region_hint = true
     skip_annotate_on_copy_save = false
 
     [shell.session]
@@ -641,6 +700,7 @@ umbriel_overview_type_to_launch_enabled = false
         enabled = true
         glyph = ""
         label = ""
+        lockscreen_shortcut = ""
         shortcut = "1"
         variant = "default"
 
@@ -651,6 +711,7 @@ umbriel_overview_type_to_launch_enabled = false
         enabled = true
         glyph = ""
         label = ""
+        lockscreen_shortcut = ""
         shortcut = "2"
         variant = "default"
 
@@ -661,6 +722,7 @@ umbriel_overview_type_to_launch_enabled = false
         enabled = true
         glyph = ""
         label = ""
+        lockscreen_shortcut = ""
         shortcut = "3"
         variant = "default"
 
@@ -671,6 +733,7 @@ umbriel_overview_type_to_launch_enabled = false
         enabled = true
         glyph = ""
         label = ""
+        lockscreen_shortcut = ""
         shortcut = "4"
         variant = "default"
 
@@ -681,6 +744,7 @@ umbriel_overview_type_to_launch_enabled = false
         enabled = true
         glyph = ""
         label = ""
+        lockscreen_shortcut = ""
         shortcut = "5"
         variant = "destructive"
 
@@ -689,6 +753,7 @@ umbriel_overview_type_to_launch_enabled = false
     direction = "down"
 
     [shell.window_switcher]
+    colorize_icons = false
     current_workspace_only = false
     mru = false
     show_all_outputs = true
@@ -746,6 +811,8 @@ mode = "auto"
 pure_black_dark = false
 shell_mode = "follow"
 source = "wallpaper"
+sync_color_scheme = true
+terminal_colors = "palette"
 wallpaper_scheme = "m3-tonal-spot"
 
     [theme.templates]
@@ -763,6 +830,7 @@ enabled = true
 fill_color = ""
 fill_mode = "crop"
 per_monitor_directories = true
+sync_transitions = true
 transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb" ]
 transition_duration = 1500.0
 transition_on_startup = false
@@ -771,6 +839,7 @@ transition_on_startup = false
     enabled = true
     interval_seconds = 1800
     order = "random"
+    pause_on_fullscreen = false
     recursive = true
 
     [wallpaper.monitor.HDMI-A-1]
@@ -792,6 +861,7 @@ refresh_minutes = 30
 unit = "metric"
 
 [widget.active_window]
+colorize_icons = false
 icon_size = 14.0
 max_length = 260.0
 min_length = 80.0
@@ -894,6 +964,7 @@ interactive = false
 type = "spacer"
 
 [widget.taskbar]
+colorize_icons = false
 pinned = []
 type = "taskbar"
 
@@ -903,7 +974,7 @@ type = "sysmon"
 
 [widget.text_sync]
 capsule = true
-capsule_fill = "surface_variant"
+capsule_fill = "surface_container"
 file_path = "/dev/shm/lyrics"
 max_chars = 37
 refresh_interval = 100
@@ -926,6 +997,7 @@ type = "nightwatch75/todo:todo"
 type = "nightwatch75/todo:todo"
 
 [widget.tray]
+colorize_icons = false
 match_adjacent_spacing = true
 scale = 0.94999999999999996
 type = "tray"
@@ -945,3 +1017,7 @@ type = "mdj2812/mihomo-control:widget"
 
 [widget.widget_3]
 type = "yuuto/arch-updater:widget"
+
+[widget.workspaces]
+colorize_icons = false
+type = "workspaces"
